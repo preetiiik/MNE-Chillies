@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import Navbar from "../components/Navbar";
-import MarqueeStrip from "../Components/MarqueeStrip";
+import MarqueeStrip from "../components/MarqueeStrip";
 import InfraIntro from "../components/InfraIntro";
 
 import hero from "../assets/images/infra-hero.png";
