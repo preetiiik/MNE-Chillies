@@ -1,0 +1,271 @@
+/* ===========================
+   OUR PRODUCTS
+=========================== */
+
+.our-products {
+    width: 100%;
+    max-height: 606px;
+    background: #FAF8F5;
+    padding: 80px 0;
+}
+
+.our-products-container{
+    max-width:1440px;
+    margin:auto;
+    padding:15px 40px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* ===========================
+   LEFT IMAGE
+=========================== */
+
+.products-left{
+    width:266px;
+    flex-shrink:0;
+}
+
+.products-left img{
+    width:266px;
+    height:492px;
+    object-fit:contain;
+    padding-left: 56px;
+    margin-top: -50px;
+}
+/* ===========================
+   CENTER
+=========================== */
+
+.products-center{
+    width:430px;
+    text-align:centre;
+    margin-top:70px;
+    margin-left:5px;
+}
+
+.collection-tag {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #A6000C;
+    margin-bottom: 14px;
+}
+
+.products-center h2 {
+    font-family: "Libre Caslon Text", serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #281717;
+    line-height: 56px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.products-center p {
+    width: 424px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5D3F3C;
+    text-align: center;
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.products-right{
+    width:598px;
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+    margin-top: -60px;
+}
+
+.product-type{
+    display:flex;
+    justify-content:space-between;
+    align-items:centre;
+    gap:20px;
+}
+
+.product-info{
+    width:354px;
+    text-align:right;
+}
+
+.product-info h3 {
+    font-family: "Libre Caslon Text", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #A6000C;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5D3F3C;
+}
+
+.product-type img {
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.product-type:nth-child(1) img {
+    width: 133px;
+    height: 150px;
+}
+
+.product-type:nth-child(2) img {
+    width: 130px;
+    height: 89px;
+}
+
+.product-type:nth-child(3) img {
+    width: 133px;
+    height: 150px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1100px) {
+
+    .our-products-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 60px;
+        justify-items: center;
+    }
+
+    .products-center p,
+    .product-info {
+        width: 100%;
+    }
+
+    .product-type {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+}
+@media (max-width:768px){
+
+    .our-products-container{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+        padding:0 20px;
+    }
+
+    .products-left{
+        display:none; /* hide the decorative left image */
+    }
+
+    .products-center{
+        width:100%;
+        text-align:center;
+        margin:0 0 30px;
+    }
+
+    .products-center p{
+        width:100%;
+        max-width:330px;
+        margin:auto;
+    }
+
+    .products-right{
+        width:100%;
+        margin:0;
+        gap:28px;
+    }
+
+    
+
+}
+@media (max-width:768px){
+
+    .our-products{
+        padding:50px 16px;
+        max-height:none;
+    }
+
+    .our-products-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+        padding:0;
+    }
+
+    .products-left{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .products-left img{
+        width:180px;
+        height:auto;
+        margin:0;
+        padding:0;
+    }
+
+    .products-center{
+        width:100%;
+        margin:0;
+        text-align:center;
+    }
+
+    .products-center h2{
+        font-size:34px;
+        line-height:40px;
+    }
+
+    .products-center p{
+        width:100%;
+        max-width:340px;
+        margin:auto;
+    }
+
+    .products-right{
+        width:100%;
+        margin:0;
+        gap:24px;
+    }
+
+    .product-type{
+        display:flex;
+        flex-direction:row;      /* <-- keep image and text side by side */
+        align-items:center;
+        justify-content:flex-start;
+        gap:16px;
+    }
+
+    .product-info{
+        width:auto;
+        text-align:left;
+        flex:1;
+    }
+
+    .product-type img{
+        width:90px !important;
+        height:90px !important;
+        object-fit:contain;
+        flex-shrink:0;
+    }
+
+}

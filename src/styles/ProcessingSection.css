@@ -1,0 +1,370 @@
+/* ==========================================================
+   PROCESSING SECTION
+========================================================== */
+
+.processing-section{
+    width:100%;
+    background:#FCFBF9;
+    padding:110px 0;
+    overflow:hidden;
+}
+
+.processing-container{
+
+    max-width:1261px;
+    margin:auto;
+    padding:0 20px;
+
+    display:grid;
+    grid-template-columns:555px 555px;
+    justify-content:space-between;
+    align-items:center;
+    gap:90px;
+
+}
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.processing-left h2{
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:52px;
+    font-weight:700;
+    line-height:65px;
+
+    color:#281717;
+
+    margin-bottom:28px;
+}
+
+.processing-left p{
+
+    font-family:Inter,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    line-height:29.25px;
+
+    color:#5D3F3C;
+
+    margin-bottom:42px;
+}
+
+/* ==========================================================
+   FEATURES
+========================================================== */
+
+.processing-features{
+
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+.processing-item{
+
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.processing-icon{
+
+    width:48px;
+    height:48px;
+
+    border:1px solid rgba(166,0,12,.2);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    background:#fff;
+}
+
+.processing-icon img{
+
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+
+.processing-item h3{
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:24px;
+    font-weight:500;
+    line-height:32px;
+
+    color:#A6000C;
+
+    margin-bottom:8px;
+}
+
+.processing-item span{
+
+    display:block;
+
+    font-family:Inter,sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+
+    color:#5D3F3C;
+}
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.processing-right{
+
+    position:relative;
+
+    display:flex;
+    justify-content:flex-end;
+}
+
+.processing-image{
+
+    width:555px;
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    transform:scale(1.18);
+
+    opacity:0;
+
+    transition:
+    transform 1.2s ease,
+    opacity 1.2s ease;
+
+    will-change:transform;
+}
+
+/* AOS Animation */
+
+.processing-right.aos-animate .processing-image{
+
+    transform:scale(1);
+
+    opacity:1;
+}
+/* ==========================================================
+   24/7 MONITORING CARD
+========================================================== */
+
+.monitoring-card{
+
+    position:absolute;
+
+    right:-18px;
+    bottom:-18px;
+
+    width:210px;
+    height:152px;
+
+    background:#A6000C;
+
+    border-radius:8px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:5;
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+    transition-delay:.45s;
+}
+
+.processing-right.aos-animate .monitoring-card{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+.monitoring-card h4{
+
+    font-family:Inter,sans-serif;
+    font-size:64px;
+    font-weight:300;
+    line-height:64px;
+
+    color:#fff;
+
+    margin-bottom:10px;
+}
+
+.monitoring-card span{
+
+    font-family:Inter,sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#fff;
+}
+
+/* ==========================================================
+   IMAGE HOVER
+========================================================== */
+
+.processing-right:hover .processing-image{
+
+    transform:scale(1.04);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+    .processing-container{
+
+        grid-template-columns:1fr;
+        gap:70px;
+    }
+
+    .processing-left{
+
+        max-width:700px;
+        margin:auto;
+    }
+
+    .processing-right{
+
+        justify-content:center;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .processing-section{
+
+        padding:80px 20px;
+    }
+
+    .processing-left h2{
+
+        font-size:42px;
+        line-height:52px;
+    }
+
+    .processing-left p{
+
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .processing-image{
+
+        width:100%;
+        max-width:520px;
+        height:auto;
+    }
+
+    .monitoring-card{
+
+        width:170px;
+        height:125px;
+
+        right:-8px;
+        bottom:-8px;
+    }
+
+    .monitoring-card h4{
+
+        font-size:52px;
+        line-height:52px;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .processing-section{
+
+        padding:60px 18px;
+    }
+
+    .processing-left h2{
+
+        font-size:34px;
+        line-height:42px;
+    }
+
+    .processing-left p{
+
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .processing-item{
+
+        gap:14px;
+    }
+
+    .processing-item h3{
+
+        font-size:20px;
+        line-height:28px;
+    }
+
+    .processing-item span{
+
+        font-size:15px;
+        line-height:24px;
+    }
+
+    .processing-icon{
+
+        width:42px;
+        height:42px;
+    }
+
+    .processing-image{
+
+        border-radius:20px;
+    }
+
+    .monitoring-card{
+
+        width:140px;
+        height:105px;
+    }
+
+    .monitoring-card h4{
+
+        font-size:42px;
+        line-height:42px;
+    }
+
+    .monitoring-card span{
+
+        font-size:10px;
+        letter-spacing:1.5px;
+    }
+
+}

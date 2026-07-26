@@ -1,0 +1,233 @@
+/* ===== ABOUT US ===== */
+
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-page {
+    width: 100%;
+    min-height: 539px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.about-overlay {
+    width: 100%;
+    min-height: 539px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(30,22,22,.72) 0%,
+        rgba(30,22,22,.45) 40%,
+        rgba(30,22,22,.08) 100%
+    );
+
+    display: flex;
+    align-items: center;
+}
+
+.about-content{
+    width:min(90%,600px);
+
+    margin-left:clamp(24px,6vw,88px);
+
+    padding-top:clamp(70px, 10vw, 110px);
+}
+
+/* ===========================
+   Badge
+=========================== */
+
+.story-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 16px;
+
+  border: 0.67px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.story-badge::before {
+  content: "";
+  width: 8px;
+  min-height: 8px;
+  border-radius: 50%;
+  background: #f98a8a;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.about-content h1 {
+  margin-top: 20px;
+
+  font-family: "Libre Caslon Text", serif;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #fff;
+}
+
+.about-content h1 span {
+  color: #f98a8a;
+}
+
+/* ===========================
+   Paragraph
+=========================== */
+
+.about-content p {
+  margin-top: 20px;
+
+  max-width: 48ch;
+
+  font-family: "Inter", sans-serif;
+  font-size: clamp(15px, 2vw, 17px);
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================
+   Large Tablets & Small Laptops
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .about-page,
+  .about-overlay {
+    min-height: 500px;
+  }
+
+  .about-content {
+    width: 90%;
+    max-width: 650px;
+    margin-left: 40px;
+    padding-top: 80px;
+  }
+
+  .about-content h1 {
+    font-size: clamp(40px, 5vw, 52px);
+  }
+
+  .about-content p {
+    max-width: 520px;
+  }
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width: 768px) {
+
+  .about-page,
+  .about-overlay {
+    min-height: 460px;
+  }
+
+  .about-overlay {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+
+  }
+
+  .about-content {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .story-badge {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+
+  .about-content h1 {
+    margin-top: 18px;
+    font-size: clamp(34px, 6vw, 42px);
+    line-height: 1.2;
+  }
+
+  .about-content p {
+    margin-top: 18px;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 576px) {
+
+  .about-page,
+  .about-overlay {
+    min-height: 420px;
+  }
+
+  .about-content {
+    width: 92%;
+    padding-top: 40px;
+  }
+
+  .story-badge {
+    font-size: 10px;
+    padding: 5px 12px;
+    letter-spacing: 1px;
+  }
+
+  .about-content h1 {
+    font-size: clamp(30px, 8vw, 36px);
+    line-height: 1.2;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* ==========================================
+   Small Mobile
+========================================== */
+
+@media (max-width: 400px) {
+
+  .about-content {
+    width: 94%;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 13.5px;
+    line-height: 22px;
+  }
+}

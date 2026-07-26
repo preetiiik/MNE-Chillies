@@ -1,0 +1,695 @@
+/* ===================================================
+   FEATURED PRODUCTS
+=================================================== */
+
+.fp-section{
+    width:100%;
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.fp-container{
+    width:min(92%,1320px);
+    margin:auto;
+}
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.fp-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+    margin-bottom:70px;
+}
+
+.fp-tag{
+    display:inline-block;
+    color:#A6000C;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.fp-title{
+    font-family:"Libre Caslon Text",serif;
+    font-size:58px;
+    line-height:65px;
+    color:#1C1111;
+}
+
+/* ===================================================
+   FILTERS
+=================================================== */
+
+.fp-filters{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.fp-filters button{
+
+    padding:13px 24px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#F7F2F1;
+
+    color:#6A5652;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.fp-filters button:hover{
+
+    background:#A6000C;
+
+    color:white;
+
+}
+
+.fp-filters button.active{
+
+    background:#A6000C;
+
+    color:#fff;
+
+}
+
+/* ===================================================
+   PRODUCT CARDS
+=================================================== */
+
+.fp-cards{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:70px;
+
+}
+
+.fp-card{
+
+    display:grid;
+
+    grid-template-columns:520px 1fr;
+
+    gap:55px;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.fp-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.fp-card.reverse{
+
+    grid-template-columns:1fr 520px;
+
+}
+
+.fp-card.reverse .fp-image{
+
+    order:2;
+
+}
+
+.fp-card.reverse .fp-content{
+
+    order:1;
+    padding:22px;
+
+}
+
+/* ===================================================
+   IMAGE
+=================================================== */
+
+.fp-image{
+
+    position:relative;
+
+    height:720px;
+
+    overflow:hidden;
+
+}
+
+.fp-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.fp-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.fp-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(to top,
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.08),
+    transparent);
+
+}
+
+/* ===================================================
+   BADGE
+=================================================== */
+
+.fp-badge{
+
+    position:absolute;
+
+    top:28px;
+
+    left:28px;
+
+    z-index:5;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#A6000C;
+
+    color:white;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===================================================
+   SPECIFICATION CHIPS
+=================================================== */
+
+.fp-specs{
+
+    position:absolute;
+
+    left:25px;
+
+    bottom:25px;
+
+    z-index:5;
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.fp-specs span{
+
+    padding:10px 18px;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+}
+
+/* ===================================================
+   CONTENT
+=================================================== */
+
+.fp-content{
+
+    padding:55px 55px 55px 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:left;
+
+}
+
+.fp-location{
+
+    color:#A6000C;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    margin-bottom:16px;
+
+}
+
+.fp-product-title{
+
+    font-family:"Libre Caslon Text",serif;
+
+    font-size:54px;
+
+    line-height:60px;
+
+    color:#1C1111;
+
+    margin-bottom:16px;
+
+}
+
+.fp-subtitle{
+
+    color:#C64343;
+
+    font-size:20px;
+
+    font-style:italic;
+
+    margin-bottom:24px;
+
+}
+
+.fp-description{
+
+    color:#675652;
+
+    font-size:17px;
+
+    line-height:33px;
+
+    margin-bottom:35px;
+
+}
+/* ===================================================
+   HEAT LEVEL
+=================================================== */
+
+.fp-heat{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:35px;
+}
+
+.fp-heat-label{
+    font-size:15px;
+    font-weight:600;
+    color:#222;
+}
+
+.fp-bars{
+    display:flex;
+    gap:7px;
+}
+
+.fp-bars span{
+    width:18px;
+    height:5px;
+    border-radius:20px;
+    background:#E5D8D4;
+}
+
+.fp-bars span.active{
+    background:#A6000C;
+}
+
+/* ===================================================
+   COMMON USES & PACKING
+=================================================== */
+
+.fp-block{
+    margin-bottom:28px;
+}
+
+.fp-block h5{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+    color:#1C1111;
+    margin-bottom:16px;
+}
+
+.fp-chip-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.fp-chip{
+    padding:10px 18px;
+    border:1px solid #E8E2DE;
+    border-radius:999px;
+    background:#fff;
+    color:#675652;
+    font-size:14px;
+    transition:.3s;
+}
+
+.fp-chip:hover{
+    border-color:#A6000C;
+    color:#A6000C;
+}
+
+.fp-pack{
+    padding:10px 18px;
+    background:#FFF2F2;
+    color:#A6000C;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.fp-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:15px;
+}
+
+.fp-primary-btn{
+
+    width:220px;
+    height:56px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#A6000C;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.fp-primary-btn:hover{
+
+    background:#860009;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(166,0,12,.25);
+
+}
+
+.fp-secondary-btn{
+
+    width:220px;
+    height:56px;
+
+    border:1px solid #DDD6D3;
+
+    background:#fff;
+
+    color:#666;
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.fp-secondary-btn:hover:not(:disabled){
+
+    border-color:#A6000C;
+
+    color:#A6000C;
+
+}
+
+.fp-secondary-btn:disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+}
+
+.fp-secondary-btn:disabled:hover{
+
+    border-color:#DDD6D3;
+
+    color:#666;
+
+    transform:none;
+
+}
+
+/* ===================================================
+   TABLET
+=================================================== */
+
+@media(max-width:1200px){
+
+    .fp-card,
+    .fp-card.reverse{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .fp-card.reverse .fp-image,
+    .fp-card.reverse .fp-content{
+
+        order:unset;
+
+    }
+
+    .fp-image{
+
+        height:500px;
+
+    }
+
+    .fp-content{
+
+        padding:22px;
+
+    }
+
+    .fp-product-title{
+
+        font-size:44px;
+        line-height:50px;
+
+    }
+
+}
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+@media(max-width:768px){
+
+    .fp-section{
+
+        padding:70px 0;
+
+    }
+
+    .fp-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        margin-bottom:45px;
+
+    }
+
+    .fp-title{
+
+        font-size:40px;
+
+        line-height:46px;
+
+    }
+
+    .fp-filters{
+
+        width:100%;
+
+    }
+
+    .fp-filters button{
+
+        flex:1;
+
+        min-width:140px;
+
+    }
+
+    .fp-image{
+
+        height:330px;
+
+    }
+
+    .fp-content{
+
+        padding:20px 8px;
+
+    }
+
+    .fp-product-title{
+
+        font-size:34px;
+
+        line-height:42px;
+
+    }
+
+    .fp-subtitle{
+
+        font-size:18px;
+
+    }
+
+    .fp-description{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .fp-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .fp-primary-btn,
+    .fp-secondary-btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===================================================
+   SMALL MOBILE
+=================================================== */
+
+@media(max-width:480px){
+
+    .fp-title{
+
+        font-size:32px;
+
+        line-height:38px;
+
+    }
+
+    .fp-product-title{
+
+        font-size:28px;
+
+        line-height:34px;
+
+    }
+
+    .fp-image{
+
+        height:250px;
+
+    }
+
+    .fp-content{
+
+        padding:22px;
+
+    }
+
+    .fp-description{
+
+        font-size:14px;
+
+        line-height:24px;
+
+    }
+
+    .fp-chip,
+    .fp-pack{
+
+        font-size:12px;
+
+        padding:8px 14px;
+
+    }
+
+}

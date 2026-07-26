@@ -1,0 +1,239 @@
+/* ===========================
+   Testimonials Section
+=========================== */
+
+
+.testimonials-section {
+  background: #faf8f5;
+  padding: 96px 0;
+}
+ 
+.testimonials-container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+ 
+/* ===========================
+   Heading
+=========================== */
+ 
+.testimonials-heading {
+  margin-bottom: 56px;
+}
+ 
+.section-label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #a6000c;
+  margin-bottom: 18px;
+}
+ 
+.testimonials-heading h2 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 52px;
+  line-height: 60.2px;
+  font-weight: 700;
+  color: #1a0505;
+}
+ 
+/* ===========================
+   Row layout
+=========================== */
+ 
+.testimonial-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+ 
+.testimonial-center {
+  flex: 0 0 auto;
+  transition: opacity 0.35s ease;
+}
+ 
+.testimonial-side {
+  flex: 0 0 auto;
+  transition: opacity 0.35s ease;
+}
+ 
+/* ===========================
+   Cards
+=========================== */
+ 
+.testimonial-card {
+  background: #ffffff;
+  border: 0.7px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 28px;
+  min-height: 309px;
+  width: 396px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+ 
+.testimonial-card.is-active {
+  opacity: 1;
+}
+ 
+.testimonial-card.is-side {
+  opacity: 0.35;
+  transform: scale(0.92);
+  pointer-events: none;
+}
+ 
+/* ===========================
+   Quote
+=========================== */
+ 
+.quote-mark {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 42px;
+  line-height: 42px;
+  color: #a6000c;
+  opacity: 0.35;
+}
+ 
+/* ===========================
+   Testimonial Text
+=========================== */
+ 
+.testimonial-text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3d1c1c;
+ 
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+ 
+/* ===========================
+   Footer
+=========================== */
+ 
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+ 
+  border-top: 1px solid #efefef;
+  padding-top: 22px;
+}
+ 
+/* ===========================
+   Avatar
+=========================== */
+ 
+.avatar {
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  color: white;
+ 
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+ 
+  flex-shrink: 0;
+}
+ 
+/* ===========================
+   Author
+=========================== */
+ 
+.author-info h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #1a0505;
+  margin-bottom: 2px;
+}
+ 
+.author-info span {
+  display: block;
+ 
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+ 
+  color: #5d3f3c;
+}
+ 
+/* ===========================
+   Dots
+=========================== */
+ 
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+ 
+.testimonial-dot {
+  width: 8px;
+  min-height: 8px;
+  border-radius: 50%;
+  background: rgba(166, 0, 12, 0.2);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s ease, width 0.3s ease;
+}
+ 
+.testimonial-dot.active {
+  background: #a6000c;
+  width: 24px;
+  border-radius: 4px;
+}
+ 
+/* ===========================
+   Responsive
+=========================== */
+ 
+@media (max-width: 1300px) {
+  .testimonials-container {
+    width: 92%;
+  }
+}
+ 
+@media (max-width: 992px) {
+  .testimonial-side {
+    display: none;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 70px 20px;
+  }
+ 
+  .testimonials-heading h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+ 
+  .testimonial-card {
+    width: 100%;
+    max-width: 396px;
+  }
+}

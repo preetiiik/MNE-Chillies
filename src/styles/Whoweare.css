@@ -1,0 +1,303 @@
+/* ==========================================
+   WHO ARE WE
+========================================== */
+
+.who-we-are {
+    width: 100%;
+    min-height: 619px;
+    background: #FFF8F7;
+    padding: clamp(60px, 8vw, 90px) 0;
+}
+
+.who-container {
+    width: min(90%, 1280px);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(40px, 6vw, 80px);
+}
+
+.who-content {
+    flex: 1;
+    max-width: 640px;
+}
+
+.section-tag {
+    display: block;
+
+    color: #A6000C;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.who-content h2 {
+    margin-top: 16px;
+
+    color: #281717;
+
+    font-family: "Libre Caslon Text", serif;
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.who-content p {
+    margin-top: 24px;
+
+    max-width: 640px;
+
+    color: #4E403F;
+
+    font-family: "Inter", sans-serif;
+    font-size: clamp(15px, 1.2vw, 16px);
+    line-height: 1.8;
+}
+
+/* ===========================
+   Gallery
+=========================== */
+
+.who-gallery {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.gallery-item img {
+    width: 84px;
+    min-height: 84px;
+
+    object-fit: cover;
+
+    border: 2px solid #F2C8C8;
+    border-radius: 12px;
+
+    padding: 4px;
+    background: #fff;
+
+    transition: all .35s ease;
+}
+
+.gallery-item span {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #281717;
+
+    transition: color .3s ease;
+}
+
+/* Hover */
+
+.gallery-item:hover {
+    cursor: pointer;
+}
+
+.gallery-item:hover img {
+    border-color: #A6000C;
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow: 0 12px 24px rgba(166, 0, 12, .15);
+}
+
+.gallery-item:hover span {
+    color: #A6000C;
+    font-weight: 600;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 40px;
+
+    color: #A6000C;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    color: #7E0009;
+    transform: translateX(5px);
+}
+
+.read-more span {
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover span {
+    transform: translateX(6px);
+}
+
+/* ===========================
+   Right Image
+=========================== */
+
+.who-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.who-image img {
+    width: min(100%, 720px);
+    min-height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+/* Decorative Corners */
+
+.corner {
+    position: absolute;
+    width: 140px;
+    min-height: 60px;
+    border: 4px solid #E9B5B5;
+    z-index: 1;
+}
+
+.corner.top {
+    top: 12%;
+    left: 8%;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner.bottom {
+    right: 6%;
+    bottom: 10%;
+
+    border-left: none;
+    border-top: none;
+}
+
+/* =========================
+   Laptop
+========================= */
+
+@media (max-width:1200px){
+
+    .who-container{
+        gap:50px;
+    }
+
+    .who-image img{
+        max-width:580px;
+    }
+
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:992px){
+    .who-container{
+        flex-direction:column;
+        text-align:left;
+    }
+    .who-content{
+        max-width:100%;
+    }
+    .who-content p{
+        max-width:100%;
+    }
+    .who-gallery{
+        justify-content:left;
+    }
+    .read-more{
+        justify-content:left;
+    }
+    .who-image{
+        width:100%;
+        margin-top:20px;
+    }
+    .who-image img{
+        width:min(85%,500px);
+    }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px){
+    .who-we-are{
+        padding:60px 0;
+    }
+    .who-container{
+         width:92%;
+    }
+    .who-gallery{
+        justify-content:centre;
+        gap:20px;
+    }
+    .gallery-item img{
+        width:72px;
+    }
+    .gallery-item span{
+        font-size:15px;
+    }
+    .read-more{
+        margin-top:30px;
+    }
+    .corner{
+        display:none;
+    }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width:480px){
+
+    .who-content h2{
+
+        font-size:34px;
+    }
+
+    .who-content p{
+
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .who-gallery{
+
+        gap:16px;
+    }
+
+    .gallery-item img{
+
+        width:64px;
+    }
+
+}

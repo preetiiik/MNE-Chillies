@@ -1,0 +1,397 @@
+/* ==========================
+   PROCESS SECTION
+========================== */
+
+.process-section {
+  width: 100%;
+  margin-left: 30px;
+  background: #f9f6f2;
+  padding: 64px 0 80px;
+}
+
+.process-container {
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ==========================
+   Heading
+========================== */
+
+.process-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-label {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #a6000c;
+}
+
+.process-heading h2 {
+  margin-top: 8px;
+
+  font-family: "Libre Caslon Text", serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 57.2px;
+  color: #1a0505;
+}
+
+/* ==========================
+   Steps
+========================== */
+
+.process-grid {
+  margin-top: 64px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.process-card {
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-circle {
+  width: 56px;
+  min-height: 56px;
+  border-radius: 50%;
+
+  background: #a6000c;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Libre Caslon Text", serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+
+  box-shadow:
+    0 4px 6px -4px rgba(166, 0, 12, 0.25),
+    0 10px 15px -3px rgba(166, 0, 12, 0.25);
+}
+
+.process-content {
+  padding-top: 20px;
+}
+
+.process-content h3 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1a0505;
+}
+
+.process-content p {
+  margin-top: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #5d3f3c;
+}
+
+/* ==========================
+   Hover
+========================== */
+
+.process-card:hover .process-circle {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+.process-card:hover h3 {
+  color: #a6000c;
+  transition: 0.3s ease;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 1300px) {
+  .process-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .process-heading h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .process-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .process-card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-section {
+    padding: 50px 20px;
+  }
+
+  .process-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .process-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .process-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .process-content {
+    padding-top: 18px;
+  }
+}
+.services-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.services-container {
+  width: 88%;
+  max-width: 1269px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT GRID */
+
+.services-grid {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.service-card {
+  background: #faf8f5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+
+  padding: 20px;
+
+  min-height: 172px;
+
+  transition: 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.08);
+}
+
+.service-icon {
+  width: 40px;
+  min-height: 40px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: #1a0505;
+
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 19px;
+
+  color: #5d3f3c;
+}
+
+/* RIGHT CONTENT */
+
+.services-content {
+  flex: 1;
+  max-width: 580px;
+}
+
+.subtitle {
+  display: inline-block;
+
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #a6000c;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.services-content h2 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 52px;
+  line-height: 57.2px;
+  font-weight: 700;
+
+  color: #1a0505;
+
+  margin-bottom: 26px;
+}
+
+.services-content p {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #5d3f3c;
+
+  margin-bottom: 34px;
+}
+
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #a6000c;
+
+  text-decoration: none;
+
+  border-bottom: 2px solid #a6000c;
+  padding-bottom: 4px;
+
+  transition: .3s;
+}
+
+.service-btn span {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.service-btn:hover {
+  gap: 18px;
+}
+
+/* Tablet */
+
+@media (max-width:1024px){
+
+.services-container{
+    flex-direction:column;
+    gap:60px;
+}
+
+.services-content{
+    max-width:100%;
+}
+
+.services-content h2{
+    font-size:44px;
+    line-height:50px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.services-section{
+    padding:70px 20px;
+}
+
+.services-container{
+    width:100%;
+}
+
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+.services-content h2{
+    font-size:38px;
+    line-height:44px;
+}
+
+.services-content p{
+    font-size:15px;
+}
+
+.service-card{
+    min-height:auto;
+}
+
+}
+.process-timeline{
+    position:relative;
+    margin-top:64px;
+}
+
+.timeline-line{
+    position:absolute;
+    top:28px;          /* center of the circles */
+    left:28px;
+    width:calc(100% - 56px);
+    min-height:3px;
+    background:#a6000c;
+    z-index:1;
+
+    transform:scaleX(0);
+    transform-origin:left;
+    animation:growLine 2s ease forwards;
+}
+
+.process-grid{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+    z-index:2;
+}
+
+.process-circle{
+    position:relative;
+    z-index:3;
+}

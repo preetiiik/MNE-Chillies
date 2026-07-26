@@ -1,0 +1,447 @@
+/* ======================================================
+   DRY CHILLI COMPARISON
+====================================================== */
+
+.comparison-section {
+  width: 100%;
+  background: #fff;
+  padding: 90px 0;
+}
+
+.comparison-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ======================================================
+   HEADING
+====================================================== */
+
+.comparison-heading {
+  margin-bottom: 42px;
+}
+
+.comparison-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  color: #A6000C;
+}
+
+.comparison-line {
+  width: 24px;
+  height: 1px;
+  background: #A6000C;
+}
+
+.comparison-heading h2 {
+  margin-top: 10px;
+
+  font-family: "Libre Caslon Text", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+
+  color: #1A0505;
+}
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.comparison-table {
+  width: 100%;
+}
+
+.table-row {
+  display: grid;
+
+  grid-template-columns:
+    2.4fr
+    1fr
+    1.35fr
+    1fr
+    1.3fr
+    1.6fr;
+
+  align-items: center;
+
+  column-gap: 30px;
+
+  min-height: 82px;
+
+  border-bottom: 0.67px solid rgba(0,0,0,.06);
+}
+
+.table-head {
+  min-height: 56px;
+  border-bottom: 2px solid rgba(166,0,12,.15);
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.table-head div:first-child {
+
+  font-family: "Libre Caslon Text", serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+
+  color: #1A0505;
+}
+
+.table-head div:not(:first-child) {
+
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  line-height: 16.5px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #5D3F3C;
+}
+
+/* ======================================================
+   VARIETY COLUMN
+====================================================== */
+
+.variety-col {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.variety-col img {
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+.variety-col h4 {
+
+  font-family: "Libre Caslon Text", serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  line-height: 22.5px;
+
+  color: #1A0505;
+
+  margin-bottom: 2px;
+}
+
+.variety-col p {
+
+  font-family: Inter, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 16.5px;
+
+  color: #5D3F3C;
+}
+
+/* ======================================================
+   ASTA
+====================================================== */
+
+.asta {
+
+  font-family: "Libre Caslon Text", serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  line-height: 22.5px;
+
+  color: #A6000C;
+}
+
+/* ======================================================
+   NORMAL TEXT
+====================================================== */
+
+.normal-text {
+
+  font-family: Inter, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 20px;
+
+  color: #5D3F3C;
+}
+/* ======================================================
+   HEAT LEVEL
+====================================================== */
+
+.heat-bars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar {
+  width: 18px;
+  height: 5px;
+  border-radius: 999px;
+  background: #F4DCDC;
+  transition: 0.3s;
+}
+
+.bar.active {
+  background: #A6000C;
+}
+
+/* ======================================================
+   BEST FOR CHIPS
+====================================================== */
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  background: rgba(166, 0, 12, 0.07);
+
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+
+  color: #A6000C;
+
+  transition: .3s ease;
+}
+
+.chip:hover {
+  background: #A6000C;
+  color: #fff;
+}
+
+/* ======================================================
+   ROW HOVER
+====================================================== */
+
+.table-row:not(.table-head) {
+  transition: .35s ease;
+}
+
+.table-row:not(.table-head):hover {
+  background: #FFF9F8;
+}
+
+.table-row:not(.table-head):hover .asta {
+  color: #8D000A;
+}
+
+.table-row:not(.table-head):hover img {
+  transform: scale(1.05);
+}
+
+.variety-col img {
+  transition: .35s ease;
+}
+
+/* ======================================================
+   AOS
+====================================================== */
+
+[data-aos] {
+  will-change: transform, opacity;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:1200px){
+
+.comparison-container{
+padding:0 30px;
+}
+
+.table-row{
+
+grid-template-columns:
+2.3fr
+1fr
+1.4fr
+1fr
+1.3fr
+1.5fr;
+
+column-gap:20px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.comparison-heading h2{
+font-size:40px;
+line-height:46px;
+}
+
+.comparison-section{
+padding:70px 0;
+}
+
+.comparison-table{
+overflow-x:auto;
+}
+
+.comparison-table::-webkit-scrollbar{
+height:8px;
+}
+
+.comparison-table::-webkit-scrollbar-thumb{
+background:#A6000C;
+border-radius:20px;
+}
+
+.comparison-table::-webkit-scrollbar-track{
+background:#eee;
+}
+
+.table-head,
+.table-row{
+
+min-width:1100px;
+
+}
+
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media(max-width:768px){
+
+.comparison-section{
+padding:60px 0;
+}
+
+.comparison-heading{
+margin-bottom:30px;
+}
+
+.comparison-heading h2{
+
+font-size:34px;
+
+line-height:40px;
+
+}
+
+.comparison-tag{
+
+font-size:11px;
+
+letter-spacing:2px;
+
+}
+
+.table-head,
+.table-row{
+
+min-width:1000px;
+
+}
+
+.variety-col{
+
+gap:12px;
+
+}
+
+.variety-col img{
+
+width:38px;
+height:38px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.comparison-container{
+
+padding:0 16px;
+
+}
+
+.comparison-heading h2{
+
+font-size:30px;
+
+line-height:36px;
+
+}
+
+.comparison-tag{
+
+font-size:10px;
+
+letter-spacing:1.8px;
+
+}
+
+.table-head,
+.table-row{
+
+min-width:920px;
+
+}
+
+}
+
+/* ======================================================
+   SMOOTH
+====================================================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}

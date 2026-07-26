@@ -1,0 +1,240 @@
+/* ==========================================
+   LEADERSHIP TEAM
+========================================== */
+.leaders-section {
+    width: 100%;
+    max-min-height: 645px;
+    padding: 96px 0;
+    background: #fff;
+}
+.leaders-container {
+    width: min(90%, 1260px);
+    margin: auto;
+}
+/* ==========================================
+   Heading
+========================================== */
+.leaders-tag {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #A6000C;
+}
+.leaders-title {
+    margin-bottom: 60px;
+    font-family: "Libre Caslon Text", serif;
+    font-size: clamp(38px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1A0505;
+}
+
+/* ==========================================
+   Grid
+========================================== */
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.leader-card {
+
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ECECEC;
+    transition: .35s ease;
+    cursor: pointer;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.10);
+}
+
+/* ==========================================
+   Top
+========================================== */
+
+.leader-top {
+
+    min-height: 180px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* ==========================================
+   Avatar
+========================================== */
+
+.leader-avatar {
+
+    width: 96px;
+    min-height: 96px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-family: "Libre Caslon Text", serif;
+    font-size: 28px;
+    font-weight: 700;
+
+    transition: .35s ease;
+
+    box-shadow:
+        0 4px 6px rgba(0,0,0,.10),
+        0 10px 15px rgba(0,0,0,.10);
+}
+
+.leader-card:hover .leader-avatar {
+
+    transform: scale(1.08);
+}
+
+/* ==========================================
+   Bottom
+========================================== */
+
+.leader-bottom {
+
+    padding: 28px;
+}
+
+.leader-bottom h3 {
+
+    font-family: "Libre Caslon Text", serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: #1A0505;
+}
+
+.leader-bottom h4 {
+
+    margin-top: 8px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+
+    color: #A6000C;
+}
+
+.leader-bottom p {
+
+    margin-top: 14px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #5D3F3C;
+}
+
+/* ==========================================
+   LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+.leaders-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:768px){
+
+.leaders-section{
+
+padding:70px 0;
+
+}
+
+.leaders-title{
+
+margin-bottom:45px;
+
+}
+
+.leaders-grid{
+
+gap:24px;
+
+}
+
+.leader-top{
+
+min-height:170px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:576px){
+
+.leaders-container{
+
+width:92%;
+
+}
+
+.leaders-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.leader-bottom{
+
+padding:24px;
+
+}
+
+.leader-avatar{
+
+width:85px;
+min-height:85px;
+
+font-size:24px;
+
+}
+
+.leaders-title{
+
+font-size:34px;
+
+}
+
+}

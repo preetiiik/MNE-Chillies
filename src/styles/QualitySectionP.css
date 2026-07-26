@@ -1,0 +1,340 @@
+/* ======================================================
+   QUALITY SECTION
+====================================================== */
+
+.quality-section{
+    width:100%;
+    background:#FAF8F5;
+    padding:90px 0;
+}
+
+.quality-container{
+    max-width:1260px;
+    margin:auto;
+    padding:0 20px;
+
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:90px;
+    align-items:center;
+}
+
+/* ======================================================
+   LEFT SIDE
+====================================================== */
+
+.quality-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:600;
+    line-height:18px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+
+    color:#A6000C;
+}
+
+.quality-line{
+    width:24px;
+    height:1px;
+    background:#A6000C;
+}
+
+.quality-left h2{
+    margin-top:18px;
+    margin-bottom:26px;
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:46px;
+    font-weight:700;
+    line-height:50.6px;
+    color:#1A0505;
+}
+
+.quality-left p{
+
+    width:403px;
+    max-width:100%;
+
+    font-family:Inter,sans-serif;
+    font-size:15px;
+    line-height:26px;
+    font-weight:400;
+
+    color:#5D3F3C;
+}
+
+/* ======================================================
+   RIGHT GRID
+====================================================== */
+
+.quality-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,294px);
+
+    justify-content:end;
+
+    gap:16px;
+}
+
+/* ======================================================
+   CARD
+====================================================== */
+
+.quality-card{
+
+    width:294px;
+    min-height:201px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    transition:.35s ease;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.quality-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.08);
+}
+
+/* ======================================================
+   ICON
+====================================================== */
+
+.quality-icon{
+
+    width:24px;
+    height:39px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:26px;
+
+    color:#A6000C;
+
+    margin-bottom:24px;
+}
+
+/* ======================================================
+   CARD TITLE
+====================================================== */
+
+.quality-card h3{
+
+    font-family:"Libre Caslon Text",serif;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:25.5px;
+
+    color:#1A0505;
+
+    margin-bottom:14px;
+}
+
+/* ======================================================
+   CARD DESCRIPTION
+====================================================== */
+
+.quality-card p{
+
+    font-family:Inter,sans-serif;
+
+    font-size:13.5px;
+
+    font-weight:400;
+
+    line-height:21px;
+
+    color:#5D3F3C;
+}
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:1200px){
+
+    .quality-container{
+
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .quality-left{
+
+        text-align:center;
+    }
+
+    .quality-tag{
+
+        justify-content:center;
+    }
+
+    .quality-left p{
+
+        margin:auto;
+    }
+
+    .quality-grid{
+
+        justify-content:center;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .quality-section{
+
+        padding:70px 20px;
+    }
+
+    .quality-container{
+
+        padding:0;
+        gap:45px;
+    }
+
+    .quality-left h2{
+
+        font-size:38px;
+        line-height:44px;
+    }
+
+    .quality-left p{
+
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .quality-grid{
+
+        grid-template-columns:1fr;
+        width:100%;
+    }
+
+    .quality-card{
+
+        width:100%;
+        min-height:auto;
+    }
+
+    .quality-left{
+        text-align:left;
+    }
+
+    .quality-tag{
+        justify-content:flex-start;
+    }
+
+    
+    .quality-left p{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+    .quality-grid{
+        justify-content:flex-start;
+    }
+
+
+}
+
+
+@media (max-width:480px){
+
+    .quality-section{
+
+        padding:60px 18px;
+    }
+
+    .quality-left h2{
+
+        font-size:32px;
+        line-height:38px;
+    }
+
+    .quality-left p{
+
+        font-size:14px;
+        line-height:24px;
+    }
+
+    .quality-card{
+
+        padding:24px;
+        border-radius:16px;
+    }
+
+    .quality-card h3{
+
+        font-size:18px;
+    }
+
+    .quality-card p{
+
+        font-size:14px;
+        line-height:22px;
+    }
+
+    .quality-icon{
+
+        margin-bottom:18px;
+    }
+
+}
+
+/* ======================================================
+   AOS ANIMATION TWEAKS
+====================================================== */
+
+.quality-left,
+.quality-card{
+
+    will-change:transform,opacity;
+}
+
+.quality-card:nth-child(1){
+
+    transition-delay:.1s;
+}
+
+.quality-card:nth-child(2){
+
+    transition-delay:.2s;
+}
+
+.quality-card:nth-child(3){
+
+    transition-delay:.3s;
+}
+
+.quality-card:nth-child(4){
+
+    transition-delay:.4s;
+}

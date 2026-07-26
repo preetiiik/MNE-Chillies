@@ -1,0 +1,126 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 28px;
+    background:transparent;
+    transition:all .35s ease;
+    z-index:9999;
+}
+.navbar.scrolled{
+    background:#000;
+    box-shadow:0 5px 20px rgba(0,0,0,.18);
+}
+.nav-container{
+    width:min(92%,1400px);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo img{
+    width:120px;
+    display:block;
+}
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    position:relative;
+    transition:.3s;
+}
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-7px;
+    width:0;
+    min-height:2px;
+    background:#A6000C;
+    transition:.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+.nav-links a.active{
+    color:white;
+    font-weight:700;
+}
+.contact-btn{
+    width:140px;
+    min-height:45px;
+    border:none;
+    border-radius:10px;
+    background:#A6000C;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+.contact-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(166,0,12,.35);
+}
+.menu-icon{
+    display:none;
+    color:white;
+    font-size:34px;
+    cursor:pointer;
+}
+
+/* Tablet */
+@media(max-width:992px){
+    .nav-links{
+    gap:22px;
+}
+}
+
+/* Mobile */
+@media(max-width:768px){
+.navbar{
+        padding: 16px 12px;
+    }
+.menu-icon{
+    display:block;
+    z-index:10000;
+}
+.contact-btn{
+    display:none;
+}
+.nav-links{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:280px;
+    min-height:100vh;
+    background:#120303;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    transition:.4s;
+}
+.nav-links.active{
+    right:0;
+}
+.logo img{
+    width:105px;
+}
+}

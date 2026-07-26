@@ -1,0 +1,45 @@
+/* ==========================================
+   MARQUEE STRIP
+========================================== */
+
+.marquee-strip {
+  width: 100%;
+  min-height: 48px;
+  background: #A6000C;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  white-space: nowrap;
+
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-item {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

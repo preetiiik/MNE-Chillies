@@ -1,0 +1,517 @@
+/* =====================================================
+   WHAT WE DO — SERVICES SECTION
+===================================================== */
+ 
+.wwd-section{
+    width:100%;
+    background:#FCFBF9;
+    padding:56px 0 110px;
+}
+ 
+.wwd-container{
+    max-width:1263px;
+    margin:auto;
+    padding:0 20px;
+}
+ 
+/* =====================================================
+   HEADER
+===================================================== */
+ 
+.wwd-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:40px;
+    gap:24px;
+}
+ 
+.wwd-small-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+ 
+    margin-bottom:12px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:600;
+    line-height:18px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+ 
+    color:#A6000C;
+}
+ 
+.wwd-dash{
+    width:20px;
+    height:1.5px;
+    background:#A6000C;
+    display:inline-block;
+}
+ 
+.wwd-header-left h2{
+    font-family:"Libre Caslon Text",serif;
+    font-size:52px;
+    font-weight:700;
+    line-height:54px;
+ 
+    color:#1A0505;
+}
+ 
+.wwd-header-right{
+    max-width:220px;
+    margin-bottom:6px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:21px;
+    text-align:right;
+ 
+    color:#5D3F3C;
+}
+ 
+/* =====================================================
+   GRID
+===================================================== */
+ 
+.wwd-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+ 
+/* =====================================================
+   CARD
+===================================================== */
+ 
+.wwd-card{
+    all:unset;
+    box-sizing:border-box;
+    cursor:pointer;
+ 
+    display:flex;
+    flex-direction:column;
+ 
+    width:100%;
+    max-width:408px;
+ 
+    border-radius:16px;
+    border:0.67px solid rgba(26,5,5,0.1);
+ 
+    background:#FFFFFF;
+    overflow:hidden;
+ 
+    transition:border-color .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+ 
+.wwd-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(26,5,5,0.08);
+}
+ 
+.wwd-card.active{
+    background:#A6000C;
+    border-color:#A6000C;
+}
+ 
+/* ---------- image ---------- */
+ 
+.wwd-card-image{
+    position:relative;
+    width:100%;
+    height:194px;
+    overflow:hidden;
+}
+ 
+.wwd-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .5s ease;
+}
+ 
+.wwd-card:hover .wwd-card-image img{
+    transform:scale(1.05);
+}
+ 
+.wwd-card-number{
+    position:absolute;
+    top:14px;
+    left:18px;
+ 
+    font-family:"Libre Caslon Text",serif;
+    font-size:34px;
+    font-weight:400;
+    color:rgba(255,255,255,0.55);
+}
+ 
+.wwd-card-badge{
+    position:absolute;
+    bottom:14px;
+    right:14px;
+ 
+    padding:7px 16px;
+    border-radius:999px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+ 
+    background:#A6000C;
+    color:#FFFFFF;
+}
+ 
+.wwd-card.active .wwd-card-badge{
+    background:#FFFFFF;
+    color:#A6000C;
+}
+ 
+/* ---------- content ---------- */
+ 
+.wwd-card-content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+ 
+    padding:26px 24px 28px;
+    text-align:left;
+}
+ 
+.wwd-card-icon{
+    display:flex;
+    margin-bottom:16px;
+ 
+    color:#A6000C;
+}
+ 
+.wwd-card.active .wwd-card-icon{
+    color:rgba(255,255,255,0.85);
+}
+ 
+.wwd-card-content h3{
+    font-family:"Libre Caslon Text",serif;
+    font-size:20px;
+    font-weight:700;
+    line-height:26px;
+ 
+    color:#1A0505;
+ 
+    margin-bottom:8px;
+}
+ 
+.wwd-card.active .wwd-card-content h3{
+    color:#FFFFFF;
+}
+ 
+.wwd-card-content p{
+    font-family:Inter,sans-serif;
+    font-size:13.5px;
+    font-weight:400;
+    line-height:21px;
+ 
+    color:rgba(26,5,5,0.6);
+ 
+    margin-bottom:20px;
+}
+ 
+.wwd-card.active .wwd-card-content p{
+    color:rgba(255,255,255,0.7);
+}
+ 
+.wwd-card-divider{
+    width:100%;
+    height:1px;
+    background:rgba(26,5,5,0.1);
+    margin-bottom:18px;
+}
+ 
+.wwd-card.active .wwd-card-divider{
+    background:rgba(255,255,255,0.2);
+}
+ 
+.wwd-card-stat{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+ 
+.wwd-stat-value{
+    font-family:"Libre Caslon Text",serif;
+    font-size:22px;
+    font-weight:700;
+    line-height:33px;
+ 
+    color:#A6000C;
+}
+ 
+.wwd-card.active .wwd-stat-value{
+    color:#FFFFFF;
+}
+ 
+.wwd-stat-label{
+    font-family:Inter,sans-serif;
+    font-size:11px;
+    font-weight:600;
+    line-height:16.5px;
+    letter-spacing:0.8px;
+    text-transform:uppercase;
+ 
+    color:rgba(26,5,5,0.5);
+}
+ 
+.wwd-card.active .wwd-stat-label{
+    color:rgba(255,255,255,0.5);
+}
+ 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+ 
+/* =====================================================
+   DETAIL PANEL
+===================================================== */
+ 
+.wwd-detail{
+    display:grid;
+    grid-template-columns:460px 1fr;
+    gap:70px;
+    align-items:start;
+ 
+    margin-top:60px;
+ 
+    animation:wwd-fade .4s ease;
+}
+ 
+@keyframes wwd-fade{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+}
+ 
+/* ---------- image side ---------- */
+ 
+.wwd-detail-image{
+    position:relative;
+    width:100%;
+    border-radius:16px;
+    overflow:hidden;
+}
+ 
+.wwd-detail-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+}
+ 
+.wwd-detail-stat{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+ 
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+ 
+    padding:16px 22px;
+    border-radius:10px;
+ 
+    background:#A6000C;
+}
+ 
+.wwd-detail-stat-value{
+    font-family:"Libre Caslon Text",serif;
+    font-size:26px;
+    font-weight:700;
+    line-height:32px;
+    color:#FFFFFF;
+}
+ 
+.wwd-detail-stat-label{
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:400;
+    color:rgba(255,255,255,0.85);
+}
+ 
+/* ---------- content side ---------- */
+ 
+.wwd-detail-content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding-top:4px;
+}
+ 
+.wwd-detail-icon{
+    display:flex;
+    margin-bottom:14px;
+    color:#A6000C;
+}
+ 
+.wwd-detail-content h2{
+    font-family:"Libre Caslon Text",serif;
+    font-size:38px;
+    font-weight:700;
+    line-height:44px;
+    color:#1A0505;
+ 
+    margin-bottom:10px;
+}
+ 
+.wwd-detail-tagline{
+    font-family:Inter,sans-serif;
+    font-size:15px;
+    font-weight:500;
+    font-style:italic;
+    color:#A6000C;
+ 
+    margin-bottom:20px;
+}
+ 
+.wwd-detail-paragraph{
+    font-family:Inter,sans-serif;
+    font-size:15.5px;
+    font-weight:400;
+    line-height:26px;
+    color:#5D3F3C;
+ 
+    margin-bottom:28px;
+}
+ 
+.wwd-detail-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px 32px;
+ 
+    list-style:none;
+    padding:0;
+    margin:0 0 36px;
+ 
+    width:100%;
+}
+ 
+.wwd-detail-features li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:14px;
+    font-weight:400;
+    color:#1A0505;
+}
+ 
+.wwd-feature-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#A6000C;
+    flex-shrink:0;
+}
+ 
+/* ---------- nav ---------- */
+ 
+.wwd-detail-nav{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+ 
+.wwd-nav-btn{
+    all:unset;
+    box-sizing:border-box;
+    cursor:pointer;
+ 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ 
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid rgba(26,5,5,0.15);
+ 
+    font-size:16px;
+    color:#1A0505;
+ 
+    transition:background .25s ease, border-color .25s ease;
+}
+ 
+.wwd-nav-btn:hover{
+    background:#A6000C;
+    border-color:#A6000C;
+    color:#FFFFFF;
+}
+ 
+.wwd-nav-count{
+    font-family:Inter,sans-serif;
+    font-size:13px;
+    font-weight:500;
+    color:#5D3F3C;
+}
+ 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+ 
+@media (max-width:1024px){
+ 
+    .wwd-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+ 
+    .wwd-header-left h2{
+        font-size:44px;
+        line-height:48px;
+    }
+ 
+    .wwd-detail{
+        grid-template-columns:1fr;
+        gap:32px;
+    }
+ 
+    .wwd-detail-image img{
+        height:340px;
+    }
+}
+ 
+@media (max-width:640px){
+ 
+    .wwd-section{
+        padding:48px 0 70px;
+    }
+ 
+    .wwd-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:16px;
+    }
+ 
+    .wwd-header-right{
+        text-align:left;
+        max-width:100%;
+    }
+ 
+    .wwd-grid{
+        grid-template-columns:1fr;
+    }
+ 
+    .wwd-header-left h2{
+        font-size:36px;
+        line-height:40px;
+    }
+ 
+    .wwd-detail-features{
+        grid-template-columns:1fr;
+    }
+ 
+    .wwd-detail-content h2{
+        font-size:30px;
+        line-height:36px;
+    }
+}

@@ -1,0 +1,293 @@
+/* =====================================================
+   INFRASTRUCTURE INTRO
+===================================================== */
+
+.infra-intro{
+    width:100%;
+    background:#FCFBF9;
+    padding:60px 0 110px;
+    overflow:hidden; 
+    min-height: 817px; 
+    height:auto;
+}
+
+.infra-intro-container{
+    max-width:1260px;
+    margin:auto;
+    padding:0 20px;
+    background:#FCFBF9;
+    display:grid;
+    grid-template-columns:560px 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.infra-small-title{
+
+    display:block;
+
+    margin-bottom:24px;
+
+    font-family:Inter,sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+
+    color:#A6000C;
+}
+
+.infra-intro-left h2{
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:50px;
+    font-weight:700;
+    line-height:67px;
+
+    color:#281717;
+
+    margin-bottom:34px;
+}
+
+.infra-intro-left p{
+
+    max-width:558px;
+
+    font-family:Inter,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    line-height:29.25px;
+
+    color:#5D3F3C;
+
+    margin-bottom:56px;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.infra-stats{
+
+    display:flex;
+    gap:70px;
+}
+
+.infra-stat{
+
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.infra-border{
+
+    width:4px;
+    height:64px;
+
+    background:#A6000C;
+
+    border-radius:10px;
+}
+
+.infra-stat h4{
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+
+    color:#A6000C;
+
+    margin-bottom:4px;
+}
+
+.infra-stat span{
+
+    font-family:Inter,sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+
+    color:#5D3F3C;
+}
+
+/* =====================================================
+   RIGHT IMAGE
+===================================================== */
+
+.infra-intro-right{
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    position:relative;
+}
+
+.infra-hand{
+
+    width:100%;
+    max-width:630px;
+    height:auto;
+
+    object-fit:contain;
+
+    transform:scale(1.15);
+
+    transition:
+        transform 1.2s ease,
+        opacity 1.2s ease;
+
+    will-change:transform;
+}
+/* =====================================================
+   IMAGE ANIMATION
+===================================================== */
+
+/* Initial state before AOS animation */
+.infra-intro-right{
+    overflow: hidden;
+}
+
+.infra-hand{
+    transform: translateX(80px) scale(1.18);
+    opacity: 0;
+}
+
+/* Final state after AOS finishes */
+.aos-animate .infra-hand{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+/* Slight hover effect */
+
+.infra-hand:hover{
+    transform: scale(1.03);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:1200px){
+
+    .infra-intro-container{
+
+        grid-template-columns:1fr;
+        gap:70px;
+    }
+
+    .infra-intro-left{
+
+        text-align:center;
+        margin:auto;
+    }
+
+    .infra-intro-left p{
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .infra-stats{
+
+        justify-content:center;
+    }
+
+    .infra-intro-right{
+
+        justify-content:center;
+    }
+
+    .infra-hand{
+
+        max-width:520px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .infra-intro{
+
+        padding:80px 20px;
+    }
+
+    .infra-intro-left h2{
+
+        font-size:40px;
+        line-height:52px;
+    }
+
+    .infra-intro-left p{
+
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .infra-stats{
+
+        flex-direction:column;
+        gap:30px;
+        align-items:flex-start;
+    }
+
+    .infra-intro-right{
+
+        margin-top:20px;
+    }
+
+    .infra-hand{
+
+        max-width:420px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .infra-intro{
+
+        padding:60px 18px;
+    }
+
+    .infra-small-title{
+
+        font-size:14px;
+    }
+
+    .infra-intro-left h2{
+
+        font-size:34px;
+        line-height:42px;
+    }
+
+    .infra-intro-left p{
+
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .infra-stat{
+
+        gap:16px;
+    }
+
+    .infra-border{
+
+        height:56px;
+    }
+
+    .infra-hand{
+
+        max-width:320px;
+    }
+
+}

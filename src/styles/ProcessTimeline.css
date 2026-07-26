@@ -1,0 +1,211 @@
+/* =====================================================
+   PROCESS TIMELINE — "HOW IT ALL FITS TOGETHER"
+===================================================== */
+ 
+.pt-section{
+    width:100%;
+    height: auto;
+    min-height: 477px;
+    background:rgba(26,5,5,0.92);
+    padding:64px 0 60px;
+}
+ 
+.pt-container{
+    max-width:1360px;
+    margin:auto;
+    padding:0 40px;
+}
+ 
+/* =====================================================
+   HEADER
+===================================================== */
+ 
+.pt-small-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+ 
+    margin-bottom:14px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:600;
+    line-height:18px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+ 
+    color:#FF9090;
+}
+ 
+.pt-dash{
+    width:20px;
+    height:1.5px;
+    background:#FF9090;
+    display:inline-block;
+}
+ 
+.pt-container h2{
+    font-family:"Libre Caslon Text",serif;
+    font-size:50px;
+    font-weight:700;
+    line-height:54px;
+ 
+    color:#FFFFFF;
+ 
+    margin-bottom:56px;
+}
+ 
+/* =====================================================
+   STEPS ROW
+===================================================== */
+ 
+.pt-steps{
+    position:relative;
+ 
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+}
+ 
+/* connecting line, sits behind the circles at their vertical center */
+ 
+.pt-line{
+    position:absolute;
+    top:28px;
+    left:28px;
+    right:28px;
+    height:1px;
+ 
+    background:rgba(166,0,12,0.35);
+    z-index:0;
+}
+ 
+/* =====================================================
+   STEP
+===================================================== */
+ 
+.pt-step{
+    all:unset;
+    box-sizing:border-box;
+    cursor:pointer;
+ 
+    position:relative;
+    z-index:1;
+ 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+ 
+    width:167.77px;
+ 
+    transition:opacity .25s ease;
+}
+ 
+.pt-step:hover{
+    opacity:0.85;
+}
+ 
+/* ---------- circle ---------- */
+ 
+.pt-step-circle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ 
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    border:2px solid #A6000C;
+ 
+    background:rgba(26,5,5,0.9);
+ 
+    font-family:"Libre Caslon Text",serif;
+    font-size:16px;
+    font-weight:700;
+    color:#A6000C;
+ 
+    margin-bottom:20px;
+ 
+    transition:background .25s ease, color .25s ease;
+}
+ 
+.pt-step.active .pt-step-circle{
+    background:#A6000C;
+    color:#FFFFFF;
+}
+ 
+/* ---------- title & description ---------- */
+ 
+.pt-step h4{
+    font-family:"Libre Caslon Text",serif;
+    font-size:14px;
+    font-weight:700;
+    line-height:19.25px;
+ 
+    color:#FFFFFF;
+ 
+    margin-bottom:6px;
+}
+ 
+.pt-step p{
+    max-width:160px;
+ 
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:400;
+    line-height:15px;
+ 
+    color:rgba(255,255,255,0.4);
+ 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+ 
+.pt-step.active p{
+    color:rgba(255,255,255,0.6);
+}
+ 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+ 
+@media (max-width:1100px){
+ 
+    .pt-steps{
+        flex-wrap:wrap;
+        row-gap:40px;
+        justify-content:flex-start;
+    }
+ 
+    .pt-line{
+        display:none;
+    }
+ 
+    .pt-step{
+        width:calc(33.333% - 16px);
+    }
+}
+ 
+@media (max-width:640px){
+ 
+    .pt-section{
+        padding:48px 0;
+    }
+ 
+    .pt-container h2{
+        font-size:34px;
+        line-height:40px;
+        margin-bottom:36px;
+    }
+ 
+    .pt-step{
+        width:calc(50% - 12px);
+    }
+ 
+    .pt-step p{
+        white-space:normal;
+        max-width:140px;
+    }
+}

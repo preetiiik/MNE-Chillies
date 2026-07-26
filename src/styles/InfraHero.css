@@ -1,0 +1,324 @@
+/* ===================================================
+   INFRASTRUCTURE HERO
+=================================================== */
+
+.infra-hero{
+    position: relative;
+    width: 100%;
+    max-height: 540px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.infra-overlay{
+    width: 100%;
+    max-height: 540px;
+    background: linear-gradient(
+        90deg,
+        rgba(22,14,10,0.68) 0%,
+        rgba(22,14,10,0.55) 38%,
+        rgba(18,14,12,0.42) 65%,
+        rgba(12,10,9,0.28) 100%
+    );
+}
+
+/* ===================================================
+   CONTENT
+=================================================== */
+
+.infra-content{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 95px 20px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ===================================================
+   TAG
+=================================================== */
+
+.infra-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px 30px;
+
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 999px;
+
+    backdrop-filter: blur(8px);
+
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.92);
+}
+
+.infra-tag .dot{
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+    background: #D96D6D;
+
+    flex-shrink: 0;
+}
+
+/* ===================================================
+   HEADING
+=================================================== */
+
+.infra-content h1{
+    margin-top: 28px;
+
+    max-width: 520px;
+
+    font-family: "Libre Caslon Text", serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.5px;
+
+    color: #FFFFFF;
+}
+
+.infra-content h1 span{
+    color: #FF9094;
+}
+
+/* ===================================================
+   PARAGRAPH
+=================================================== */
+
+.infra-content p{
+    margin-top: 26px;
+
+    width: 480px;
+    max-width: 100%;
+
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: rgba(255,255,255,.75);
+}
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media (max-width:1200px){
+
+    .infra-content{
+
+        padding:90px 40px 110px;
+    }
+
+    .infra-content h1{
+
+        font-size:50px;
+        line-height:60px;
+    }
+
+}
+
+
+@media (max-width:992px){
+
+    .infra-hero,
+    .infra-overlay{
+
+        min-height:85vh;
+    }
+
+    .infra-content{
+
+        padding:80px 35px 100px;
+    }
+
+    .infra-content h1{
+
+        font-size:46px;
+        line-height:56px;
+        max-width:480px;
+    }
+
+    .infra-content p{
+
+        width:440px;
+        font-size:16px;
+        line-height:27px;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .infra-hero,
+    .infra-overlay{
+
+        min-height:auto;
+        height: auto;    
+}
+
+    .infra-content{
+
+        padding:60px 20px 35px;;
+    }
+
+    .infra-tag{
+
+        padding:12px 24px;
+        font-size:11px;
+        letter-spacing:1.2px;
+    }
+
+    .infra-tag .dot{
+
+        width:12px;
+        height:12px;
+    }
+
+    .infra-content h1{
+
+        margin-top:24px;
+
+        font-size:40px;
+        line-height:48px;
+
+        max-width:100%;
+    }
+
+    .infra-content p{
+
+        width:100%;
+        margin-top:22px;
+
+        font-size:15px;
+        line-height:26px;
+    }
+
+    /* .infra-stats{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:flex-start;
+        gap:24px;
+        flex-wrap:nowrap;
+    } */
+     .infra-stats{
+        display:grid !important;
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+        width:100%;
+        justify-items:start;
+    }
+
+    .infra-stat{
+        flex:1;
+        min-width:0;
+        gap:12px;
+    }
+
+    .infra-border{
+        height:52px;
+    }
+
+    .infra-stat h4{
+        font-size:14px;
+        line-height:20px;
+        white-space: nowrap;
+    }
+
+    .infra-stat span{
+        font-size:14px;
+        line-height:20px;
+    }
+
+
+}
+
+
+@media (max-width:480px){
+
+    .infra-content{
+
+        padding: 60px 20px 35px;
+    }
+
+    .infra-tag{
+
+        padding:10px 20px;
+        font-size:10px;
+        letter-spacing:1px;
+    }
+
+    .infra-content h1{
+
+        font-size:32px;
+        line-height:40px;
+    }
+
+    .infra-content p{
+
+        font-size:14px;
+        line-height:24px;
+    }
+    .infra-stats{
+        gap:16px;
+    }
+
+    .infra-stat{
+        gap:10px;
+    }
+
+    .infra-stat h4{
+        font-size:13px;
+    }
+
+    .infra-stat span{
+        font-size:13px;
+    }
+
+
+}
+
+/* ===================================================
+   AOS SMOOTHNESS
+=================================================== */
+
+.infra-content,
+.infra-tag,
+.infra-content h1,
+.infra-content p{
+
+    will-change:transform,opacity;
+}
+
+/* ===================================================
+   OPTIONAL HOVER EFFECT
+=================================================== */
+
+.infra-tag{
+
+    transition:all .35s ease;
+}
+
+.infra-tag:hover{
+
+    border-color:rgba(255,255,255,.45);
+
+    background:rgba(255,255,255,.05);
+
+    transform:translateY(-2px);
+}

@@ -1,0 +1,304 @@
+/* ==========================================================
+   CAPABILITIES SECTION
+========================================================== */
+
+.capabilities-section{
+    width:100%;
+    background:#FCFBF9;
+    padding:40px 0 120px;
+}
+
+.capabilities-container{
+    max-width:1260px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.capability-card{
+
+    display:grid;
+    grid-template-columns:616px 500px;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:90px;
+
+    margin-bottom:120px;
+}
+
+.capability-card:last-child{
+    margin-bottom:0;
+}
+
+.capability-card.reverse{
+
+    grid-template-columns:500px 616px;
+}
+
+/* Alternate Layout */
+
+.capability-card.reverse .capability-image{
+    order:2;
+}
+
+.capability-card.reverse .capability-content{
+    order:1;
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.capability-image{
+
+    overflow:hidden;
+    border-radius:24px;
+}
+
+.capability-image img{
+
+    width:100%;
+    height:462px;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    transition:.8s ease;
+}
+
+.capability-card:hover img{
+
+    transform:scale(1.05);
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.capability-id{
+
+    display:block;
+
+    font-family:Inter,sans-serif;
+    font-size:11px;
+    font-weight:600;
+
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+    color:#A6000C;
+
+    margin-bottom:16px;
+}
+
+.capability-content h2{
+
+    font-family:"Libre Caslon Text",serif;
+    font-size:52px;
+    font-weight:700;
+    line-height:60px;
+
+    color:#281717;
+
+    margin-bottom:10px;
+}
+
+.capability-content h4{
+
+    font-family:Inter,sans-serif;
+    font-size:15px;
+    font-style:italic;
+    font-weight:500;
+
+    color:#D34949;
+
+    margin-bottom:26px;
+}
+
+.capability-content p{
+
+    font-family:Inter,sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:29px;
+
+    color:#5D3F3C;
+
+    margin-bottom:34px;
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.capability-content ul{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.capability-content li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    font-family:Inter,sans-serif;
+    font-size:17px;
+    font-weight:400;
+
+    color:#4D3733;
+}
+
+.capability-content li::before{
+
+    content:"■";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    color:#A6000C;
+
+    font-size:10px;
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.capability-image img{
+
+    transform:scale(1.08);
+
+    opacity:0;
+
+    transition:
+    transform 1.1s ease,
+    opacity 1.1s ease;
+}
+
+.capability-image.aos-animate img{
+
+    transform:scale(1);
+
+    opacity:1;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1200px){
+
+.capability-card,
+.capability-card.reverse{
+
+    grid-template-columns:1fr;
+
+    gap:55px;
+
+    margin-bottom:90px;
+}
+
+.capability-card.reverse .capability-image,
+.capability-card.reverse .capability-content{
+
+    order:unset;
+}
+
+.capability-image{
+
+    max-width:760px;
+    margin:auto;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.capabilities-section{
+
+    padding:80px 20px;
+}
+
+.capability-content h2{
+
+    font-size:42px;
+    line-height:50px;
+}
+
+.capability-content p{
+
+    font-size:15px;
+    line-height:28px;
+}
+
+.capability-image img{
+
+    height:auto;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.capabilities-section{
+
+    padding:60px 18px;
+}
+
+.capability-card{
+
+    gap:40px;
+
+    margin-bottom:70px;
+}
+
+.capability-content h2{
+
+    font-size:34px;
+    line-height:42px;
+}
+
+.capability-content h4{
+
+    font-size:14px;
+}
+
+.capability-content p{
+
+    font-size:15px;
+    line-height:26px;
+}
+
+.capability-content li{
+
+    font-size:15px;
+}
+
+.capability-image{
+
+    border-radius:18px;
+}
+
+.capability-image img{
+
+    border-radius:18px;
+}
+
+}
