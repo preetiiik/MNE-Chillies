@@ -3,7 +3,7 @@
 ========================================== */
 .leaders-section {
     width: 100%;
-    max-min-height: 645px;
+    min-height: 645px;
     padding: 96px 0;
     background: #fff;
 }

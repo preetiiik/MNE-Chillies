@@ -1,4 +1,4 @@
-import "../styles/LeadershipTeamAboutUs.css";
+import "../styles/LeadershipTeamAboutus.css";
 const team = [
   {
     id: 1,
