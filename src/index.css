@@ -18,13 +18,14 @@ body {
 }
 
 .container{
-    width: min(90%, 1280px);
-    margin: 0 auto;
+    width:100%;
 }
 
 @media (max-width:768px){
 
 .container{
-    width: calc(100% - 40px);
+    width:calc(100% - 40px);
+    margin:0 auto;
 }
+
 }

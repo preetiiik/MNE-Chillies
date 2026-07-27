@@ -68,7 +68,7 @@ const ContactFooter = ({ hideCTA }) => {
       {/* ================= Footer ================= */}
 
       <footer className="footer">
-        <div className="container">
+        <div className="">
 
         <div className="footer-container">
 
