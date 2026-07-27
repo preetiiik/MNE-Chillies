@@ -7,7 +7,7 @@ import "../styles/Whoweare.css"
 import "../styles/WhatwedoAboutus.css"
 import "../styles/MilestonesAboutus.css";
 import "../styles/InfraAboutus.css";
-import "../styles/LeadershipTeamAboutUs.css";
+import "../styles/LeadershipTeamAboutus.css";
 import "../styles/StatsH.css";
 
 
