@@ -4,7 +4,7 @@
 
 .process-section {
   width: 100%;
-  margin-left: 30px;
+  margin-left: 0;
   background: #f9f6f2;
   padding: 64px 0 80px;
 }
@@ -13,6 +13,7 @@
   max-width: 1264px;
   width: 100%;
   margin: 0 auto;
+  margin-left: 88px;
 }
 
 /* ==========================
