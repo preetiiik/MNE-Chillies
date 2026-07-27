@@ -9,10 +9,12 @@
 }
  
 .wsw-container{
-    max-width:1234px;
-    margin:auto;
-    padding:0 40px;
- 
+    max-width:1260px;
+    width:100%;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing:border-box;
+
     display:grid;
     grid-template-columns:704px 1fr;
     align-items:center;

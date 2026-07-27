@@ -11,6 +11,7 @@
 .contact-enquiry-container{
     width:min(92%,1437px);
     margin:0 auto;
+    margin-left: 88px;
 
     display:grid;
     grid-template-columns:527px 694px;
@@ -215,7 +216,7 @@
 
 .send-btn{
 
-    width:100%;
+    width:88%;
 
     height:64px;
 
@@ -301,6 +302,27 @@
 ========================================== */
 
 @media(max-width:768px){
+
+    .contact-enquiry-container{
+    width:92%;
+    margin:0 auto;
+    padding:0;
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.contact-info{
+    width:100%;
+}
+
+.contact-form{
+    width:100%;
+    padding:24px;
+}
+
+.send-btn{
+    width:100%;
+}
 
 .contact-enquiry{
 

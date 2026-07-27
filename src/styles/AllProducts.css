@@ -318,6 +318,7 @@ SPECS
 .product-tags{
     display:flex;
     flex-wrap:wrap;
+    width:fit-content;
     gap:10px;
     margin-bottom:24px;
 }
