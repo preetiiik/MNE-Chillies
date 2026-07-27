@@ -131,7 +131,7 @@
    Tablet
 ========================================== */
 
-@media (max-width:576px){
+@media (max-width:768px){
 
     .infra-section{
         height:auto;
@@ -139,12 +139,15 @@
     }
 
     .infra-overlay{
-        min-height:auto;
-        padding:30px 0;
+    min-height: auto;
+    padding: 30px 0;
+    width: 100%;
+
     }
-  .infra-container {
-    width: 92%;
-  }
+  .infra-container{
+    width:min(92%,500px);
+    margin:auto;
+}
 
   .infra-tag {
     font-size: 12px;

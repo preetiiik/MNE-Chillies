@@ -34,7 +34,7 @@ function AllProducts() {
             heat:5,
 
             tags:[
-                "Export Grade",
+                "Export",
                 "Extra Hot",
                 "High Pungency"
             ],

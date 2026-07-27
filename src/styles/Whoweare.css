@@ -9,14 +9,17 @@
     padding: clamp(60px, 8vw, 90px) 0;
 }
 
-.who-container {
-    width: min(90%, 1280px);
-    margin: 0 auto;
+.who-container{
+    max-width:1260px;
+    width:100%;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing:border-box;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: clamp(40px, 6vw, 80px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
 }
 
 .who-content {
@@ -30,7 +33,7 @@
     color: #A6000C;
 
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 1.6px;
