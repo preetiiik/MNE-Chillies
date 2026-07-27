@@ -33,6 +33,7 @@ function WhatDrivesUs() {
       className="purpose-section"
       style={{ backgroundImage: `url(${purposeBg})` }}
     >
+      <div className="container">
       <div className="purpose-container">
 
         <span
@@ -73,6 +74,7 @@ function WhatDrivesUs() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

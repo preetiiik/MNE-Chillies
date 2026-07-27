@@ -36,6 +36,7 @@ const processSteps = [
 export default function ProcessSection() {
   return (
     <section className="process-section" data-aos="fade-right">
+      <div className="container">
       <div className="process-container">
 
         <div className="process-heading">
@@ -71,6 +72,7 @@ export default function ProcessSection() {
           
         </div>
 
+      </div>
       </div>
     </section>
   );

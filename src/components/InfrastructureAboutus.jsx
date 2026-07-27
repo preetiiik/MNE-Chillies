@@ -30,6 +30,7 @@ function Infrastructure() {
       className="infra-section"
       style={{ backgroundImage: `url(${infrastructureBg})` }}
     >
+      <div className="container">
       <div className="infra-overlay">
 
         <div className="infra-container">
@@ -71,6 +72,7 @@ function Infrastructure() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

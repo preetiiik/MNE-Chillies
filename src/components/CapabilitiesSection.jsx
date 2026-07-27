@@ -114,6 +114,7 @@ export default function CapabilitiesSection() {
 
   return (
     <section className="capabilities-section">
+      <div className="container">
       <div className="capabilities-container">
         {capabilities.map((item, index) => (
           <div
@@ -157,6 +158,7 @@ export default function CapabilitiesSection() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

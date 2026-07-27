@@ -120,6 +120,7 @@ export default function TestimonialsSection() {
 
   function renderCard(item, extraClass) {
     return (
+
       <div className={`testimonial-card ${extraClass}`}>
         <div>
           <div className="quote-mark">&#8221;</div>
@@ -140,6 +141,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="testimonials-section">
+      <div className="container">
       <div className="testimonials-container">
         <div className="testimonials-heading">
           <span className="section-label">Testimonials</span>
@@ -183,6 +185,7 @@ export default function TestimonialsSection() {
             />
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

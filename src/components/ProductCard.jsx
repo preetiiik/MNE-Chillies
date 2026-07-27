@@ -20,6 +20,7 @@ function ProductCard({ product }) {
 
   return (
     <div className="product-item">
+      <div className="container">
       <div className="product-image">
         <span className="product-badge">{badge}</span>
         <img src={image} alt={title} loading="lazy" />
@@ -97,6 +98,7 @@ function ProductCard({ product }) {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -27,6 +27,7 @@ function Collection() {
 
   return (
     <section className="collection">
+      <div className="container">
       <div className="collection-top">
         <div className="collection-left">
           <span
@@ -82,6 +83,7 @@ function Collection() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

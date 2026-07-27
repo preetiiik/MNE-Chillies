@@ -8,6 +8,7 @@ import "../styles/OurProductsP.css";
 function OurProductsSection() {
   return (
     <section className="our-products">
+      <div className="container">
 
       <div className="our-products-container">
 
@@ -98,6 +99,7 @@ function OurProductsSection() {
 
         </div>
 
+      </div>
       </div>
 
     </section>

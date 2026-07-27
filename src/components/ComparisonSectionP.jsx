@@ -104,6 +104,7 @@ export default function ComparisonSection() {
 
   return (
     <section className="comparison-section">
+      <div className="container">
 
       <div
         className="comparison-container"
@@ -240,6 +241,7 @@ export default function ComparisonSection() {
 
         </div>
 
+      </div>
       </div>
 
     </section>

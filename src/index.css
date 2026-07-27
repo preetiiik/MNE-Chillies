@@ -16,3 +16,15 @@ body {
   font-family: "Inter", sans-serif;
   background: #fff;
 }
+
+.container{
+    width: min(90%, 1280px);
+    margin: 0 auto;
+}
+
+@media (max-width:768px){
+
+.container{
+    width: calc(100% - 40px);
+}
+}

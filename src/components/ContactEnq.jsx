@@ -10,6 +10,7 @@ import {
 function ContactEnquiry() {
   return (
     <section className="contact-enquiry">
+      <div className="container">
       <div className="contact-enquiry-container">
 
         {/* LEFT */}
@@ -196,6 +197,7 @@ function ContactEnquiry() {
           </form>
         </div>
 
+      </div>
       </div>
     </section>
   );

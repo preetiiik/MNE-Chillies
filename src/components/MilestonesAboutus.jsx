@@ -90,6 +90,7 @@ useEffect(() => {
 
   return (
     <section className="milestones-section">
+      <div className="container">
       <div className="milestones-container">
 
         <span
@@ -152,6 +153,7 @@ useEffect(() => {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

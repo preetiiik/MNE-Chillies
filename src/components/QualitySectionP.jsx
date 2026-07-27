@@ -49,6 +49,7 @@ export default function QualitySection() {
 
   return (
     <section className="quality-section">
+      <div className="container">
 
       <div className="quality-container">
 
@@ -120,6 +121,7 @@ export default function QualitySection() {
 
         </div>
 
+      </div>
       </div>
 
     </section>

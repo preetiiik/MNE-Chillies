@@ -5,6 +5,7 @@ function Commitment() {
   const navigate = useNavigate();
   return (
     <section className="commitment" data-aos="fade-right">
+      <div className="container">
 
       <div className="overlay"></div>
 
@@ -72,6 +73,7 @@ function Commitment() {
 
         </div>
 
+      </div>
       </div>
 
     </section>
