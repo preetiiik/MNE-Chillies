@@ -4,6 +4,7 @@ import handImg from "../assets/images/infra-hand.png";
 export default function InfraIntro() {
   return (
     <section className="infra-intro">
+      <div className="container">
 
       <div className="infra-intro-container">
 
@@ -84,6 +85,7 @@ export default function InfraIntro() {
 
         </div>
 
+      </div>
       </div>
 
     </section>

@@ -249,6 +249,7 @@ function AllProducts() {
     return (
 
         <section className="all-products">
+            <div className="container">
 
             <div
                 className="all-products-header"
@@ -420,7 +421,7 @@ function AllProducts() {
                 ))}
 
             </div>
-
+            </div>
         </section>
 
     );

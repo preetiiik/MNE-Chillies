@@ -59,6 +59,7 @@ export default function ProcessTimeline() {
 
   return (
     <section className="pt-section">
+      <div className="container">
       <div className="pt-container">
 
         <span className="pt-small-title">
@@ -91,6 +92,7 @@ export default function ProcessTimeline() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

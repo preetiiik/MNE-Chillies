@@ -175,6 +175,7 @@ export default function WhatWeDo() {
 
   return (
     <section className="wwd-section">
+      <div className="container">
       <div className="wwd-container">
 
         {/* HEADER */}
@@ -303,6 +304,7 @@ export default function WhatWeDo() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

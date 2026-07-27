@@ -23,6 +23,7 @@ const ContactFooter = ({ hideCTA }) => {
           backgroundImage: `url(${contactBg})`,
         }}
       >
+        <div className="container">
         <div
           className="contact-overlay"
           data-aos="fade-up"
@@ -61,11 +62,13 @@ const ContactFooter = ({ hideCTA }) => {
 </a> */}
           </div>
         </div>
+        </div>
       </section>
       )}
       {/* ================= Footer ================= */}
 
       <footer className="footer">
+        <div className="container">
 
         <div className="footer-container">
 
@@ -300,6 +303,7 @@ const ContactFooter = ({ hideCTA }) => {
 
           </div>
 
+        </div>
         </div>
 
       </footer>

@@ -9,6 +9,7 @@ function AboutUs() {
       className="about-hero"
       style={{ backgroundImage: `url(${aboutBg})` }}
     >
+      <div className="container">
       <div className="about-overlay">
         <div className="about-content">
           <span className="story-badge">● OUR STORY</span>
@@ -24,6 +25,7 @@ function AboutUs() {
             farms to kitchens and factories across 25+ countries.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

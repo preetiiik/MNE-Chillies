@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="home-hero" data-aos="fade-in">
+      <div className="container">
       <div className="home-hero-content">
         {/* Badge */}
         <div className="home-hero-badge">
@@ -37,6 +38,7 @@ function Hero() {
             Watch Our Story
           </button>
         </div>
+      </div>
       </div>
     </section>
   );

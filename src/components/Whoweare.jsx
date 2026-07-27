@@ -8,6 +8,7 @@ import "../styles/Whoweare.css";
 function WhoAreWe() {
   return (
     <section className="who-we-are">
+      <div className="container">
       <div className="who-container">
 
         <div className="who-content">
@@ -100,6 +101,7 @@ function WhoAreWe() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

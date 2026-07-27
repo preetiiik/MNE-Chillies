@@ -39,6 +39,7 @@ function FeatureIcon() {
 export default function WhySourceWithUs() {
   return (
     <section className="wsw-section">
+      <div className="container">
       <div className="wsw-container">
 
         {/* LEFT CONTENT */}
@@ -100,6 +101,7 @@ export default function WhySourceWithUs() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

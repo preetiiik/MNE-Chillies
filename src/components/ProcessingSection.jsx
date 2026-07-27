@@ -39,6 +39,7 @@ export default function ProcessingSection() {
   return (
 
     <section className="processing-section">
+      <div className="container">
 
       <div className="processing-container">
 
@@ -142,6 +143,7 @@ export default function ProcessingSection() {
 
         </div>
 
+      </div>
       </div>
 
     </section>

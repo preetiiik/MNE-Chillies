@@ -42,6 +42,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="services-section" data-aos="fade-right">
+      <div className="container">
       <div className="services-container">
 
         <div className="services-grid">
@@ -85,6 +86,7 @@ export default function ServicesSection() {
 
         </div>
 
+      </div>
       </div>
     </section>
   );

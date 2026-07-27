@@ -307,6 +307,7 @@ function FeaturedProducts() {
     return (
 
         <section className="fp-section">
+            <div className="container">
 
             <div className="fp-container">
 
@@ -509,6 +510,7 @@ function FeaturedProducts() {
 
                 </div>
 
+            </div>
             </div>
 
         </section>

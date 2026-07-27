@@ -41,6 +41,7 @@ const team = [
 function LeadershipTeam() {
   return (
     <section className="leaders-section">
+      <div className="container">
 
       <div className="leaders-container">
 
@@ -99,6 +100,7 @@ function LeadershipTeam() {
 
         </div>
 
+      </div>
       </div>
       
 
