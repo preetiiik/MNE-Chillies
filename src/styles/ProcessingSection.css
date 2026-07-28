@@ -5,7 +5,7 @@
 .processing-section{
     width:100%;
     background:#FCFBF9;
-    padding:10px 0;
+    padding:0px 0 40px;
     overflow:hidden;
     padding-left: 60px;
     padding-right: 45px;
@@ -19,10 +19,10 @@
     padding:0 20px;
 
     display:grid;
-    grid-template-columns:555px 555px;
+    grid-template-columns:1fr 480px;
     justify-content:space-between;
     align-items:center;
-    gap:90px;
+    gap:70px;
 
 }
 
@@ -133,8 +133,8 @@
 
 .processing-image{
 
-    width:555px;
-    height:600px;
+    width:480px;
+    height:520px;
 
     object-fit:cover;
 
@@ -167,7 +167,7 @@
 
     position:absolute;
 
-    right:-18px;
+    right:0;
     bottom:-18px;
 
     width:210px;

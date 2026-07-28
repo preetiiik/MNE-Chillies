@@ -5,9 +5,10 @@
 .infra-intro{
     width:100%;
     background:#FCFBF9;
-    padding:60px 0 110px;
+    padding:10px 0 0px;
+    padding-bottom: 0%;
     overflow:hidden; 
-    min-height: 817px; 
+    min-height: 700px; 
     height:auto;
 }
 
