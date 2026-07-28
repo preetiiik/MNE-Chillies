@@ -78,10 +78,10 @@ function ProductCard({ product }) {
         <div className="product-footer">
           {/* <span className="origin-text">Origin: {origin}</span> */}
 
-          <a href={link || "#"} className="view-details-btn">
-            View Details
-            <FiArrowRight />
-          </a>
+            <Link to="/products" className="view-details-btn">
+              <span>View Details</span>
+              <FiArrowRight />
+            </Link>
               {/* <path
                 d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5"
                 stroke="currentColor"
