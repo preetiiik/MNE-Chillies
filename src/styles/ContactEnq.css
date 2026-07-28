@@ -11,11 +11,11 @@
 .contact-enquiry-container{
     width:min(92%,1437px);
     margin:0 auto;
-    margin-left: 40px;
+    margin-left: 88px;
 
     display:grid;
     grid-template-columns:527px 694px;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:start;
     gap:5px;
 }
