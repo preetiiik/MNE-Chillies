@@ -489,6 +489,16 @@
 }
  
 @media (max-width:640px){
+    .wwd-container{
+    padding: 0 12px;
+  }
+
+  .wwd-header,
+  .wwd-grid,
+  .wwd-detail{
+    padding-left: 0;
+    padding-right: 0;
+  }
  
     .wwd-section{
         padding:48px 0 70px;
