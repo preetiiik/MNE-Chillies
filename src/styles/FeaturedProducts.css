@@ -11,7 +11,10 @@
 .fp-container{
     width:min(92%,1320px);
     margin:auto;
+    padding-left: 19px;
+    padding-right: 20px;
 }
+
 
 /* ===================================================
    HEADER

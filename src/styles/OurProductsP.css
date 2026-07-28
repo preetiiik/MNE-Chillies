@@ -12,7 +12,8 @@
 .our-products-container{
     max-width:1440px;
     margin:auto;
-    padding:15px 40px 0;
+    padding-left:20px;
+    padding-right: 200px;
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
@@ -40,18 +41,22 @@
 
 .products-center{
     width:430px;
-    text-align:centre;
+    text-align:center;
     margin-top:70px;
     margin-left:5px;
+    display:flex;
+    flex-direction:column;
 }
 
 .collection-tag {
+    display: block;
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #A6000C;
+    margin-top: 0;
     margin-bottom: 14px;
 }
 
@@ -61,6 +66,7 @@
     font-weight: 600;
     color: #281717;
     line-height: 56px;
+    margin-top: 0;
     margin-bottom: 22px;
     text-align: center;
 }
@@ -90,7 +96,7 @@
 .product-type{
     display:flex;
     justify-content:space-between;
-    align-items:centre;
+    align-items:center;
     gap:20px;
 }
 
@@ -105,6 +111,7 @@
     font-weight: 500;
     color: #A6000C;
     margin-bottom: 10px;
+    text-align: right;
 }
 
 .product-info p {
@@ -125,8 +132,8 @@
 }
 
 .product-type:nth-child(2) img {
-    width: 130px;
-    height: 89px;
+    width: 155px;
+    height: 115px;
 }
 
 .product-type:nth-child(3) img {
@@ -164,42 +171,8 @@
 }
 @media (max-width:768px){
 
-    .our-products-container{
-        display:flex;
-        flex-direction:column;
-        gap:40px;
-        padding:0 20px;
-    }
-
-    .products-left{
-        display:none; /* hide the decorative left image */
-    }
-
-    .products-center{
-        width:100%;
-        text-align:center;
-        margin:0 0 30px;
-    }
-
-    .products-center p{
-        width:100%;
-        max-width:330px;
-        margin:auto;
-    }
-
-    .products-right{
-        width:100%;
-        margin:0;
-        gap:28px;
-    }
-
-    
-
-}
-@media (max-width:768px){
-
     .our-products{
-        padding:50px 16px;
+        padding:50px 12px;
         max-height:none;
     }
 

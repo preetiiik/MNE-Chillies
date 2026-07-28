@@ -5,18 +5,18 @@
 .quality-section{
     width:100%;
     background:#FAF8F5;
-    padding:90px 0;
+    padding:60px 0;
 }
 
 .quality-container{
     max-width:1260px;
-    margin:auto;
-    padding:0 20px;
+    padding-left:20px;
+    padding-right: 60px;
 
     display:grid;
     grid-template-columns:420px 1fr;
-    gap:90px;
-    align-items:center;
+    gap:30px;
+    align-items:left;
 }
 
 /* ======================================================
@@ -27,6 +27,8 @@
     display:inline-flex;
     align-items:center;
     gap:14px;
+    padding-left:60px;
+    padding-right: 60px;
 
     font-family:Inter,sans-serif;
     font-size:12px;
@@ -47,6 +49,8 @@
 .quality-left h2{
     margin-top:18px;
     margin-bottom:26px;
+    padding-left:60px;
+    padding-right: 60px;
 
     font-family:"Libre Caslon Text",serif;
     font-size:46px;
@@ -59,6 +63,8 @@
 
     width:403px;
     max-width:100%;
+    padding-left:60px;
+    padding-right: 60px;
 
     font-family:Inter,sans-serif;
     font-size:15px;
@@ -214,19 +220,27 @@
     .quality-container{
 
         padding:0;
-        gap:45px;
+        gap:35px;
+    }
+    .quality-tag{
+        align-items: left;
+        padding: 0 20px
     }
 
     .quality-left h2{
 
         font-size:38px;
         line-height:44px;
+        align-items: left;
+        padding: 0 20px
     }
 
     .quality-left p{
 
         font-size:15px;
         line-height:26px;
+        padding: 0 20px
+        
     }
 
     .quality-grid{
