@@ -67,7 +67,7 @@
   z-index: 0;
   background: rgba(166, 0, 12, 0.35);
   transform: scaleX(0);
-  transition: transform 0.08s linear;
+  transition: transform 1.5s linear;
   pointer-events: none;
 }
 

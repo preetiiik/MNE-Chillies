@@ -100,13 +100,21 @@ export default function ProcessSection() {
       // smoothly if the user scrolls back up.
       const viewportHeight = window.innerHeight;
       const total = gridRect.height + viewportHeight;
-      let progress = total > 0 ? (viewportHeight - gridRect.top) / total : 0;
-      progress = Math.min(1, Math.max(0, progress));
+    //   let progress = total > 0 ? (viewportHeight - gridRect.top) / total : 0;
+    //   progress = Math.min(1, Math.max(0, progress));
 
-      line.style.transform = isHorizontal
-        ? `scaleX(${progress})`
-        : `scaleY(${progress})`;
-    };
+    //   line.style.transform = isHorizontal
+    //     ? `scaleX(${progress})`
+    //     : `scaleY(${progress})`;
+    // };
+        const triggerPoint = window.innerHeight * 0.75;
+
+          if (gridRect.top <= triggerPoint) {
+            line.style.transform = isHorizontal
+              ? "scaleX(1)"
+              : "scaleY(1)";
+          }
+        }
 
     let ticking = false;
     const onScrollOrResize = () => {

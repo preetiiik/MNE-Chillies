@@ -33,7 +33,7 @@ function PremiumProductsH() {
     moisture: "≤12%",
     heat: 5,
     heatLabel: "Extra Hot",
-    tags: ["Export", "Extra Hot", "High Pungency"],
+    tags: ["Export", "Spicy", "Intense"],
     origin: "Guntur, AP",
   },
 
@@ -52,7 +52,7 @@ function PremiumProductsH() {
     moisture: "≤11%",
     heat: 2,
     heatLabel: "Mild",
-    tags: ["Color Grade", "Mild Heat", "Paprika"],
+    tags: ["Vibrant", "Gentle", "Paprika"],
     origin: "Byadagi, Karnataka",
   },
 
@@ -71,7 +71,7 @@ function PremiumProductsH() {
     moisture: "≤12%",
     heat: 4,
     heatLabel: "Very Hot",
-    tags: ["Premium Grade", "Balanced", "Versatile"],
+    tags: ["Elite", "Balanced", "Versatile"],
     origin: "Guntur, AP",
   },
 
@@ -90,7 +90,7 @@ function PremiumProductsH() {
     moisture: "≤11%",
     heat: 4,
     heatLabel: "Very Hot",
-    tags: ["Processed", "Food Grade", "SSS Free"],
+    tags: ["Refined", "Edible", "SSS Free"],
     origin: "Guntur, AP",
   },
 
@@ -128,7 +128,7 @@ function PremiumProductsH() {
     moisture: "≤12%",
     heat: 4,
     heatLabel: "Very Hot",
-    tags: ["Coarse Cut", "Chef's Choice", "Flakes"],
+    tags: ["Coarse", "Preferred", "Flakes"],
     origin: "Guntur, AP",
   },
 
@@ -147,7 +147,7 @@ function PremiumProductsH() {
     moisture: "≤12%",
     heat: 3,
     heatLabel: "Hot",
-    tags: ["Export", "Medium Heat", "Processing"],
+    tags: ["Export", "Light", "Processing"],
     origin: "Guntur, AP",
   },
 ];
