@@ -116,7 +116,10 @@
     }
 
     .hero-content{
-        padding:0 20px;
+        width:min(92%,1400px);
+        margin:0 auto;
+        padding:0;
+        box-sizing:border-box;
     }
 
     .story-tag{
@@ -146,13 +149,16 @@
     }
 
 }
-@media (max-width:480px){
+@media (max-width:768px){
 .hero{
     height:420px;
 }
 .hero-content{
-    padding:0 20px;
-}
+        width:min(92%,1400px);
+        margin:0 auto;
+        padding:18px;
+        box-sizing:border-box;
+    }
 .story-tag{
     padding:8px 16px;
     font-size:10px;
