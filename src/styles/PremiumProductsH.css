@@ -164,7 +164,7 @@
 .product-item {
   width:100%;
   max-width:403px;
-  min-height:640px;  /* grows instead of clipping content */
+  min-height:500px;  /* grows instead of clipping content */
   display:flex;
   flex-direction:column;
   background: #ffffff;
@@ -349,8 +349,40 @@
 /* ==========================================
    HEAT SECTION
 ========================================== */
- 
-.heat-section {
+.heat-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width:100%;
+    margin:16px 0;
+}
+
+.heat-bars{
+    flex:1;
+    display:flex;
+    gap:4px;
+}
+
+.heat-bar{
+    flex:1;
+    height:5px;
+    border-radius:20px;
+    background:#eadada;
+    max-width:none;
+}
+
+.heat-bar.active{
+    background:#a6000c;
+}
+
+.heat-label{
+    flex-shrink:0;
+    font-size:14px;
+    font-weight:600;
+    color:#a6000c;
+    white-space:nowrap;
+}
+/* .heat-section {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -362,7 +394,7 @@
   display: flex;
   gap: 5px;
   flex: 1 1 auto;
-  min-width: 0; /* lets bars shrink instead of overflowing */
+  min-width: 0; /* lets bars shrink instead of overflowing 
 }
  
 .heat-bar {
@@ -384,7 +416,7 @@
   line-height: 16.5px;
   color: #5d3f3c;
   white-space: nowrap;
-}
+} */
  
 /* ==========================================
    TAGS
@@ -461,42 +493,52 @@
   white-space: nowrap;
 }
  
-.enquire-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
- 
-  padding: 10px 20px;
-  border-radius: 999px;
- 
-  background: #a6000c;
-  color: #fff;
- 
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
- 
-  text-decoration: none;
-  white-space: nowrap;
- 
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+.view-details-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    color:#A6000C;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.view-details-btn:hover{
+    color:#8b0000;
 }
  
-.enquire-btn:hover {
-  background: #87000a;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(166, 0, 12, 0.28);
+.view-details-btn svg{
+    width:16px;
+    height:16px;
+    display:block;
+    flex-shrink:0;
 }
  
-.enquire-btn svg {
-  transition: transform 0.3s ease;
-}
- 
-.enquire-btn:hover svg {
+.view-details-btn:hover svg {
   transform: translateX(3px);
 }
- 
+.product-description{
+    margin-top:10px;
+}
+
+.heat-section{
+    margin-top:14px;
+}
+
+.product-tags{
+    margin-top:12px;
+}
+
+.product-footer{
+    margin-top:auto;
+    padding-top:14px;
+}
+
+
+
 /* ==========================================
    ONE-BY-ONE ENTRANCE
 ========================================== */

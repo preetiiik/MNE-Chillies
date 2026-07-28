@@ -4,20 +4,20 @@
 
 .contact-enquiry{
     width:100%;
-    padding:96px 0;
+    padding:56px 0;
     background:#fff;
 }
 
 .contact-enquiry-container{
     width:min(92%,1437px);
     margin:0 auto;
-    margin-left: 88px;
+    margin-left: 40px;
 
     display:grid;
     grid-template-columns:527px 694px;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:start;
-    gap:80px;
+    gap:5px;
 }
 
 /* ==========================================

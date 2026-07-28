@@ -29,10 +29,10 @@ function ProductCard({ product }) {
       <div className="product-info">
         <span className="product-variety">{variety}</span>
         <h3 className="product-name">{title}</h3>
-        <p className="product-tagline">{tagline}</p>
+        {/* <p className="product-tagline">{tagline}</p> */}
         <p className="product-description">{description}</p>
 
-        <div className="specs-box">
+        {/* <div className="specs-box">
           <div className="spec-col">
             <span className="spec-value">{asta}</span>
             <span className="spec-label">ASTA</span>
@@ -51,7 +51,7 @@ function ProductCard({ product }) {
             <span className="spec-value">{moisture}</span>
             <span className="spec-label">H2O</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="heat-section">
           <div className="heat-bars">
@@ -76,18 +76,13 @@ function ProductCard({ product }) {
         <hr />
 
         <div className="product-footer">
-          <span className="origin-text">Origin: {origin}</span>
+          {/* <span className="origin-text">Origin: {origin}</span> */}
 
-          <a href={link || "#"} className="enquire-btn">
-            Enquire
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
+          <a href={link || "#"} className="view-details-btn">
+            View Details
+            <FiArrowRight />
+          </a>
+              {/* <path
                 d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5"
                 stroke="currentColor"
                 strokeWidth="1.5"
@@ -95,7 +90,7 @@ function ProductCard({ product }) {
                 strokeLinejoin="round"
               />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
