@@ -246,7 +246,6 @@ transform:scale(1);
 /* ==========================================
    TABLET
 ========================================== */
-
 @media (max-width: 992px) {
 
     .milestones-section{
@@ -260,6 +259,14 @@ transform:scale(1);
     .milestones-container h2{
         margin-bottom:60px;
     }
+
+    .timeline-dot{
+    width:19px;
+    min-height:20px;
+    background:white;
+    border:8px solid maroon;
+    border-width: 5px;
+}
 
     .timeline-line{
         left:18px;
@@ -323,6 +330,13 @@ transform:scale(1);
 /* Mobile only - make dot pop smoothly */
 .timeline-dot{
     transition: transform .3s ease;
+}
+.timeline-dot{
+    width:19px;
+    min-height:20px;
+    background:white;
+    border:8px solid maroon;
+    border-width: 5px;
 }
 .timeline-line{
     overflow: hidden;
@@ -411,10 +425,12 @@ transform:scale(1);
     }
 
     .timeline-dot{
-        width:18px;
-        height:18px;
-        border-width:5px;
-    }
+    width:19px;
+    min-height:20px;
+    background:white;
+    border:8px solid maroon;
+    border-width: 5px;
+}
 
     .timeline-content h3{
         font-size:26px;
