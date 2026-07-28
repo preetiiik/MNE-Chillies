@@ -258,16 +258,28 @@
 }
  
 @media (max-width:768px){
+    .wsw-container{
+    padding: 0 12px;
+}
+
+.wsw-left{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+.wsw-small-title,
+.wsw-left h2,
+.wsw-intro{
+    text-align: left;
+}
  
     .wsw-section{
         padding:60px 0;
     }
  
-    .wsw-container{
-        padding:0 20px;
-    }
  
-    .wsw-left h2{
+    /* .wsw-left h2{
         font-size:38px;
         line-height:44px;
     }
@@ -275,7 +287,7 @@
     .wsw-intro{
         font-size:15px;
         line-height:25px;
-    }
+    } */
  
     .wsw-badge-solid{
         top:-10px;

@@ -190,12 +190,32 @@
 }
  
 @media (max-width:640px){
+
+    .pt-container{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .pt-container h2{
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 36px;
+    }
+
+    .pt-step{
+        width: calc(50% - 12px);
+    }
+
+    .pt-step p{
+        white-space: normal;
+        max-width: 140px;
+    }
  
     .pt-section{
         padding:48px 0;
     }
  
-    .pt-container h2{
+    /* .pt-container h2{
         font-size:34px;
         line-height:40px;
         margin-bottom:36px;
@@ -208,5 +228,5 @@
     .pt-step p{
         white-space:normal;
         max-width:140px;
-    }
+    } */
 }
