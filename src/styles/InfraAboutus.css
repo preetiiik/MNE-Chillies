@@ -147,6 +147,8 @@
   .infra-container{
     width:min(92%,500px);
     margin:auto;
+    padding-left: 21px;
+    padding-right: 18px;
 }
 
   .infra-tag {
@@ -198,6 +200,8 @@
 
     .infra-container{
         width:92%;
+        padding-left: 21px;
+        padding-right: 18px;
     }
 
     .infra-tag{
@@ -245,6 +249,10 @@
 
   .infra-overlay {
     padding: 20px 0;
+  }
+  .infra-container {
+    padding-left: 21px;
+    padding-right: 18px;
   }
 
   .infra-title {
