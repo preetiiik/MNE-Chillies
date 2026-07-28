@@ -10,12 +10,8 @@
 }
 
 .who-container{
-    max-width:1260px;
-    width:100%;
-    margin:0 auto;
-    padding:0 20px;
-    box-sizing:border-box;
-
+    width:min(92%,1400px);
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -25,6 +21,7 @@
 .who-content {
     flex: 1;
     max-width: 640px;
+    margin-left: 30px;
 }
 
 .section-tag {
@@ -164,7 +161,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
 
@@ -175,30 +171,106 @@
     position: relative;
     z-index: 2;
 }
+.bowl-img{
+    width:100%;
+    max-width:650px;
+    display:block;
+    position:relative;
+    z-index:2;
+}
 
+.floating-chilli{
+
+    position:absolute;
+
+    width:140px;
+
+    top:4%;
+    right:7%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    animation:chilliFloat 4s ease-in-out infinite;
+}
+
+@keyframes chilliFloat{
+
+    0%{
+        transform:
+            translate(0px,0px)
+            rotate(-12deg);
+    }
+
+    20%{
+        transform:
+            translate(8px,-12px)
+            rotate(-8deg);
+    }
+
+    40%{
+        transform:
+            translate(-5px,-26px)
+            rotate(2deg);
+    }
+
+    60%{
+        transform:
+            translate(10px,-42px)
+            rotate(8deg);
+    }
+
+    80%{
+        transform:
+            translate(-4px,-20px)
+            rotate(-4deg);
+    }
+
+    100%{
+        transform:
+            translate(0px,0px)
+            rotate(-12deg);
+    }
+
+}
 /* Decorative Corners */
 
-.corner {
-    position: absolute;
-    width: 140px;
-    min-height: 60px;
-    border: 4px solid #E9B5B5;
-    z-index: 1;
+.corner{
+    position:absolute;
+    width:120px;
+    height:120px;
+    border:4px solid #E9B8B8;
+    z-index:1;
 }
 
-.corner.top {
-    top: 12%;
-    left: 8%;
+
+/* Top Left */
+/* .corner.top{
+    top: 3%;
+    left: 3%;
     border-right: none;
     border-bottom: none;
+} */
+ .corner.top{
+    top:2%;
+    left:4%;
+    border-right:none;
+    border-bottom:none;
 }
 
-.corner.bottom {
-    right: 6%;
-    bottom: 10%;
-
+/* Bottom Right */
+/* .corner.bottom{
+    right: 3%;
+    bottom: 1%;
     border-left: none;
     border-top: none;
+} */
+.corner.bottom{
+    bottom:2%;
+    right:4%;
+    border-left:none;
+    border-top:none;
 }
 
 /* =========================
