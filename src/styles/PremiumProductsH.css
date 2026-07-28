@@ -657,6 +657,10 @@
   .product-item{
     max-width:100%;
   }
+  .premium-right p{
+    text-align: left;
+    margin-top: -65px;
+  }
 
 }
  
