@@ -78,13 +78,18 @@
    PRODUCT GRID
 =========================== */
 
-.collection-grid {
+/* .collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: space-between;
   gap: 52px;
-}
+} */
 
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px;
+}
 /* ===========================
    PRODUCT CARD
 =========================== */
