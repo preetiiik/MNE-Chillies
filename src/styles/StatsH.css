@@ -11,6 +11,9 @@
     max-width: 1349px;
     width: 92%;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 20px;
+    align-items: center;
 
     display: flex;
     justify-content: space-between;
