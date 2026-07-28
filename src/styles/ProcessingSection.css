@@ -5,8 +5,10 @@
 .processing-section{
     width:100%;
     background:#FCFBF9;
-    padding:110px 0;
+    padding:10px 0;
     overflow:hidden;
+    padding-left: 60px;
+    padding-right: 45px;
 }
 
 .processing-container{

@@ -5,7 +5,7 @@
 .wsw-section{
     width:100%;
     background:#FFFFFF;
-    padding:80px 0;
+    padding:40px 0;
 }
  
 .wsw-container{
@@ -28,6 +28,8 @@
 .wsw-left{
     display:flex;
     flex-direction:column;
+    padding-left: 60px;
+    padding-right: 45px;
     width:100%;
     max-width:704px;
 }
@@ -87,7 +89,7 @@
 .wsw-features{
     display:flex;
     flex-direction:column;
-    gap:24px;
+    gap:20px;
 }
  
 .wsw-feature-row{

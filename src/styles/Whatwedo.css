@@ -12,7 +12,7 @@
     max-width:1260px;
     width:100%;
     margin:0 auto;
-    padding:0 20px;
+    padding: 0 20px;
     box-sizing:border-box;
 }
  
@@ -25,6 +25,8 @@
     justify-content:space-between;
     align-items:flex-end;
     margin-bottom:40px;
+    padding-left: 60px;
+    padding-right: 45px;
     gap:24px;
 }
  
@@ -80,6 +82,8 @@
  
 .wwd-grid{
     display:grid;
+    padding-left: 60px;
+    padding-right: 45px;
     grid-template-columns:repeat(3,1fr);
     gap:24px;
 }
@@ -283,6 +287,8 @@
     grid-template-columns:460px 1fr;
     gap:70px;
     align-items:start;
+    padding-left: 60px;
+    padding-right: 45px;
  
     margin-top:60px;
  
