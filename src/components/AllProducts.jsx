@@ -23,8 +23,7 @@ function AllProducts() {
             title:"Teja S17",
             subtitle:"The world's most exported Indian chilli",
             description:
-            "The undisputed king of Indian chilli exports. Teja S17 is prized for its extreme pungency, brilliant deep-red pigmentation and excellent shelf life.",
-
+            "Extreme pungency, deep-red color, excellent shelf life — the king of Indian chilli exports for global markets.",
             image:teja,
 
             asta:"80–100",
@@ -87,8 +86,7 @@ function AllProducts() {
             subtitle:"Balanced heat and color — the all-rounder",
 
             description:
-            "The workhorse of Indian cuisine and the most widely used chilli variety in the subcontinent.",
-
+            "The workhorse of Indian cuisine and the most widely used chilli variety in the subcontinent for everyday cooking.",
             image:sannam,
 
             asta:"100–120",
@@ -100,7 +98,7 @@ function AllProducts() {
             heat:4,
 
             tags:[
-                "Premium Grade",
+                "Elite",
                 "Balanced",
                 "Versatile"
             ],

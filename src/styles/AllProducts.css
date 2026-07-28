@@ -70,20 +70,16 @@ CARD
 ========================================== */
 
 .product-card{
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background:#fff;
-
     border:1px solid rgba(0,0,0,.07);
-
     border-radius:16px;
-
     overflow:hidden;
-
     transition:.35s;
-
     box-shadow:
     0 6px 18px rgba(0,0,0,.04);
-
 }
 
 .product-card:hover{
