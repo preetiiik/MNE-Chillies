@@ -72,7 +72,7 @@ function AllProducts() {
                 "Paprika"
             ],
 
-            origin:"Byadagi, Karnataka"
+            origin:"Byadgi, Karnataka"
         },
 
         {

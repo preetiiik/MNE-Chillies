@@ -6,14 +6,12 @@
   width: 100%;
   margin-left: 0;
   background: #f9f6f2;
-  padding: 64px 0 80px;
+  padding: 64px 28px 80px;
 }
 
 .process-container{
     width:min(92%,1400px);
     margin:0 auto;
-    margin-left: 88px;
-    margin-right: 70px;
     padding:0;
     box-sizing:border-box;
 }
@@ -52,6 +50,7 @@
 ========================== */
 
 .process-grid {
+  position: relative;
   margin-top: 64px;
 
   display: flex;
@@ -59,15 +58,40 @@
   gap: 24px;
 }
 
+/* Connecting line running from the center of the first step circle
+   to the center of the last one. Its left/top/width/height/transform
+   are set inline by JS so it always lines up exactly with the circles
+   and fills in as the section scrolls through the viewport. */
+.process-line {
+  position: absolute;
+  z-index: 0;
+  background: rgba(166, 0, 12, 0.35);
+  transform: scaleX(0);
+  transition: transform 0.08s linear;
+  pointer-events: none;
+}
+
 .process-card {
+  position: relative;
+  z-index: 1;
   width: 198px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.process-card:focus-visible {
+  outline: 2px solid #a6000c;
+  outline-offset: 6px;
+  border-radius: 8px;
 }
 
 .process-circle {
+  position: relative;
+  z-index: 1;
   width: 56px;
   min-height: 56px;
+  flex-shrink: 0;
   border-radius: 50%;
 
   background: #a6000c;
@@ -147,43 +171,26 @@
 
 @media (max-width: 768px) {
   .process-section {
-    padding: 50px 20px;
+    padding: 50px 12px;
   }
 
   .process-heading h2 {
     font-size: 36px;
     line-height: 42px;
   }
-
-  .process-grid{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:32px;
-}
-
-.process-card{
-    flex:1;
-    min-width:180px;
-    max-width:220px;
-}
-
-  .process-content {
-    padding-top: 18px;
-  }
 }
 .services-section {
   width: 100%;
   background: #ffffff;
-  padding: 90px 0;
+  padding: 90px 28px;
 }
 
 .services-container{
     width:min(92%,1400px);
     margin:auto;
     display:flex;
-    justify-content:space-between;
-    align-items:left;
+    justify-content:flex-start;
+    align-items:flex-start;
     gap:70px;
 }
 
@@ -318,6 +325,7 @@
 
 .services-container{
     flex-direction:column;
+    align-items:stretch;
     gap:60px;
 }
 
@@ -332,74 +340,151 @@
 
 }
 
+
+@media (max-width:480px){
+  .services-content{
+    width:100%;
+    margin:0;
+    padding: 0px 4px 6px;
+  }
+}
+
 /* Mobile */
 
-@media (max-width:768px){
+/* ==========================
+   MOBILE
+========================== */
 
-.process-section{
-    padding:60px 0;
-}
+@media (max-width: 768px) {
 
-.process-container{
-    width:min(92%,1400px);
-}
+  /* PROCESS SECTION */
 
-.process-heading h2{
-    font-size:34px;
-    line-height:42px;
-}
+  .process-section {
+    padding: 60px 16px;
+  }
 
-.process-grid{
-    flex-direction:column;
-    align-items:center;
-    gap:35px;
-}
+  .process-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 
-.process-card{
-    width:100%;
-    max-width:350px;
-}
+  .process-heading {
+    text-align: left;
+    align-items: flex-start;
+  }
 
-.process-content{
-    text-align:center;
-}
+  .process-heading h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
 
-.process-circle{
-    margin:auto;
-}
+  .process-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+  }
 
-/* SERVICES */
+  .process-line {
+    display: none;
+  }
+
+  .process-card {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    box-sizing: border-box;
+  }
+
+  .process-circle {
+    flex-shrink: 0;
+  }
+
+  .process-content {
+    flex: 1;
+    padding-top: 6px;
+  }
+
+  .process-content h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .process-content p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+
+  /* SERVICES SECTION */
 
 .services-section{
-    padding:60px 0;
+    padding:60px 16px;
+    overflow:hidden;
 }
 
 .services-container{
-    width:min(92%,1400px);
+    width:100%;
+    max-width:100%;
+    display:flex;
     flex-direction:column;
-    gap:40px;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
+    gap:0px;
+    margin:0;
+    padding:0;
 }
 
 .services-content{
+    width:100%;
     max-width:100%;
-    text-align:center;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 .services-content h2{
     font-size:34px;
     line-height:42px;
+    width:100%;
 }
 
 .services-content p{
-    font-size:15px;
-    line-height:24px;
+    width:100%;
+    font-size:16px;
+    line-height:28px;
+    overflow-wrap:break-word;
 }
 
-.service-btn{
-    justify-content:center;
+.services-grid{
+    width:100%;
+    grid-template-columns:1fr;
+}
+
+.service-card{
+    width:100%;
+    box-sizing:border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.services-section,
+.services-container,
+.services-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 }
