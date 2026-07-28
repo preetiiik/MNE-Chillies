@@ -19,6 +19,7 @@ function ProductCard({ product }) {
   } = product;
 
   return (
+    <div className="container">
     <div className="product-item">
       <div className="product-image">
         <span className="product-badge">{badge}</span>
@@ -97,6 +98,7 @@ function ProductCard({ product }) {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }
