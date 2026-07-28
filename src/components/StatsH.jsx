@@ -84,7 +84,7 @@ function Stats() {
   ];
 
   return (
-    <section className="stats" data-aos="fade-right">
+    <section className="stats"> 
       <div className="stats-container">
         {stats.map((item, index) => (
           <div className="stat-card" key={index}>
