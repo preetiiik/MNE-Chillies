@@ -1,4 +1,4 @@
-import "../styles/servicesHero.css";
+import "../styles/ServicesHero.css";
 import "../styles/Whatwedo.css";
 
 import AOS from "aos";
