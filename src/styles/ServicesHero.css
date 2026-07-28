@@ -2,7 +2,7 @@
    SERVICES HERO
 ========================================================== */
 
-.services-hero{
+.services-page-hero{
 
     width:100%;
     min-height:539px;
@@ -15,7 +15,7 @@
     position:relative;
 }
 
-.services-overlay{
+.services-page-overlay{
 
     width:100%;
     min-height:539px;
@@ -30,7 +30,7 @@
    CONTENT
 ========================================================== */
 
-.services-content{
+.services-page-content{
 
     max-width:1240px;
     width:100%;
@@ -43,7 +43,7 @@
    TAG
 ========================================================== */
 
-.services-tag{
+.services-page-tag{
 
     display:inline-flex;
     align-items:left;
@@ -68,7 +68,7 @@
     margin-bottom:28px;
 }
 
-.services-tag .dot{
+.services-page-tag .dot{
 
     width:14px;
     height:14px;
@@ -84,7 +84,7 @@
    HEADING
 ========================================================== */
 
-.services-content h1{
+.services-page-content h1{
 
     font-family:"Libre Caslon Text",serif;
     font-size:56px;
@@ -98,7 +98,7 @@
     margin-bottom:48px;
 }
 
-.services-content h1 span{
+.services-page-content h1 span{
 
     color:#FF9094;
 }
@@ -107,7 +107,7 @@
    STATS
 ========================================================== */
 
-.services-stats{
+.services-page-stats{
 
     display:flex;
     align-items:flex-start;
@@ -172,28 +172,29 @@
 
 @media (max-width:768px){
 
-    .services-hero,
-    .services-overlay{
+    .services-page-hero,
+    .services-page-overlay{
         min-height:auto;
     }
 
-    .services-content{
-        padding:120px 22px 60px;
-        text-align: left;
-    }
-
-    .services-tag{
+    .services-page-content{
+    width:min(92%, 1400px);
+    margin:0 auto;
+    /* padding:83px; */
+    margin-left: 12px;
+}
+    .services-page-tag{
         margin-bottom:22px;
     }
 
-    .services-content h1{
+    .services-page-content h1{
         font-size:40px;
         line-height:1.2;
         margin-bottom:36px;
         max-width:420px;
     }
 
-    .services-stats{
+    .services-page-stats{
         display:grid;
         grid-template-columns:repeat(2,1fr);
         gap:26px 18px;
@@ -220,33 +221,29 @@
 
 @media (max-width:480px){
 
-    .services-content{
-        padding:110px 18px 50px;
-    }
+   .services-page-content{
+    width:min(92%, 1400px);
+    margin:0 auto;
+    /* padding:83px; */
+    margin-left: 12px;
+}
 
-    .services-tag{
+    .services-page-tag{
+        margin-bottom:18px;
         font-size:10px;
         padding:8px 14px;
     }
 
-    .services-content h1{
-        font-size:30px;
+    .services-page-content h1{
+        font-size:32px;
         line-height:1.2;
+        margin-bottom:28px;
         max-width:300px;
     }
 
-    .services-stats{
+    .services-page-page-stats{
+        display:grid;
         grid-template-columns:repeat(2,1fr);
-        gap:24px 14px;
+        gap:24px 16px;
     }
-
-    .service-stat h3{
-        font-size:22px;
-    }
-
-    .service-stat span{
-        font-size:11px;
-        line-height:17px;
-    }
-
 }

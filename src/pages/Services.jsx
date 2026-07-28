@@ -1,4 +1,4 @@
-import "../styles/ServicesHero.css";
+import "../styles/servicesHero.css";
 import "../styles/Whatwedo.css";
 
 import AOS from "aos";
@@ -13,7 +13,7 @@ import ProcessTimeline from "../components/ProcessTimeline";
 
 import hero from "../assets/images/services-hero.png";
 
-export default function Services() {
+export default function services() {
 
   useEffect(() => {
 
@@ -50,26 +50,26 @@ export default function Services() {
     <>
 
       <section
-        className="services-hero"
+        className="services-page-hero"
         style={{
           backgroundImage: `url(${hero})`,
         }}
       >
 
-        <div className="services-overlay">
+        <div className="services-page-overlay">
 
           <Navbar />
 
-          <div className="services-content">
+          <div className="services-page-content">
 
             {/* TAG */}
 
             <div
-              className="services-tag"
+              className="services-page-tag"
               data-aos="fade-right"
             >
               <span className="dot"></span>
-              OUR SERVICES
+              OUR services
             </div>
 
             {/* HEADING */}
@@ -77,14 +77,14 @@ export default function Services() {
             <h1
               data-aos="fade-up"
             >
-              Six Services.
+              Six services.
               <br />
               <span>One Supply Chain.</span>
             </h1>
 
             {/* STATS */}
 
-            <div className="services-stats">
+            <div className="services-page-stats">
 
               {stats.map((item, index) => (
 
