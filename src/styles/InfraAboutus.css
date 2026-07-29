@@ -140,30 +140,27 @@
     }
 
     .infra-overlay{
-        min-height: auto;
-        padding: 30px 20px;
-        width: 100%;
+        padding:40px 20px;
     }
 
-  .infra-container{
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-}
+    .infra-container{
+        width:100%;
+        max-width:1500px;
+        padding:0;      /* no extra padding */
+        margin:0 auto;
+    }
 
-  .infra-title {
-    margin-bottom: 40px;
-  }
+    .infra-title,
+    .infra-tag,
+    .infra-cards{
+        margin-left:0;
+        margin-right:0;
+    }
 
-  .infra-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
-
-  .infra-card {
-    padding: 22px;
-    min-height: auto;
-  }
+    .infra-cards{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
 }
 
 /* ==========================================

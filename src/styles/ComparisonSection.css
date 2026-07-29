@@ -9,10 +9,10 @@
 }
 
 .comparison-container {
-  max-width: 1260px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  margin-left: 88px;
-  padding-right: 60px;
+  padding: 0 30px;
 }
 
 /* ======================================================
@@ -28,10 +28,10 @@
   align-items: center;
   gap: 12px;
 
-  font-family: Inter, sans-serif;
-  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 19.5px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
 
@@ -40,7 +40,7 @@
 
 .comparison-line {
   width: 24px;
-  height: 1px;
+  height: 2px;
   background: #A6000C;
 }
 
@@ -48,15 +48,19 @@
   margin-top: 10px;
 
   font-family: "Libre Caslon Text", serif;
-  font-size: 48px;
+  font-size: clamp(36px, 4vw, 52px);
   font-weight: 700;
-  line-height: 52px;
+  line-height: 1.15;
 
   color: #1A0505;
 }
 
 /* ======================================================
    TABLE
+   Note: this is a dense data table, so it intentionally
+   keeps its own compact scale rather than the larger
+   card/heading sizes used elsewhere - kept internally
+   consistent instead.
 ====================================================== */
 
 .comparison-table {
@@ -104,11 +108,11 @@
 
 .table-head div:not(:first-child) {
 
-  font-family: Inter, sans-serif;
-  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   font-weight: 600;
 
-  line-height: 16.5px;
+  line-height: 18px;
 
   letter-spacing: 1px;
 
@@ -160,13 +164,13 @@
 
 .variety-col p {
 
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
 
-  font-size: 11px;
+  font-size: 12px;
 
   font-weight: 400;
 
-  line-height: 16.5px;
+  line-height: 18px;
 
   color: #5D3F3C;
 }
@@ -194,7 +198,7 @@
 
 .normal-text {
 
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
 
   font-size: 13px;
 
@@ -242,8 +246,8 @@
 
   background: rgba(166, 0, 12, 0.07);
 
-  font-family: Inter, sans-serif;
-  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   font-weight: 500;
   line-height: 16px;
 
@@ -296,7 +300,8 @@
 @media (max-width:1200px){
 
 .comparison-container{
-padding:0 30px;
+max-width: 1500px;
+padding: 0 30px;
 }
 
 .table-row{
@@ -316,11 +321,6 @@ column-gap:20px;
 }
 
 @media(max-width:992px){
-
-.comparison-heading h2{
-font-size:40px;
-line-height:46px;
-}
 
 .comparison-section{
 padding:70px 0;
@@ -358,31 +358,22 @@ min-width:1100px;
 
 @media (max-width:768px){
 
-    .contact-section::before{
-    background: rgba(255, 248, 242, 0.68);
-}
-
     .comparison-section{
         padding:60px 0;
     }
 
     .comparison-container{
-        width:92%;
-        margin:0 auto;
-        padding:0;
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .comparison-heading{
         margin-bottom:30px;
     }
 
-    .comparison-heading h2{
-        font-size:34px;
-        line-height:40px;
-    }
-
     .comparison-tag{
-        font-size:11px;
         letter-spacing:2px;
     }
 
@@ -414,17 +405,7 @@ padding:0 16px;
 
 }
 
-.comparison-heading h2{
-
-font-size:30px;
-
-line-height:36px;
-
-}
-
 .comparison-tag{
-
-font-size:10px;
 
 letter-spacing:1.8px;
 

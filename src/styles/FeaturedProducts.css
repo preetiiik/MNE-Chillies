@@ -9,10 +9,10 @@
 }
 
 .fp-container{
-    width:min(92%,1320px);
-    margin:auto;
-    padding-left: 19px;
-    padding-right: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 
@@ -29,19 +29,30 @@
 }
 
 .fp-tag{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
     color:#A6000C;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
+    font-family:"Inter",sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2.5px;
     text-transform:uppercase;
     margin-bottom:18px;
 }
 
+.fp-tag::before{
+    content:"";
+    width:24px;
+    height:2px;
+    background:#A6000C;
+}
+
 .fp-title{
     font-family:"Libre Caslon Text",serif;
-    font-size:58px;
-    line-height:65px;
+    font-weight:700;
+    font-size:clamp(36px, 4vw, 52px);
+    line-height:1.15;
     color:#1C1111;
 }
 
@@ -71,9 +82,10 @@
 
     transition:.35s;
 
+    font-family:"Inter",sans-serif;
     font-size:14px;
 
-    font-weight:500;
+    font-weight:600;
 
 }
 
@@ -221,9 +233,10 @@
 
     color:white;
 
-    font-size:11px;
+    font-family:"Inter",sans-serif;
+    font-size:12px;
 
-    font-weight:700;
+    font-weight:600;
 
     letter-spacing:1px;
 
@@ -263,9 +276,10 @@
 
     color:white;
 
-    border-radius:999px;
-
+    font-family:"Inter",sans-serif;
     font-size:13px;
+
+    border-radius:999px;
 
 }
 
@@ -291,23 +305,28 @@
 
     text-transform:uppercase;
 
-    font-size:12px;
+    font-family:"Inter",sans-serif;
+    font-size:13px;
 
-    letter-spacing:2px;
+    letter-spacing:2.5px;
 
-    font-weight:700;
+    font-weight:600;
 
     margin-bottom:16px;
 
 }
 
+/* Featured product name - matches sitewide H2 scale
+   since this card functions as a mini spotlight section */
 .fp-product-title{
 
     font-family:"Libre Caslon Text",serif;
 
-    font-size:54px;
+    font-size:clamp(36px, 4vw, 52px);
 
-    line-height:60px;
+    font-weight:700;
+
+    line-height:1.15;
 
     color:#1C1111;
 
@@ -319,6 +338,7 @@
 
     color:#C64343;
 
+    font-family:"Inter",sans-serif;
     font-size:20px;
 
     font-style:italic;
@@ -331,9 +351,12 @@
 
     color:#675652;
 
-    font-size:17px;
+    font-family:"Inter",sans-serif;
+    font-size:15px;
 
-    line-height:33px;
+    font-weight:400;
+
+    line-height:1.6;
 
     margin-bottom:35px;
 
@@ -350,7 +373,8 @@
 }
 
 .fp-heat-label{
-    font-size:15px;
+    font-family:"Inter",sans-serif;
+    font-size:13px;
     font-weight:600;
     color:#222;
 }
@@ -380,10 +404,11 @@
 }
 
 .fp-block h5{
+    font-family:"Inter",sans-serif;
     font-size:12px;
     text-transform:uppercase;
-    letter-spacing:2px;
-    font-weight:700;
+    letter-spacing:1px;
+    font-weight:600;
     color:#1C1111;
     margin-bottom:16px;
 }
@@ -400,7 +425,9 @@
     border-radius:999px;
     background:#fff;
     color:#675652;
-    font-size:14px;
+    font-family:"Inter",sans-serif;
+    font-size:13px;
+    font-weight:500;
     transition:.3s;
 }
 
@@ -414,7 +441,8 @@
     background:#FFF2F2;
     color:#A6000C;
     border-radius:999px;
-    font-size:14px;
+    font-family:"Inter",sans-serif;
+    font-size:13px;
     font-weight:500;
 }
 
@@ -441,7 +469,8 @@
 
     color:#fff;
 
-    font-size:15px;
+    font-family:"Inter",sans-serif;
+    font-size:14px;
 
     font-weight:600;
 
@@ -474,7 +503,8 @@
 
     border-radius:14px;
 
-    font-size:15px;
+    font-family:"Inter",sans-serif;
+    font-size:14px;
 
     font-weight:600;
 
@@ -542,13 +572,6 @@
 
     }
 
-    .fp-product-title{
-
-        font-size:44px;
-        line-height:50px;
-
-    }
-
 }
 
 /* ===================================================
@@ -563,6 +586,12 @@
 
     }
 
+    .fp-container{
+
+        padding: 0 20px;
+
+    }
+
     .fp-header{
 
         flex-direction:column;
@@ -570,14 +599,6 @@
         align-items:flex-start;
 
         margin-bottom:45px;
-
-    }
-
-    .fp-title{
-
-        font-size:40px;
-
-        line-height:46px;
 
     }
 
@@ -607,14 +628,6 @@
 
     }
 
-    .fp-product-title{
-
-        font-size:34px;
-
-        line-height:42px;
-
-    }
-
     .fp-subtitle{
 
         font-size:18px;
@@ -623,9 +636,7 @@
 
     .fp-description{
 
-        font-size:15px;
-
-        line-height:28px;
+        font-size:14px;
 
     }
 
@@ -650,22 +661,6 @@
 
 @media(max-width:480px){
 
-    .fp-title{
-
-        font-size:32px;
-
-        line-height:38px;
-
-    }
-
-    .fp-product-title{
-
-        font-size:28px;
-
-        line-height:34px;
-
-    }
-
     .fp-image{
 
         height:250px;
@@ -681,8 +676,6 @@
     .fp-description{
 
         font-size:14px;
-
-        line-height:24px;
 
     }
 
