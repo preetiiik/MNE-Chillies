@@ -148,15 +148,16 @@ export default function TestimonialsSection() {
   // When the track has slid far enough to be sitting on a cloned copy,
   // snap it back into the canonical middle copy with no transition —
   // visually identical, so nobody sees the jump.
-  function handleTransitionEnd() {
-    if (position >= TOTAL * 2) {
-      setNoTransition(true);
-      setPosition((p) => p - TOTAL);
-    } else if (position < TOTAL) {
-      setNoTransition(true);
-      setPosition((p) => p + TOTAL);
-    }
+  function handleTransitionEnd(e) {
+  if (e.target !== e.currentTarget) return; // ignore bubbled child transitions
+  if (position >= TOTAL * 2) {
+    setNoTransition(true);
+    setPosition((p) => p - TOTAL);
+  } else if (position < TOTAL) {
+    setNoTransition(true);
+    setPosition((p) => p + TOTAL);
   }
+}
 
   useEffect(() => {
     if (noTransition) {

@@ -190,7 +190,6 @@ export default function WhatWeDo() {
 
           <p className="wwd-header-right">
             Click any service to see the full detail
-            <br />
             below.
           </p>
         </div>

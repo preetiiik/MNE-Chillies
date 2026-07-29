@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/ProcessSectionH.css";
+
 
 const processSteps = [
   {
@@ -34,33 +36,25 @@ const processSteps = [
   },
 ];
 
-// Where clicking a step should take the user.
-const SERVICES_SELECTOR = "#services, .services-section";
-
-function goToServices() {
-  const target = document.querySelector(SERVICES_SELECTOR);
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
-
 export default function ProcessSection() {
+  const navigate = useNavigate();
+
   const gridRef = useRef(null);
   const circleRefs = useRef([]);
   const lineRef = useRef(null);
 
   circleRefs.current = [];
+
   const registerCircle = (el) => {
     if (el && !circleRefs.current.includes(el)) {
       circleRefs.current.push(el);
     }
   };
 
-  // Draw the connecting line from the center of the first step circle to
-  // the center of the last one (horizontal on desktop, vertical on mobile),
-  // and fill it in as the section scrolls through the viewport — so it
-  // visibly animates top-to-bottom (or left-to-right) as the user scrolls,
-  // rather than just popping on once.
+  const goToServices = () => {
+    navigate("/services");
+  };
+
   useEffect(() => {
     const measureAndDraw = () => {
       const grid = gridRef.current;
@@ -94,32 +88,25 @@ export default function ProcessSection() {
         line.style.transformOrigin = "top center";
       }
 
-      // Scroll progress through the section: 0 when the grid is just
-      // entering the bottom of the viewport, 1 once it has fully passed
-      // the top. Recomputed on every scroll tick, so it also un-draws
-      // smoothly if the user scrolls back up.
-      const viewportHeight = window.innerHeight;
-      const total = gridRect.height + viewportHeight;
-    //   let progress = total > 0 ? (viewportHeight - gridRect.top) / total : 0;
-    //   progress = Math.min(1, Math.max(0, progress));
+      const triggerPoint = window.innerHeight * 0.75;
 
-    //   line.style.transform = isHorizontal
-    //     ? `scaleX(${progress})`
-    //     : `scaleY(${progress})`;
-    // };
-        const triggerPoint = window.innerHeight * 0.75;
-
-          if (gridRect.top <= triggerPoint) {
-            line.style.transform = isHorizontal
-              ? "scaleX(1)"
-              : "scaleY(1)";
-          }
-        }
+      if (gridRect.top <= triggerPoint) {
+        line.style.transform = isHorizontal
+          ? "scaleX(1)"
+          : "scaleY(1)";
+      } else {
+        line.style.transform = isHorizontal
+          ? "scaleX(0)"
+          : "scaleY(0)";
+      }
+    };
 
     let ticking = false;
+
     const onScrollOrResize = () => {
       if (ticking) return;
       ticking = true;
+
       window.requestAnimationFrame(() => {
         measureAndDraw();
         ticking = false;
@@ -127,10 +114,12 @@ export default function ProcessSection() {
     };
 
     measureAndDraw();
-    // Re-measure once fonts/images settle, in case sizes shift slightly.
+
     const settleTimeout = setTimeout(measureAndDraw, 300);
 
-    window.addEventListener("scroll", onScrollOrResize, { passive: true });
+    window.addEventListener("scroll", onScrollOrResize, {
+      passive: true,
+    });
     window.addEventListener("resize", onScrollOrResize);
     window.addEventListener("orientationchange", onScrollOrResize);
 
@@ -164,19 +153,26 @@ export default function ProcessSection() {
           </div>
 
           <div className="process-grid" ref={gridRef}>
-            <span ref={lineRef} className="process-line" aria-hidden="true" />
+            <span
+              ref={lineRef}
+              className="process-line"
+              aria-hidden="true"
+            />
 
             {processSteps.map((step) => (
               <div
-                className="process-card"
                 key={step.number}
+                className="process-card"
                 role="button"
                 tabIndex={0}
                 onClick={goToServices}
                 onKeyDown={handleCardKeyDown}
-                aria-label={`${step.title} — go to Services`}
+                aria-label={`${step.title} — Go to Services`}
               >
-                <div className="process-circle" ref={registerCircle}>
+                <div
+                  className="process-circle"
+                  ref={registerCircle}
+                >
                   {step.number}
                 </div>
 

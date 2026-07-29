@@ -4,9 +4,9 @@
 
 .infra-intro{
     width:100%;
-    background:#FCFBF9;
+    background:#E3DFD5;
     padding:10px 0 0px;
-    padding-bottom: 0%;
+    padding-bottom: 10px;
     overflow:hidden; 
     min-height: 700px; 
     height:auto;
@@ -16,7 +16,7 @@
     max-width:1260px;
     margin:0 auto;
     padding:0 30px;
-    background:#FCFBF9;
+    background:#E3DFD5;
     display:grid;
     grid-template-columns:560px 1fr;
     align-items:center;
