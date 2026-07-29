@@ -215,6 +215,7 @@
     .contact-section{
     position: relative;
     overflow: hidden;
+    background-position: left center;
 }
 
 .contact-section::before{
@@ -327,6 +328,7 @@
     }
     .contact-section{
         padding:50px 18px;
+        background-position: left center;
     }
 
     .contact-overlay{
