@@ -14,12 +14,13 @@
     width: 100%;
     min-height: 100%;
     background: rgba(0,0,0,.45);
-    padding: 80px 0;
+    padding: 80px 30px;
 }
 
 .infra-container {
-    width: min(90%,1264px);
-    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 /* ==========================================
@@ -28,7 +29,7 @@
 
 .infra-tag{
     display:inline-block;
-    margin-bottom:14px;
+    margin-bottom:16px;
     font-family:"Inter",sans-serif;
     font-size:13px;
     font-weight:600;
@@ -39,11 +40,9 @@
 }
 .infra-title{
     font-family:"Libre Caslon Text",serif;
-    /* font-size:46px; */
     font-weight:700;
-    font-size: clamp(36px, 4vw, 46px);
-    line-height: 1.2;
-    /* line-height:50.6px; */
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1.15;
     color:#fff;
     margin-bottom:60px;
 }
@@ -74,29 +73,33 @@
     box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
+/* Big stat number - matches milestone year style */
 .infra-card h3{
     font-family:"Libre Caslon Text",serif;
-    font-size:34px;
+    font-size:38px;
     font-weight:700;
-    line-height:34px;
+    line-height:1.1;
     color:#fff;
 }
 
+/* Label under stat - matches card meta style */
 .infra-card span{
     display:block;
     margin-top:8px;
     font-family:"Inter",sans-serif;
-    font-size:12px;
+    font-size:13px;
     font-weight:600;
-    line-height:18px;
+    line-height:19.5px;
+    letter-spacing:1px;
     text-transform:uppercase;
     color:rgba(255,255,255,.70);
 }
 .infra-card p{
     margin-top:18px;
     font-family:"Inter",sans-serif;
-    font-size:13.5px;
-    line-height:20px;
+    font-size:15px;
+    font-weight:400;
+    line-height:1.6;
 
     color:rgba(255,255,255,.60);
 }
@@ -108,12 +111,10 @@
 @media (max-width: 1200px) {
 
   .infra-overlay {
-    padding: 70px 0;
+    padding: 70px 30px;
   }
 
   .infra-title {
-    font-size: clamp(38px, 4vw, 44px);
-    line-height: 1.2;
     margin-bottom: 50px;
   }
 
@@ -139,26 +140,18 @@
     }
 
     .infra-overlay{
-    min-height: auto;
-    padding: 30px 0;
-    width: 100%;
-
+        min-height: auto;
+        padding: 30px 20px;
+        width: 100%;
     }
+
   .infra-container{
-    width:min(92%,500px);
-    margin:auto;
-    padding-left: 21px;
-    padding-right: 18px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-  .infra-tag {
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-
   .infra-title {
-    font-size: clamp(34px, 6vw, 38px);
-    line-height: 1.2;
     margin-bottom: 40px;
   }
 
@@ -170,16 +163,6 @@
   .infra-card {
     padding: 22px;
     min-height: auto;
-  }
-
-  .infra-card h3 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .infra-card p {
-    font-size: 13px;
-    line-height: 20px;
   }
 }
 
@@ -195,23 +178,10 @@
     }
 
     .infra-overlay{
-        padding:40px 0;
-    }
-
-    .infra-container{
-        width:92%;
-        padding-left: 21px;
-        padding-right: 18px;
-    }
-
-    .infra-tag{
-        font-size:11px;
-        margin-bottom:10px;
+        padding:40px 20px;
     }
 
     .infra-title{
-        font-size:28px;
-        line-height:1.15;
         margin-bottom:22px;
     }
 
@@ -225,20 +195,8 @@
         border-radius:14px;
     }
 
-    .infra-card h3{
-        font-size:22px;
-        line-height:1;
-    }
-
-    .infra-card span{
-        font-size:10px;
-        margin-top:4px;
-    }
-
     .infra-card p{
         margin-top:10px;
-        font-size:12px;
-        line-height:17px;
     }
 }
 /* ==========================================
@@ -248,27 +206,10 @@
 @media (max-width: 400px) {
 
   .infra-overlay {
-    padding: 20px 0;
-  }
-  .infra-container {
-    padding-left: 21px;
-    padding-right: 18px;
-  }
-
-  .infra-title {
-    font-size: 26px;
+    padding: 20px 20px;
   }
 
   .infra-card {
     padding: 18px;
-  }
-
-  .infra-card h3 {
-    font-size: 24px;
-  }
-
-  .infra-card p {
-    font-size: 12.5px;
-    line-height: 19px;
   }
 }

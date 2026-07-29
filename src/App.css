@@ -1,4 +1,3 @@
- 
 /* ===========================
    COLLECTION SECTION
 =========================== */
@@ -220,7 +219,7 @@
 @media (max-width:768px){
  
     .collection{
-        padding:60px 20px; /* matches navbar's mobile horizontal padding */
+        padding:60px 5px; /* matches navbar's mobile horizontal padding */
     }
  
     .collection-top{
@@ -248,18 +247,17 @@
  
     .collection-grid{
         grid-template-columns:1fr;
-        justify-items:center;
         gap:20px;
     }
  
     .product-card{
         width:100%;
-        max-width:420px;
+        max-width:100%; /* matches .product-item — no cap, fills the container */
     }
  
     .product-card img{
         width:100%;
-        height:260px;
+        height:210px; /* matches .product-image's mobile height in the Premium section */
         object-fit:cover;
     }
  
