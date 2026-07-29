@@ -4,17 +4,16 @@
  
 .premium {
   width: 100%;
-  padding:80px 0;
   background: #ffffff;
-  padding: clamp(40px, 6vw, 80px) 40px; /* match navbar's horizontal padding, not 60px */
+  padding: clamp(40px, 6vw, 80px) 0; /* vertical only — container below handles horizontal */
   overflow: hidden; /* keeps entrance animations from causing scrollbars */
 }
 
 .premium-container{
     width:100%;
-    max-width:1263px;   /* Same as Figma */
+    max-width:1500px;   /* matches .nav-container */
     margin:0 auto;
-    padding:0 60px;     /* Left & right spacing */
+    padding:0 30px;     /* matches .navbar horizontal padding */
     box-sizing:border-box;
 }
  
@@ -23,7 +22,7 @@
 =========================== */
  
 .premium-header {
-  max-width: 1320px;
+  max-width: 100%;
   width: 100%;
   /* margin-left: 30px; */
   display: flex;
@@ -61,9 +60,9 @@
 .premium-title {
   margin: 0;
   font-family: "Libre Caslon Text", serif;
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: 52px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 60.2px;
   color: #1a0505;
 }
  
@@ -95,7 +94,7 @@
 ========================================== */
  
 .filter-buttons {
-  max-width: 1260px;
+  max-width: 100%;
   width: 100%;
   margin: 24px auto 0;
  
@@ -148,13 +147,13 @@
 ========================================== */
  
 .product-grid {
-  max-width: 1260px;
+  max-width: 100%;
   width: 100%;
   margin: 40px auto 0;
  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 20px;
 }
  
 /* ==========================================
@@ -163,7 +162,6 @@
  
 .product-item {
   width:100%;
-  max-width:403px;
   min-height:500px;  /* grows instead of clipping content */
   display:flex;
   flex-direction:column;
@@ -585,12 +583,6 @@
    RESPONSIVE
 ========================================== */
  
-@media (max-width: 1300px) {
-  .premium {
-    padding: clamp(40px, 6vw, 80px) 40px;
-  }
-}
- 
 /* @media (max-width: 992px) {
   .premium-header {
     flex-direction: column;
@@ -675,10 +667,6 @@
 
 @media (max-width:992px){
 
-  .premium-container{
-    padding:0 24px;
-  }
-
   .product-grid{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -688,12 +676,12 @@
 @media (max-width:768px){
 
   .premium-container{
-    padding:0 20px;
+    padding:0 20px; /* matches navbar's mobile horizontal padding */
   }
 
   .product-grid{
     grid-template-columns: 1fr;
-    gap:24px;
+    gap:20px;
   }
 
   .product-item{
@@ -709,10 +697,10 @@
 @media (max-width:480px){
 
     .premium{
-        padding:30px 12px;
+        padding:30px 0;
     }
     .premium-container{
-      padding: 30px 12px;
+      padding: 0 20px;
     }
     .premium-title{
         font-size:32px;

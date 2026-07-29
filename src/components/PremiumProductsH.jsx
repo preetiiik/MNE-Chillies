@@ -204,7 +204,7 @@ function PremiumProductsH() {
 
   return (
     <section className="premium" ref={sectionRef}>
-      <div className="container">
+      
       <div className="premium-container">
       <div className="premium-header">
 
@@ -267,7 +267,6 @@ function PremiumProductsH() {
 
         ))}
 
-      </div>
       </div>
       </div>
 
