@@ -5,12 +5,14 @@
 .capabilities-section{
     width:100%;
     background:#FCFBF9;
-    padding:40px 28px 120px;
+    padding:40px 0 120px;
 }
 
 .capabilities-container{
-    width:min(92%,1400px);
+    max-width:1400px;
     margin:0 auto;
+    padding:0 30px;
+    box-sizing:border-box;
 }
 
 /* ==========================================================
@@ -85,10 +87,10 @@
     display:block;
 
     font-family:Inter,sans-serif;
-    font-size:11px;
+    font-size:12px;
     font-weight:600;
 
-    letter-spacing:3px;
+    letter-spacing:2.5px;
     text-transform:uppercase;
 
     color:#A6000C;
@@ -99,9 +101,9 @@
 .capability-content h2{
 
     font-family:"Libre Caslon Text",serif;
-    font-size:52px;
+    font-size:48px;
     font-weight:700;
-    line-height:60px;
+    line-height:56px;
 
     color:#281717;
 
@@ -125,7 +127,7 @@
     font-family:Inter,sans-serif;
     font-size:16px;
     font-weight:400;
-    line-height:29px;
+    line-height:27px;
 
     color:#5D3F3C;
 
@@ -154,8 +156,9 @@
     padding-left:24px;
 
     font-family:Inter,sans-serif;
-    font-size:17px;
+    font-size:14px;
     font-weight:400;
+    line-height:22px;
 
     color:#4D3733;
 }
@@ -231,19 +234,24 @@
 
 .capabilities-section{
 
-    padding:80px 12px;
+    padding:80px 0;
+}
+
+.capabilities-container{
+
+    padding:0 20px;
 }
 
 .capability-content h2{
 
-    font-size:42px;
-    line-height:50px;
+    font-size:32px;
+    line-height:40px;
 }
 
 .capability-content p{
 
     font-size:15px;
-    line-height:28px;
+    line-height:24px;
 }
 
 .capability-image img{
@@ -258,7 +266,7 @@
 
 .capabilities-section{
 
-    padding:60px 12px;
+    padding:60px 0;
 }
 
 .capability-card{
@@ -266,12 +274,6 @@
     gap:40px;
 
     margin-bottom:70px;
-}
-
-.capability-content h2{
-
-    font-size:34px;
-    line-height:42px;
 }
 
 .capability-content h4{
@@ -282,12 +284,12 @@
 .capability-content p{
 
     font-size:15px;
-    line-height:26px;
+    line-height:24px;
 }
 
 .capability-content li{
 
-    font-size:15px;
+    font-size:14px;
 }
 
 .capability-image{

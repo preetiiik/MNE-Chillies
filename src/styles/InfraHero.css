@@ -27,7 +27,7 @@
 /* CONTENT */
 .infra-content{
     width:min(90%,600px);
-    margin-left:30px;
+    margin-left:10px;
     padding-top:50px;
     padding-bottom: 20px;
     display: flex;
@@ -128,7 +128,7 @@
     .infra-content{
         width:100%;
         margin:0;
-        padding-left:20px;
+        padding-left:16px;
         padding-right:20px;
         padding-top:120px;
         box-sizing:border-box;
@@ -204,7 +204,7 @@
     }
  
     .infra-content{
-        padding-left:20px;
+        padding-left:16px;
         padding-right:20px;
         padding-top:100px;
     }
