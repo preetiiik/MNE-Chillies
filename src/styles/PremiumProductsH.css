@@ -296,6 +296,37 @@
    align-items:flex-start;   /* ADD THIS */
   text-align:left;
 }
+
+/* ==========================================
+   SPEC ROW (ASTA / MOISTURE — INLINE W/ ICONS)
+========================================== */
+
+.spec-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.spec-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d3f3c;
+  white-space: nowrap;
+}
+
+.spec-item svg {
+  width: 13px;
+  height: 13px;
+  color: #a6000c;
+  flex-shrink: 0;
+}
  
 /* ==========================================
    SPECS BOX (ASTA / SHU / MOISTURE)
@@ -428,8 +459,8 @@
 } */
 .product-tags {
     display: flex;
-    flex-wrap: nowrap;      /* Keep all tags in one line */
-    gap: 4px;
+    flex-wrap: wrap;        /* allow wrap on narrow cards instead of clipping */
+    gap: 8px;
     width: 100%;
 }
 
@@ -438,20 +469,20 @@
     align-items: center;
     justify-content: center;
 
-    padding: 1px 4px;
+    padding: 6px 14px;
     border-radius: 999px;
     background: #f8ecec;
     border: 1px solid #efd5d5;
 
     font-family: "Inter", sans-serif;
-    font-size: 1px;        /* Reduce if needed */
+    font-size: 11px;
     font-weight: 500;
     line-height: 1;
 
     color: #a6000c;
 
-    white-space: nowrap;    /* Prevent text from wrapping */
-    flex: 0 0 auto;         /* Width based on content */
+    white-space: nowrap;
+    flex: 0 0 auto;
 }
 /* .tag {
   padding: 4px 16px;

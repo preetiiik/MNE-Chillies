@@ -223,9 +223,7 @@ function PremiumProductsH() {
         <div className="premium-right">
           <p>
             Sourced from Guntur's finest farms,
-            <br />
             processed with precision,
-            <br />
             exported globally.
           </p>
         </div>
