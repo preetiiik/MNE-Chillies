@@ -40,7 +40,7 @@
 
      background:#FAF8F5;
 
-    padding:40px;
+    padding:0px;
     border-radius:24px;
 
     box-sizing:border-box;
@@ -249,7 +249,7 @@
 
 .capabilities-container{
 
-    padding:0 20px;
+    padding:0 10px;
 }
 
 .capability-content h2{
@@ -277,6 +277,10 @@
 .capabilities-section{
 
     padding:60px 0;
+}
+.capabilities-container{
+
+    padding:0 10px;
 }
 
 .capability-card{

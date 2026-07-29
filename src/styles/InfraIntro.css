@@ -226,7 +226,7 @@
         width:100%;
         max-width:100%;
         margin:0 auto;
-        padding:0 20px;
+        padding:0 10px;
         gap:40px;
     }
 
@@ -272,13 +272,21 @@
 
     .infra-intro{
 
-        padding:60px 0;
+        padding:20px 0;
+        padding-left: 0px;
     }
 
     .infra-intro-left p{
 
         font-size:15px;
         line-height:26px;
+    }
+    .infra-intro-container{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+        padding:0 10px;
+        gap:40px;
     }
 
     .infra-stat{
