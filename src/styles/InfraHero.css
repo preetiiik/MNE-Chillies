@@ -5,7 +5,7 @@
 .infra-hero{
     position: relative;
     width: 100%;
-    max-height: 540px;
+    min-height: 450px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,82 +15,60 @@
 
 .infra-overlay{
     width: 100%;
-    max-height: 540px;
-    
+    min-height: 450px;
     background: linear-gradient(
         90deg,
-        rgba(22,14,10,0.68) 0%,
-        rgba(22,14,10,0.55) 38%,
-        rgba(18,14,12,0.42) 65%,
-        rgba(12,10,9,0.28) 100%
+        rgba(20,14,12,.72) 0%,
+        rgba(20,14,12,.45) 40%,
+        rgba(20,14,12,.08) 100%
     );
 }
 
-/* ===================================================
-   CONTENT
-=================================================== */
-
+/* CONTENT */
 .infra-content{
-    max-width: 1260px;
-    margin: 0 auto;
-    margin-left: 88px;
-    padding: 95px 20px 120px;
+    width:min(90%,600px);
+    margin-left:30px;
+    padding-top:50px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-
-/* ===================================================
-   TAG
-=================================================== */
-
+/* TAG */
 .infra-tag{
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-
-    padding: 13px 30px;
-
-    border: 1px solid rgba(255,255,255,.22);
+    gap: 8px;
+    padding: 6px 16px;
+    border: 0.67px solid rgba(255,255,255,.25);
     border-radius: 999px;
-
-    backdrop-filter: blur(8px);
-
+    background: rgba(255,255,255,.08);
     font-family: Inter, sans-serif;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1.4px;
     line-height: 18px;
     text-transform: uppercase;
-
     color: rgba(255,255,255,.92);
 }
 
 .infra-tag .dot{
-    width: 14px;
-    height: 14px;
-
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: #D96D6D;
-
     flex-shrink: 0;
 }
 
-/* ===================================================
-   HEADING
-=================================================== */
-
+/* HEADING */
 .infra-content h1{
-    margin-top: 28px;
-
-    max-width: 520px;
-
+    margin-top: 24px;
+    max-width: 560px;
     font-family: "Libre Caslon Text", serif;
     font-size: 56px;
     font-weight: 700;
-    line-height: 67.5px;
-
+    line-height: 1.15;
     color: #FFFFFF;
 }
 
@@ -98,137 +76,89 @@
     color: #FF9094;
 }
 
-/* ===================================================
-   PARAGRAPH
-=================================================== */
-
+/* PARAGRAPH */
 .infra-content p{
-    margin-top: 26px;
-
-    width: 480px;
-    max-width: 100%;
-
+    margin-top: 20px;
+    max-width: 480px;
     font-family: Inter, sans-serif;
     font-size: 17px;
     font-weight: 400;
-    line-height: 28px;
-
+    line-height: 1.65;
     color: rgba(255,255,255,.75);
 }
+
 /* ===================================================
    RESPONSIVE
 =================================================== */
 
-@media (max-width:1200px){
-
-    .infra-content{
-
-        padding:90px 40px 110px;
-    }
-
-    .infra-content h1{
-
-        font-size:50px;
-        line-height:60px;
-    }
-
-}
-
-
-@media (max-width:992px){
+/* Tablet (≤1024px) */
+@media (max-width:1024px){
 
     .infra-hero,
     .infra-overlay{
-
-        min-height:85vh;
+        min-height:520px;
     }
 
     .infra-content{
-    width:92%;
-    margin:0 auto;
-    padding:90px 0 40px;
-    align-items:flex-start;
-}
+        width:min(90%,600px);
+        margin-left:30px;
+        padding-top:80px;
+    }
 
     .infra-content h1{
-
         font-size:46px;
-        line-height:56px;
-        max-width:480px;
+        line-height:1.2;
     }
 
     .infra-content p{
-
-        width:440px;
         font-size:16px;
-        line-height:27px;
+        line-height:1.6;
     }
-    .infra-intro-container{
-    width:92%;
-    margin:0 auto;
-    padding:0;
 }
 
-}
-
-
+/* Mobile (≤768px) */
 @media (max-width:768px){
 
     .infra-hero,
     .infra-overlay{
-
-        min-height:auto;
-        height: auto;    
-}
+        min-height:460px;
+    }
 
     .infra-content{
-    width:92%;
-    margin:0 auto;
-    padding:90px 0 40px;
-    align-items:flex-start;
-}
+        width:100%;
+        margin:0;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:60px;
+        box-sizing:border-box;
+    }
 
     .infra-tag{
-
-        padding:12px 24px;
-        font-size:11px;
-        letter-spacing:1.2px;
+        padding:5px 12px;
+        font-size:10px;
+        letter-spacing:1px;
     }
 
     .infra-tag .dot{
-
-        width:12px;
-        height:12px;
+        width:8px;
+        height:8px;
     }
 
     .infra-content h1{
-
         margin-top:24px;
-
-        font-size:40px;
-        line-height:48px;
-
+        font-size:32px;
+        line-height:1.2;
         max-width:100%;
     }
 
     .infra-content p{
-
         width:100%;
-        margin-top:22px;
-
-        font-size:15px;
-        line-height:26px;
+        margin-top:20px;
+        font-size:14px;
+        line-height:1.6;
     }
 
-    /* .infra-stats{
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:flex-start;
-        gap:24px;
-        flex-wrap:nowrap;
-    } */
-     .infra-stats{
+    .infra-stats{
         display:grid !important;
         grid-template-columns:repeat(2,1fr);
         gap:20px;
@@ -256,41 +186,44 @@
         font-size:14px;
         line-height:20px;
     }
+
     .infra-intro-container{
-    width:92%;
-    margin:0 auto;
-    padding:0;
+        width:92%;
+        margin:0 auto;
+        padding:0;
+    }
 }
 
-
-}
-
-
+/* Small Mobile (≤480px) */
 @media (max-width:480px){
 
-    .infra-content{
+    .infra-hero,
+    .infra-overlay{
+        min-height:400px;
+    }
 
-        padding: 60px 20px 35px;
+    .infra-content{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:40px;
     }
 
     .infra-tag{
-
-        padding:10px 20px;
+        padding:5px 12px;
         font-size:10px;
         letter-spacing:1px;
     }
 
     .infra-content h1{
-
-        font-size:32px;
-        line-height:40px;
+        font-size:28px;
+        line-height:1.2;
     }
 
     .infra-content p{
-
-        font-size:14px;
-        line-height:24px;
+        font-size:13.5px;
+        line-height:1.55;
     }
+
     .infra-stats{
         gap:16px;
     }
@@ -306,36 +239,27 @@
     .infra-stat span{
         font-size:13px;
     }
-
-
 }
 
 /* ===================================================
    AOS SMOOTHNESS
 =================================================== */
-
 .infra-content,
 .infra-tag,
 .infra-content h1,
 .infra-content p{
-
     will-change:transform,opacity;
 }
 
 /* ===================================================
    OPTIONAL HOVER EFFECT
 =================================================== */
-
 .infra-tag{
-
     transition:all .35s ease;
 }
 
 .infra-tag:hover{
-
     border-color:rgba(255,255,255,.45);
-
     background:rgba(255,255,255,.05);
-
     transform:translateY(-2px);
 }
