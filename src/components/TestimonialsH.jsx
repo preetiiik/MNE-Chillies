@@ -78,12 +78,24 @@ const testimonials = [
 ];
 
 const ROTATE_MS = 4000;
-const FADE_MS = 350;
+
+// Tripled dataset lets the track slide continuously in either direction;
+// the "middle" copy is the canonical one, and position snaps back into
+// it (invisibly, mid-loop) once it drifts into a neighboring copy.
+const TOTAL = testimonials.length;
+const EXTENDED = [...testimonials, ...testimonials, ...testimonials];
 
 export default function TestimonialsSection() {
-  const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [position, setPosition] = useState(TOTAL); // start at first "real" copy
+  const [noTransition, setNoTransition] = useState(false);
+  const [step, setStep] = useState(0);
+  const [viewportWidth, setViewportWidth] = useState(0);
+
+  const viewportRef = useRef(null);
+  const slotRefs = useRef([]);
   const timerRef = useRef(null);
+
+  const activeIndex = ((position % TOTAL) + TOTAL) % TOTAL;
 
   useEffect(() => {
     startTimer();
@@ -91,101 +103,137 @@ export default function TestimonialsSection() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    measure();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [position]);
+
+  function measure() {
+    if (!viewportRef.current) return;
+    const vw = viewportRef.current.offsetWidth;
+    const s0 = slotRefs.current[0];
+    const s1 = slotRefs.current[1];
+    if (!s0 || !s1) return;
+    setViewportWidth(vw);
+    setStep(s1.offsetLeft - s0.offsetLeft);
+  }
+
   function startTimer() {
     clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      changeTo((prev) => (prev + 1) % testimonials.length);
+      slideBy(1);
     }, ROTATE_MS);
   }
 
-  function changeTo(next) {
-    setVisible(false);
-    setTimeout(() => {
-      setIndex((prev) => (typeof next === "function" ? next(prev) : next));
-      setVisible(true);
-    }, FADE_MS);
+  function slideBy(delta) {
+    setNoTransition(false);
+    setPosition((p) => p + delta);
   }
 
   function goTo(i) {
-    changeTo(i);
+    let delta = i - activeIndex;
+    if (delta > TOTAL / 2) delta -= TOTAL;
+    if (delta < -TOTAL / 2) delta += TOTAL;
+    if (delta !== 0) slideBy(delta);
     startTimer();
   }
 
-  const total = testimonials.length;
-  const prevIndex = (index - 1 + total) % total;
-  const nextIndex = (index + 1) % total;
-  const t = testimonials[index];
-  const prevT = testimonials[prevIndex];
-  const nextT = testimonials[nextIndex];
-
-  function renderCard(item, extraClass) {
-    return (
-
-      <div className={`testimonial-card ${extraClass}`}>
-        <div>
-          <div className="quote-mark">&#8221;</div>
-          <p className="testimonial-text">{item.quote}</p>
-        </div>
-        <div className="testimonial-footer">
-          <div className="avatar" style={{ background: item.color }}>
-            {item.initials}
-          </div>
-          <div className="author-info">
-            <h4>{item.name}</h4>
-            <span>{item.role}</span>
-          </div>
-        </div>
-      </div>
-    );
+  // When the track has slid far enough to be sitting on a cloned copy,
+  // snap it back into the canonical middle copy with no transition —
+  // visually identical, so nobody sees the jump.
+  function handleTransitionEnd() {
+    if (position >= TOTAL * 2) {
+      setNoTransition(true);
+      setPosition((p) => p - TOTAL);
+    } else if (position < TOTAL) {
+      setNoTransition(true);
+      setPosition((p) => p + TOTAL);
+    }
   }
+
+  useEffect(() => {
+    if (noTransition) {
+      const id = requestAnimationFrame(() => setNoTransition(false));
+      return () => cancelAnimationFrame(id);
+    }
+  }, [noTransition]);
+
+  const visibleCount = step ? Math.max(1, Math.round(viewportWidth / step)) : 1;
+  const centerOffset = (visibleCount - 1) / 2;
+  const translateX = step ? -((position - centerOffset) * step) : 0;
 
   return (
     <section className="testimonials-section">
       <div className="container">
-      <div className="testimonials-container">
-        <div className="testimonials-heading">
-          <span className="section-label">Testimonials</span>
-          <h2>
-            Trusted by Global
-            <br />
-            Food Brands
-          </h2>
-        </div>
-
-        <div className="testimonial-row">
-          <div
-            className="testimonial-side"
-            style={{ opacity: visible ? 1 : 0 }}
-          >
-            {renderCard(prevT, "is-side")}
+        <div className="testimonials-container">
+          <div className="testimonials-heading">
+            <span className="section-label">Testimonials</span>
+            <h2>
+              Trusted by Global
+              <br />
+              Food Brands
+            </h2>
           </div>
 
-          <div
-            className="testimonial-center"
-            style={{ opacity: visible ? 1 : 0 }}
-          >
-            {renderCard(t, "is-active")}
+          <div className="testimonial-viewport" ref={viewportRef}>
+            <div
+              className={`testimonial-track${noTransition ? " no-transition" : ""}`}
+              style={{ transform: `translateX(${translateX}px)` }}
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {EXTENDED.map((item, k) => {
+                const offset = k - position;
+                const slotClass =
+                  offset === 0
+                    ? "is-active"
+                    : Math.abs(offset) === 1
+                    ? "is-side"
+                    : "is-far";
+                return (
+                  <div
+                    className={`testimonial-slot ${slotClass}`}
+                    key={k}
+                    ref={(el) => (slotRefs.current[k] = el)}
+                  >
+                    <div className="testimonial-card">
+                      <div>
+                        <div className="quote-mark">&#8221;</div>
+                        <p className="testimonial-text">{item.quote}</p>
+                      </div>
+                      <div className="testimonial-footer">
+                        <div className="avatar" style={{ background: item.color }}>
+                          {item.initials}
+                        </div>
+                        <div className="author-info">
+                          <h4>{item.name}</h4>
+                          <span>{item.role}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
-          <div
-            className="testimonial-side"
-            style={{ opacity: visible ? 1 : 0 }}
-          >
-            {renderCard(nextT, "is-side")}
+          <div className="testimonial-dots">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                className={`testimonial-dot${i === activeIndex ? " active" : ""}`}
+                aria-label={`Show testimonial ${i + 1}`}
+                onClick={() => goTo(i)}
+              />
+            ))}
           </div>
         </div>
-
-        <div className="testimonial-dots">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              className={`testimonial-dot${i === index ? " active" : ""}`}
-              aria-label={`Show testimonial ${i + 1}`}
-              onClick={() => goTo(i)}
-            />
-          ))}
-        </div>
-      </div>
       </div>
     </section>
   );
