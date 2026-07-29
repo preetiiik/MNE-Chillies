@@ -392,10 +392,11 @@
   }
 
   .process-line {
-    display: none;
+    display: none; /* the desktop version is positioned via JS for a horizontal layout — not usable here */
   }
 
   .process-card {
+    position: relative; /* anchor for the vertical connector below */
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -403,6 +404,19 @@
     align-items: flex-start;
     gap: 18px;
     box-sizing: border-box;
+  }
+
+  /* Vertical line from the bottom of each circle down to the next one,
+     mirroring the desktop horizontal connector. */
+  .process-card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 27px;                       /* centers on the 56px circle */
+    top: 56px;                        /* starts at the bottom of the circle */
+    width: 2px;
+    height: calc(100% - 56px + 32px); /* rest of this card's height + the gap to the next card */
+    background: rgba(166, 0, 12, 0.35);
   }
 
   .process-circle {
@@ -437,7 +451,7 @@
     max-width:100%;
     display:flex;
     flex-direction:column;
-    gap:0px;
+    gap:40px; /* space between the offer cards and the "WHAT WE OFFER" label below them */
     margin:0;
     padding:0 20px; /* matches navbar's mobile horizontal padding */
     box-sizing:border-box;
