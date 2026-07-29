@@ -109,14 +109,14 @@ function Commitment() {
 
           <button
             className="learn-btn"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/about")}
           >
             Learn More
           </button>
 
           <button
             className="farmers-btn"
-            onClick={() => navigate("/about-us")}
+            onClick={() => navigate("/contact")}
           >
             Meet Our Farmers
           </button>

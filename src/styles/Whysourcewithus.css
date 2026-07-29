@@ -153,6 +153,8 @@
     position:relative;
     width:100%;
     max-width:630px;
+    overflow:visible;
+    z-index:1;
 }
  
 .wsw-image-wrap img{
@@ -169,6 +171,7 @@
     display:flex;
     flex-direction:column;
     border-radius:16px;
+    z-index:2;
 }
  
 /* top-right solid red badge */
@@ -202,7 +205,7 @@
 /* bottom-left white floating card */
  
 .wsw-badge-card{
-    bottom:-20px;
+    bottom:20px;
     left:-20px;
  
     flex-direction:row;
@@ -290,7 +293,7 @@
     }
  
     .wsw-badge-card{
-        bottom:-14px;
+        bottom:14px;
         left:-14px;
         padding:14px;
         gap:8px;

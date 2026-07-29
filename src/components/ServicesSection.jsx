@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const services = [
@@ -78,11 +79,13 @@ export default function ServicesSection() {
             runs seamlessly. Whether you need bulk raw chilies or custom-branded
             retail packs, we have the infrastructure and expertise to deliver.
           </p>
-
-          <a href="/" className="service-btn">
-            Learn More About Services
-            <span>→</span>
-          </a>
+          
+          <Link
+            to="/services"
+            className="service-btn"
+          >
+            Learn More About Services <span>→</span>
+          </Link>
 
         </div>
 
