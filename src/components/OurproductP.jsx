@@ -42,7 +42,7 @@ function OurProductsSection() {
 
           <div className="product-type">
 
-            <div className="product-info">
+            <div className="our-product-info">
               <h3>Dry Chillies</h3>
 
               <p>
@@ -61,7 +61,7 @@ function OurProductsSection() {
 
           <div className="product-type">
 
-            <div className="product-info">
+            <div className="our-product-info">
               <h3>Chilli Flakes</h3>
 
               <p>
@@ -80,7 +80,7 @@ function OurProductsSection() {
 
           <div className="product-type">
 
-            <div className="product-info">
+            <div className="our-product-info">
               <h3>Chilli Powder</h3>
 
               <p>

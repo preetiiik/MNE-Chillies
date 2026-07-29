@@ -102,13 +102,13 @@
     gap:6px;
 }
 
-.product-info{
+.our-product-info{
     width:280px;
     text-align:right;
 }
 
 /* Card title - matches sitewide card-title style */
-.product-info h3 {
+.our-product-info h3 {
     font-family: "Libre Caslon Text", serif;
     font-size: 22px;
     font-weight: 700;
@@ -118,7 +118,7 @@
     text-align: right;
 }
 
-.product-info p {
+.our-product-info p {
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -160,7 +160,7 @@
     }
 
     .products-center p,
-    .product-info {
+    .our-product-info {
         width: 100%;
     }
 
@@ -170,11 +170,11 @@
         flex-direction: column-reverse;
     }
 
-    .product-info {
+    .our-product-info {
         text-align: center;
     }
 
-    .product-info h3{
+    .our-product-info h3{
         text-align:center;
     }
 }
@@ -231,13 +231,13 @@
         gap:16px;
     }
 
-    .product-info{
+    .our-product-info{
         width:auto;
         text-align:left;
         flex:1;
     }
 
-    .product-info h3{
+    .our-product-info h3{
         text-align:left;
     }
 
