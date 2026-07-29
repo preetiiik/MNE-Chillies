@@ -212,6 +212,37 @@
 ========================================== */
 
 @media (max-width:768px){
+    .contact-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+.contact-overlay{
+    position: relative;
+    z-index: 2;
+}
+
+.contact-tag{
+    color: #FF9090;
+}
+
+.contact-overlay h2{
+    color: #0b0909;
+    text-shadow: 0 4px 15px rgba(0,0,0,.5);
+}
+
+.contact-descriptionf{
+    color: rgba(7, 6, 6, 0.95);
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+}
     .contact-buttons{
         display:flex;
         flex-direction:row;
