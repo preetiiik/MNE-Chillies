@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Caslon+Text:wght@700&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-html,
-body,
-#root {
-  width: 100%;
-  overflow-x: hidden;
+html, body{
+    width:100%;
+    overflow-x:hidden;
 }
 
 body {
