@@ -269,7 +269,7 @@
 
     .processing-container{
 
-        padding:0 20px;
+        padding:0 10px;
     }
 
     .processing-left h2{
@@ -314,6 +314,10 @@
     .processing-section{
 
         padding:60px 0;
+    }
+    .processing-container{
+
+        padding:0 10px;
     }
 
     .processing-left p{
