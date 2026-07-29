@@ -16,6 +16,7 @@ function WhoAreWe() {
           <span
             className="section-tag"
             data-aos="fade-right"
+            data-aos-once="true"
             data-aos-duration="800"
           >
             OUR HERITAGE
@@ -23,6 +24,7 @@ function WhoAreWe() {
 
           <h2
             data-aos="fade-right"
+            data-aos-once="true"
             data-aos-delay="150"
             data-aos-duration="800"
           >
@@ -31,6 +33,7 @@ function WhoAreWe() {
 
           <p
             data-aos="fade-right"
+            data-aos-once="true"
             data-aos-delay="300"
             data-aos-duration="800"
           >
@@ -45,6 +48,7 @@ function WhoAreWe() {
             <div
               className="gallery-item"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="450"
               data-aos-duration="700"
             >
@@ -55,6 +59,7 @@ function WhoAreWe() {
             <div
               className="gallery-item"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="600"
               data-aos-duration="700"
             >
@@ -65,6 +70,7 @@ function WhoAreWe() {
             <div
               className="gallery-item"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="750"
               data-aos-duration="700"
             >
@@ -78,6 +84,7 @@ function WhoAreWe() {
             href="#"
             className="read-more"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="900"
             data-aos-duration="700"
           >
@@ -86,12 +93,7 @@ function WhoAreWe() {
 
         </div>
 
-        <div
-          className="who-image"
-          data-aos="fade-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
+        <div className="who-image">
 
           <div className="corner top"></div>
 
