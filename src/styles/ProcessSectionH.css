@@ -6,13 +6,14 @@
   width: 100%;
   margin-left: 0;
   background: #f9f6f2;
-  padding: 64px 28px 80px;
+  padding: 64px 0 80px; /* vertical only — container below handles horizontal */
 }
 
 .process-container{
-    width:min(92%,1400px);
+    width:100%;
+    max-width:1500px;   /* matches .nav-container */
     margin:0 auto;
-    padding:0;
+    padding:0 30px;     /* matches .navbar horizontal padding */
     box-sizing:border-box;
 }
 
@@ -41,7 +42,7 @@
   font-family: "Libre Caslon Text", serif;
   font-size: 52px;
   font-weight: 700;
-  line-height: 57.2px;
+  line-height: 60.2px;
   color: #1a0505;
 }
 
@@ -182,12 +183,15 @@
 .services-section {
   width: 100%;
   background: #ffffff;
-  padding: 90px 28px;
+  padding: 90px 0;
 }
 
 .services-container{
-    width:min(92%,1400px);
-    margin:auto;
+    width:100%;
+    max-width:1500px;   /* matches .nav-container */
+    margin:0 auto;
+    padding:0 30px;     /* matches .navbar horizontal padding */
+    box-sizing:border-box;
     display:flex;
     justify-content:flex-start;
     align-items:flex-start;
@@ -201,7 +205,7 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .service-card {
@@ -273,7 +277,7 @@
 .services-content h2 {
   font-family: "Libre Caslon Text", serif;
   font-size: 52px;
-  line-height: 57.2px;
+  line-height: 60.2px;
   font-weight: 700;
 
   color: #1a0505;
@@ -360,13 +364,14 @@
   /* PROCESS SECTION */
 
   .process-section {
-    padding: 60px 16px;
+    padding: 60px 0;
   }
 
   .process-container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 20px; /* matches navbar's mobile horizontal padding */
     box-sizing: border-box;
   }
 
@@ -423,7 +428,7 @@
   /* SERVICES SECTION */
 
 .services-section{
-    padding:60px 16px;
+    padding:60px 0;
     overflow:hidden;
 }
 
@@ -434,7 +439,8 @@
     flex-direction:column;
     gap:0px;
     margin:0;
-    padding:0;
+    padding:0 20px; /* matches navbar's mobile horizontal padding */
+    box-sizing:border-box;
 }
 
 .services-content{
@@ -478,13 +484,27 @@ body {
   overflow-x: hidden;
 }
 
-.services-section,
-.services-container,
+.services-section {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.services-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
 .services-content {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding-left: 16px !important;
-  padding-right: 16px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 }
