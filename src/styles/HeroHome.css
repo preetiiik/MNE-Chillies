@@ -140,63 +140,63 @@
    Tablet (≤1024px)
 ========================================== */
 @media (max-width: 1024px) {
-
+ 
   .home-hero {
-    min-height: 520px;
+    min-height:540px;
   }
-
+ 
   .home-hero-content {
     width:min(90%,600px);
     margin-left:30px;
-    padding-top: 80px;
+    padding-top:110px;
   }
-
+ 
   .home-hero-title {
     font-size: 46px;
     line-height: 1.2;
   }
-
+ 
   .home-hero-description {
     font-size: 16px;
     line-height: 1.6;
   }
 }
-
+ 
 /* ==========================================
    Mobile (≤768px)
 ========================================== */
 @media (max-width: 768px) {
-
+ 
   .home-hero {
-    min-height: 460px;
+    min-height:700px;
     background-position: 68% center;
   }
-
+ 
   .home-hero-content {
     width: 100%;
     max-width: 100%;
     margin:0;
     padding-left:20px;
     padding-right:20px;
-    padding-top:60px;
+    padding-top:120px;
     box-sizing:border-box;
   }
-
+ 
   .home-hero-badge {
     font-size: 10px;
     padding: 5px 12px;
   }
-
+ 
   .home-hero-title {
     font-size: 32px;
     line-height: 1.2;
   }
-
+ 
   .home-hero-description {
     font-size: 14px;
     line-height: 1.6;
   }
-
+ 
   .home-hero-buttons{
     display: flex;
     flex-direction: column;
@@ -205,7 +205,7 @@
     width: 100%;
     max-width: 220px;
   }
-
+ 
   .home-primary-btn,
   .home-secondary-btn{
     width: 100%;
@@ -213,38 +213,39 @@
     font-size: 15px;
   }
 }
-
+ 
 /* ==========================================
    Small Mobile (≤480px)
 ========================================== */
 @media (max-width: 480px) {
-
+ 
   .home-hero {
-    min-height: 400px;
+    min-height:550px;
     background-position: 72% center;
+    padding-top: 0px;
   }
-
+ 
   .home-hero-content {
     padding-left:20px;
     padding-right:20px;
-    padding-top:40px;
+    padding-top:100px;
   }
-
+ 
   .home-hero-title {
     font-size: 28px;
     line-height: 1.2;
   }
-
+ 
   .home-hero-description {
     font-size: 13.5px;
     line-height: 1.55;
   }
-
+ 
   .home-hero-buttons {
     flex-direction: column;
     gap: 12px;
   }
-
+ 
   .home-primary-btn,
   .home-secondary-btn {
     width: 100%;

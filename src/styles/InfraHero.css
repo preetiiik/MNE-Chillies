@@ -87,77 +87,78 @@
     color: rgba(255,255,255,.75);
 }
 
+ 
 /* ===================================================
    RESPONSIVE
 =================================================== */
-
+ 
 /* Tablet (≤1024px) */
 @media (max-width:1024px){
-
+ 
     .infra-hero,
     .infra-overlay{
-        min-height:520px;
+        min-height:540px;
     }
-
+ 
     .infra-content{
         width:min(90%,600px);
         margin-left:30px;
-        padding-top:80px;
+        padding-top:110px;
     }
-
+ 
     .infra-content h1{
         font-size:46px;
         line-height:1.2;
     }
-
+ 
     .infra-content p{
         font-size:16px;
         line-height:1.6;
     }
 }
-
+ 
 /* Mobile (≤768px) */
 @media (max-width:768px){
-
+ 
     .infra-hero,
     .infra-overlay{
-        min-height:460px;
+        min-height:500px;
     }
-
+ 
     .infra-content{
         width:100%;
         margin:0;
         padding-left:20px;
         padding-right:20px;
-        padding-top:60px;
+        padding-top:120px;
         box-sizing:border-box;
     }
-
+ 
     .infra-tag{
         padding:5px 12px;
         font-size:10px;
         letter-spacing:1px;
     }
-
+ 
     .infra-tag .dot{
         width:8px;
         height:8px;
     }
-
+ 
     .infra-content h1{
         margin-top:24px;
         font-size:32px;
         line-height:1.2;
         max-width:100%;
     }
-
+ 
     .infra-content p{
         width:100%;
         margin-top:20px;
         font-size:14px;
         line-height:1.6;
     }
-
+ 
     .infra-stats{
         display:grid !important;
         grid-template-columns:repeat(2,1fr);
@@ -165,82 +166,82 @@
         width:100%;
         justify-items:start;
     }
-
+ 
     .infra-stat{
         flex:1;
         min-width:0;
         gap:12px;
     }
-
+ 
     .infra-border{
         height:52px;
     }
-
+ 
     .infra-stat h4{
         font-size:14px;
         line-height:20px;
         white-space: nowrap;
     }
-
+ 
     .infra-stat span{
         font-size:14px;
         line-height:20px;
     }
-
+ 
     .infra-intro-container{
         width:92%;
         margin:0 auto;
         padding:0;
     }
 }
-
+ 
 /* Small Mobile (≤480px) */
 @media (max-width:480px){
-
+ 
     .infra-hero,
     .infra-overlay{
         min-height:400px;
     }
-
+ 
     .infra-content{
         padding-left:20px;
         padding-right:20px;
-        padding-top:40px;
+        padding-top:100px;
     }
-
+ 
     .infra-tag{
         padding:5px 12px;
         font-size:10px;
         letter-spacing:1px;
     }
-
+ 
     .infra-content h1{
         font-size:28px;
         line-height:1.2;
     }
-
+ 
     .infra-content p{
         font-size:13.5px;
         line-height:1.55;
     }
-
+ 
     .infra-stats{
         gap:16px;
     }
-
+ 
     .infra-stat{
         gap:10px;
     }
-
+ 
     .infra-stat h4{
         font-size:13px;
     }
-
+ 
     .infra-stat span{
         font-size:13px;
     }
 }
-
+ 
 /* ===================================================
    AOS SMOOTHNESS
 =================================================== */
@@ -250,14 +251,14 @@
 .infra-content p{
     will-change:transform,opacity;
 }
-
+ 
 /* ===================================================
    OPTIONAL HOVER EFFECT
 =================================================== */
 .infra-tag{
     transition:all .35s ease;
 }
-
+ 
 .infra-tag:hover{
     border-color:rgba(255,255,255,.45);
     background:rgba(255,255,255,.05);
