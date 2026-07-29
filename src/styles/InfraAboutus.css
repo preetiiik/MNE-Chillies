@@ -157,6 +157,11 @@
         margin-right:0;
     }
 
+    .infra-title{
+        font-size:32px;
+        line-height:40px;
+    }
+
     .infra-cards{
         grid-template-columns:repeat(2,1fr);
         gap:12px;
