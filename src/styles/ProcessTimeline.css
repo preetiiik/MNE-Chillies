@@ -13,8 +13,8 @@
 .pt-container{
     max-width:1360px;
     margin:auto;
-    padding-left: 60px;
-    padding-right: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
  
 /* =====================================================
@@ -47,9 +47,9 @@
  
 .pt-container h2{
     font-family:"Libre Caslon Text",serif;
-    font-size:50px;
+    font-size:48px;
     font-weight:700;
-    line-height:54px;
+    line-height:56px;
  
     color:#FFFFFF;
  
@@ -189,15 +189,17 @@
     }
 }
  
+@media (max-width:768px){
+    .pt-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media (max-width:640px){
 
-    .pt-container{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
     .pt-container h2{
-        font-size: 34px;
+        font-size: 32px;
         line-height: 40px;
         margin-bottom: 36px;
     }
@@ -214,19 +216,4 @@
     .pt-section{
         padding:48px 0;
     }
- 
-    /* .pt-container h2{
-        font-size:34px;
-        line-height:40px;
-        margin-bottom:36px;
-    }
- 
-    .pt-step{
-        width:calc(50% - 12px);
-    }
- 
-    .pt-step p{
-        white-space:normal;
-        max-width:140px;
-    } */
 }

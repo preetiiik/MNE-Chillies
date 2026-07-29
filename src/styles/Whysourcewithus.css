@@ -12,7 +12,7 @@
     max-width:1260px;
     width:100%;
     margin:0 auto;
-    padding:0 20px;
+    padding:0 30px;
     box-sizing:border-box;
 
     display:grid;
@@ -28,8 +28,6 @@
 .wsw-left{
     display:flex;
     flex-direction:column;
-    padding-left: 60px;
-    padding-right: 45px;
     width:100%;
     max-width:704px;
 }
@@ -60,9 +58,9 @@
  
 .wsw-left h2{
     font-family:"Libre Caslon Text",serif;
-    font-size:52px;
+    font-size:48px;
     font-weight:700;
-    line-height:57.6px;
+    line-height:56px;
  
     color:#1A0505;
  
@@ -121,7 +119,7 @@
  
 .wsw-feature-text h4{
     font-family:"Libre Caslon Text",serif;
-    font-size:16px;
+    font-size:18px;
     font-weight:700;
     line-height:24px;
  
@@ -259,12 +257,10 @@
  
 @media (max-width:768px){
     .wsw-container{
-    padding: 0 12px;
+    padding: 0 20px;
 }
 
 .wsw-left{
-    padding-left: 0;
-    padding-right: 0;
     max-width: 100%;
 }
 
@@ -273,21 +269,15 @@
 .wsw-intro{
     text-align: left;
 }
+
+.wsw-left h2{
+    font-size:32px;
+    line-height:40px;
+}
  
     .wsw-section{
         padding:60px 0;
     }
- 
- 
-    /* .wsw-left h2{
-        font-size:38px;
-        line-height:44px;
-    }
- 
-    .wsw-intro{
-        font-size:15px;
-        line-height:25px;
-    } */
  
     .wsw-badge-solid{
         top:-10px;
@@ -316,11 +306,6 @@
 }
  
 @media (max-width:480px){
- 
-    .wsw-left h2{
-        font-size:32px;
-        line-height:38px;
-    }
  
     .wsw-feature-row{
         gap:12px;

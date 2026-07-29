@@ -25,6 +25,7 @@
     max-width: 760px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .contact-descriptionf{
@@ -234,10 +235,14 @@
         min-height:auto;
         padding:60px 20px;
     }
+    .contact-section::before{
+    background: rgba(255,255,255,0.45);
+}
 
     .contact-overlay{
         width:100%;
         max-width:600px;
+    
     }
 
     .contact-tag{
@@ -318,6 +323,9 @@
         width:100%;
         gap:14px;
     }
+    .contact-section::before{
+    background: rgba(255,255,255,0.45);
+}
 
     /* .primary-btn,
     .secondary-btn{
