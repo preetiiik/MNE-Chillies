@@ -333,9 +333,9 @@
         overflow: hidden;
         max-width: 100%;
     }
-    .flying-chilli{
-        width:clamp(80px, 20vw, 100px);
-        max-width: 45vw;
+    .flying-chilli,
+    .chilli-flake{
+        display:none;
     }
     .bowl-img{
         width:min(90%,500px);

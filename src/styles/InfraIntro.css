@@ -6,9 +6,9 @@
     width:100%;
     background:#E3DFD5;
     padding:10px 0 0px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     overflow:hidden; 
-    min-height: 700px; 
+    /* min-height: 700px;  */
     height:auto;
 }
 
@@ -219,7 +219,7 @@
 @media (max-width:768px){
 
     .infra-intro{
-        padding:60px 0;
+        padding:30px 0;
     }
 
     .infra-intro-container{
@@ -272,7 +272,7 @@
 
     .infra-intro{
 
-        padding:20px 0;
+        padding:0px 0;
         padding-left: 0px;
     }
 

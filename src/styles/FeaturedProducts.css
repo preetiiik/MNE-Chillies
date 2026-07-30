@@ -152,7 +152,7 @@
 .fp-card.reverse .fp-content{
 
     order:1;
-    padding:22px;
+    padding:22px 0 22px 55px;
 
 }
 
@@ -281,7 +281,7 @@
 
 .fp-content{
 
-    padding:55px 55px 55px 0;
+    padding:22px 55px 22px 0;
 
     display:flex;
 
