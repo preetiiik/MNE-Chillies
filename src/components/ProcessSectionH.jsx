@@ -139,8 +139,8 @@ export default function ProcessSection() {
   };
 
   return (
-    <section className="process-section" data-aos="fade-right">
-      <div className="container">
+    <section className="process-section">
+      <div className="container" data-aos="fade-right">
         <div className="process-container">
           <div className="process-heading">
             <span className="process-label">OUR PROCESS</span>
