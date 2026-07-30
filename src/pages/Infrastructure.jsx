@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar";
 import MarqueeStrip from "../components/MarqueeStrip";
 import InfraIntro from "../components/InfraIntro";
 
-import hero from "../assets/images/infra-hero.png";
+import hero from "../assets/images/infra-hero.webp";
 import ProcessSection from "../components/ProcessSectionH";
 import ProcessingSection from "../components/ProcessingSection";
 import CapabilitiesSection from "../components/CapabilitiesSection";

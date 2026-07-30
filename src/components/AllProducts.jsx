@@ -2,13 +2,13 @@ import { useNavigate } from "react-router-dom";
 
 import "../styles/AllProducts.css";
 
-import teja from "../assets/images/teja-s17.png";
-import sannam from "../assets/images/334-s4-sannam.png";
-import byadagi from "../assets/images/byadagi.png";
-import variety341 from "../assets/images/341-variety.png";
-import dd from "../assets/images/dd.png";
-import powder from "../assets/images/mild-chilli-powder.png";
-import flakes from "../assets/images/chilli-flakes.png";
+import teja from "../assets/images/teja-s17.webp";
+import sannam from "../assets/images/334-s4-sannam.webp";
+import byadagi from "../assets/images/byadagi.webp";
+import variety341 from "../assets/images/341-variety.webp";
+import dd from "../assets/images/dd.webp";
+import powder from "../assets/images/mild-chilli-powder.webp";
+import flakes from "../assets/images/chilli-flakes.webp";
 
 function AllProducts() {
 

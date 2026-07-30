@@ -3,37 +3,37 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: "/images/chilli-pepper.png",
+    icon: "/images/chilli-pepper.webp",
     title: "CMF Processing",
     description:
       "State-of-the-art cleaning, sorting, and steam sterilization facilities.",
   },
   {
-    icon: "/images/detergent.png",
+    icon: "/images/detergent.webp",
     title: "Sorting & Grading",
     description:
       "Machine + manual sorting for uniform quality and size.",
   },
   {
-    icon: "/images/cooking.png",
+    icon: "/images/cooking.webp",
     title: "Cold Storage",
     description:
       "Temperature-controlled warehouses — freshness guaranteed year-round.",
   },
   {
-    icon: "/images/chilli-pepper.png",
+    icon: "/images/chilli-pepper.webp",
     title: "Custom Packaging",
     description:
       "Jute bags, PP bags, vacuum packs — tailored to your brand.",
   },
   {
-    icon: "/images/detergent.png",
+    icon: "/images/detergent.webp",
     title: "Export & Logistics",
     description:
       "End-to-end export support with global shipping partners.",
   },
   {
-    icon: "/images/cooking.png",
+    icon: "/images/cooking.webp",
     title: "Quality Testing",
     description:
       "In-house and third-party lab testing for color, heat, and moisture.",

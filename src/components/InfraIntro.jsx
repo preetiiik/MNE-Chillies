@@ -1,5 +1,5 @@
 import "../styles/InfraIntro.css";
-import handImg from "../assets/images/infra-hand.png";
+import handImg from "../assets/images/infra-hand.webp";
 
 export default function InfraIntro() {
   return (

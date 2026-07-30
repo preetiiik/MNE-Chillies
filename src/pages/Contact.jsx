@@ -1,5 +1,5 @@
 
-import contactBg from "../assets/images/contact-hero.png";
+import contactBg from "../assets/images/contact-hero.webp";
 import ContactEnq from "../components/ContactEnq";
 import "../styles/ContactEnq.css";
 

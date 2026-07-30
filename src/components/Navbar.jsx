@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

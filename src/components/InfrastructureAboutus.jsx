@@ -1,5 +1,5 @@
 import "../styles/InfraAboutus.css";
-import infrastructureBg from "../assets/images/infrastructure-bg.png";
+import infrastructureBg from "../assets/images/infrastructure-bg.webp";
 
 const stats = [
   {

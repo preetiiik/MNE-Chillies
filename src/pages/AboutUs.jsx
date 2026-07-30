@@ -11,7 +11,7 @@ import "../styles/LeadershipTeamAboutus.css";
 import "../styles/StatsH.css";
 
 
-import aboutBg from "../assets/images/about-bg.png";
+import aboutBg from "../assets/images/about-bg.webp";
 
 import MarqueeStrip from "../components/MarqueeStrip";
 import Whoweare from "../components/Whoweare";

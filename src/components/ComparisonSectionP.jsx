@@ -4,12 +4,12 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 // Images
-import teja from "../assets/images/teja-s17.png";
-import byadagi from "../assets/images/byadagi.png";
-import sannam from "../assets/images/334-s4-sannam.png";
-import dd from "../assets/images/dd.png";
-import powder from "../assets/images/mild-chilli-powder.png";
-import flakes from "../assets/images/chilli-flakes.png";
+import teja from "../assets/images/teja-s17.webp";
+import byadagi from "../assets/images/byadagi.webp";
+import sannam from "../assets/images/334-s4-sannam.webp";
+import dd from "../assets/images/dd.webp";
+import powder from "../assets/images/mild-chilli-powder.webp";
+import flakes from "../assets/images/chilli-flakes.webp";
 
 export default function ComparisonSection() {
 
