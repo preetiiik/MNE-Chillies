@@ -14,14 +14,23 @@ import flakes from "../assets/images/chilli-flakes.webp";
 export default function ComparisonSection() {
 
   useEffect(() => {
-    AOS.init({
-      duration: 900,
-      once: true,
-      offset: 80,
-    });
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
 
+  const handleLoad = () => {
     AOS.refresh();
-  }, []);
+    setTimeout(() => AOS.refreshHard(), 300);
+  };
+
+  if (document.readyState === 'complete') {
+    handleLoad();
+  } else {
+    window.addEventListener('load', handleLoad);
+    return () => window.removeEventListener('load', handleLoad);
+  }
+}, []);
 
   const products = [
     {
