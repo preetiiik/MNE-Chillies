@@ -120,23 +120,15 @@
 }
 
 .fp-card{
-
     display:grid;
-
     grid-template-columns:520px 1fr;
-
+    align-items:start;   /* 👈 add this line */
     gap:55px;
-
     background:#fff;
-
     border-radius:30px;
-
     overflow:hidden;
-
     box-shadow:0 12px 40px rgba(0,0,0,.08);
-
     transition:.4s;
-
 }
 
 .fp-card:hover{
@@ -172,7 +164,7 @@
 
     position:relative;
 
-    height:720px;
+    height:100%;
 
     overflow:hidden;
 
@@ -295,7 +287,7 @@
 
     flex-direction:column;
 
-    justify-content:left;
+    justify-content:flex-start;
 
 }
 

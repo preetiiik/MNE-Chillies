@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="home-hero" data-aos="fade-in">
+    <section className="home-hero">
       <div className="container">
-      <div className="home-hero-content">
+      <div className="home-hero-content" data-aos="fade-in">
         {/* Badge */}
         <div className="home-hero-badge">
           <span className="home-badge-dot"></span>

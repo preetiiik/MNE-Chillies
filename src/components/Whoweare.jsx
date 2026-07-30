@@ -85,7 +85,7 @@ function WhoAreWe() {
             className="read-more"
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-delay="900"
+            data-aos-delay="500"
             data-aos-duration="700"
           >
             Read More →

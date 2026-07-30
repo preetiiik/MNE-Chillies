@@ -42,9 +42,9 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="services-section" data-aos="fade-right">
+    <section className="services-section" >
       
-      <div className="services-container">
+      <div className="services-container" data-aos="fade-right">
 
         <div className="services-grid">
           {services.map((service, index) => (

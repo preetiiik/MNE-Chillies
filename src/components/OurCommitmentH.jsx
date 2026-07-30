@@ -54,12 +54,13 @@ function Commitment() {
   const farmToPack = useCountUp(72, 1500, inView);
 
   return (
-    <section className="commitment" data-aos="fade-right" ref={sectionRef}>
+    <section className="commitment"  ref={sectionRef}>
       <div className="container">
 
       <div className="overlay"></div>
 
-      <div className="commitment-content">
+      <div className="commitment-content" data-aos="fade-right">
+        
 
         <p className="commitment-label">
           OUR COMMITMENT
