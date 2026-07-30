@@ -1,5 +1,5 @@
 import "../styles/Whysourcewithus.css";
-import chainImg from "../assets/images/supply-chain-illustration.png";
+import chainImg from "../assets/images/supply-chain-illustration.webp";
 
 const FEATURES = [
   {

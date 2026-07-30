@@ -5,7 +5,7 @@ import MarqueeStrip from "../components/MarqueeStrip";
 import FeaturedProducts from "../components/FeaturedProducts";
 import { useEffect } from "react";
 import AOS from "aos";
-import heroBg from "../assets/images/products-hero.png";
+import heroBg from "../assets/images/products-hero.webp";
 import OurProductsP from "../components/OurproductP";
 import AllProducts from "../components/AllProducts";
 import ComparisonSection from "../components/ComparisonSectionP";

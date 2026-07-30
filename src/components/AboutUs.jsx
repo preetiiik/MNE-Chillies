@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import aboutBg from "../images/about-bg.png";
+import aboutBg from "../images/about-bg.webp";
 import "../styles/AboutUsHero.css";
 
 function AboutUs() {

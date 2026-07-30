@@ -2,12 +2,12 @@ import { useState } from "react";
 import "../styles/Whatwedo.css";
 
 
-import img01 from "../assets/images/service-cleaning.png";
-import img02 from "../assets/images/service-steam.png";
-import img03 from "../assets/images/service-storage.png";
-import img04 from "../assets/images/service-testing.png";
-import img05 from "../assets/images/service-packaging.png";
-import img06 from "../assets/images/service-export.png";
+import img01 from "../assets/images/service-cleaning.webp";
+import img02 from "../assets/images/service-steam.webp";
+import img03 from "../assets/images/service-storage.webp";
+import img04 from "../assets/images/service-testing.webp";
+import img05 from "../assets/images/service-packaging.webp";
+import img06 from "../assets/images/service-export.webp";
 
 const SERVICES = [
   {

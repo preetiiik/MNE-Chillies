@@ -11,7 +11,7 @@ import Whatwedo from "../components/Whatwedo";
 import Whysourcewithus from "../components/Whysourcewithus";
 import ProcessTimeline from "../components/ProcessTimeline";
 
-import hero from "../assets/images/services-hero.png";
+import hero from "../assets/images/services-hero.webp";
 
 export default function services() {
 

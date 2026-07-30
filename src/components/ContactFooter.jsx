@@ -9,8 +9,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import footerLogo from "../assets/images/logo.png";
-import contactBg from "../assets/images/Container.png";
+import footerLogo from "../assets/images/logo.webp";
+import contactBg from "../assets/images/Container.webp";
 
 const ContactFooter = ({ hideCTA }) => {
   return (
@@ -68,7 +68,7 @@ const ContactFooter = ({ hideCTA }) => {
       {/* ================= Footer ================= */}
 
       <footer className="footer">
-        <div className="">
+        <div className="container">
 
         <div className="footer-container">
 

@@ -1,4 +1,4 @@
-import purposeBg from "../assets/images/purpose-bg.png";
+import purposeBg from "../assets/images/purpose-bg.webp";
 
 const cards = [
   {

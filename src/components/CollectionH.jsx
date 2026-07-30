@@ -6,19 +6,19 @@ import { FiArrowRight } from "react-icons/fi";
 function Collection() {
   const products = [
     {
-      image: "/images/dry-chilies.png",
+      image: "/images/dry-chilies.webp",
       title: "Whole Chilli",
       description:
         "Handpicked, sun-dried red chillies with deep pigmentation and bold heat. Source-verified from Guntur farms.",
     },
     {
-      image: "/images/chili-powder.png",
+      image: "/images/chili-powder.webp",
       title: "Chilli Powder",
       description:
         "Finely ground, vibrant red powder. Retains natural oils, aroma, and color — ideal for spice blends and sauces.",
     },
     {
-      image: "/images/chili-flakes.png",
+      image: "/images/chili-flakes.webp",
       title: "Chilli Flakes",
       description:
         "Coarsely crushed for bold texture. Perfect heat-to-color ratio for pizza, pasta, marinades, and rubs.",
