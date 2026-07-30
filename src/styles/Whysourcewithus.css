@@ -5,7 +5,7 @@
 .wsw-section{
     width:100%;
     background:#FFFFFF;
-    padding:40px 0;
+    padding:45px 0;
 }
  
 .wsw-container{
@@ -18,7 +18,7 @@
     display:grid;
     grid-template-columns:704px 1fr;
     align-items:center;
-    gap:65px;
+    gap:0px;
 }
  
 /* =====================================================
@@ -159,7 +159,7 @@
  
 .wsw-image-wrap img{
     width:100%;
-    height:auto;
+    height:520px;
     display:block;
     border-radius:16px;
 }
