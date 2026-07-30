@@ -44,12 +44,23 @@ function AppContent() {
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+
+  const handleLoad = () => {
+    AOS.refresh();
+    setTimeout(() => AOS.refreshHard(), 300);
+  };
+
+  if (document.readyState === 'complete') {
+    handleLoad();
+  } else {
+    window.addEventListener('load', handleLoad);
+    return () => window.removeEventListener('load', handleLoad);
+  }
+}, []);
 
   return (
     <BrowserRouter>
