@@ -13,9 +13,12 @@ import dd from "../assets/images/dd.webp";
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
-function FeaturedProducts() {
+function FeaturedProducts({
+  activeFilter,
+  setActiveFilter,
+}){
     
-    const [activeFilter, setActiveFilter] = useState("All");
+    // const [activeFilter, setActiveFilter] = useState("All");
     const navigate = useNavigate();
     const scrollToContact = () => {
     navigate("/contact");
@@ -296,6 +299,12 @@ function FeaturedProducts() {
         }
 
     ];
+    const filters = [
+  "All",
+  "Dry Chillies",
+  "Chilli Powder",
+  "Chilli Flakes",
+];
 
     const filteredProducts =
         activeFilter === "All"
@@ -327,25 +336,14 @@ function FeaturedProducts() {
 
                     <div className="fp-filters">
 
-                        {[
-                            "All",
-                            "Dry Chillies",
-                            "Chilli Powder",
-                            "Chilli Flakes",
-                        ].map((filter) => (
+                        {filters.map((filter) => (
 
                             <button
-                                key={filter}
-                                onClick={() =>
-                                    setActiveFilter(filter)
-                                }
-                                className={
-                                    activeFilter === filter
-                                        ? "active"
-                                        : ""
-                                }
+                            key={filter}
+                            onClick={() => setActiveFilter(filter)}
+                            className={activeFilter === filter ? "active" : ""}
                             >
-                                {filter}
+                            {filter}
                             </button>
 
                         ))}
