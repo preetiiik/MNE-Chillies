@@ -1,10 +1,10 @@
-import "../styles/ProductsHero.css"
-
+import "../styles/ProductsHero.css";
 
 import MarqueeStrip from "../components/MarqueeStrip";
 import FeaturedProducts from "../components/FeaturedProducts";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
+
 import heroBg from "../assets/images/products-hero.webp";
 import OurProductsP from "../components/OurproductP";
 import AllProducts from "../components/AllProducts";
@@ -15,6 +15,15 @@ function Products() {
   useEffect(() => {
     AOS.refresh();
   }, []);
+
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filters = [
+    "All",
+    "Dry Chillies",
+    "Chilli Powder",
+    "Chilli Flakes",
+  ];
 
   return (
     <>
@@ -51,20 +60,30 @@ function Products() {
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            <button className="active">All</button>
-            <button>Dry Chillies</button>
-            <button>Chilli Powder</button>
-            <button>Chilli Flakes</button>
+            {filters.map((filter) => (
+              <button
+                key={filter}
+                className={activeFilter === filter ? "active" : ""}
+                onClick={() => setActiveFilter(filter)}
+              >
+                {filter}
+              </button>
+            ))}
           </div>
         </div>
       </section>
 
       <MarqueeStrip />
-      <FeaturedProducts />
-      <OurProductsP />   
-      <AllProducts />  
+
+      <FeaturedProducts
+        activeFilter={activeFilter}
+        setActiveFilter={setActiveFilter}
+      />
+
+      <OurProductsP />
+      <AllProducts />
       <ComparisonSection />
-      <QualitySectionP /> {/* Rest of the Products page */}
+      <QualitySectionP />
     </>
   );
 }
