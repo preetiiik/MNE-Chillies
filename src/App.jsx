@@ -22,6 +22,12 @@ function AppContent() {
     location.pathname === "/contact" ||
     location.pathname === "/infrastructure";
 
+  // Refresh AOS positions on every route change
+  // (recalculates offsets for the newly rendered page's elements)
+  useEffect(() => {
+    AOS.refresh();
+  }, [location.pathname]);
+
   return (
     <>
       <ScrollToTop />
@@ -43,24 +49,16 @@ function AppContent() {
 }
 
 function App() {
+  // AOS.init should run ONCE for the entire app, here in the root component.
+  // Do NOT call AOS.init() again in any page or section component —
+  // repeated init() calls rebind AOS's scroll listener multiple times,
+  // which is what was causing the "stuck on first scroll" bug.
   useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-
-  const handleLoad = () => {
-    AOS.refresh();
-    setTimeout(() => AOS.refreshHard(), 300);
-  };
-
-  if (document.readyState === 'complete') {
-    handleLoad();
-  } else {
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
-  }
-}, []);
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
 
   return (
     <BrowserRouter>
