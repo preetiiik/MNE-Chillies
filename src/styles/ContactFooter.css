@@ -15,7 +15,8 @@
   background-repeat: no-repeat;
 
   position: relative;
-  overflow: hidden;
+  overflow: hidden;  /* fallback */
+  overflow: clip;    /* `hidden` here would create a nested scroll container */
 
 }
 

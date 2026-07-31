@@ -7,7 +7,8 @@
     background:#E3DFD5;
     padding:10px 0 0px;
     padding-bottom: 0px;
-    overflow:hidden; 
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */ 
     /* min-height: 700px;  */
     height:auto;
 }
@@ -155,7 +156,8 @@
 
 /* Initial state before AOS animation */
 .infra-intro-right{
-    overflow: hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 }
 
 .infra-hand{
