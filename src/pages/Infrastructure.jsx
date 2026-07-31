@@ -16,24 +16,24 @@ import CapabilitiesSection from "../components/CapabilitiesSection";
 
 export default function Infrastructure() {
 
-  useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
+//   useEffect(() => {
+//   AOS.init({
+//     duration: 800,
+//     once: true,
+//   });
 
-  const handleLoad = () => {
-    AOS.refresh();
-    setTimeout(() => AOS.refreshHard(), 300);
-  };
+//   const handleLoad = () => {
+//     AOS.refresh();
+//     setTimeout(() => AOS.refreshHard(), 300);
+//   };
 
-  if (document.readyState === 'complete') {
-    handleLoad();
-  } else {
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
-  }
-}, []);
+//   if (document.readyState === 'complete') {
+//     handleLoad();
+//   } else {
+//     window.addEventListener('load', handleLoad);
+//     return () => window.removeEventListener('load', handleLoad);
+//   }
+// }, []);
 
   return (
     <>
