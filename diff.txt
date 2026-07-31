@@ -1,0 +1,81 @@
+diff --git a/src/components/QualitySectionP.jsx b/src/components/QualitySectionP.jsx
+index 4167ee6..6f4e3d0 100644
+--- a/src/components/QualitySectionP.jsx
++++ b/src/components/QualitySectionP.jsx
+@@ -10,24 +10,24 @@ import { FiShield } from "react-icons/fi";
+ import { BsDiamond } from "react-icons/bs";
+ 
+ export default function QualitySection() {
+-  useEffect(() => {
+-  AOS.init({
+-    duration: 800,
+-    once: true,
+-  });
+-
+-  const handleLoad = () => {
+-    AOS.refresh();
+-    setTimeout(() => AOS.refreshHard(), 300);
+-  };
+-
+-  if (document.readyState === 'complete') {
+-    handleLoad();
+-  } else {
+-    window.addEventListener('load', handleLoad);
+-    return () => window.removeEventListener('load', handleLoad);
+-  }
+-}, []);
++//   useEffect(() => {
++//   // AOS.init({
++//   //   duration: 800,
++//   //   once: true,
++//   // });
++
++//   const handleLoad = () => {
++//     AOS.refresh();
++//     setTimeout(() => AOS.refreshHard(), 300);
++//   };
++
++//   if (document.readyState === 'complete') {
++//     handleLoad();
++//   } else {
++//     window.addEventListener('load', handleLoad);
++//     return () => window.removeEventListener('load', handleLoad);
++//   }
++// }, []);
+ 
+   const cards = [
+     {
+diff --git a/src/components/StatsH.jsx b/src/components/StatsH.jsx
+index c91f359..f13bbae 100644
+--- a/src/components/StatsH.jsx
++++ b/src/components/StatsH.jsx
+@@ -88,7 +88,10 @@ function Stats() {
+       <div className="stats-container">
+         {stats.map((item, index) => (
+           <div className="stat-card" key={index}>
+-            <Counter end={item.end} suffix={item.suffix} />
++            <h2>
++              {item.end}
++              {item.suffix}
++            </h2>
+             <h4>{item.title}</h4>
+             <p>{item.desc}</p>
+           </div>
+diff --git a/src/index.css b/src/index.css
+index 8a1a168..97c7ea0 100644
+--- a/src/index.css
++++ b/src/index.css
+@@ -1,4 +1,4 @@
+-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Caslon+Text:wght@700&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Caslon+Text:wght@700&display=swap'); 
+ *{
+     margin:0;
+     padding:0;
+@@ -24,4 +24,5 @@ body {
+     width:calc(100% - 24px);
+     margin:0 auto;
+ }
+-}
+\ No newline at end of file
++}
++
