@@ -15,24 +15,24 @@ import hero from "../assets/images/services-hero.webp";
 
 export default function services() {
 
-  useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
+//   useEffect(() => {
+//   AOS.init({
+//     duration: 800,
+//     once: true,
+//   });
 
-  const handleLoad = () => {
-    AOS.refresh();
-    setTimeout(() => AOS.refreshHard(), 300);
-  };
+//   const handleLoad = () => {
+//     AOS.refresh();
+//     setTimeout(() => AOS.refreshHard(), 300);
+//   };
 
-  if (document.readyState === 'complete') {
-    handleLoad();
-  } else {
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
-  }
-}, []);
+//   if (document.readyState === 'complete') {
+//     handleLoad();
+//   } else {
+//     window.addEventListener('load', handleLoad);
+//     return () => window.removeEventListener('load', handleLoad);
+//   }
+// }, []);
 
   const stats = [
     {
