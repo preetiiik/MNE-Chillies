@@ -14,10 +14,10 @@ import flakes from "../assets/images/chilli-flakes.webp";
 export default function ComparisonSection() {
 
   useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
+  // AOS.init({
+  //   duration: 800,
+  //   once: true,
+  // });
 
   const handleLoad = () => {
     AOS.refresh();

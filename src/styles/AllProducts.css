@@ -78,7 +78,8 @@ CARD
     background:#fff;
     border:1px solid rgba(0,0,0,.07);
     border-radius:16px;
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
     transition:.35s;
     box-shadow:
     0 6px 18px rgba(0,0,0,.04);
@@ -102,7 +103,8 @@ IMAGE
 
     position:relative;
 
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 
     height:220px;
 

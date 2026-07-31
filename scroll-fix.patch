@@ -1,0 +1,383 @@
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/App.css ./medwear/src/App.css
+--- /tmp/orig/medwear/src/App.css	2026-07-29 06:45:13.000000000 +0000
++++ ./medwear/src/App.css	2026-07-31 12:52:50.700861386 +0000
+@@ -94,7 +94,8 @@
+     background: #fff;
+     border: 1px solid #f0ece8;
+     border-radius: 20px;
+-    overflow: hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+  
+     display: flex;
+     flex-direction: column;
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/components/ScrollToTop.jsx ./medwear/src/components/ScrollToTop.jsx
+--- /tmp/orig/medwear/src/components/ScrollToTop.jsx	2026-07-30 12:27:46.000000000 +0000
++++ ./medwear/src/components/ScrollToTop.jsx	2026-07-31 12:52:50.702726003 +0000
+@@ -3,9 +3,6 @@
+ 
+ function ScrollToTop() {
+   const { pathname } = useLocation();
+-  const scrollToContact = () => {
+-    navigate("/contact");
+-  };
+   useEffect(() => {
+     window.scrollTo({
+       top: 0,
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/index.css ./medwear/src/index.css
+--- /tmp/orig/medwear/src/index.css	2026-07-29 04:29:44.000000000 +0000
++++ ./medwear/src/index.css	2026-07-31 12:52:50.690807630 +0000
+@@ -4,9 +4,32 @@
+     padding:0;
+     box-sizing:border-box;
+ }
+-html, body{
++/* ------------------------------------------------------------------
++   SCROLL FIX - never put `overflow-x: hidden` on <body>.
++
++   `overflow-x: hidden` forces the OTHER axis from `visible` to `auto`,
++   which turns <body> into its own scroll container. The AOS entrance
++   animations start their elements translated (fade-up = +100px on Y,
++   fade-right/left = -/+100px on X), so that body scroll box really does
++   have ~100px of scrollable overflow. Chrome latches a wheel gesture
++   onto the first scrollable box under the cursor, so the FIRST scroll
++   gets eaten by <body> and only the SECOND one reaches the page.
++   That is the "stuck on the first scroll" bug.
++
++   `overflow-x: clip` clips exactly the same way but does NOT create a
++   scroll container, so there is only ever ONE scrolling context: the
++   page itself. The `hidden` line before it is a fallback for browsers
++   without `clip` (Chrome <90 / Firefox <81 / Safari <16).
++------------------------------------------------------------------ */
++html{
++    width:100%;
++    overflow-x:hidden;  /* fallback */
++    overflow-x:clip;
++}
++
++body{
+     width:100%;
+-    overflow-x:hidden;
++    overflow-x:clip;    /* never `hidden` here */
+ }
+ 
+ body {
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/AboutUsHero.css ./medwear/src/styles/AboutUsHero.css
+--- /tmp/orig/medwear/src/styles/AboutUsHero.css	2026-07-29 05:11:58.000000000 +0000
++++ ./medwear/src/styles/AboutUsHero.css	2026-07-31 12:52:50.691946928 +0000
+@@ -7,7 +7,8 @@
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+-    overflow: hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ .about-overlay {
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/AllProducts.css ./medwear/src/styles/AllProducts.css
+--- /tmp/orig/medwear/src/styles/AllProducts.css	2026-07-29 07:15:53.000000000 +0000
++++ ./medwear/src/styles/AllProducts.css	2026-07-31 12:52:50.692342977 +0000
+@@ -78,7 +78,8 @@
+     background:#fff;
+     border:1px solid rgba(0,0,0,.07);
+     border-radius:16px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+     transition:.35s;
+     box-shadow:
+     0 6px 18px rgba(0,0,0,.04);
+@@ -102,7 +103,8 @@
+ 
+     position:relative;
+ 
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ 
+     height:220px;
+ 
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/CapabilitiesSection.css ./medwear/src/styles/CapabilitiesSection.css
+--- /tmp/orig/medwear/src/styles/CapabilitiesSection.css	2026-07-30 11:26:28.000000000 +0000
++++ ./medwear/src/styles/CapabilitiesSection.css	2026-07-31 12:52:50.692609232 +0000
+@@ -67,7 +67,8 @@
+ 
+ .capability-image{
+ 
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+     border-radius:24px;
+ }
+ 
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/ContactFooter.css ./medwear/src/styles/ContactFooter.css
+--- /tmp/orig/medwear/src/styles/ContactFooter.css	2026-07-30 11:58:39.000000000 +0000
++++ ./medwear/src/styles/ContactFooter.css	2026-07-31 12:52:50.693593363 +0000
+@@ -15,7 +15,8 @@
+   background-repeat: no-repeat;
+ 
+   position: relative;
+-  overflow: hidden;
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */
+ 
+ }
+ 
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/FeaturedProducts.css ./medwear/src/styles/FeaturedProducts.css
+--- /tmp/orig/medwear/src/styles/FeaturedProducts.css	2026-07-30 11:38:08.000000000 +0000
++++ ./medwear/src/styles/FeaturedProducts.css	2026-07-31 12:52:50.694426073 +0000
+@@ -126,7 +126,8 @@
+     gap:55px;
+     background:#fff;
+     border-radius:30px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+     box-shadow:0 12px 40px rgba(0,0,0,.08);
+     transition:.4s;
+ }
+@@ -166,7 +167,8 @@
+ 
+     height:100%;
+ 
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ 
+ }
+ 
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/HeroHome.css ./medwear/src/styles/HeroHome.css
+--- /tmp/orig/medwear/src/styles/HeroHome.css	2026-07-30 05:06:49.000000000 +0000
++++ ./medwear/src/styles/HeroHome.css	2026-07-31 12:52:50.703053091 +0000
+@@ -223,7 +223,6 @@
+   .home-hero {
+     min-height:550px;
+     background-position: 72% center;
+-    padding-top: px;
+   }
+  
+   .home-hero-content {
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/InfraIntro.css ./medwear/src/styles/InfraIntro.css
+--- /tmp/orig/medwear/src/styles/InfraIntro.css	2026-07-30 11:41:58.000000000 +0000
++++ ./medwear/src/styles/InfraIntro.css	2026-07-31 12:52:50.695368101 +0000
+@@ -7,7 +7,8 @@
+     background:#E3DFD5;
+     padding:10px 0 0px;
+     padding-bottom: 0px;
+-    overflow:hidden; 
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */ 
+     /* min-height: 700px;  */
+     height:auto;
+ }
+@@ -155,7 +156,8 @@
+ 
+ /* Initial state before AOS animation */
+ .infra-intro-right{
+-    overflow: hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ .infra-hand{
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/LeadershipTeamAboutus.css ./medwear/src/styles/LeadershipTeamAboutus.css
+--- /tmp/orig/medwear/src/styles/LeadershipTeamAboutus.css	2026-07-29 06:50:22.000000000 +0000
++++ ./medwear/src/styles/LeadershipTeamAboutus.css	2026-07-31 12:52:50.695596601 +0000
+@@ -51,7 +51,8 @@
+ .leader-card {
+ 
+     border-radius: 16px;
+-    overflow: hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+     background: #fff;
+     border: 1px solid #ECECEC;
+     transition: .35s ease;
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/MarqueeStrip.css ./medwear/src/styles/MarqueeStrip.css
+--- /tmp/orig/medwear/src/styles/MarqueeStrip.css	2026-07-24 17:03:50.000000000 +0000
++++ ./medwear/src/styles/MarqueeStrip.css	2026-07-31 12:52:50.695771443 +0000
+@@ -6,7 +6,8 @@
+   width: 100%;
+   min-height: 48px;
+   background: #A6000C;
+-  overflow: hidden;
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */
+ 
+   display: flex;
+   align-items: center;
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/MilestonesAboutus.css ./medwear/src/styles/MilestonesAboutus.css
+--- /tmp/orig/medwear/src/styles/MilestonesAboutus.css	2026-07-29 06:49:32.000000000 +0000
++++ ./medwear/src/styles/MilestonesAboutus.css	2026-07-31 12:52:50.696129358 +0000
+@@ -6,7 +6,8 @@
+     width:100%;
+     background:#FAF8F5;
+     padding:90px 30px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ .milestones-container{
+@@ -345,7 +346,8 @@
+     border-width: 5px;
+ }
+ .timeline-line{
+-    overflow: hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+     .timeline-content.show{
+         animation:slideFromLeft .7s ease forwards;
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/OurcommitmentHome.css ./medwear/src/styles/OurcommitmentHome.css
+--- /tmp/orig/medwear/src/styles/OurcommitmentHome.css	2026-07-30 05:06:49.000000000 +0000
++++ ./medwear/src/styles/OurcommitmentHome.css	2026-07-31 12:52:50.696682292 +0000
+@@ -12,7 +12,8 @@
+     background-image:url("/images/frame24.webp");
+     background-size:cover;
+     background-position:center;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ /* Dark Overlay */
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/PremiumProductsH.css ./medwear/src/styles/PremiumProductsH.css
+--- /tmp/orig/medwear/src/styles/PremiumProductsH.css	2026-07-29 11:05:49.000000000 +0000
++++ ./medwear/src/styles/PremiumProductsH.css	2026-07-31 12:52:50.697220307 +0000
+@@ -6,7 +6,8 @@
+   width: 100%;
+   background: #ffffff;
+   padding: clamp(40px, 6vw, 80px) 0; /* vertical only — container below handles horizontal */
+-  overflow: hidden; /* keeps entrance animations from causing scrollbars */
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */ /* keeps entrance animations from causing scrollbars */
+ }
+ 
+ .premium-container{
+@@ -168,7 +169,8 @@
+   background: #ffffff;
+   border: 0.67px solid rgba(0, 0, 0, 0.1);
+   border-radius: 16px;
+-  overflow: hidden;
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+   transition: transform 0.35s ease, box-shadow 0.35s ease;
+   animation: fadeInUp 0.6s ease both;
+@@ -196,7 +198,8 @@
+   position: relative;
+   width: 100%;
+   min-height: 210px;
+-  overflow: hidden;
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */
+   flex-shrink: 0;
+ }
+  
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/ProcessSectionH.css ./medwear/src/styles/ProcessSectionH.css
+--- /tmp/orig/medwear/src/styles/ProcessSectionH.css	2026-07-29 06:41:03.000000000 +0000
++++ ./medwear/src/styles/ProcessSectionH.css	2026-07-31 12:52:50.697696562 +0000
+@@ -443,7 +443,8 @@
+ 
+ .services-section{
+     padding:60px 0;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ .services-container{
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/ProcessingSection.css ./medwear/src/styles/ProcessingSection.css
+--- /tmp/orig/medwear/src/styles/ProcessingSection.css	2026-07-30 11:20:57.000000000 +0000
++++ ./medwear/src/styles/ProcessingSection.css	2026-07-31 12:52:50.698354451 +0000
+@@ -6,7 +6,8 @@
+     width:100%;
+     background:#FCFBF9;
+     padding:50px 0 40px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+ 
+ .processing-container{
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/TestimonialsH.css ./medwear/src/styles/TestimonialsH.css
+--- /tmp/orig/medwear/src/styles/TestimonialsH.css	2026-07-29 11:33:43.000000000 +0000
++++ ./medwear/src/styles/TestimonialsH.css	2026-07-31 12:52:50.699444990 +0000
+@@ -50,7 +50,8 @@
+ =========================== */
+  
+ .testimonial-viewport {
+-  overflow: hidden;
++  overflow: hidden;  /* fallback */
++  overflow: clip;    /* `hidden` here would create a nested scroll container */
+   width: 100%;
+   max-width: 1252px; /* 3 cards (396px) + 2 gaps (32px) */
+   margin: 0 auto;
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/Whatwedo.css ./medwear/src/styles/Whatwedo.css
+--- /tmp/orig/medwear/src/styles/Whatwedo.css	2026-07-29 07:38:24.000000000 +0000
++++ ./medwear/src/styles/Whatwedo.css	2026-07-31 12:52:50.699837566 +0000
+@@ -103,7 +103,8 @@
+     border:0.67px solid rgba(26,5,5,0.1);
+  
+     background:#FFFFFF;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+  
+     transition:border-color .3s ease, transform .3s ease, box-shadow .3s ease;
+ }
+@@ -124,7 +125,8 @@
+     position:relative;
+     width:100%;
+     height:194px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+  
+ .wwd-card-image img{
+@@ -300,7 +302,8 @@
+     position:relative;
+     width:100%;
+     border-radius:16px;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ }
+  
+ .wwd-detail-image img{
+diff -ru '--exclude=node_modules' '--exclude=dist' '--exclude=.git' /tmp/orig/medwear/src/styles/Whoweare.css ./medwear/src/styles/Whoweare.css
+--- /tmp/orig/medwear/src/styles/Whoweare.css	2026-07-30 11:56:12.000000000 +0000
++++ ./medwear/src/styles/Whoweare.css	2026-07-31 12:52:50.700303011 +0000
+@@ -214,7 +214,8 @@
+ 
+     display:block;
+     border-radius:50%;
+-    overflow:hidden;
++    overflow: hidden;  /* fallback */
++    overflow: clip;    /* `hidden` here would create a nested scroll container */
+ 
+     background-repeat:no-repeat;
+     background-color: transparent;
+@@ -314,7 +315,8 @@
+         width: 100%;
+         max-width: 1500px;
+         margin: 0 auto;
+-        overflow: hidden;
++        overflow: hidden;  /* fallback */
++        overflow: clip;    /* `hidden` here would create a nested scroll container */
+     }
+     .who-gallery{
+         justify-content:center;
+@@ -330,7 +332,8 @@
+         display:none;
+     }
+     .who-image{
+-        overflow: hidden;
++        overflow: hidden;  /* fallback */
++        overflow: clip;    /* `hidden` here would create a nested scroll container */
+         max-width: 100%;
+     }
+     .flying-chilli,

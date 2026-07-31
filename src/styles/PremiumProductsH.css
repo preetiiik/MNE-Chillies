@@ -6,7 +6,8 @@
   width: 100%;
   background: #ffffff;
   padding: clamp(40px, 6vw, 80px) 0; /* vertical only — container below handles horizontal */
-  overflow: hidden; /* keeps entrance animations from causing scrollbars */
+  overflow: hidden;  /* fallback */
+  overflow: clip;    /* `hidden` here would create a nested scroll container */ /* keeps entrance animations from causing scrollbars */
 }
 
 .premium-container{
@@ -168,7 +169,8 @@
   background: #ffffff;
   border: 0.67px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  overflow: hidden;
+  overflow: hidden;  /* fallback */
+  overflow: clip;    /* `hidden` here would create a nested scroll container */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   animation: fadeInUp 0.6s ease both;
@@ -196,7 +198,8 @@
   position: relative;
   width: 100%;
   min-height: 210px;
-  overflow: hidden;
+  overflow: hidden;  /* fallback */
+  overflow: clip;    /* `hidden` here would create a nested scroll container */
   flex-shrink: 0;
 }
  

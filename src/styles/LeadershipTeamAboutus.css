@@ -51,7 +51,8 @@
 .leader-card {
 
     border-radius: 16px;
-    overflow: hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
     background: #fff;
     border: 1px solid #ECECEC;
     transition: .35s ease;

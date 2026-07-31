@@ -3,9 +3,6 @@ import { useLocation } from "react-router-dom";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  const scrollToContact = () => {
-    navigate("/contact");
-  };
   useEffect(() => {
     window.scrollTo({
       top: 0,

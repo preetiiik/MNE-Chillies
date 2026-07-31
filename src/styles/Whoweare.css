@@ -214,7 +214,8 @@
 
     display:block;
     border-radius:50%;
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 
     background-repeat:no-repeat;
     background-color: transparent;
@@ -314,7 +315,8 @@
         width: 100%;
         max-width: 1500px;
         margin: 0 auto;
-        overflow: hidden;
+        overflow: hidden;  /* fallback */
+        overflow: clip;    /* `hidden` here would create a nested scroll container */
     }
     .who-gallery{
         justify-content:center;
@@ -330,7 +332,8 @@
         display:none;
     }
     .who-image{
-        overflow: hidden;
+        overflow: hidden;  /* fallback */
+        overflow: clip;    /* `hidden` here would create a nested scroll container */
         max-width: 100%;
     }
     .flying-chilli,

@@ -6,7 +6,8 @@
     width:100%;
     background:#FAF8F5;
     padding:90px 30px;
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 }
 
 .milestones-container{
@@ -345,7 +346,8 @@ transform:scale(1);
     border-width: 5px;
 }
 .timeline-line{
-    overflow: hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 }
     .timeline-content.show{
         animation:slideFromLeft .7s ease forwards;

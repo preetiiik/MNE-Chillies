@@ -4,9 +4,32 @@
     padding:0;
     box-sizing:border-box;
 }
-html, body{
+/* ------------------------------------------------------------------
+   SCROLL FIX - never put `overflow-x: hidden` on <body>.
+
+   `overflow-x: hidden` forces the OTHER axis from `visible` to `auto`,
+   which turns <body> into its own scroll container. The AOS entrance
+   animations start their elements translated (fade-up = +100px on Y,
+   fade-right/left = -/+100px on X), so that body scroll box really does
+   have ~100px of scrollable overflow. Chrome latches a wheel gesture
+   onto the first scrollable box under the cursor, so the FIRST scroll
+   gets eaten by <body> and only the SECOND one reaches the page.
+   That is the "stuck on the first scroll" bug.
+
+   `overflow-x: clip` clips exactly the same way but does NOT create a
+   scroll container, so there is only ever ONE scrolling context: the
+   page itself. The `hidden` line before it is a fallback for browsers
+   without `clip` (Chrome <90 / Firefox <81 / Safari <16).
+------------------------------------------------------------------ */
+html{
     width:100%;
-    overflow-x:hidden;
+    overflow-x:hidden;  /* fallback */
+    overflow-x:clip;
+}
+
+body{
+    width:100%;
+    overflow-x:clip;    /* never `hidden` here */
 }
 
 body {

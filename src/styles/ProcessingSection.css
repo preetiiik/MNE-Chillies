@@ -6,7 +6,8 @@
     width:100%;
     background:#FCFBF9;
     padding:50px 0 40px;
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 }
 
 .processing-container{

@@ -443,7 +443,8 @@
 
 .services-section{
     padding:60px 0;
-    overflow:hidden;
+    overflow: hidden;  /* fallback */
+    overflow: clip;    /* `hidden` here would create a nested scroll container */
 }
 
 .services-container{
