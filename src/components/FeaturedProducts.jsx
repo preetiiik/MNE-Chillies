@@ -112,9 +112,9 @@ function FeaturedProducts({
 
             image: byadagi,
 
-            location: "byadagi • KARNATAKA",
+            location: "Byadagi • KARNATAKA",
 
-            title: "byadagi",
+            title: "Byadagi",
 
             subtitle: "High colour. Low pungency.",
 

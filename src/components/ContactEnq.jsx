@@ -41,8 +41,8 @@ function ContactEnquiry() {
                 <div className="contact-label">Phone</div>
 
                 <div className="contact-value">
-                  <a href="tel:+919876543210">
-                    +91 98765 43210
+                  <a href="tel:+91123">
+                    +91 123
                   </a>
                 </div>
               </div>
@@ -72,13 +72,11 @@ function ContactEnquiry() {
 
                 <div className="contact-value">
                   <a
-                    href="https://maps.google.com/?q=Spice+Market+Road,+Guntur,+Andhra+Pradesh,+India"
+                    href="https://www.google.com/maps/place/Hubballi,+Karnataka/@15.404758,75.0667318,12z/data=!3m1!4b1!4m6!3m5!1s0x3bb8d6d3a2090b17:0xae803e207113397!8m2!3d15.3647083!4d75.1239547!16zL20vMDE2YmY1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Spice Market Road, Guntur,
-                    <br />
-                    Andhra Pradesh, India
+                    Hubli
                   </a>
                 </div>
               </div>
@@ -93,11 +91,11 @@ function ContactEnquiry() {
 
                 <div className="contact-value">
                   <a
-                    href="https://wa.me/919876500000"
+                    href="https://wa.me/123"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +91 98765 00000
+                    +91 123
                   </a>
                 </div>
               </div>
