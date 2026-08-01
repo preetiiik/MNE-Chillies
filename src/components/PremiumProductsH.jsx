@@ -184,14 +184,30 @@ function PremiumProductsH() {
   };
 
   useEffect(() => {
+    // FIX: `threshold: 0.2` meant "fire when 20% of this section is on
+    // screen". intersectionRatio is capped at viewportHeight / sectionHeight,
+    // and this section (header + filters + 7 stacked cards) is several
+    // thousand px tall on a phone -- so 20% of it can never fit on screen at
+    // once. The callback never ran, animateCards stayed false, and every card
+    // sat at `opacity: 0` (the `.product-item-wrap` rule) until a filter click
+    // set it manually. threshold: 0 fires as soon as one pixel is visible,
+    // which is height-independent. The negative bottom rootMargin just keeps
+    // the reveal feeling deliberate.
+    if (typeof IntersectionObserver === "undefined") {
+      setAnimateCards(true); // fail open: never leave the grid invisible
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setAnimateCards(true);
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0,
+        rootMargin: "0px 0px -80px 0px",
       }
     );
 
