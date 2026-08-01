@@ -1,8 +1,6 @@
 import "../styles/ProcessingSection.css";
 
-import { SlEqualizer } from "react-icons/sl";
-import { PiMicroscopeThin } from "react-icons/pi";
-import { LuCalendarDays } from "react-icons/lu";
+import { PiSlidersBold, PiMicroscopeBold, PiCalendarDotsBold } from "react-icons/pi";
 
 import stageImg from "../assets/images/stage.webp";
 // import steamImg from "../assets/images/steam.webp";
@@ -17,19 +15,19 @@ export default function ProcessingSection() {
 
   const features = [
   {
-    icon: <SlEqualizer />,
+    icon: <PiSlidersBold />,
     title: "Controlled Processing",
     description:
       "Automated climate and humidity controls at every vital processing junction.",
   },
   {
-    icon: <PiMicroscopeThin />,
+    icon: <PiMicroscopeBold />,
     title: "In-House Quality Checks",
     description:
       "Real-time sampling and analytical testing integrated into the production flow.",
   },
   {
-    icon: <LuCalendarDays />,
+    icon: <PiCalendarDotsBold />,
     title: "Year-Round Handling",
     description:
       "Optimized supply chain infrastructure capable of handling seasonal peaks without quality loss.",
