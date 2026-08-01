@@ -44,6 +44,11 @@
     background:#A6000C;
 }
 
+.quality-left{
+    position:sticky;
+    top:110px; /* clears the fixed navbar (~90px) plus a little breathing room */
+}
+
 .quality-left h2{
     margin-top:18px;
     margin-bottom:26px;
@@ -184,6 +189,7 @@
     .quality-left{
 
         text-align:center;
+        position:static;
     }
 
     .quality-tag{

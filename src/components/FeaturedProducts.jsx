@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/FeaturedProducts.css";
 import AOS from "aos";
@@ -312,6 +311,20 @@ function FeaturedProducts({
             : products.filter(
                   (product) => product.category === activeFilter
               );
+
+    // Filtering changes how many cards render, which changes this
+    // section's height. AOS caches every data-aos element's trigger
+    // offset based on page height at load time, so without a refresh
+    // here, everything below (AllProducts, Comparison, Quality) keeps
+    // the stale offsets from the previous filter and never fires.
+    useEffect(() => {
+        // Wait a frame so the new card list has actually painted
+        // before AOS recalculates offsets against it.
+        const id = requestAnimationFrame(() => {
+            AOS.refreshHard();
+        });
+        return () => cancelAnimationFrame(id);
+    }, [activeFilter]);
 
     return (
 
