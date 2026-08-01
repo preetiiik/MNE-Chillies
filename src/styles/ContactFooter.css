@@ -336,7 +336,7 @@
     }
 
     .contact-overlay h2{
-        font-size:32px;
+        font-size:42px;
         line-height:1.2;
         margin-bottom:18px;
     }
@@ -385,13 +385,15 @@
 
 .footer {
   background: #120303;
-  padding: 80px 30px 30px;
+  padding: 80px 0 30px;
 }
 
 .footer-container {
   max-width: 1500px;
   width: 100%;
   margin: auto;
+  box-sizing: border-box;
+  padding: 0 30px;
 
   display: grid;
   grid-template-columns: 340px 160px 170px 330px;
@@ -569,11 +571,11 @@
   .process-section,
   .our-commitment,
   .testimonials,
-  .contact-section,
-  .footer{
+  .contact-section{
       padding-left:5%;
       padding-right:5%;
   }
+  .footer-container,
   .footer-bottom{
       padding-left:5%;
       padding-right:5%;
@@ -634,8 +636,7 @@ img{
   }
 
   .collection,
-  .premium,
-  .footer{
+  .premium{
     padding-left:5%;
     padding-right:5%;
   }

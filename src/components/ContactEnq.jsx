@@ -41,8 +41,8 @@ function ContactEnquiry() {
                 <div className="contact-label">Phone</div>
 
                 <div className="contact-value">
-                  <a href="tel:+91123">
-                    +91 123
+                  <a href="tel:+91 1234567890">
+                    +91 1234567890
                   </a>
                 </div>
               </div>
@@ -91,11 +91,11 @@ function ContactEnquiry() {
 
                 <div className="contact-value">
                   <a
-                    href="https://wa.me/123"
+                    href="https://wa.me/1234567890"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +91 123
+                    +91 1234567890
                   </a>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import "../styles/ComparisonSection.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Images
 import teja from "../assets/images/teja-s17.webp";
@@ -12,6 +12,43 @@ import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
 export default function ComparisonSection() {
+
+  const scrollRef = useRef(null);
+  const [scrollPct, setScrollPct] = useState(0);
+  const [scrollable, setScrollable] = useState(false);
+
+  const updateScrollProgress = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    setScrollable(maxScroll > 4); // hide the bar if there's nothing to scroll
+
+    if (maxScroll <= 0) {
+      setScrollPct(0);
+      return;
+    }
+
+    setScrollPct((el.scrollLeft / maxScroll) * 100);
+  };
+
+  useEffect(() => {
+    updateScrollProgress();
+
+    const el = scrollRef.current;
+    if (!el) return;
+
+    // Table width can change (fonts loading, resize, orientation change),
+    // so keep the thumb size accurate beyond just the initial mount.
+    const resizeObserver = new ResizeObserver(updateScrollProgress);
+    resizeObserver.observe(el);
+
+    window.addEventListener("resize", updateScrollProgress);
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", updateScrollProgress);
+    };
+  }, []);
 
   useEffect(() => {
   // AOS.init({
@@ -134,7 +171,11 @@ export default function ComparisonSection() {
 
         </div>
 
-        <div className="comparison-table">
+        <div
+          className="comparison-table"
+          ref={scrollRef}
+          onScroll={updateScrollProgress}
+        >
 
           {/* Header */}
 
@@ -249,6 +290,17 @@ export default function ComparisonSection() {
           ))}
 
         </div>
+
+        {/* Custom scroll progress bar — replaces the native
+            ::-webkit-scrollbar styling, which iOS Safari ignores. */}
+        {scrollable && (
+          <div className="comparison-scroll-track">
+            <div
+              className="comparison-scroll-thumb"
+              style={{ "--thumb-left": `${scrollPct * 0.78}%` }}
+            ></div>
+          </div>
+        )}
 
       </div>
       </div>

@@ -231,8 +231,8 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <div className="footer-phone">
-              <a href="tel:+91 123">
-                +91 123
+              <a href="tel:+91 1234567890">
+                +91 1234567890
                 </a>
             </div>
 
@@ -240,7 +240,7 @@ const ContactFooter = ({ hideCTA }) => {
               WHATSAPP
             </span>
             <a
-              href="https://wa.me/91 123"
+              href="https://wa.me/91 1234567890"
               target="_blank"
               rel="noreferrer"
               className="footer-link"

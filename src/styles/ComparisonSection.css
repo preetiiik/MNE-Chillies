@@ -429,3 +429,41 @@ html{
 scroll-behavior:auto;
 
 }
+
+/* ======================================================
+   CUSTOM SCROLL PROGRESS BAR
+   Renders identically on iOS/Android/desktop since it's a
+   plain div being resized via JS, not a native scrollbar.
+   iOS Safari ignores ::-webkit-scrollbar entirely (it only
+   allows styling the desktop, non-overlay scrollbar), so
+   this is the real cross-platform version of that indicator.
+====================================================== */
+
+.comparison-scroll-track{
+  position:relative;
+  width:100%;
+  height:6px;
+  margin-top:14px;
+  border-radius:999px;
+  background:#eee;
+  overflow:hidden;
+  display:none; /* only shown when the table is actually wider than its container */
+}
+
+.comparison-scroll-thumb{
+  position:absolute;
+  top:0;
+  left:var(--thumb-left, 0%);
+  height:100%;
+  width:22%;
+  min-width:40px;
+  border-radius:999px;
+  background:#A6000C;
+  transition:left .05s linear;
+}
+
+@media(max-width:992px){
+  .comparison-scroll-track{
+    display:block;
+  }
+}
