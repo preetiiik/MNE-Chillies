@@ -65,14 +65,14 @@ function Navbar() {
 
           <li>
             <NavLink to="/contact" onClick={closeMenu}>
-              Contact
+              Contact Us
             </NavLink>
           </li>
         </ul>
 
-        <button className="contact-btn">
+         <NavLink to="/contact" className="contact-btn" onClick={closeMenu}>
           Get In Touch
-        </button>
+        </NavLink>
 
         <div
           className="menu-icon"

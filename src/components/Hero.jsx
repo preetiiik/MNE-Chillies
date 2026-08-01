@@ -34,9 +34,11 @@ function Hero() {
             Explore Products
           </Link>
 
-          <button className="home-secondary-btn">
-            Watch Our Story
-          </button>
+          <Link to="/aboutus">
+            <button className="home-secondary-btn">
+              Watch Our Story
+            </button>
+          </Link>
         </div>
       </div>
       </div>

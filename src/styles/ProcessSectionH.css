@@ -257,6 +257,10 @@
 .services-content {
   flex: 1;
   max-width: 580px;
+
+  position: sticky;
+  top: 110px; /* clears the fixed navbar (~90px) plus a little breathing room */
+  align-self: flex-start;
 }
 
 .subtitle {
@@ -265,11 +269,12 @@
   font-family: "Inter";
   font-size: 13px;
   font-weight: 600;
+  font-style: normal !important;
 
   color: #a6000c;
 
   letter-spacing: 2.5px;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 
   margin-bottom: 12px;
 }
@@ -335,6 +340,7 @@
 
 .services-content{
     max-width:100%;
+    position:static;
 }
 
 .services-content h2{

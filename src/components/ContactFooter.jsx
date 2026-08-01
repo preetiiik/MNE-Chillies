@@ -207,13 +207,12 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <a
-              href="https://maps.google.com/?q=Kothapet,Guntur,Andhra Pradesh"
+              href="https://www.google.com/maps/place/Hubballi,+Karnataka/@15.404758,75.0667318,12z/data=!3m1!4b1!4m6!3m5!1s0x3bb8d6d3a2090b17:0xae803e207113397!8m2!3d15.3647083!4d75.1239547!16zL20vMDE2YmY1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noreferrer"
               className="footer-link"
             >
-              Kothapet, Guntur,<br />
-              Andhra Pradesh – 522006
+              Hubli
             </a>
 
             <span className="footer-label">
@@ -232,12 +231,8 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <div className="footer-phone">
-              <a href="tel:+919876543210">
-                +91 98765 43210
-                </a>
-                <br />
-                <a href="tel:+919123456789">
-                  +91 91234 56789
+              <a href="tel:+91 123">
+                +91 123
                 </a>
             </div>
 
@@ -245,7 +240,7 @@ const ContactFooter = ({ hideCTA }) => {
               WHATSAPP
             </span>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/91 123"
               target="_blank"
               rel="noreferrer"
               className="footer-link"
@@ -284,22 +279,15 @@ const ContactFooter = ({ hideCTA }) => {
         >
           <p>
             © 2026 MNE Chillies Pvt. Ltd.
-            All rights reserved.
+            All Rights Reserved.
+            Powered by Spitel Pvt. Ltd.
           </p>
 
           <div className="footer-links">
 
-            <a href="/">
-              Privacy Policy
-            </a>
-
-            <a href="/">
-              Terms & Conditions
-            </a>
-
-            <a href="/">
-              Cookie Policy
-            </a>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Cookie Policy</p>
 
           </div>
 
