@@ -5,10 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import teja from "../assets/images/teja-s17.webp";
-import sannam from "../assets/images/334-s4-sannam.webp";
-import byadagi from "../assets/images/byadagi.webp";
-import variety341 from "../assets/images/341-variety.webp";
-import dd from "../assets/images/dd.webp";
+import sannam from "../assets/images/334.jpeg";
+import byadagi from "../assets/images/SYNGENTA.jpeg";
+import variety341 from "../assets/images/341-DLX.jpeg";
+import dd from "../assets/images/KURNOOL-DD.jpeg";
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
@@ -75,7 +75,7 @@ function FeaturedProducts({
 
             location: "334 S4/SANNAM • GUNTUR, AP",
 
-            title: "334 S4 / Sannam",
+            title: "334 / S4 / Sannam",
 
             subtitle: "Balanced heat with rich red colour",
 
@@ -112,9 +112,9 @@ function FeaturedProducts({
 
             image: byadagi,
 
-            location: "Byadagi • KARNATAKA",
+            location: "355 BYADGI (RALLIS) • KARNATAKA",
 
-            title: "Byadagi",
+            title: "355 Byadgi (RALLIS)",
 
             subtitle: "High colour. Low pungency.",
 
@@ -151,9 +151,9 @@ function FeaturedProducts({
 
             image: variety341,
 
-            location: "341 VARIETY • GUNTUR",
+            location: "341 DLX • GUNTUR",
 
-            title: "341 Variety",
+            title: "341 DLX",
 
             subtitle: "Excellent colour with medium heat",
 
@@ -189,7 +189,7 @@ function FeaturedProducts({
 
             image: dd,
 
-            location: "DEVANUR DELUXE • KARNATAKA",
+            location: "DEVANUR DELUXE (DD) • KURNOOL",
 
             title: "Devanur Deluxe (DD)",
 

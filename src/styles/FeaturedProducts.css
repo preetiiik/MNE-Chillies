@@ -165,7 +165,7 @@
 
     position:relative;
 
-    height:100%;
+    height:600px;
 
     overflow: hidden;  /* fallback */
     overflow: clip;    /* `hidden` here would create a nested scroll container */
@@ -316,7 +316,7 @@
 
     font-family:"Libre Caslon Text",serif;
 
-    font-size:clamp(36px, 4vw, 52px);
+    font-size:48px;
 
     font-weight:700;
 
