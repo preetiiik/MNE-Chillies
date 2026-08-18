@@ -21,21 +21,21 @@ function AllProducts() {
             badge:"DRY CHILLIES",
             variety:"TEJA VARIETY",
             title:"Teja S17",
-            subtitle:"The world's most exported Indian chilli",
+            subtitle:"World's most exported Indian chilli",
             description:
-            "Extreme pungency, deep-red color, excellent shelf life — the king of Indian chilli exports for global markets.",
+            "The undisputed king of export chillies. Extremely hot with brilliant deep-red colour and excellent shelf life. Widely used across Asian, Middle Eastern and Latin American markets.",
             image:teja,
 
             asta:"80–100",
             shu:"50,000+",
-            moisture:"≤ 12%",
+            moisture:"≤12%",
 
             heat:5,
 
             tags:[
-                "Export",
-                "Extra Hot",
-                "High Pungency"
+                "Hot Sauces",
+                "Spice Blends",
+                "Asian Cuisine"
             ],
 
             origin:"Guntur, AP"
@@ -46,32 +46,32 @@ function AllProducts() {
 
             badge:"DRY CHILLIES",
 
-            variety:"BYADAGI VARIETY",
+            variety:"355 BYADGI VARIETY",
 
-            title:"Byadagi",
+            title:"355 Byadgi (RALLIS)",
 
-            subtitle:"Record ASTA. Deep crimson. Low heat.",
+            subtitle:"High colour. Low pungency.",
 
             description:
-            "Karnataka's signature chilli, world-renowned for its extraordinary colour value and mild pungency.",
+            "Famous for its exceptional colour value and mild heat. Preferred for food colouring, spice blends and premium masala manufacturing.",
 
             image:byadagi,
 
-            asta:"150+",
+            asta:"100–140",
 
-            shu:"10,000+",
+            shu:"15,000–30,000",
 
-            moisture:"≤11%",
+            moisture:"≤12%",
 
             heat:2,
 
             tags:[
-                "Color Grade",
-                "Mild Heat",
-                "Paprika"
+                "Natural Food Colour",
+                "Masala Blends",
+                "Pickles"
             ],
 
-            origin:"Byadgi, Karnataka"
+            origin:"Karnataka"
         },
 
         {
@@ -79,28 +79,28 @@ function AllProducts() {
 
             badge:"DRY CHILLIES",
 
-            variety:"GUNTUR VARIETY",
+            variety:"334/S4 SANNAM VARIETY",
 
-            title:"Guntur Sannam",
+            title:"334 / S4 / Sannam",
 
-            subtitle:"Balanced heat and color — the all-rounder",
+            subtitle:"Balanced heat with rich red colour",
 
             description:
-            "The workhorse of Indian cuisine and the most widely used chilli variety in the subcontinent for everyday cooking.",
+            "One of India's most demanded export chillies offering vibrant colour, medium-high pungency and excellent processing quality for food manufacturers worldwide.",
             image:sannam,
 
-            asta:"100–120",
+            asta:"30–35",
 
-            shu:"35,000+",
+            shu:"35,000–40,000",
 
             moisture:"≤12%",
 
             heat:4,
 
             tags:[
-                "Elite",
-                "Balanced",
-                "Versatile"
+                "Masala Powders",
+                "Pickles",
+                "Restaurants"
             ],
 
             origin:"Guntur, AP"
@@ -111,32 +111,32 @@ function AllProducts() {
 
             badge:"DRY CHILLIES",
 
-            variety:"PROCESSED VARIETY",
+            variety:"DEVANUR DELUXE VARIETY",
 
-            title:"Devanur Delux",
+            title:"Devanur Deluxe (DD)",
 
-            subtitle:"Clean-processed for food manufacturers",
+            subtitle:"Dark red. Rich flavour. Premium export grade.",
 
             description:
-            "Meticulously processed to remove all stems and seeds, leaving only uniform chilli skin with excellent consistency.",
+            "Premium quality chilli with attractive dark-red appearance, excellent aroma and balanced pungency. Ideal for export markets and premium spice manufacturers.",
 
             image:dd,
 
-            asta:"90+",
+            asta:"90–180",
 
-            shu:"40,000+",
+            shu:"25,000–35,000",
 
-            moisture:"≤11%",
+            moisture:"≤12%",
 
-            heat:4,
+            heat:3,
 
             tags:[
-                "Processed",
-                "Food Grade",
-                "SSS Free"
+                "Masala Blends",
+                "Premium Cuisine",
+                "Food Processing"
             ],
 
-            origin:"Guntur, AP"
+            origin:"Kurnool"
         },
 
         {
@@ -210,9 +210,9 @@ function AllProducts() {
 
             badge:"DRY CHILLIES",
 
-            variety:"341 VARIETY",
+            variety:"341 DLX VARIETY",
 
-            title:"341 Variety",
+            title:"341 DLX",
 
             subtitle:"Excellent colour with medium heat",
 
@@ -223,16 +223,16 @@ function AllProducts() {
 
             asta:"90–100",
 
-            shu:"25,000+",
+            shu:"25,000–50,000",
 
             moisture:"≤12%",
 
             heat:3,
 
             tags:[
-                "Export",
-                "Medium Heat",
-                "Processing"
+                "Curry Powders",
+                "Spice Blends",
+                "Food Processing"
             ],
 
             origin:"Guntur, AP"

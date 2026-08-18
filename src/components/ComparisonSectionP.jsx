@@ -8,6 +8,7 @@ import teja from "../assets/images/teja-s17.webp";
 import byadagi from "../assets/images/byadagi.webp";
 import sannam from "../assets/images/334-s4-sannam.webp";
 import dd from "../assets/images/dd.webp";
+import variety341 from "../assets/images/341-variety.webp";
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
@@ -75,43 +76,43 @@ export default function ComparisonSection() {
       name: "Teja S17",
       type: "Teja Variety",
       asta: "80–100",
-      shu: "50,000–100,000",
-      moisture: "≤ 12%",
+      shu: "50,000+",
+      moisture: "≤12%",
       heat: 5,
-      best: ["Hot sauces", "Spice blends"],
+      best: ["Hot Sauces", "Spice Blends", "Asian Cuisine"],
     },
 
     {
       image: byadagi,
-      name: "Byadagi",
-      type: "Byadagi Variety",
-      asta: "150+",
-      shu: "10,000–20,000",
-      moisture: "≤ 11%",
+      name: "355 Byadgi (RALLIS)",
+      type: "355 Byadgi Variety",
+      asta: "100–140",
+      shu: "15,000–30,000",
+      moisture: "≤12%",
       heat: 2,
-      best: ["Paprika", "Oleoresin"],
+      best: ["Natural Food Colour", "Masala Blends", "Pickles"],
     },
 
     {
       image: sannam,
-      name: "Guntur Sannam",
-      type: "Guntur Variety",
-      asta: "100–120",
-      shu: "35,000–50,000",
-      moisture: "≤ 12%",
+      name: "334 / S4 / Sannam",
+      type: "334/S4 Sannam Variety",
+      asta: "30–35",
+      shu: "35,000–40,000",
+      moisture: "≤12%",
       heat: 4,
-      best: ["Indian curries", "Spice blends"],
+      best: ["Masala Powders", "Pickles", "Restaurants"],
     },
 
     {
-      image: dd,
-      name: "Stem & Seed Free",
-      type: "Processed Variety",
-      asta: "90+",
-      shu: "40,000–80,000",
-      moisture: "≤ 11%",
-      heat: 4,
-      best: ["Food processing", "Spice blending"],
+      image: variety341,
+      name: "341 DLX",
+      type: "341 DLX Variety",
+      asta: "90–100",
+      shu: "25,000–50,000",
+      moisture: "≤12%",
+      heat: 3,
+      best: ["Curry Powders", "Spice Blends", "Food Processing"],
     },
 
     {
@@ -138,13 +139,13 @@ export default function ComparisonSection() {
 
     {
       image: dd,
-      name: "Devanur Deluxe",
-      type: "DD Variety",
+      name: "Devanur Deluxe (DD)",
+      type: "Devanur Deluxe Variety",
       asta: "90–180",
       shu: "25,000–35,000",
-      moisture: "≤ 12%",
+      moisture: "≤12%",
       heat: 3,
-      best: ["Export", "Premium Grade"],
+      best: ["Masala Blends", "Premium Cuisine", "Food Processing"],
     },
   ];
 

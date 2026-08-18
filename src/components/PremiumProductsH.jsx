@@ -2,11 +2,20 @@ import { useState, useEffect, useRef } from "react";
 import ProductCard from "./ProductCard";
 import "../styles/PremiumProductsH.css";
 
+// Existing Teja S17 asset already in the project — reused for the new
+// "Teja (S17) Dried Red Chilli" entry since it is the correct variety image.
 import teja from "../assets/images/teja-s17.webp";
-import sannam from "../assets/images/334-s4-sannam.webp";
-import byadagi from "../assets/images/byadagi.webp";
-import variety341 from "../assets/images/341-variety.webp";
-import dd from "../assets/images/dd.webp";
+
+// NEW client-provided images referenced in the brief.
+// Place these files in src/assets/images/ using the exact names below
+// (renamed to a safe, space-free format). If the original files still have
+// spaces in their names (e.g. "341 DLX.jpeg"), rename them to match, or
+// send them over and they'll be wired in directly.
+import sannam334 from "../assets/images/334.jpeg";
+import syngenta from "../assets/images/SYNGENTA.jpeg";
+import chilli341dlx from "../assets/images/341-DLX.jpeg";
+import kurnoolDD from "../assets/images/KURNOOL-DD.jpeg";
+
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
@@ -18,139 +27,220 @@ function PremiumProductsH() {
   const sectionRef = useRef(null);
 
   const products = [
-  {
-    id: 1,
-    category: "Dry Chillies",
-    badge: "DRY CHILLIES",
-    image: teja,
-    variety: "TEJA VARIETY",
-    title: "Teja S17",
-    tagline: "THE WORLD'S MOST EXPORTED INDIAN CHILLI",
-    description:
-      "India's leading export chilli, prized for intense heat, deep-red colour, and exceptional shelf life.",
-    asta: "80–100",
-    shu: "50,000+",
-    moisture: "≤12%",
-    heat: 5,
-    heatLabel: "Extra Hot",
-    tags: ["Export", "Spicy", "Intense"],
-    origin: "Guntur, AP",
-  },
+    {
+      id: 1,
+      category: "Dry Chillies",
+      badge: "Hottest Variety",
+      image: teja,
+      variety: "TEJA (S17)",
+      title: "Teja (S17) Dried Red Chilli",
+      description:
+        "One of the hottest chilli varieties, S17 Teja is widely grown in southern India and highly sought after by international buyers for its intense heat and rich red colour.",
+      productDetails: {
+        finishing: "Sun dried",
+        appearance: "Bright Red, Thin Skin, Fiery Hot",
+        packing: "Jute / PP Bag",
+      },
+      specifications: {
+        colorValue: "50 – 70",
+        pungency: "65k – 85k SHU",
+        capsaicin: "0.589%",
+      },
+      types: [
+        "Teja S17 With Stem",
+        "Teja S17 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+      heat: 5,
+      heatLabel: "Fiery Hot",
+      tags: [
+        "Teja S17 With Stem",
+        "Teja S17 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+    },
 
-  {
-    id: 2,
-    category: "Dry Chillies",
-    badge: "DRY CHILLIES",
-    image: byadagi,
-    variety: "BYADAGI VARIETY",
-    title: "Byadagi",
-    tagline: "RECORD ASTA. DEEP CRIMSON. LOW HEAT.",
-    description:
-      "Karnataka's signature chilli, world-renowned for its extraordinary colour value and mild pungency.",
-    asta: "150+",
-    shu: "10,000+",
-    moisture: "≤11%",
-    heat: 2,
-    heatLabel: "Mild",
-    tags: ["Vibrant", "Gentle", "Paprika"],
-    origin: "Byadagi, Karnataka",
-  },
+    {
+      id: 2,
+      category: "Dry Chillies",
+      badge: "Popular Export Variety",
+      image: sannam334,
+      variety: "334 / S4 / SANNAM",
+      title: "334 / S4 / Sannam Dried Red Chilli",
+      description:
+        "Rich red, hot S4 Sannam chilli with thick skin, grown in Guntur, Khammam and Prakasam. Ideal for bold colour and flavour.",
+      productDetails: {
+        finishing: "Sun dried",
+        appearance: "Bright Red, Thick Skin, Hot",
+        packing: "Jute / PP Bag",
+      },
+      specifications: {
+        colorValue: "30 – 35",
+        pungency: "35k – 40k SHU",
+        capsaicin: "0.226%",
+      },
+      types: [
+        "334 S4 With Stem",
+        "334 S4 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+      heat: 3,
+      heatLabel: "Hot",
+      tags: [
+        "334 S4 With Stem",
+        "334 S4 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+    },
 
-  {
-    id: 3,
-    category: "Dry Chillies",
-    badge: "DRY CHILLIES",
-    image: sannam,
-    variety: "GUNTUR VARIETY",
-    title: "Guntur Sannam",
-    tagline: "BALANCED HEAT AND COLOR — THE ALL-ROUNDER",
-    description:
-      "The workhorse of Indian cuisine and the most widely used chilli variety in the subcontinent.",
-    asta: "100–120",
-    shu: "35,000+",
-    moisture: "≤12%",
-    heat: 4,
-    heatLabel: "Very Hot",
-    tags: ["Elite", "Balanced", "Versatile"],
-    origin: "Guntur, AP",
-  },
+    {
+      id: 3,
+      category: "Dry Chillies",
+      badge: "High Color Value",
+      image: syngenta,
+      variety: "355 BYADGI (RALLIS)",
+      title: "355 Byadgi (RALLIS) Dried Red Chilli",
+      description:
+        "High-demand worldwide, Byadgi is long, bright red, wrinkled, and mild. Widely used in cooking and natural colour extraction.",
+      productDetails: {
+        finishing: "Sun dried",
+        appearance: "Bright Red, Thin Skin, Less Hot",
+        packing: "Jute / PP Bag",
+      },
+      specifications: {
+        colorValue: "100 – 140",
+        pungency: "15k – 30k SHU",
+        capsaicin: "0.226%",
+      },
+      types: [
+        "Byadgi With Stem",
+        "Byadgi Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+      heat: 2,
+      heatLabel: "Less Hot",
+      tags: [
+        "Byadgi With Stem",
+        "Byadgi Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+    },
 
-  {
-    id: 4,
-    category: "Dry Chillies",
-    badge: "DRY CHILLIES",
-    image: dd,
-    variety: "PROCESSED VARIETY",
-    title: "Devanur Delux",
-    tagline: "CLEAN-PROCESSED FOR FOOD MANUFACTURERS",
-    description:
-      "Meticulously processed to remove all stems and seeds, leaving only uniform chilli skin with excellent consistency.",
-    asta: "90+",
-    shu: "40,000+",
-    moisture: "≤11%",
-    heat: 4,
-    heatLabel: "Very Hot",
-    tags: ["Refined", "Edible", "SSS Free"],
-    origin: "Guntur, AP",
-  },
+    {
+      id: 4,
+      category: "Dry Chillies",
+      badge: "Masala Industry Favourite",
+      image: chilli341dlx,
+      variety: "341",
+      title: "341 Dried Red Chilli",
+      description:
+        "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed dark red, less spicy.",
+      productDetails: {
+        finishing: "Sun dried",
+        appearance: "Dark Red, Thin Skin, Less Hot",
+        packing: "Jute / PP Bag",
+      },
+      specifications: {
+        colorValue: "90 – 140",
+        pungency: "25k – 50k SHU",
+        capsaicin: null,
+      },
+      types: [
+        "341 With Stem",
+        "341 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+      heat: 3,
+      heatLabel: "Less Hot",
+      tags: [
+        "341 With Stem",
+        "341 Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+    },
 
-  {
-    id: 5,
-    category: "Chilli Powder",
-    badge: "CHILLI POWDER",
-    image: powder,
-    variety: "MILD POWDER",
-    title: "Mild Chilli Powder",
-    tagline: "RICH COLOR. GENTLE HEAT. MAXIMUM AROMA.",
-    description:
-      "Ground from select low-heat varieties, this powder delivers stunning deep-red colour and balanced flavour.",
-    asta: "120+",
-    shu: "5,000+",
-    moisture: "≤10%",
-    heat: 2,
-    heatLabel: "Mild",
-    tags: ["Mild", "High Color", "Powder"],
-    origin: "Guntur, AP",
-  },
+    {
+      id: 5,
+      category: "Dry Chillies",
+      badge: "Chilli Powder Favourite",
+      image: kurnoolDD,
+      variety: "DEVANUR DELUXE (DD)",
+      title: "Devanur Deluxe Dried Red Chilli",
+      description:
+        "Dark red, semi-wrinkled and hot, Devanur Deluxe is grown in Kurnool, Telangana and Andhra Pradesh. Ideal for chilli powder, with fewer seeds.",
+      productDetails: {
+        finishing: "Sun dried",
+        appearance: "Dark Red, Semi Wrinkled, Hot",
+        packing: "Jute / PP Bag",
+      },
+      specifications: {
+        colorValue: "90 – 160",
+        pungency: "25k – 35k SHU",
+        capsaicin: null,
+      },
+      types: [
+        "DEVANUR DELUXE (DD) With Stem",
+        "DEVANUR DELUXE (DD) Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+      heat: 3,
+      heatLabel: "Hot",
+      tags: [
+        "DD With Stem",
+        "DD Stemless",
+        "Crushed Chilli Flakes",
+        "Chilli Pepper Powder",
+      ],
+    },
 
-  {
-    id: 6,
-    category: "Chilli Flakes",
-    badge: "CHILLI FLAKES",
-    image: flakes,
-    variety: "COARSE CUT",
-    title: "Crushed Chilli Flakes",
-    tagline: "BOLD TEXTURE. PERFECT HEAT-TO-COLOR RATIO.",
-    description:
-      "Coarsely crushed for visual appeal and textural punch. Our chilli flakes are a staple for pizzas and seasoning.",
-    asta: "80+",
-    shu: "30,000+",
-    moisture: "≤12%",
-    heat: 4,
-    heatLabel: "Very Hot",
-    tags: ["Coarse", "Preferred", "Flakes"],
-    origin: "Guntur, AP",
-  },
+    // ── Unchanged existing products ─────────────────────────────
+    {
+      id: 6,
+      category: "Chilli Powder",
+      badge: "CHILLI POWDER",
+      image: powder,
+      variety: "MILD POWDER",
+      title: "Mild Chilli Powder",
+      tagline: "RICH COLOR. GENTLE HEAT. MAXIMUM AROMA.",
+      description:
+        "Ground from carefully selected low-heat chilli varieties, this premium powder delivers a vibrant deep-red colour, balanced flavour, rich aroma, and consistent quality.",
+      asta: "120+",
+      shu: "5,000+",
+      moisture: "≤10%",
+      heat: 2,
+      heatLabel: "Mild",
+      tags: ["Mild", "High Color", "Powder", "Rich Aroma", "Seasoning"],
+      origin: "Guntur, AP",
+    },
 
-  {
-    id: 7,
-    category: "Dry Chillies",
-    badge: "DRY CHILLIES",
-    image: variety341,
-    variety: "341 VARIETY",
-    title: "341 Variety",
-    tagline: "EXCELLENT COLOUR WITH MEDIUM HEAT",
-    description:
-      "Popular export chilli with vibrant red colour, thin skin, and consistent processing quality.",
-    asta: "90–100",
-    shu: "25,000+",
-    moisture: "≤12%",
-    heat: 3,
-    heatLabel: "Hot",
-    tags: ["Export", "Light", "Processing"],
-    origin: "Guntur, AP",
-  },
-];
+    {
+      id: 7,
+      category: "Chilli Flakes",
+      badge: "CHILLI FLAKES",
+      image: flakes,
+      variety: "COARSE CUT",
+      title: "Crushed Chilli Flakes",
+      tagline: "BOLD TEXTURE. PERFECT HEAT-TO-COLOR RATIO.",
+      description:
+        "Coarsely crushed for visual appeal and textural punch. Our chilli flakes are a staple for pizzas and seasoning. They offer a perfect balance of heat and color, making them ideal for culinary applications that demand both flavor and aesthetics.",
+      asta: "80+",
+      shu: "30,000+",
+      moisture: "≤12%",
+      heat: 4,
+      heatLabel: "Very Hot",
+      tags: ["Coarse", "Preferred", "Flakes"],
+      origin: "Guntur, AP",
+    },
+  ];
 
   const filters = [
     "All",
@@ -186,7 +276,7 @@ function PremiumProductsH() {
   useEffect(() => {
     // FIX: `threshold: 0.2` meant "fire when 20% of this section is on
     // screen". intersectionRatio is capped at viewportHeight / sectionHeight,
-    // and this section (header + filters + 7 stacked cards) is several
+    // and this section (header + filters + stacked cards) is several
     // thousand px tall on a phone -- so 20% of it can never fit on screen at
     // once. The callback never ran, animateCards stayed false, and every card
     // sat at `opacity: 0` (the `.product-item-wrap` rule) until a filter click

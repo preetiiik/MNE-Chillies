@@ -1,0 +1,272 @@
+/* ==========================================
+   CHILLI VIDEOS
+   (font, color, and alignment system matched
+   to .premium in PremiumProductsH.css)
+========================================== */
+
+.chilli-videos {
+  width: 100%;
+  background: #ffffff;
+  padding: clamp(40px, 6vw, 80px) 0;
+  overflow: hidden;
+  overflow: clip;
+}
+
+.chilli-videos-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.chilli-videos-header {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  animation: fadeInUp 0.6s ease both;
+}
+
+/* LEFT */
+.chilli-videos-left {
+  flex: 1 1 320px;
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chilli-videos-label {
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+  color: #a6000c;
+}
+
+.chilli-videos-title {
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60.2px;
+  color: #1a0505;
+}
+
+.chilli-videos-title span {
+  color: #a6000c;
+}
+
+/* RIGHT */
+.chilli-videos-right {
+  flex: 1 1 260px;
+  max-width: 320px;
+  margin-top: 48px;
+}
+
+.chilli-videos-right p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #5d3f3c;
+  text-align: right;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.chilli-videos-grid {
+  max-width: 100%;
+  width: 100%;
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.chilli-video-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 0.67px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  overflow: clip;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.chilli-video-card:nth-child(1) { animation-delay: 0.05s; }
+.chilli-video-card:nth-child(2) { animation-delay: 0.15s; }
+.chilli-video-card:nth-child(3) { animation-delay: 0.25s; }
+
+.chilli-video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* landscape 16:9 frame */
+.chilli-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #1a0505;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.chilli-video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================
+   CAPTION
+=========================== */
+
+.chilli-video-caption {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.chilli-video-caption h3 {
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a0505;
+}
+
+.chilli-video-caption p {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #5d3f3c;
+  text-align: left;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chilli-videos-header,
+  .chilli-video-card {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .chilli-videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chilli-video-card:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+
+  .chilli-video-card:nth-child(3) .chilli-video-frame {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .chilli-videos-container {
+    padding: 0 20px;
+  }
+
+  .chilli-videos-right p {
+    text-align: left;
+    margin-top: -65px;
+  }
+
+  .chilli-videos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .chilli-video-card {
+    max-width: 100%;
+  }
+
+  .chilli-video-card:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .chilli-video-card:nth-child(3) .chilli-video-frame {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .chilli-videos {
+    padding: 30px 0;
+  }
+
+  .chilli-videos-container {
+    padding: 0 20px;
+  }
+
+  .chilli-videos-title {
+    font-size: 32px;
+    max-width: 260px;
+  }
+
+  .chilli-videos-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .chilli-videos-right p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
