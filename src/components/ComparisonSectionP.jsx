@@ -4,11 +4,12 @@ import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
 
 // Images
-import teja from "../assets/images/teja-s17.webp";
-import byadagi from "../assets/images/byadagi.webp";
-import sannam from "../assets/images/334-s4-sannam.webp";
-import dd from "../assets/images/dd.webp";
-import variety341 from "../assets/images/341-variety.webp";
+
+import teja from "../assets/images/teja-s17.jpeg";
+import sannam from "../assets/images/334.jpeg";
+import byadagi from "../assets/images/SYNGENTA.jpeg";
+import variety341 from "../assets/images/341-DLX.jpeg";
+import dd from "../assets/images/KURNOOL-DD.jpeg";
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
@@ -75,8 +76,8 @@ export default function ComparisonSection() {
       image: teja,
       name: "Teja S17",
       type: "Teja Variety",
-      asta: "80–100",
-      shu: "50,000+",
+      asta:"50–70",
+      shu:"65k - 85k",
       moisture: "≤12%",
       heat: 5,
       best: ["Hot Sauces", "Spice Blends", "Asian Cuisine"],
@@ -106,9 +107,9 @@ export default function ComparisonSection() {
 
     {
       image: variety341,
-      name: "341 DLX",
-      type: "341 DLX Variety",
-      asta: "90–100",
+      name: "341",
+      type: "341 Variety",
+      asta: "90–140",
       shu: "25,000–50,000",
       moisture: "≤12%",
       heat: 3,
@@ -141,7 +142,7 @@ export default function ComparisonSection() {
       image: dd,
       name: "Devanur Deluxe (DD)",
       type: "Devanur Deluxe Variety",
-      asta: "90–180",
+      asta: "90–160",
       shu: "25,000–35,000",
       moisture: "≤12%",
       heat: 3,
