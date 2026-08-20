@@ -49,7 +49,7 @@ function Products() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Six varieties.
+            Seven varieties.
             <br />
             <span>One standard.</span>
           </h1>
