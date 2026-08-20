@@ -165,7 +165,7 @@
 
     position:relative;
 
-    height:620px;
+    height:655px;
 
     overflow: hidden;  /* fallback */
     overflow: clip;    /* `hidden` here would create a nested scroll container */
@@ -316,7 +316,7 @@
 
     font-family:"Libre Caslon Text",serif;
 
-    font-size:48px;
+    font-size:42px;
 
     font-weight:700;
 
@@ -571,6 +571,7 @@
         padding:22px;
 
     }
+    
 
 }
 
@@ -659,6 +660,16 @@
     .fp-secondary-btn{
 
         width:100%;
+
+    }
+    .fp-specs span{
+
+        font-size:7px;
+
+    }
+    .fp-product-title{
+
+        font-size:clamp(28px, 4vw, 36px);
 
     }
 }
