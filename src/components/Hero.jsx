@@ -4,6 +4,21 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="home-hero">
+      {/* Background Video */}
+      <video
+        className="home-hero-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/assets/images/hero-bg.webp"
+      >
+        <source src="/assests/videos/hero-video4.mp4" type="video/mp4" />
+      </video>
+
+      {/* Gradient Overlay */}
+      <div className="home-hero-overlay"></div>
+
       <div className="container">
       <div className="home-hero-content" data-aos="fade-in">
         {/* Badge */}

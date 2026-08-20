@@ -713,6 +713,10 @@
     padding:0 20px; /* matches navbar's mobile horizontal padding */
   }
 
+  .premium-title{
+    line-height: 40.2px;
+  }
+
   .product-grid{
     grid-template-columns: 1fr;
     gap:20px;
@@ -739,6 +743,7 @@
     .premium-title{
         font-size:32px;
         max-width:260px;
+        line-height: 40.2px;
     }
 
     .premium-label{
