@@ -4,7 +4,7 @@ import "../styles/PremiumProductsH.css";
 
 // Existing Teja S17 asset already in the project — reused for the new
 // "Teja (S17) Dried Red Chilli" entry since it is the correct variety image.
-import teja from "../assets/images/teja-s17.webp";
+import teja from "../assets/images/teja-s17.jpeg";
 
 // NEW client-provided images referenced in the brief.
 // Place these files in src/assets/images/ using the exact names below
@@ -35,7 +35,7 @@ function PremiumProductsH() {
       variety: "TEJA (S17)",
       title: "Teja (S17) Dried Red Chilli",
       description:
-        "One of the hottest chilli varieties, S17 Teja is widely grown in southern India and highly sought after by international buyers for its intense heat and rich red colour.",
+        "One of the hottest chilli varieties, S17 Teja is widely grown in southern India and valued worldwide for its intense heat and rich red colour.",
       productDetails: {
         finishing: "Sun dried",
         appearance: "Bright Red, Thin Skin, Fiery Hot",
