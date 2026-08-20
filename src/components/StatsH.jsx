@@ -88,10 +88,7 @@ function Stats() {
       <div className="stats-container">
         {stats.map((item, index) => (
           <div className="stat-card" key={index}>
-            <h2>
-              {item.end}
-              {item.suffix}
-            </h2>
+            <Counter end={item.end} suffix={item.suffix} />
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
           </div>
