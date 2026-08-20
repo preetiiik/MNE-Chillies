@@ -123,7 +123,7 @@ export default function ComparisonSection() {
       asta: "120+",
       shu: "5,000–10,000",
       moisture: "≤ 10%",
-      heat: 1,
+      heat: 4,
       best: ["Seasoning", "Snacks"],
     },
 
@@ -134,7 +134,7 @@ export default function ComparisonSection() {
       asta: "80+",
       shu: "30,000+",
       moisture: "≤ 12%",
-      heat: 3,
+      heat: 2,
       best: ["Pizza", "Pasta"],
     },
 

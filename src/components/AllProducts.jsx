@@ -161,7 +161,7 @@ function AllProducts() {
 
             moisture:"≤10%",
 
-            heat:2,
+            heat:4,
 
             tags:[
                 "Mild",
@@ -194,7 +194,7 @@ function AllProducts() {
 
             moisture:"≤12%",
 
-            heat:4,
+            heat:2,
 
             tags:[
                 "Coarse Cut",
