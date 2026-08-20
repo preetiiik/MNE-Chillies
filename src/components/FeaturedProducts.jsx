@@ -149,9 +149,9 @@ function FeaturedProducts({
 
             image: variety341,
 
-            location: "341 DLX • GUNTUR",
+            location: "341 • GUNTUR",
 
-            title: "341 DLX Dried Red Chilli",
+            title: "341 Dried Red Chilli",
 
             subtitle: "Excellent colour with medium heat",
 

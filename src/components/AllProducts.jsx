@@ -2,11 +2,11 @@ import { useNavigate } from "react-router-dom";
 
 import "../styles/AllProducts.css";
 
-import teja from "../assets/images/teja-s17.webp";
-import sannam from "../assets/images/334-s4-sannam.webp";
-import byadagi from "../assets/images/byadagi.webp";
-import variety341 from "../assets/images/341-variety.webp";
-import dd from "../assets/images/dd.webp";
+import teja from "../assets/images/teja-s17.jpeg";
+import sannam from "../assets/images/334.jpeg";
+import byadagi from "../assets/images/SYNGENTA.jpeg";
+import variety341 from "../assets/images/341-DLX.jpeg";
+import dd from "../assets/images/KURNOOL-DD.jpeg";
 import powder from "../assets/images/mild-chilli-powder.webp";
 import flakes from "../assets/images/chilli-flakes.webp";
 
@@ -20,14 +20,14 @@ function AllProducts() {
             id:1,
             badge:"DRY CHILLIES",
             variety:"TEJA VARIETY",
-            title:"Teja S17",
+            title:"Teja S17 Dried Red Chilli",
             subtitle:"World's most exported Indian chilli",
             description:
-            "The undisputed king of export chillies. Extremely hot with brilliant deep-red colour and excellent shelf life. Widely used across Asian, Middle Eastern and Latin American markets.",
+            "One of the hottest varieties available. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
             image:teja,
 
-            asta:"80–100",
-            shu:"50,000+",
+            asta:"50–70",
+            shu:"65k - 85k",
             moisture:"≤12%",
 
             heat:5,
@@ -48,12 +48,12 @@ function AllProducts() {
 
             variety:"355 BYADGI VARIETY",
 
-            title:"355 Byadgi (RALLIS)",
+            title:"355 Byadgi (RALLIS) Dried Red Chilli",
 
             subtitle:"High colour. Low pungency.",
 
             description:
-            "Famous for its exceptional colour value and mild heat. Preferred for food colouring, spice blends and premium masala manufacturing.",
+            "Full demand worldwide. Grown in Guntur, Kurnool, Prakasam and Karnataka. Sub-varieties: Byadagi 355, 668, Syngenta, Kaddi, Dabbi. Physically longer, brighter red, wrinkled and mild. Used in cuisines and colour extraction industries.",
 
             image:byadagi,
 
@@ -81,12 +81,12 @@ function AllProducts() {
 
             variety:"334/S4 SANNAM VARIETY",
 
-            title:"334 / S4 / Sannam",
+            title:"334 / S4 / Sannam Dried Red Chilli",
 
             subtitle:"Balanced heat with rich red colour",
 
             description:
-            "One of India's most demanded export chillies offering vibrant colour, medium-high pungency and excellent processing quality for food manufacturers worldwide.",
+            "Rich red color and hot flavour. Grown in Guntur, Khammam and Prakasam districts. S4 Sannam skin is thick and red. When crushed — thick, red and hot. Rich in Vitamin C and Protein.",
             image:sannam,
 
             asta:"30–35",
@@ -113,16 +113,16 @@ function AllProducts() {
 
             variety:"DEVANUR DELUXE VARIETY",
 
-            title:"Devanur Deluxe (DD)",
+            title:"Devanur Deluxe (DD) Dried Red Chilli",
 
             subtitle:"Dark red. Rich flavour. Premium export grade.",
 
             description:
-            "Premium quality chilli with attractive dark-red appearance, excellent aroma and balanced pungency. Ideal for export markets and premium spice manufacturers.",
+            "Dark red, semi-wrinkled, longer, hot. Grown in Kurnool, Telangana and Andhra Pradesh. Popular for chilli powder. When crushed — thick, red, hot. Fewer seeds than other varieties.",
 
             image:dd,
 
-            asta:"90–180",
+            asta:"90–160",
 
             shu:"25,000–35,000",
 
@@ -151,7 +151,7 @@ function AllProducts() {
             subtitle:"Rich color. Gentle heat. Maximum aroma.",
 
             description:
-            "Ground from select low-heat varieties, this powder delivers stunning deep-red colour and balanced flavour.",
+            "Ground from carefully selected low-heat chilli varieties, this powder delivers a stunning deep-red colour with a smooth, balanced flavour. Perfect for adding vibrant colour, rich aroma, and mild warmth to curries, gravies, marinades, and everyday dishes.",
 
             image:powder,
 
@@ -184,7 +184,7 @@ function AllProducts() {
             subtitle:"Bold texture. Perfect heat-to-color ratio.",
 
             description:
-            "Coarsely crushed for visual appeal and textural punch. Our chilli flakes are a staple for pizzas and seasoning.",
+            "Coarsely crushed for bold visual appeal and a satisfying textural punch, our chilli flakes are perfect for adding heat, colour, and flavour to every bite. A versatile kitchen staple, they’re ideal for pizzas, pastas, salads, snacks, marinades, and everyday seasoning.",
 
             image:flakes,
 
@@ -210,18 +210,18 @@ function AllProducts() {
 
             badge:"DRY CHILLIES",
 
-            variety:"341 DLX VARIETY",
+            variety:"341 VARIETY",
 
-            title:"341 DLX",
+            title:"341 Dried Red Chilli",
 
             subtitle:"Excellent colour with medium heat",
 
             description:
-            "Popular export chilli featuring attractive red colour, thin skin and consistent quality suitable for food processing industries.",
+            "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed — dark red, less spicy.",
 
             image:variety341,
 
-            asta:"90–100",
+            asta:"90–140",
 
             shu:"25,000–50,000",
 
