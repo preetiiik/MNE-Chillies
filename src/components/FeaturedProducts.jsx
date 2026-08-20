@@ -4,7 +4,7 @@ import "../styles/FeaturedProducts.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import teja from "../assets/images/teja-s17.webp";
+import teja from "../assets/images/teja-s17.jpeg";
 import sannam from "../assets/images/334.jpeg";
 import byadagi from "../assets/images/SYNGENTA.jpeg";
 import variety341 from "../assets/images/341-DLX.jpeg";
@@ -36,12 +36,12 @@ function FeaturedProducts({
 
             location: "TEJA VARIETY • GUNTUR, AP",
 
-            title: "Teja S17",
+            title: "Teja S17 Dried Red Chilli",
 
             subtitle: "World's most exported Indian chilli",
 
             description:
-                "The undisputed king of export chillies. Extremely hot with brilliant deep-red colour and excellent shelf life. Widely used across Asian, Middle Eastern and Latin American markets.",
+                "One of the hottest varieties available. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
 
             heat: 5,
 
@@ -75,13 +75,12 @@ function FeaturedProducts({
 
             location: "334 S4/SANNAM • GUNTUR, AP",
 
-            title: "334 / S4 / Sannam",
+            title: "334 / S4 / Sannam Dried Red Chilli",
 
             subtitle: "Balanced heat with rich red colour",
 
             description:
-                "One of India's most demanded export chillies offering vibrant colour, medium-high pungency and excellent processing quality for food manufacturers worldwide.",
-
+                "Rich red color and hot flavour. Grown in Guntur, Khammam and Prakasam districts. S4 Sannam skin is thick and red. When crushed — thick, red and hot. Rich in Vitamin C and Protein.",
             heat: 4,
 
             specs: [
@@ -114,13 +113,12 @@ function FeaturedProducts({
 
             location: "355 BYADGI (RALLIS) • KARNATAKA",
 
-            title: "355 Byadgi (RALLIS)",
+            title: "355 Byadgi (RALLIS) Dried Red Chilli",
 
             subtitle: "High colour. Low pungency.",
 
             description:
-                "Famous for its exceptional colour value and mild heat. Preferred for food colouring, spice blends and premium masala manufacturing.",
-
+                "Full demand worldwide. Grown in Guntur, Kurnool, Prakasam and Karnataka. Sub-varieties: Byadagi 355, 668, Syngenta, Kaddi, Dabbi. Physically longer, brighter red, wrinkled and mild. Used in cuisines and colour extraction industries.",
             heat: 2,
 
             specs: [
@@ -153,12 +151,12 @@ function FeaturedProducts({
 
             location: "341 DLX • GUNTUR",
 
-            title: "341 DLX",
+            title: "341 DLX Dried Red Chilli",
 
             subtitle: "Excellent colour with medium heat",
 
             description:
-                "Popular export chilli featuring attractive red colour, thin skin and consistent quality suitable for food processing industries.",
+                "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed — dark red, less spicy.",
 
             heat: 3,
 
@@ -191,13 +189,12 @@ function FeaturedProducts({
 
             location: "DEVANUR DELUXE (DD) • KURNOOL",
 
-            title: "Devanur Deluxe (DD)",
+            title: "Devanur Deluxe (DD) Dried Red Chilli",
 
             subtitle: "Dark red. Rich flavour. Premium export grade.",
 
             description:
-                "Premium quality chilli with attractive dark-red appearance, excellent aroma and balanced pungency. Ideal for export markets and premium spice manufacturers.",
-
+                "Dark red, semi-wrinkled, longer, hot. Grown in Kurnool, Telangana and Andhra Pradesh. Popular for chilli powder. When crushed — thick, red, hot. Fewer seeds than other varieties.",
             heat: 3,
 
             specs: [
