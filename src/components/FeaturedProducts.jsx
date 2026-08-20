@@ -234,7 +234,7 @@ function FeaturedProducts({
             description:
                 "Prepared from carefully selected chillies to deliver uniform colour, flavour and texture for restaurants, food industries and spice brands.",
 
-            heat: 2,
+            heat: 4,
 
             specs: [
                 "ASTA 100-120",
@@ -273,7 +273,7 @@ function FeaturedProducts({
             description:
                 "Uniform crushed chilli flakes made from premium quality dried chillies. Widely used for pizzas, pasta, snacks and seasoning blends.",
 
-            heat: 3,
+            heat: 2,
 
             specs: [
                 "2-5 mm",
