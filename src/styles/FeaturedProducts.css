@@ -165,7 +165,7 @@
 
     position:relative;
 
-    height:655px;
+    height:100%;
 
     overflow: hidden;  /* fallback */
     overflow: clip;    /* `hidden` here would create a nested scroll container */

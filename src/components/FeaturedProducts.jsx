@@ -41,13 +41,14 @@ function FeaturedProducts({
             subtitle: "World's most exported Indian chilli",
 
             description:
-                "One of the hottest varieties available. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
+                "One of the hottest varieties available. Bright red with thin skin. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
 
             heat: 5,
 
             specs: [
                 "ASTA 80-100",
                 "SHU 50,000+",
+                "Capsaicin 0.589%",
                 "H₂O ≤12%"
             ],
 
@@ -55,6 +56,13 @@ function FeaturedProducts({
                 "Hot sauces",
                 "Spice blends",
                 "Asian cuisine"
+            ],
+
+            types: [
+                "Teja S17 With Stem",
+                "Teja S17 Stemless",
+                "Crushed Chilli Flakes",
+                "Chilli Pepper Powder"
             ],
 
             packing: [
@@ -86,6 +94,7 @@ function FeaturedProducts({
             specs: [
                 "ASTA 30-35",
                 "SHU 35k-40k",
+                "Capsaicin 0.226%",
                 "H₂O ≤12%"
             ],
 
@@ -93,6 +102,13 @@ function FeaturedProducts({
                 "Masala powders",
                 "Pickles",
                 "Restaurants"
+            ],
+
+            types: [
+                "334 S4 With Stem",
+                "334 S4 Stemless",
+                "Crushed Chilli Flakes",
+                "Chilli Pepper Powder"
             ],
 
             packing: [
@@ -118,12 +134,13 @@ function FeaturedProducts({
             subtitle: "High colour. Low pungency.",
 
             description:
-                "Full demand worldwide. Grown in Guntur, Kurnool, Prakasam and Karnataka. Sub-varieties: Byadagi 355, 668, Syngenta, Kaddi, Dabbi. Physically longer, brighter red, wrinkled and mild. Used in cuisines and colour extraction industries.",
+                "Full demand worldwide. Grown in Guntur, Kurnool, Prakasam and Karnataka. Sub-varieties: Byadagi 355, 668, Syngenta, Kaddi, Dabbi. Physically longer, brighter red, thin skin, wrinkled and mild. Used in cuisines and colour extraction industries.",
             heat: 2,
 
             specs: [
                 "ASTA 100-140",
                 "SHU 15k-30k",
+                "Capsaicin 0.226%",
                 "H₂O ≤12%"
             ],
 
@@ -131,6 +148,13 @@ function FeaturedProducts({
                 "Natural food colour",
                 "Masala blends",
                 "Pickles"
+            ],
+
+            types: [
+                "Byadgi With Stem",
+                "Byadgi Stemless",
+                "Crushed Chilli Flakes",
+                "Chilli Pepper Powder"
             ],
 
             packing: [
@@ -156,7 +180,7 @@ function FeaturedProducts({
             subtitle: "Excellent colour with medium heat",
 
             description:
-                "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed — dark red, less spicy.",
+                "Dark red, thin skin, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed — dark red, less spicy.",
 
             heat: 3,
 
@@ -170,6 +194,13 @@ function FeaturedProducts({
                 "Curry powders",
                 "Spice blends",
                 "Food processing"
+            ],
+
+            types: [
+                "341 With Stem",
+                "341 Stemless",
+                "Crushed Chilli Flakes",
+                "Chilli Pepper Powder"
             ],
 
             packing: [
@@ -207,6 +238,13 @@ function FeaturedProducts({
                 "Masala blends",
                 "Premium cuisine",
                 "Food processing"
+            ],
+
+            types: [
+                "Devanur Deluxe (DD) With Stem",
+                "Devanur Deluxe (DD) Stemless",
+                "Crushed Chilli Flakes",
+                "Chilli Pepper Powder"
             ],
 
             packing: [
@@ -461,6 +499,42 @@ function FeaturedProducts({
                                     </div>
 
                                 </div>
+                                {product.category === "Dry Chillies" && (
+
+                                    <div className="fp-block">
+                                        <h5>Finishing</h5>
+                                        <div className="fp-chip-container">
+                                            <span className="fp-chip">Sun Dried</span>
+                                            {/* <span className="fp-chip">Machine Dried</span> */}
+                                        </div>
+                                    </div>
+
+                                )}
+
+                                {product.types && (
+
+                                    <div className="fp-block">
+
+                                        <h5>TYPES AVAILABLE</h5>
+
+                                        <div className="fp-chip-container">
+
+                                            {product.types.map(
+                                                (item, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="fp-chip"
+                                                    >
+                                                        {item}
+                                                    </span>
+                                                )
+                                            )}
+
+                                        </div>
+
+                                    </div>
+
+                                )}
 
                                 <div className="fp-block">
 
