@@ -564,6 +564,18 @@
 .footer-links a:hover {
   color: white;
 }
+
+.footer-bottom a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color .3s;
+    color: #ffffff66;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff99;
+}
+
 @media (max-width: 1200px){
   .collection,
   .premium,

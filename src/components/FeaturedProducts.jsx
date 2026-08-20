@@ -266,7 +266,7 @@ function FeaturedProducts({
 
             location: "CRUSHED CHILLI",
 
-            title: "Premium Chilli Flakes",
+            title: "Crushed Chilli Flakes",
 
             subtitle: "Perfect texture. Rich aroma.",
 
