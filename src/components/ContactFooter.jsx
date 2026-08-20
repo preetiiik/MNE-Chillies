@@ -231,8 +231,8 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <div className="footer-phone">
-              <a href="tel:+91 1234567890">
-                +91 1234567890
+              <a href="tel:+911234567890">
+                +911234567890
                 </a>
             </div>
 
@@ -240,7 +240,7 @@ const ContactFooter = ({ hideCTA }) => {
               WHATSAPP
             </span>
             <a
-              href="https://wa.me/91 1234567890"
+              href="https://wa.me/911234567890"
               target="_blank"
               rel="noreferrer"
               className="footer-link"
@@ -280,7 +280,14 @@ const ContactFooter = ({ hideCTA }) => {
           <p>
             © 2026 MNE Chillies Pvt. Ltd.
             All Rights Reserved.
-            Powered by Spitel Pvt. Ltd.
+            Powered by{" "}
+            <a
+              href="https://www.spitel.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Spitel Pvt. Ltd.
+            </a>
           </p>
 
           <div className="footer-links">

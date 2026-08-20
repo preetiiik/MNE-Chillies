@@ -129,7 +129,7 @@ export default function ComparisonSection() {
 
     {
       image: flakes,
-      name: "Premium Chilli Flakes",
+      name: "Crushed Chilli Flakes",
       type: "Flakes",
       asta: "80+",
       shu: "30,000+",
