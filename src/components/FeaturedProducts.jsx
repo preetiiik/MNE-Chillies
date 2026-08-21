@@ -46,8 +46,8 @@ function FeaturedProducts({
             heat: 5,
 
             specs: [
-                "ASTA 80-100",
-                "SHU 50,000+",
+                "ASTA 50-70",
+                "SHU 65k-85k",
                 "Capsaicin 0.589%",
                 "H₂O ≤12%"
             ],
@@ -185,7 +185,7 @@ function FeaturedProducts({
             heat: 3,
 
             specs: [
-                "ASTA 90-100",
+                "ASTA 90-140",
                 "SHU 25k-50k",
                 "H₂O ≤12%"
             ],
@@ -229,7 +229,7 @@ function FeaturedProducts({
             heat: 3,
 
             specs: [
-                "ASTA 90-180",
+                "ASTA 90-160",
                 "SHU 25k-35k",
                 "H₂O ≤12%"
             ],
@@ -275,8 +275,8 @@ function FeaturedProducts({
             heat: 4,
 
             specs: [
-                "ASTA 100-120",
-                "SHU 5k-10k",
+                "ASTA 120+",
+                "SHU 5k+",
                 "H₂O ≤10%"
             ],
 
@@ -314,8 +314,8 @@ function FeaturedProducts({
             heat: 2,
 
             specs: [
-                "2-5 mm",
-                "SHU 20k-35k",
+                "ASTA 80+",
+                "SHU 30k+",
                 "H₂O ≤10%"
             ],
 
