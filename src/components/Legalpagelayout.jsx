@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { PiX } from "react-icons/pi";
-import "../styles/LegalPageLayout.css";
+import "../styles/Legalpagelayout.css";
 
 /**
  * Full-screen overlay wrapper for legal pages (Privacy Policy,
