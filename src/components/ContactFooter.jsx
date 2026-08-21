@@ -291,11 +291,9 @@ const ContactFooter = ({ hideCTA }) => {
           </p>
 
           <div className="footer-links">
-
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
-            <p>Cookie Policy</p>
-
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
+            <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
 
         </div>
