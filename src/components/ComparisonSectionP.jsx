@@ -121,7 +121,7 @@ export default function ComparisonSection() {
       name: "Mild Chilli Powder",
       type: "Powder",
       asta: "120+",
-      shu: "5,000–10,000",
+      shu: "5,000+",
       moisture: "≤ 10%",
       heat: 4,
       best: ["Seasoning", "Snacks"],
