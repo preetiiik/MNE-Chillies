@@ -15,8 +15,19 @@ import Services from "./pages/Services";
 import Infrastructure from "./pages/Infrastructure";
 import Contact from "./pages/Contact";
 
+import PrivacyPolicy from "./components/Privacypolicy";
+import TermsConditions from "./components/Termsconditions";
+import CookiePolicy from "./components/Cookiepolicy";
+
 function AppContent() {
   const location = useLocation();
+
+  const legalPaths = [
+    "/privacy-policy",
+    "/terms-and-conditions",
+    "/cookie-policy",
+  ];
+  const isLegalPage = legalPaths.includes(location.pathname);
 
   const hideCTA =
     location.pathname === "/contact" ||
@@ -32,7 +43,7 @@ function AppContent() {
     <>
       <ScrollToTop />
 
-      <Navbar />
+      {!isLegalPage && <Navbar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -41,9 +52,14 @@ function AppContent() {
         <Route path="/services" element={<Services />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+
       </Routes>
 
-      <ContactFooter hideCTA={hideCTA} />
+      {!isLegalPage && <ContactFooter hideCTA={hideCTA} />}
     </>
   );
 }
