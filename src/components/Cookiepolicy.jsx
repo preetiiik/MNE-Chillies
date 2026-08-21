@@ -1,5 +1,5 @@
 import React from "react";
-import LegalPageLayout from "./LegalPageLayout";
+import LegalPageLayout from "./Legalpagelayout";
 
 const COMPANY = "MNE Chillies Pvt. Ltd.";
 const DOMAIN = "[yourdomain.com]"; // TODO: replace once the domain is live
