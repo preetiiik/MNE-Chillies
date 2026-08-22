@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import "../styles/FeaturedProducts.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,8 +9,8 @@ import sannam from "../assets/images/334.jpeg";
 import byadagi from "../assets/images/SYNGENTA.jpeg";
 import variety341 from "../assets/images/341-DLX.jpeg";
 import dd from "../assets/images/KURNOOL-DD.jpeg";
-import powder from "../assets/images/mild-chilli-powder.webp";
-import flakes from "../assets/images/chilli-flakes.webp";
+import powder from "../assets/images/mild-chilli-powder.png";
+import flakes from "../assets/images/chilli-flakes.png";
 
 function FeaturedProducts({
   activeFilter,
@@ -19,9 +19,42 @@ function FeaturedProducts({
     
     // const [activeFilter, setActiveFilter] = useState("All");
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
     const scrollToContact = () => {
     navigate("/contact");
 };
+
+    // Allow links like /products?category=Dry%20Chillies&product=3 to
+    // preselect a filter and scroll straight to that specific product card
+    // (falling back to just the section top when no product id is given).
+    useEffect(() => {
+        const categoryFromUrl = searchParams.get("category");
+        const productIdFromUrl = searchParams.get("product");
+
+        if (
+            categoryFromUrl &&
+            ["All", "Dry Chillies", "Chilli Powder", "Chilli Flakes"].includes(
+                categoryFromUrl
+            )
+        ) {
+            setActiveFilter(categoryFromUrl);
+        }
+
+        if (categoryFromUrl || productIdFromUrl) {
+            // Wait for the (possibly just-filtered) cards to render before
+            // scrolling, otherwise scrollIntoView can undershoot on a tall
+            // hero/banner page or target a card that isn't mounted yet.
+            const targetId = productIdFromUrl
+                ? `product-${productIdFromUrl}`
+                : "featured-products";
+
+            setTimeout(() => {
+                document
+                    .getElementById(targetId)
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100);
+        }
+    }, [searchParams]);
 
     const products = [
 
@@ -363,7 +396,7 @@ function FeaturedProducts({
 
     return (
 
-        <section className="fp-section">
+        <section className="fp-section" id="featured-products">
             <div className="container">
 
             <div className="fp-container">
@@ -406,6 +439,7 @@ function FeaturedProducts({
 
                         <div
                             key={product.id}
+                            id={`product-${product.id}`}
                             className={`fp-card ${
                                 index % 2 !== 0
                                     ? "reverse"

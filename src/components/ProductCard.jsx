@@ -3,6 +3,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 function ProductCard({ product }) {
   const {
+    id,
+    category,
     badge,
     image,
     variety,
@@ -13,10 +15,12 @@ function ProductCard({ product }) {
     tags,
   } = product;
 
-  // "View Details" now always navigates to the Products page
-  // (FeaturedProducts) instead of opening an in-page modal, so make sure
-  // the entries in FeaturedProducts.jsx stay in sync with the varieties
-  // shown here.
+  // "View Details" navigates to the Products page and deep-links to this
+  // exact card in FeaturedProducts (same category + same numeric id), which
+  // reads these two params to pick the filter and scroll to the card.
+  const detailsLink = `/products?category=${encodeURIComponent(
+    category
+  )}&product=${id}`;
   return (
     <div className="product-item">
       <div className="product-image">
@@ -56,7 +60,7 @@ function ProductCard({ product }) {
         <hr />
 
         <div className="product-footer">
-          <Link to="/products" className="view-details-btn">
+          <Link to={detailsLink} className="view-details-btn">
             <span>View Details</span>
             <FiArrowRight />
           </Link>

@@ -18,13 +18,6 @@ function Products() {
 
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = [
-    "All",
-    "Dry Chillies",
-    "Chilli Powder",
-    "Chilli Flakes",
-  ];
-
   return (
     <>
       <section
@@ -54,22 +47,15 @@ function Products() {
             <span>One standard.</span>
           </h1>
 
-          <div
-            className="hero-buttons"
+          <p
+            className="hero-description"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                className={activeFilter === filter ? "active" : ""}
-                onClick={() => setActiveFilter(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
+            From sun-dried whole chillies to fine powders and crushed flakes,
+            every batch is graded for colour, heat and purity before it ships.
+          </p>
         </div>
       </section>
 

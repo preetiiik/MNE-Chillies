@@ -1,7 +1,7 @@
 import dryPowder from "../assets/images/powder-pour.webp";
 import dryChillies from "../assets/images/dry-chillies.webp";
-import flakes from "../assets/images/chilli-flakes.webp";
-import powder from "../assets/images/mild-chilli-powder.webp";
+import flakes from "../assets/images/chilli-flakes.png";
+import powder from "../assets/images/mild-chilli-powder.png";
 
 import "../styles/OurProductsP.css";
 

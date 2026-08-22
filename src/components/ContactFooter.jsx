@@ -2,12 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/ContactFooter.css";
 
-import {
-  FaLinkedinIn,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 import footerLogo from "../assets/images/logo.webp";
 import contactBg from "../assets/images/Container.webp";
@@ -93,35 +88,12 @@ const ContactFooter = ({ hideCTA }) => {
 
             <div className="social-icons">
               <a
-                href="https://www.linkedin.com/company/your-company"
+                href="https://wa.me/911234567890"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Chat on WhatsApp"
               >
-                <FaLinkedinIn />
-              </a>
-
-              <a
-                href="https://www.Twitter.com/company/your-company"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaTwitter />
-              </a>
-
-              <a
-                href="https://www.Instagram.com/company/your-company"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaInstagram />
-              </a>
-
-              <a
-                href="https://www.Youtube.com/company/your-company"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaYoutube />
+                <FaWhatsapp />
               </a>
             </div>
           </div>
@@ -161,19 +133,11 @@ const ContactFooter = ({ hideCTA }) => {
           >
             <h4>Products</h4>
             <ul>
-            <li><Link to="/products">Dry Chillies</Link></li>
+            <li><Link to="/products?category=Dry Chillies">Dry Chillies</Link></li>
 
-            <li><Link to="/products">Chilli Powder</Link></li>
+            <li><Link to="/products?category=Chilli Powder">Chilli Powder</Link></li>
 
-            <li><Link to="/products">Chilli Flakes</Link></li>
-
-            <li><Link to="/products">Custom Blends</Link></li>
-
-            <li><Link to="/products">Teja S17</Link></li>
-
-            <li><Link to="/products">Byadagi</Link></li>
-
-            <li><Link to="/products">Guntur Sannam</Link></li>
+            <li><Link to="/products?category=Chilli Flakes">Chilli Flakes</Link></li>
             </ul>
             {/* <ul>
               <li><a href="/">Dry Chillies</a></li>
