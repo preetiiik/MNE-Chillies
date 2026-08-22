@@ -23,6 +23,10 @@
     align-items:center;
     gap:70px;
     box-sizing:border-box;
+    max-width: 1360px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* =====================================================
