@@ -4,8 +4,8 @@ import {
   FiPhone,
   FiMail,
   FiMapPin,
-  FiMessageSquare,
 } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 function ContactEnquiry() {
   return (
@@ -84,7 +84,7 @@ function ContactEnquiry() {
 
             {/* WhatsApp */}
             <div className="contact-item">
-              <FiMessageSquare className="contact-icon" />
+              <FaWhatsapp className="contact-icon whatsapp-icon" />
 
               <div>
                 <div className="contact-label">WhatsApp</div>
