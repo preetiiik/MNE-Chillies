@@ -16,8 +16,8 @@ import syngenta from "../assets/images/SYNGENTA.jpeg";
 import chilli341dlx from "../assets/images/341-DLX.jpeg";
 import kurnoolDD from "../assets/images/KURNOOL-DD.jpeg";
 
-import powder from "../assets/images/mild-chilli-powder.webp";
-import flakes from "../assets/images/chilli-flakes.webp";
+import powder from "../assets/images/mild-chilli-powder.png";
+import flakes from "../assets/images/chilli-flakes.png";
 
 function PremiumProductsH() {
   const [activeFilter, setActiveFilter] = useState("All");

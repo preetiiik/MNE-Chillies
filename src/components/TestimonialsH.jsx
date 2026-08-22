@@ -5,75 +5,75 @@ import "../styles/TestimonialsH.css";
 const testimonials = [
   {
     quote:
-      "Consistent ASTA values, reliable moisture levels, and always on-time delivery. They've become our go-to supplier for all chilli imports.",
-    name: "Takashi Yamamoto",
-    role: "Head of Procurement · Spice World Japan",
-    initials: "TY",
+      "Been buying from them for almost two years now. What I like most is I don't have to double check every batch anymore, the moisture and color are pretty much the same every time.",
+    name: "Rohit Sharma",
+    initials: "RS",
     color: "#C0392B",
+    rating: 5,
   },
   {
     quote:
-      "The Teja S17 variety we source from them has transformed our hot sauce line. Color is extraordinary, heat is consistent batch after batch.",
-    name: "Maria Gonzalez",
-    role: "Product Development Lead · Fuego Foods, Mexico",
-    initials: "MG",
+      "Honestly wasn't expecting much when we switched suppliers, but the Teja S17 batch they sent completely changed how our sauce turns out. Good heat, great color, no complaints.",
+    name: "Priya Nair",
+    initials: "PN",
     color: "#D68910",
+    rating: 4,
   },
   {
     quote:
-      "We've worked with dozens of Indian exporters. These guys are the only ones who actually deliver what the COA says. Remarkable quality control.",
-    name: "James Thornton",
-    role: "Import Director · British Spice Co., UK",
-    initials: "JT",
+      "Quality is good when it arrives, but we've had a couple of shipments get delayed at the port with barely any heads up. Works out fine in the end, just wish the updates were quicker.",
+    name: "Arjun Mehta",
+    initials: "AM",
     color: "#1E8449",
+    rating: 3,
   },
   {
     quote:
-      "Every shipment arrives exactly as certified. Their lab reports are thorough and the team is responsive whenever we have questions.",
-    name: "Sofia Rossi",
-    role: "Head of Sourcing · Bella Cucina, Italy",
-    initials: "SR",
+      "Documentation is clean and lab reports come on time. Communication could be a little faster during peak season, but overall we haven't had a reason to look elsewhere.",
+    name: "Ananya Iyer",
+    initials: "AI",
     color: "#2874A6",
+    rating: 4,
   },
   {
     quote:
-      "Reliable partner for our seasoning line. Pricing is fair, quality is consistent, and they've never missed a delivery window in three years.",
-    name: "Ahmed Al-Farsi",
-    role: "Procurement Manager · Gulf Spice Trading, UAE",
-    initials: "AA",
+      "Nothing fancy to say, they just deliver on time and the pricing has stayed fair even when the market got a bit volatile last year. That kind of consistency is hard to find.",
+    name: "Karan Malhotra",
+    initials: "KM",
     color: "#6C3483",
+    rating: 5,
   },
   {
     quote:
-      "Switching to them cut our rejection rate to almost zero. The Sannam variety they supply has become the backbone of our paprika blends.",
-    name: "Lukas Bauer",
-    role: "Quality Assurance Lead · Wurzig GmbH, Germany",
-    initials: "LB",
+      "Our rejection rate dropped after we started sourcing from them. Had one shipment last year that came in slightly off spec, but they sorted it out quickly and it hasn't happened since.",
+    name: "Sneha Reddy",
+    initials: "SR",
     color: "#B9770E",
+    rating: 4,
   },
   {
     quote:
-      "Their traceability documentation makes our audits painless. Every bag is tagged back to the farm, which our retailers really value.",
-    name: "Grace Okafor",
-    role: "Supply Chain Manager · Savanna Foods, Nigeria",
-    initials: "GO",
+      "Every bag we get is traceable back to the farm, which made our last audit so much easier than usual. Our retail partners specifically noticed and appreciated that.",
+    name: "Vikram Desai",
+    initials: "VD",
     color: "#117864",
+    rating: 5,
   },
   {
     quote:
-      "We tested five suppliers before settling on them. Best balance of color value, pungency, and consistent pricing we've found in the market.",
-    name: "Wei Chen",
-    role: "Purchasing Director · Golden Wok Foods, Singapore",
-    initials: "WC",
+      "Product itself is decent and priced fairly, but their email responses can take a couple of days sometimes, which is frustrating when we're trying to plan around a shipment.",
+    name: "Neha Kapoor",
+    initials: "NK",
     color: "#922B21",
+    rating: 3,
   },
   {
     quote:
-      "From sample to full container, communication has been excellent. They flag quality issues before we even see them on our end.",
-    name: "Isabella Martinez",
-    role: "Operations Head · Condimentos del Sur, Argentina",
-    initials: "IM",
+      "From the first sample to a full container order, they've kept us in the loop the whole way. A couple of times they flagged a quality concern before we even noticed it ourselves.",
+    name: "Aditya Rao",
+    initials: "AR",
     color: "#7D6608",
+    rating: 5,
   },
 ];
 
@@ -206,6 +206,16 @@ export default function TestimonialsSection() {
                     <div className="testimonial-card">
                       <div>
                         <div className="quote-mark">&#8221;</div>
+                        <div className="testimonial-stars" aria-label={`${item.rating} out of 5 stars`}>
+                          {Array.from({ length: 5 }).map((_, s) => (
+                            <span
+                              key={s}
+                              className={`star${s < item.rating ? " filled" : ""}`}
+                            >
+                              &#9733;
+                            </span>
+                          ))}
+                        </div>
                         <p className="testimonial-text">{item.quote}</p>
                       </div>
                       <div className="testimonial-footer">
@@ -214,7 +224,6 @@ export default function TestimonialsSection() {
                         </div>
                         <div className="author-info">
                           <h4>{item.name}</h4>
-                          <span>{item.role}</span>
                         </div>
                       </div>
                     </div>

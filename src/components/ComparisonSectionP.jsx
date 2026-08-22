@@ -10,8 +10,8 @@ import sannam from "../assets/images/334.jpeg";
 import byadagi from "../assets/images/SYNGENTA.jpeg";
 import variety341 from "../assets/images/341-DLX.jpeg";
 import dd from "../assets/images/KURNOOL-DD.jpeg";
-import powder from "../assets/images/mild-chilli-powder.webp";
-import flakes from "../assets/images/chilli-flakes.webp";
+import powder from "../assets/images/mild-chilli-powder.png";
+import flakes from "../assets/images/chilli-flakes.png";
 
 export default function ComparisonSection() {
 

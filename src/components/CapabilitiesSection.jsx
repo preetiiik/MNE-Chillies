@@ -6,7 +6,7 @@ import mpuImg from "../assets/images/mpu.webp";
 import qaImg from "../assets/images/qa.webp";
 import coldStorageImg from "../assets/images/coldstorage.webp";
 import qualityLedImg from "../assets/images/quality-led.webp";
-import stemlessImg from "../assets/images/stemless.webp";
+import stemlessImg from "../assets/images/stemless.png";
 
 export default function CapabilitiesSection() {
   const capabilities = [
