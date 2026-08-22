@@ -1,11 +1,11 @@
 import "../styles/CapabilitiesSection.css";
 
 import steamImg from "../assets/images/steam.webp";
-import mbrImg from "../assets/images/mbr.webp";
-import mpuImg from "../assets/images/mpu.webp";
-import qaImg from "../assets/images/qa.webp";
-import coldStorageImg from "../assets/images/coldstorage.webp";
-import qualityLedImg from "../assets/images/quality-led.webp";
+import mbrImg from "../assets/images/mbr.png";
+import mpuImg from "../assets/images/mpu.png";
+import qaImg from "../assets/images/qa.png";
+import coldStorageImg from "../assets/images/coldstorage.png";
+import qualityLedImg from "../assets/images/quality-led.png";
 import stemlessImg from "../assets/images/stemless.png";
 
 export default function CapabilitiesSection() {
