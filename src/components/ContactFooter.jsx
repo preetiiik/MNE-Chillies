@@ -88,7 +88,7 @@ const ContactFooter = ({ hideCTA }) => {
 
             <div className="social-icons">
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/919440793970"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Chat on WhatsApp"
@@ -195,8 +195,8 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <div className="footer-phone">
-              <a href="tel:+911234567890">
-                +911234567890
+              <a href="tel:+919440793970">
+                +919440793970
                 </a>
             </div>
 
@@ -204,7 +204,7 @@ const ContactFooter = ({ hideCTA }) => {
               WHATSAPP
             </span>
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/919440793970"
               target="_blank"
               rel="noreferrer"
               className="footer-link"

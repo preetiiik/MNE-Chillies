@@ -41,8 +41,8 @@ function ContactEnquiry() {
                 <div className="contact-label">Phone</div>
 
                 <div className="contact-value">
-                  <a href="tel:+91 1234567890">
-                    +91 1234567890
+                  <a href="tel:+91 9440793970">
+                    +91 9440793970
                   </a>
                 </div>
               </div>
@@ -91,11 +91,11 @@ function ContactEnquiry() {
 
                 <div className="contact-value">
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/9440793970"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +91 1234567890
+                    +91 9440793970
                   </a>
                 </div>
               </div>
@@ -119,7 +119,7 @@ function ContactEnquiry() {
                 <label>FULL NAME</label>
                 <input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Ramesh Kumar"
                 />
               </div>
 
@@ -135,7 +135,7 @@ function ContactEnquiry() {
                 <label>WORK EMAIL</label>
                 <input
                   type="email"
-                  placeholder="john@company.com"
+                  placeholder="ramesh@company.com"
                 />
               </div>
 
@@ -143,7 +143,7 @@ function ContactEnquiry() {
                 <label>PHONE</label>
                 <input
                   type="text"
-                  placeholder="+91 (555) 000-0000"
+                  placeholder="+91 1234567890"
                 />
               </div>
 
@@ -159,7 +159,7 @@ function ContactEnquiry() {
                 <label>INTERESTED IN</label>
 
                 <select>
-                  <option>Dry Chillies</option>
+                  <option>Whole Chilli</option>
                   <option>Chilli Powder</option>
                   <option>Chilli Flakes</option>
                   <option>Custom Blends</option>

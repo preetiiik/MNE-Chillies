@@ -4,7 +4,7 @@ import LegalPageLayout from "./Legalpagelayout";
 const COMPANY = "MNE Chillies Pvt. Ltd.";
 const DOMAIN = "[yourdomain.com]"; // TODO: replace once the domain is live
 const EMAIL = "exports@premiumchillies.com";
-const PHONE = "+91 1234567890";
+const PHONE = "+91 9440793970";
 const ADDRESS = "Hubli, Karnataka, India";
 const LAST_UPDATED = "August 21, 2026";
 
