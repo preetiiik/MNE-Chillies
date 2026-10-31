@@ -56,8 +56,8 @@ function ContactEnquiry() {
                 <div className="contact-label">Email</div>
 
                 <div className="contact-value">
-                  <a href="mailto:enquiry@mnespice.com">
-                    enquiry@mnespice.com
+                  <a href="mailto:mnenterprises@live.in">
+                    mnenterprises@live.in
                   </a>
                 </div>
               </div>
@@ -72,11 +72,11 @@ function ContactEnquiry() {
 
                 <div className="contact-value">
                   <a
-                    href="https://www.google.com/maps/place/Hubballi,+Karnataka/@15.404758,75.0667318,12z/data=!3m1!4b1!4m6!3m5!1s0x3bb8d6d3a2090b17:0xae803e207113397!8m2!3d15.3647083!4d75.1239547!16zL20vMDE2YmY1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+                    href="https://maps.app.goo.gl/1RpR2fCwzDAsfjpNA?g_st=iw"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Hubli
+                    M.N EXPORT HOUSE<br />2/2 Arundelpet<br />Backside Jain Temple<br />Guntur - 522007<br />Andhra Pradesh, India
                   </a>
                 </div>
               </div>

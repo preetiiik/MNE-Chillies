@@ -3,12 +3,13 @@
    Full-screen, no navbar / CTA / footer. Close (X) top right.
 ====================================================== */
 
-.legal-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-
+.legal-page {
+  padding-top: 110px;
   background: #FFFDFC;
+}
+
+.legal-site-header .navbar {
+  background: #1A0505;
 }
 
 .legal-close {
@@ -67,7 +68,11 @@
    HEADER
 ====================================================== */
 
-.legal-brand {
+.legal-brand-logo {
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 22px;
   display: block;
   text-align: center;
 

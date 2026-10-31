@@ -118,16 +118,16 @@ function FeaturedProducts({
 
             title: "334 / S4 / Sannam Dried Red Chilli",
 
-            subtitle: "Balanced heat with rich red colour",
+            subtitle: "Low heat with light red colour",
 
             description:
-                "Rich red color and hot flavour. Grown in Guntur, Khammam and Prakasam districts. S4 Sannam skin is thick and red. When crushed — thick, red and hot. Rich in Vitamin C and Protein.",
-            heat: 4,
+                "Light red color and low heat flavour. Grown in Guntur and Prakasam districts.",
+            heat: 2,
 
             specs: [
-                "ASTA 30-35",
-                "SHU 35k-40k",
-                "Capsaicin 0.226%",
+                "ASTA 40-50",
+                "SHU 18k-22k",
+                "Capsaicin ~0.11–~0.14%",
                 "H₂O ≤12%"
             ],
 
@@ -489,6 +489,25 @@ function FeaturedProducts({
                                 <p className="fp-description">
                                     {product.description}
                                 </p>
+
+                                {product.id === 2 && (
+                                    <div className="fp-sannam-details">
+                                        <h4>Perfect Heat-to-Color Ratio</h4>
+                                        <p>With a pungency of 18,000–22,000 SHU and 40–50 ASTA color, it's the ideal base for global culinary spice blends.</p>
+                                        <h4>High Seed Density</h4>
+                                        <p>The seeds give it that signature pungent aroma and provide a great texture when ground into commercial chilli powder or flakes.</p>
+                                        <div className="fp-spec-table-wrap">
+                                            <table className="fp-spec-table">
+                                                <thead><tr><th>Parameter</th><th>Range / Value</th><th>Test Method</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Scoville Heat Units (SHU)</td><td>18,000 – 22,000 SHU</td><td>HPLC / Spectrophotometric</td></tr>
+                                                    <tr><td>Total Capsaicinoids</td><td>~0.11 - ~0.14%</td><td>HPLC-FLD</td></tr>
+                                                    <tr><td>Colour value</td><td>40 – 50 ASTA</td><td>—</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                )}
 
                                 <div className="fp-heat">
 

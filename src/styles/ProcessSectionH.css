@@ -52,7 +52,8 @@
 
 .process-grid {
   position: relative;
-  margin-top: 64px;
+  max-width: 940px;
+  margin: 48px 0 0;
 
   display: flex;
   justify-content: space-between;
@@ -517,3 +518,4 @@ body {
   padding-right: 3px !important;
 }
 }
+

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/ProcessTimeline.css";
 
 const STEPS = [
@@ -9,8 +8,8 @@ const STEPS = [
   },
   {
     id: "02",
-    title: "Steam Sterilisation",
-    description: "CMF processing — zero artificial additives",
+    title: "Chilli Grinding",
+    description: "Precision grinding for consistent quality and rich flavour",
   },
   {
     id: "03",
@@ -27,32 +26,19 @@ const STEPS = [
     title: "Custom Packaging",
     description: "Jute, PP, vacuum, and private-label options",
   },
-  {
-    id: "06",
-    title: "Export & Logistics",
-    description: "End-to-end documentation and global freight",
-  },
 ];
 
-export default function ProcessTimeline() {
-  const [activeId, setActiveId] = useState("01");
+export default function ProcessTimeline({ activeId, onSelect }) {
 
   const handleStepClick = (id) => {
-    setActiveId(id);
+    onSelect(id);
 
-    // Find the matching card in the "What we do" grid above and select +
-    // scroll to it. Cards render in the same 01–06 order as STEPS, so we
-    // match by position — this works without needing any changes to
-    // WhatWeDo.jsx.
+    // Scroll to the corresponding service card.
     const index = STEPS.findIndex((step) => step.id === id);
     const cards = document.querySelectorAll(".wwd-card");
     const targetCard = cards[index];
 
     if (targetCard) {
-      // Real DOM click — triggers WhatWeDo's own onClick, so the card
-      // becomes "Selected" there too, and its detail panel updates.
-      targetCard.click();
-
       targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };

@@ -98,10 +98,10 @@ export default function ComparisonSection() {
       image: sannam,
       name: "334 / S4 / Sannam Dried Red Chilli",
       type: "334/S4 Sannam Variety",
-      asta: "30–35",
-      shu: "35,000–40,000",
+      asta: "40–50",
+      shu: "18,000–22,000",
       moisture: "≤12%",
-      heat: 4,
+      heat: 2,
       best: ["Masala Powders", "Pickles", "Restaurants"],
     },
 

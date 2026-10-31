@@ -133,7 +133,7 @@
 }
  
 .wsw-feature-text p{
-    max-width:456px;
+    max-width:100%;
  
     font-family:Inter,sans-serif;
     font-size:14px;

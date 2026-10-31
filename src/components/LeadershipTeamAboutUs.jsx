@@ -2,39 +2,21 @@ import "../styles/LeadershipTeamAboutus.css";
 const team = [
   {
     id: 1,
-    initials: "RK",
-    name: "Ravi Kumar Reddy",
-    role: "Founder & Managing Director",
-    joined: "Est. 1998",
+    initials: "DH",
+    name: "Dalpatraj Hundia",
+    role: "Promoter",
+    joined: "40 years experience",
     bg: "#F8E8E8",
     circle: "#A6000C",
   },
   {
     id: 2,
-    initials: "SR",
-    name: "Sunita Reddy",
-    role: "Director — Quality & Compliance",
-    joined: "Joined 2002",
+    initials: "VH",
+    name: "Vineet Hundia",
+    role: "Promoter",
+    joined: "13 years experience",
     bg: "#F8F2E6",
     circle: "#D59A2B",
-  },
-  {
-    id: 3,
-    initials: "AP",
-    name: "Arun Prakash",
-    role: "Head of Export Operations",
-    joined: "Joined 2008",
-    bg: "#EEF4EE",
-    circle: "#5C9258",
-  },
-  {
-    id: 4,
-    initials: "PN",
-    name: "Priya Nambiar",
-    role: "Head of Procurement & Farmer Relations",
-    joined: "Joined 2013",
-    bg: "#F0F1FB",
-    circle: "#6768B1",
   },
 ];
 
@@ -56,7 +38,7 @@ function LeadershipTeam() {
           className="leaders-title"
           data-aos="fade-up"
         >
-          Leadership Team
+          Our Promoters
         </h2>
 
         <div className="leaders-grid">

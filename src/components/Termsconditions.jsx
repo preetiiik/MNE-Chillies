@@ -3,9 +3,9 @@ import LegalPageLayout from "./Legalpagelayout";
 
 const COMPANY = "MNE Chillies Pvt. Ltd.";
 const DOMAIN = "[yourdomain.com]"; // TODO: replace once the domain is live
-const EMAIL = "exports@premiumchillies.com";
+const EMAIL = "mnenterprises@live.in";
 const PHONE = "+91 9440793970";
-const ADDRESS = "Hubli, Karnataka, India";
+const ADDRESS = "M.N EXPORT HOUSE, 2/2 Arundelpet, Backside Jain Temple, Guntur - 522007, Andhra Pradesh, India";
 const LAST_UPDATED = "August 21, 2026";
 
 export default function TermsConditions() {

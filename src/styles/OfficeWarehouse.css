@@ -1,0 +1,26 @@
+.office-warehouse { background: #f9f6f2; padding: 64px 0; }
+.office-warehouse-inner { max-width: 1500px; padding: 0 30px; margin: 0 auto; }
+.office-warehouse-label { font: 600 12px/1.5 Inter, sans-serif; letter-spacing: 2.5px; color: #a6000c; }
+.office-warehouse h2 { font-family: "Libre Caslon Text", serif; font-size: clamp(30px, 3vw, 44px); color: #1a0505; margin: 12px 0 32px; }
+.office-warehouse-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.office-warehouse figure { display: flex; flex-direction: column; margin: 0; overflow: hidden; border-radius: 16px; background: #fff; }
+.office-warehouse img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.office-warehouse figcaption { flex: 1; padding: 24px; }
+.office-warehouse h3 { font-family: "Libre Caslon Text", serif; font-size: 22px; color: #1a0505; margin: 0 0 12px; }
+.office-warehouse p { font: 14px/1.7 Inter, sans-serif; color: #5d3f3c; margin: 0 0 14px; }
+.office-warehouse a { font: 600 14px/1.5 Inter, sans-serif; color: #a6000c; text-underline-offset: 4px; }
+.office-warehouse figure { transition: transform .3s ease, box-shadow .3s ease; }
+.office-warehouse-photo { overflow: hidden; }
+.office-warehouse-photo img { transition: transform .5s ease; }
+.office-warehouse figcaption { transition: background-color .3s ease; }
+.office-warehouse a:hover { color: #650009; }
+.office-warehouse figure:hover { transform: translateY(-8px); box-shadow: 0 18px 36px rgba(26, 5, 5, .18); }
+.office-warehouse figure:hover .office-warehouse-photo img { transform: scale(1.06); }
+.office-warehouse figure:hover figcaption { background-color: #fff5f2; }
+.office-warehouse figure:focus-within { box-shadow: 0 16px 32px rgba(26, 5, 5, .1); }
+@media (prefers-reduced-motion: reduce) {
+  .office-warehouse figure, .office-warehouse-photo img, .office-warehouse figcaption { transition: none; }
+  .office-warehouse figure:hover { transform: none; }
+  .office-warehouse figure:hover .office-warehouse-photo img { transform: none; }
+}
+@media (max-width: 768px) { .office-warehouse { padding: 44px 0; } .office-warehouse-inner { padding: 0 20px; } .office-warehouse-grid { grid-template-columns: 1fr; } }

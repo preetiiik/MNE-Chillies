@@ -913,3 +913,12 @@
     border-radius: 16px 16px 0 0;
   }
 }
+/* Equal-height cards and consistent content rows. */
+.product-grid .product-item-wrap { display: flex; min-width: 0; }
+.product-grid .product-item { flex: 1; }
+.product-grid .product-description { min-height: 63px; }
+.product-grid .product-tags { min-height: 70px; align-content: flex-start; }
+.product-grid .product-footer { margin-top: auto; }
+@media (max-width: 600px) {
+  .product-grid .product-description, .product-grid .product-tags { min-height: 0; }
+}

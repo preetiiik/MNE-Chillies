@@ -177,7 +177,7 @@ export default function TestimonialsSection() {
           <div className="testimonials-heading">
             <span className="section-label">Testimonials</span>
             <h2>
-              Trusted by Global
+              Trusted by National
               <br />
               Food Brands
             </h2>

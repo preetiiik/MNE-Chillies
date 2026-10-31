@@ -71,7 +71,7 @@ export default function Infrastructure() {
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              From advanced processing to controlled storage and
+              From our upcoming state-of-the-art advanced processing to controlled storage and
               testing, our infrastructure is built to protect quality
               and support reliable supply.
             </p>

@@ -1,7 +1,5 @@
 import "../styles/CapabilitiesSection.css";
 
-import steamImg from "../assets/images/steam.webp";
-import mbrImg from "../assets/images/mbr.png";
 import mpuImg from "../assets/images/mpu.png";
 import qaImg from "../assets/images/qa.png";
 import coldStorageImg from "../assets/images/coldstorage.png";
@@ -10,36 +8,10 @@ import stemlessImg from "../assets/images/stemless.png";
 
 export default function CapabilitiesSection() {
   const capabilities = [
+
+
     {
       id: "01",
-      image: steamImg,
-      title: "Steam Sterilisation",
-      subtitle: "Preserving Purity through Pure Vapor",
-      description:
-        "Our cutting-edge steam sterilisation technology ensures the highest level of microbial reduction without compromising the essential oils, color, or flavor profile of the chillies.",
-      points: [
-        "Natural Oil Preservation",
-        "5-Log Microbial Reduction",
-        "Batch-Specific Calibration",
-      ],
-    },
-
-    {
-      id: "02",
-      image: mbrImg,
-      title: "MBR Treatment",
-      subtitle: "The Standard for Sustainable Processing",
-      description:
-        "Sustainability is engineered into our core. Our Membrane Bio-Reactor (MBR) system enables zero liquid discharge and maximum water recovery, setting industrial benchmarks for environmental responsibility.",
-      points: [
-        "Advanced Filtration Media",
-        "98% Water Recovery Rate",
-        "Zero Liquid Discharge (ZLD)",
-      ],
-    },
-
-    {
-      id: "03",
       image: mpuImg,
       title: "Modern Processing Unit",
       subtitle: "Precision Engineering for Every Grain",
@@ -54,7 +26,7 @@ export default function CapabilitiesSection() {
     },
 
     {
-      id: "04",
+      id: "02",
       image: qaImg,
       title: "QA Laboratory",
       subtitle: "Analytical Rigor, Definitive Results",
@@ -68,7 +40,7 @@ export default function CapabilitiesSection() {
     },
 
     {
-      id: "05",
+      id: "03",
       image: coldStorageImg,
       title: "Cold Storage Facility",
       subtitle: "Fresher for Longer, by Design",
@@ -83,7 +55,7 @@ export default function CapabilitiesSection() {
     },
 
     {
-      id: "06",
+      id: "04",
       image: qualityLedImg,
       title: "Quality-Led Procurement",
       subtitle: "Excellence Begins at the Source",
@@ -97,12 +69,12 @@ export default function CapabilitiesSection() {
     },
 
     {
-      id: "07",
+      id: "05",
       image: stemlessImg,
-      title: "Stemless Processing Zone",
-      subtitle: "Specialized Efficiency for Global Needs",
+      title: "Stemcut Processing Zone",
+      subtitle: "Specialized Efficiency for Global Needs (As per cutomer requirement)",
       description:
-        "Dedicated to the production of premium stemless chillies, this specialised line uses advanced mechanical and manual sorting to deliver 99.9% stem-free output for discerning international clients.",
+        "Dedicated to the production of premium stemcut chillies, this specialised line uses advanced mechanical and manual sorting to deliver 99.9% stem-free output for discerning international clients.",
       points: [
         "Automated Stem Removal",
         "Double-Pass Inspection",

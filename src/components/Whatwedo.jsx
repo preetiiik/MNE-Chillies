@@ -1,21 +1,18 @@
-import { useState } from "react";
 import "../styles/Whatwedo.css";
 
 
 import img01 from "../assets/images/service-cleaning.webp";
-import img02 from "../assets/images/service-steam.webp";
 import img03 from "../assets/images/service-storage.webp";
 import img04 from "../assets/images/service-testing.webp";
 import img05 from "../assets/images/service-packaging.webp";
-import img06 from "../assets/images/service-export.webp";
 
 const SERVICES = [
   {
     id: "01",
     image: img01,
     title: "Cleaning & Sorting",
-    description: "Machine and hand sorting to remove defects",
-    tagline: "Machine and hand sorting to remove defects",
+    description: "Machine and hand sorting to remove defects (As per requirement)",
+    tagline: "Machine and hand sorting to remove defects (As per requirement)",
     statValue: "99%",
     statLabel: "Defect-free rate",
     icon: "ring",
@@ -30,20 +27,20 @@ const SERVICES = [
   },
   {
     id: "02",
-    image: img02,
-    title: "Steam Sterilization",
-    description: "CMF processing — zero artificial additives",
-    tagline: "Advanced sterilisation for food safety",
-    statValue: "0",
-    statLabel: "Artificial additives",
+    image: "/chilli%20griding.png",
+    title: "Chilli Grinding",
+    description: "Precision grinding for consistent quality and rich flavour",
+    tagline: "Precision grinding for consistent quality and rich flavour",
+    statValue: "100%",
+    statLabel: "Natural Chilli Grinding",
     icon: "diamond",
     paragraph:
-      "Our advanced steam sterilisation process eliminates harmful microorganisms while preserving the chilli's natural colour, aroma, and flavour. This ensures food safety without the use of chemicals or artificial treatments.",
+      "Our advanced Chilli grinding process transforms carefully selected dried red chillies into finely ground powder while preserving their natural colour, aroma, and pungency. Using modern grinding technology, we ensure consistent particle size, hygienic processing, and superior product quality.",
     features: [
-      "Chemical-free sterilisation",
-      "Reduces microbial load",
+      "Uniform particle size",
       "Preserves natural colour",
-      "Export-ready quality",
+      "Hygienic grinding process",
+      "Consistent aroma and pungency",
     ],
   },
   {
@@ -68,8 +65,8 @@ const SERVICES = [
     id: "04",
     image: img04,
     title: "Quality Testing",
-    description: "ASTA colour, SHU pungency and moisture on every batch",
-    tagline: "Every batch tested for consistent quality",
+    description: "ASTA colour, SHU pungency and moisture on every batch (On request)",
+    tagline: "Every batch tested for consistent quality (On request)",
     statValue: "100%",
     statLabel: "Batches tested",
     icon: "dot",
@@ -98,24 +95,6 @@ const SERVICES = [
       "Private label options",
       "Multiple pack sizes",
       "Secure sealing",
-    ],
-  },
-  {
-    id: "06",
-    image: img06,
-    title: "Export & Logistics",
-    description: "End-to-end documentation and global freight",
-    tagline: "Reliable delivery from our facility to yours",
-    statValue: "48hr",
-    statLabel: "Quote turnaround",
-    icon: "half",
-    paragraph:
-      "From documentation to shipment coordination, we manage every stage of the export process to ensure timely deliveries, secure handling, and smooth international logistics.",
-    features: [
-      "Export documentation",
-      "Timely dispatch",
-      "Secure transportation",
-      "Worldwide delivery",
     ],
   },
 ];
@@ -161,8 +140,7 @@ function ServiceIcon({ type }) {
   );
 }
 
-export default function WhatWeDo() {
-  const [activeId, setActiveId] = useState("01");
+export default function WhatWeDo({ activeId, onSelect }) {
 
   const activeIndex = SERVICES.findIndex((s) => s.id === activeId);
   const activeService = SERVICES[activeIndex];
@@ -170,7 +148,7 @@ export default function WhatWeDo() {
   const goTo = (index) => {
     // wrap around at either end
     const wrapped = (index + SERVICES.length) % SERVICES.length;
-    setActiveId(SERVICES[wrapped].id);
+    onSelect(SERVICES[wrapped].id);
   };
 
   return (
@@ -204,7 +182,7 @@ export default function WhatWeDo() {
                 key={service.id}
                 type="button"
                 className={`wwd-card${isActive ? " active" : ""}`}
-                onClick={() => setActiveId(service.id)}
+                onClick={() => onSelect(service.id)}
               >
                 <div className="wwd-card-image">
                   <img src={service.image} alt={service.title} />

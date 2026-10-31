@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import "../styles/AboutUsHero.css";
 import "../styles/Whoweare.css"
 import "../styles/WhatwedoAboutus.css"
-import "../styles/MilestonesAboutus.css";
 import "../styles/InfraAboutus.css";
 import "../styles/LeadershipTeamAboutus.css";
 import "../styles/StatsH.css";
@@ -16,7 +15,6 @@ import aboutBg from "../assets/images/about-bg.webp";
 import MarqueeStrip from "../components/MarqueeStrip";
 import Whoweare from "../components/Whoweare";
 import Whatdrivesus from "../components/Whatdrivesus";
-import Milestones from "../components/MilestonesAboutus";
 import Infrastructure from "../components/InfrastructureAboutus";
 import LeadershipTeam from "../components/LeadershipTeamAboutUs";
 
@@ -73,8 +71,8 @@ function AboutUs() {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              Since 1998, we have connected the world's finest chilli-growing
-              farms to kitchens and factories across 25+ countries.
+              We have connected the world's finest chilli-growing
+              farms to kitchens and factories across countries.
             </p>
           </div>
         </div>
@@ -91,10 +89,10 @@ function AboutUs() {
 
 
       <div data-aos="fade-up">
-        <Milestones />
       </div>
 
         <Infrastructure />
+        <OfficeWarehouse />
 
       <div data-aos="fade-up">
         <LeadershipTeam />
@@ -104,3 +102,4 @@ function AboutUs() {
 }
 
 export default AboutUs;
+import OfficeWarehouse from "../components/OfficeWarehouse";

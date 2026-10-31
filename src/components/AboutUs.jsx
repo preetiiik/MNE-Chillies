@@ -21,8 +21,8 @@ function AboutUs() {
           </h1>
 
           <p>
-            Since 1998, we have connected the world's finest chilli-growing
-            farms to kitchens and factories across 25+ countries.
+            We have connected the world's finest chilli-growing
+            farms to kitchens and factories across countries.
           </p>
         </div>
       </div>
