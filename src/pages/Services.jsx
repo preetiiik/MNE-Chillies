@@ -3,7 +3,7 @@ import "../styles/Whatwedo.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useState } from "react";
 
 import Navbar from "../components/Navbar";
 import MarqueeStrip from "../components/MarqueeStrip";
@@ -14,6 +14,7 @@ import ProcessTimeline from "../components/ProcessTimeline";
 import hero from "../assets/images/services-hero.webp";
 
 export default function services() {
+  const [activeServiceId, setActiveServiceId] = useState("01");
 
 //   useEffect(() => {
 //   AOS.init({
@@ -36,7 +37,7 @@ export default function services() {
 
   const stats = [
     {
-      value: "6",
+      value: "5",
       label: "Core services",
     },
     {
@@ -84,7 +85,7 @@ export default function services() {
             <h1
               data-aos="fade-up"
             >
-              Six services.
+              Five services.
               <br />
               <span>One Supply Chain.</span>
             </h1>
@@ -123,9 +124,9 @@ export default function services() {
       </section>
 
       <MarqueeStrip />
-      <Whatwedo />
+      <Whatwedo activeId={activeServiceId} onSelect={setActiveServiceId} />
       <Whysourcewithus />
-      <ProcessTimeline />
+      <ProcessTimeline activeId={activeServiceId} onSelect={setActiveServiceId} />
 
     </>
   );

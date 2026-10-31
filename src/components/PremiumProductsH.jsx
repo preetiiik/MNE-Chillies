@@ -70,16 +70,16 @@ function PremiumProductsH() {
       variety: "334 / S4 / SANNAM",
       title: "334 / S4 / Sannam Dried Red Chilli",
       description:
-        "Rich red, hot S4 Sannam chilli with thick skin, grown in Guntur, Khammam and Prakasam. Ideal for bold colour and flavour.",
+        "Light red color and low heat flavour. Grown in Guntur and Prakasam districts.",
       productDetails: {
         finishing: "Sun dried",
-        appearance: "Bright Red, Thick Skin, Hot",
+        appearance: "Light Red, Low Heat",
         packing: "Jute / PP Bag",
       },
       specifications: {
-        colorValue: "30 – 35",
-        pungency: "35k – 40k SHU",
-        capsaicin: "0.226%",
+        colorValue: "40 – 50",
+        pungency: "18,000 – 22,000 SHU",
+        capsaicin: "~0.11–~0.14%",
       },
       types: [
         "334 S4 With Stem",
@@ -87,8 +87,8 @@ function PremiumProductsH() {
         "Crushed Chilli Flakes",
         "Chilli Pepper Powder",
       ],
-      heat: 4,
-      heatLabel: "Hot",
+      heat: 2,
+      heatLabel: "Low Heat",
       tags: [
         "334 S4 With Stem",
         "334 S4 Stemless",

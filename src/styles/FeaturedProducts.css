@@ -716,3 +716,10 @@
     }
 
 }
+.fp-sannam-details h4 { font: 600 15px/1.5 Inter, sans-serif; color: #1a0505; margin: 18px 0 8px; }
+.fp-sannam-details p { font: 14px/1.7 Inter, sans-serif; color: #5d3f3c; margin-bottom: 14px; }
+.fp-spec-table-wrap { overflow-x: auto; margin: 20px 0; }
+.fp-spec-table { width: 100%; border-collapse: collapse; font: 12px/1.6 Inter, sans-serif; text-align: left; }
+.fp-spec-table th, .fp-spec-table td { padding: 12px; border: 1px solid #ddd; }
+.fp-spec-table th { background: #333; color: #fff; }
+.fp-spec-table tbody tr:nth-child(even) { background: #f3f1ef; }

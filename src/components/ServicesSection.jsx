@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const services = [
   {
     icon: "/images/chilli-pepper.webp",
-    title: "CMF Processing",
+    title: "CMF Processing (Third Party)",
     description:
-      "State-of-the-art cleaning, sorting, and steam sterilization facilities.",
+      "Cleaning and sorting through third-party facilities.",
   },
   {
     icon: "/images/detergent.webp",
@@ -25,12 +25,6 @@ const services = [
     title: "Custom Packaging",
     description:
       "Jute bags, PP bags, vacuum packs — tailored to your brand.",
-  },
-  {
-    icon: "/images/detergent.webp",
-    title: "Export & Logistics",
-    description:
-      "End-to-end export support with global shipping partners.",
   },
   {
     icon: "/images/cooking.webp",

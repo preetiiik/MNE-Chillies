@@ -83,19 +83,19 @@ function AllProducts() {
 
             title:"334 / S4 / Sannam Dried Red Chilli",
 
-            subtitle:"Balanced heat with rich red colour",
+            subtitle:"Low heat with light red colour",
 
             description:
-            "Rich red color and hot flavour. Grown in Guntur, Khammam and Prakasam districts. S4 Sannam skin is thick and red. When crushed — thick, red and hot. Rich in Vitamin C and Protein.",
+            "Light red color and low heat flavour. Grown in Guntur and Prakasam districts.",
             image:sannam,
 
-            asta:"30–35",
+            asta:"40–50",
 
-            shu:"35,000–40,000",
+            shu:"18,000–22,000",
 
             moisture:"≤12%",
 
-            heat:4,
+            heat:2,
 
             tags:[
                 "Masala Powders",

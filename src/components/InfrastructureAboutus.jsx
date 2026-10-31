@@ -3,24 +3,24 @@ import infrastructureBg from "../assets/images/infrastructure-bg.webp";
 
 const stats = [
   {
-    number: "40,000",
+    number: "15,000",
     unit: "SQ. FT.",
-    text: "Processing Facility",
+    text: "Warehousing Facility",
   },
   {
-    number: "8,000+",
-    unit: "MT/YR",
-    text: "Annual Throughput",
+    number: "20,000+",
+    unit: "SQ. FT.",
+    text: "Open Chilli Drying Yard",
   },
   {
-    number: "-18°C",
+    number: "6°C",
     unit: "COLD STORAGE",
     text: "Controlled Warehousing",
   },
   {
-    number: "3",
-    unit: "STERILIZATION LINES",
-    text: "CMF Processing",
+    // number: "3",
+    unit: "Our Upcoming Facility",
+    text: "New upcoming state of art manufacturing facility with integrated cold.",
   },
 ];
 

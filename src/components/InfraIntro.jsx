@@ -27,10 +27,10 @@ export default function InfraIntro() {
           </h2>
 
           <p>
-            Our facilities are equipped with industry-leading machinery to
+            Our upcoming facilities are equipped with industry-leading machinery to
             maintain the highest standards of safety and efficiency. From
             modern drying floors to automated grading units, our
-            infrastructure ensures that every batch of MNE spice is uniform
+            infrastructure will ensure that every batch of Red Chilli is uniform
             and premium.
           </p>
 

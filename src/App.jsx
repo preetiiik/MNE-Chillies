@@ -43,7 +43,9 @@ function AppContent() {
     <>
       <ScrollToTop />
 
-      {!isLegalPage && <Navbar />}
+      <div className={isLegalPage ? "legal-site-header" : undefined}>
+        <Navbar />
+      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -59,7 +61,7 @@ function AppContent() {
 
       </Routes>
 
-      {!isLegalPage && <ContactFooter hideCTA={hideCTA} />}
+      <ContactFooter hideCTA={hideCTA || isLegalPage} />
     </>
   );
 }

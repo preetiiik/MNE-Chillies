@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/ContactFooter.css";
 
 import { FaWhatsapp } from "react-icons/fa";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 import footerLogo from "../assets/images/logo.webp";
 import contactBg from "../assets/images/Container.webp";
@@ -87,6 +88,12 @@ const ContactFooter = ({ hideCTA }) => {
             </p>
 
             <div className="social-icons">
+              <a href="tel:+919440793970" aria-label="Call +91 9440793970" title="Call us">
+                <FiPhone />
+              </a>
+              <a href="mailto:mnenterprises@live.in" aria-label="Email mnenterprises@live.in" title="Email us">
+                <FiMail />
+              </a>
               <a
                 href="https://wa.me/919440793970"
                 target="_blank"
@@ -171,22 +178,22 @@ const ContactFooter = ({ hideCTA }) => {
             </span>
 
             <a
-              href="https://www.google.com/maps/place/Hubballi,+Karnataka/@15.404758,75.0667318,12z/data=!3m1!4b1!4m6!3m5!1s0x3bb8d6d3a2090b17:0xae803e207113397!8m2!3d15.3647083!4d75.1239547!16zL20vMDE2YmY1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/1RpR2fCwzDAsfjpNA?g_st=iw"
               target="_blank"
               rel="noreferrer"
               className="footer-link"
             >
-              Hubli
+              M.N EXPORT HOUSE<br />2/2 Arundelpet<br />Backside Jain Temple<br />Guntur - 522007<br />Andhra Pradesh, India
             </a>
 
             <span className="footer-label">
               EMAIL
             </span>
             <a
-            href="mailto:exports@premiumchillies.com"
+            href="mailto:mnenterprises@live.in"
             className="footer-link"
             >
-              exports@premiumchillies.com
+              mnenterprises@live.in
             </a>
 
 
@@ -201,18 +208,6 @@ const ContactFooter = ({ hideCTA }) => {
             </div>
 
             <span className="footer-label">
-              WHATSAPP
-            </span>
-            <a
-              href="https://wa.me/919440793970"
-              target="_blank"
-              rel="noreferrer"
-              className="footer-link"
-            >
-              Chat on WhatsApp
-            </a>
-
-            <span className="footer-label">
               HOURS
             </span>
 
@@ -224,7 +219,6 @@ const ContactFooter = ({ hideCTA }) => {
             <div className="certifications">
               <span>FSSAI</span>
 
-              <span>ISO 9001</span>
 
               <span>APEDA</span>
 
