@@ -1,13 +1,12 @@
 import "../styles/MarqueeStrip.css";
 function MarqueeStrip() {
   const items = [
-    "ISO 9001:2015",
-    "✦ FSSAI APPROVED",
-    "✦ 25+ EXPORT DESTINATIONS",
-    "✦ LAB-TESTED EVERY BATCH",
-    "✦ MOISTURE ≤ 12%",
-    "✦ SHU CALIBRATED",
-    "✦ 500+ PARTNER FARMERS",
+    "RED CHILLIES",
+    "CHILLI POWDER",
+    "CHILLI FLAKES",
+    "STEMCUT CHILLIES",
+    "PRIVATE LABELLING",
+    "STATE OF ART MANUFACTURING",
   ];
 
   return (
@@ -15,7 +14,7 @@ function MarqueeStrip() {
       <div className="marquee-track">
         {items.concat(items).map((item, index) => (
           <span key={index} className="marquee-item">
-            {item}
+            ✦ {item}
           </span>
         ))}
       </div>
