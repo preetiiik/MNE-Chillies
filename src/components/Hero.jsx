@@ -1,20 +1,46 @@
 import "../styles/HeroHome.css";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 function Hero() {
+  const videoRef = useRef(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [videoPlaying, setVideoPlaying] = useState(false);
+
+  useEffect(() => {
+    if (!imageLoaded) return;
+
+    const timer = window.setTimeout(() => {
+      videoRef.current?.play().catch(() => {
+        // Keep the opening image visible if playback is unavailable.
+      });
+    }, 3000);
+
+    return () => window.clearTimeout(timer);
+  }, [imageLoaded]);
+
   return (
     <section className="home-hero">
       {/* Background Video */}
       <video
+        ref={videoRef}
         className="home-hero-video"
-        autoPlay
         loop
         muted
         playsInline
-        poster="/assets/images/hero-bg.webp"
+        preload="auto"
+        poster="/hero%20image.png"
+        onPlaying={() => setVideoPlaying(true)}
       >
-        <source src="/assests/videos/4th.mp4" type="video/mp4" />
+        <source src="/assests/videos/hero-video5.mp4" type="video/mp4" />
       </video>
+      <img
+        className={`home-hero-opening${videoPlaying ? " is-hidden" : ""}`}
+        src="/hero%20image.png"
+        alt=""
+        fetchPriority="high"
+        onLoad={() => setImageLoaded(true)}
+      />
 
       {/* Gradient Overlay */}
       <div className="home-hero-overlay"></div>

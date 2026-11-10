@@ -4,6 +4,20 @@
     padding:0;
     box-sizing:border-box;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body,
+  body * {
+    cursor: url('/chilli-cursor.svg') 24 24, auto !important;
+  }
+
+  body input,
+  body textarea,
+  body [contenteditable="true"] {
+    cursor: text !important;
+  }
+}
 /* ------------------------------------------------------------------
    SCROLL FIX - never put `overflow-x: hidden` on <body>.
 
