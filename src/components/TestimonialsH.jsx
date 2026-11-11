@@ -5,7 +5,7 @@ import "../styles/TestimonialsH.css";
 const testimonials = [
   {
     quote:
-      "Been buying from them for almost two years now. What I like most is I don't have to double check every batch anymore, the moisture and color are pretty much the same every time.",
+      "The colour, heat level, and moisture consistency of their red chillies have made our production planning much easier.",
     name: "Rohit Sharma",
     initials: "RS",
     color: "#C0392B",
@@ -13,31 +13,31 @@ const testimonials = [
   },
   {
     quote:
-      "Honestly wasn't expecting much when we switched suppliers, but the Teja S17 batch they sent completely changed how our sauce turns out. Good heat, great color, no complaints.",
+      "Their Teja S17 chillies offer the strong pungency and rich red colour we need for our spice blends.",
     name: "Priya Nair",
     initials: "PN",
     color: "#D68910",
-    rating: 4,
+    rating: 5,
   },
   {
     quote:
-      "Quality is good when it arrives, but we've had a couple of shipments get delayed at the port with barely any heads up. Works out fine in the end, just wish the updates were quicker.",
+      "Clear grading, dependable packaging, and consistent product specifications make sourcing much more convenient.",
     name: "Arjun Mehta",
     initials: "AM",
     color: "#1E8449",
-    rating: 3,
-  },
-  {
-    quote:
-      "Documentation is clean and lab reports come on time. Communication could be a little faster during peak season, but overall we haven't had a reason to look elsewhere.",
-    name: "Ananya Iyer",
-    initials: "AI",
-    color: "#2874A6",
     rating: 4,
   },
   {
     quote:
-      "Nothing fancy to say, they just deliver on time and the pricing has stayed fair even when the market got a bit volatile last year. That kind of consistency is hard to find.",
+      "Their attention to quality checks and export documentation gives us confidence with every shipment.",
+    name: "Ananya Iyer",
+    initials: "AI",
+    color: "#2874A6",
+    rating: 5,
+  },
+  {
+    quote:
+      "We value their transparent approach to sourcing and their commitment to maintaining quality across different batches.",
     name: "Karan Malhotra",
     initials: "KM",
     color: "#6C3483",
@@ -45,7 +45,7 @@ const testimonials = [
   },
   {
     quote:
-      "Our rejection rate dropped after we started sourcing from them. Had one shipment last year that came in slightly off spec, but they sorted it out quickly and it hasn't happened since.",
+      "The chillies arrive well packed, with the natural colour and aroma preserved. This is important for our processing requirements.",
     name: "Sneha Reddy",
     initials: "SR",
     color: "#B9770E",
@@ -53,7 +53,7 @@ const testimonials = [
   },
   {
     quote:
-      "Every bag we get is traceable back to the farm, which made our last audit so much easier than usual. Our retail partners specifically noticed and appreciated that.",
+      "Reliable sourcing and clearly defined quality standards have helped us maintain consistency in our finished spice products.",
     name: "Vikram Desai",
     initials: "VD",
     color: "#117864",
@@ -61,21 +61,22 @@ const testimonials = [
   },
   {
     quote:
-      "Product itself is decent and priced fairly, but their email responses can take a couple of days sometimes, which is frustrating when we're trying to plan around a shipment.",
+      "Their understanding of different chilli grades and heat requirements makes selecting the right product straightforward.",
     name: "Neha Kapoor",
     initials: "NK",
     color: "#922B21",
-    rating: 3,
+    rating: 4,
   },
   {
     quote:
-      "From the first sample to a full container order, they've kept us in the loop the whole way. A couple of times they flagged a quality concern before we even noticed it ourselves.",
+      "From sample evaluation to bulk orders, their focus on product quality and clear communication has been valuable.",
     name: "Aditya Rao",
     initials: "AR",
     color: "#7D6608",
     rating: 5,
   },
 ];
+
 
 const ROTATE_MS = 4000;
 
