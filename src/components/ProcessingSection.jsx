@@ -2,7 +2,7 @@ import "../styles/ProcessingSection.css";
 
 import { PiSlidersBold, PiMicroscopeBold, PiCalendarDotsBold } from "react-icons/pi";
 
-import stageImg from "../assets/images/stage.webp";
+import stageImg from "../assets/images/stage.jpg";
 // import steamImg from "../assets/images/steam.webp";
 // import mbrImg from "../assets/images/mbr.webp";
 // import mpuImg from "../assets/images/mpu.webp";
