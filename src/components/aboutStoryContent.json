@@ -1,0 +1,89 @@
+{
+  "heritage": {
+    "label": "OUR HERITAGE \u00b7 1920",
+    "title": "A journey that began with one man's vision.",
+    "paragraphs": [
+      "Our story began in 1920, when our founder, Late Shri Meramchandji Hundia, embarked on an entrepreneurial journey from Rajasthan with determination, integrity and a belief in lasting relationships.",
+      "His vision was carried forward by his sons, Shri Shankarlalji Hundia and Shri Mohanlalji Hundia, who strengthened the family's business journey and continued its values of hard work, trust and responsibility towards society. Today, the legacy is carried forward by Shri Dalpatrajji Hundia, son of Shri Mohanlalji Hundia."
+    ],
+    "highlight": "THE FOUNDER'S VISION LIVES ON",
+    "caption": "Late Shri Meramchandji Hundia \u00b7 Founder"
+  },
+  "journey": {
+    "label": "OUR JOURNEY",
+    "title": "Generations of experience. One shared vision.",
+    "intro": "A family business shaped by heritage, deep industry knowledge and a continuing commitment to progress.",
+    "cards": [
+      {
+        "label": "1920",
+        "title": "The Foundation",
+        "description": "Late Shri Meramchandji Hundia begins the family's entrepreneurial journey in Rajasthan. His sons, Shri Shankarlalji Hundia and Shri Mohanlalji Hundia, carry it forward."
+      },
+      {
+        "label": "45+ Years",
+        "title": "Industry Expertise",
+        "description": "Shri Dalpatrajji Hundia, son of Shri Mohanlalji Hundia, carries the legacy forward with more than 45 years of red chilli industry experience."
+      },
+      {
+        "label": "Next Chapter",
+        "title": "Advanced Manufacturing",
+        "description": "Shri Vineet Hundia leads the group's move towards modern, hygienic and technology-led manufacturing."
+      }
+    ]
+  },
+  "leadership": {
+    "label": "GROUP LEADERSHIP",
+    "title": "Experience that grounds us. Innovation that moves us forward.",
+    "cards": [
+      {
+        "label": "SENIOR LEADERSHIP",
+        "title": "Shri Dalpatrajji Hundia",
+        "description": "With more than 45 years of experience in the red chilli industry, he brings extensive knowledge of varieties, sourcing regions, market dynamics and customer requirements. His leadership has helped build enduring relationships and a reputation for dependable supply.",
+        "experience": "45+ years experience"
+      },
+      {
+        "label": "EXECUTIVE LEADERSHIP",
+        "title": "Shri Vineet Hundia",
+        "description": "An MBA graduate with over 15 years of business experience, Shri Vineet Hundia is driving the group's next phase of growth, with a focus on advanced processing, modern manufacturing practices and customer-focused value-added products.",
+        "experience": "15 years experience"
+      },
+      {
+        "label": "OUR PHILOSOPHY",
+        "title": "Legacy meets progress",
+        "description": "We combine generations of market understanding and trusted relationships with a forward-looking approach to technology, hygiene, quality and operational excellence."
+      }
+    ]
+  },
+  "market": {
+    "label": "OUR MARKET PRESENCE",
+    "title": "At the heart of India's red chilli trade.",
+    "paragraphs": [
+      "Guntur is one of India's most important centres for red chilli trading. Our long-standing presence in this market has shaped our understanding of varieties, quality parameters, seasonal arrivals and customer needs.",
+      "For more than 45 years, we have supplied red chillies to leading Indian spice manufacturers, masala companies, food businesses and exporters. Our strength lies in established sourcing relationships, market knowledge and a consistent focus on dependable supply."
+    ],
+    "stats": [
+      {
+        "value": "45+ years",
+        "label": "Red chilli industry experience"
+      },
+      {
+        "value": "Guntur",
+        "label": "Our core sourcing hub"
+      },
+      {
+        "value": "One-stop",
+        "label": "Procurement to finished products"
+      }
+    ]
+  },
+  "social": {
+    "label": "SOCIAL RESPONSIBILITY",
+    "title": "Our legacy goes beyond business.",
+    "paragraphs": [
+      "Inspired by the values of our founder, our family has remained involved in social, educational, religious and community initiatives.",
+      "Our contributions include support for schools in Rajasthan and Guntur, association with Jain temples and educational institutions, and service towards Gaushalas, including Guntur Gaushala.",
+      "Shri Dalpatrajji Hundia has also served as Chairman of JITO Guntur Chapter for 2022\u20132024 and 2024\u20132026, continuing the family's commitment to community participation and social welfare."
+    ],
+    "quote": "\u201cWe believe that true success is measured not only by what we build in business, but also by the care and contribution we extend to society.\u201d"
+  }
+}

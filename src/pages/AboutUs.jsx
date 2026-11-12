@@ -1,44 +1,18 @@
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "../styles/AboutUsHero.css";
-import "../styles/Whoweare.css"
-import "../styles/WhatwedoAboutus.css"
 import "../styles/InfraAboutus.css";
-import "../styles/LeadershipTeamAboutus.css";
 import "../styles/StatsH.css";
 
 
 import aboutBg from "../assets/images/about-bg.webp";
 
 import MarqueeStrip from "../components/MarqueeStrip";
-import Whoweare from "../components/Whoweare";
-import Whatdrivesus from "../components/Whatdrivesus";
+import { Heritage, StoryCards, GroupCompanies, MarketPresence, SocialResponsibility } from "../components/AboutStorySections";
 import Infrastructure from "../components/InfrastructureAboutus";
-import LeadershipTeam from "../components/LeadershipTeamAboutUs";
+import OfficeWarehouse from "../components/OfficeWarehouse";
 
 function AboutUs() {
-  // useEffect(() => {
-  // AOS.init({
-  //   duration: 800,
-  //   once: true,
-  // });
-
-//   const handleLoad = () => {
-//     AOS.refresh();
-//     setTimeout(() => AOS.refreshHard(), 300);
-//   };
-
-//   if (document.readyState === 'complete') {
-//     handleLoad();
-//   } else {
-//     window.addEventListener('load', handleLoad);
-//     return () => window.removeEventListener('load', handleLoad);
-//   }
-// }, []);
-
-
   return (
     <>
       <section
@@ -80,26 +54,16 @@ function AboutUs() {
 
         <MarqueeStrip />
 
-      <div data-aos="fade-up">
-        <Whoweare />
-      </div>
-
-      
-        <Whatdrivesus />
-
-
-      <div data-aos="fade-up">
-      </div>
-
-        <Infrastructure />
-        <OfficeWarehouse />
-
-      <div data-aos="fade-up">
-        <LeadershipTeam />
-      </div>
+      <Heritage />
+      <StoryCards type="journey" />
+      <GroupCompanies />
+      <Infrastructure />
+      <StoryCards type="leadership" />
+      <OfficeWarehouse />
+      <MarketPresence />
+      <SocialResponsibility />
     </>
   );
 }
 
 export default AboutUs;
-import OfficeWarehouse from "../components/OfficeWarehouse";

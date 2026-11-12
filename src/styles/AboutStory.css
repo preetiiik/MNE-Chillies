@@ -1,0 +1,101 @@
+.about-story-section {
+  padding: 88px 30px;
+  background: #fff;
+  color: #281b18;
+}
+
+.about-story-inner { width: 100%; max-width: 1500px; margin: 0 auto; }
+.about-story-split { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: center; gap: clamp(36px, 5vw, 88px); }
+.about-story-label { display: block; color: #a6000c; font: 600 12px/1.7 "Inter", sans-serif; letter-spacing: 2.4px; }
+.about-story-section h2 { max-width: 1000px; margin: 16px 0 26px; font: 700 clamp(32px, 3.4vw, 52px)/1.18 "Libre Caslon Text", serif; text-wrap: balance; }
+.about-story-section p { margin: 0 0 20px; color: #65534c; font: 400 15px/1.85 "Inter", sans-serif; }
+.about-story-heading { margin-bottom: 38px; }
+.about-story-heading p { max-width: 720px; }
+.about-story-founder-note { margin-top: 32px; padding-left: 20px; border-left: 2px solid #b99b62; }
+.about-story-founder-note p { margin: 10px 0 0; color: #281b18; }
+.about-story-section figure { margin: 0; min-width: 0; }
+.about-story-section img { width: 100%; display: block; }
+.about-story-portrait { justify-self: center; width: min(100%, 470px); background: #f7f2e9; padding: 16px; border: 1px solid #e6dccb; }
+.about-story-portrait img { aspect-ratio: 4 / 5; object-fit: contain; }
+.about-story-portrait figcaption { padding: 16px 4px 3px; text-align: center; color: #65534c; font: 400 13px/1.6 "Inter", sans-serif; }
+.about-story-journey, .about-story-market { background: #f9f6f0; }
+.about-story-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.about-story-card { padding: 34px; background: #fff; border: 1px solid #e9e1d8; border-radius: 16px; transition: translate .3s ease, box-shadow .3s ease, border-color .3s ease, background-color .3s ease; }
+.about-story-journey .about-story-card { border-top: 3px solid #b99b62; }
+@media (hover: hover) and (pointer: fine) {
+  .about-story-card:hover { translate: 0 -6px; background-color: #fffaf7; border-color: #a6000c; box-shadow: 0 16px 36px rgba(120, 16, 26, .12); }
+}
+.about-story-card-label { display: block; margin-bottom: 20px; color: #8c131b; font: 600 11px/1.6 "Inter", sans-serif; letter-spacing: 1.8px; }
+.about-story-journey .about-story-card-label { font: 700 30px/1.2 "Libre Caslon Text", serif; letter-spacing: 0; }
+.about-story-card h3 { color: #78101a; margin-bottom: 16px; font: 700 23px/1.35 "Libre Caslon Text", serif; }
+.about-story-card p { margin-bottom: 0; }
+/* Group of companies: centered heading and an open row of wordmarks. */
+.about-story-companies {
+  background: linear-gradient(rgba(253, 249, 244, .25), rgba(253, 249, 244, .25)), url("../assets/images/purpose-bg.webp") center / cover no-repeat;
+  padding-top: 72px;
+  padding-bottom: 110px;
+}
+.about-company-layout { display: flex; flex-direction: column; gap: 52px; }
+.about-company-intro { text-align: center; }
+.about-company-intro .about-story-label { display: flex; align-items: center; justify-content: center; gap: 22px; }
+.about-company-intro .about-story-label::before, .about-company-intro .about-story-label::after { content: ""; width: 48px; height: 2px; background: #a6000c; flex-shrink: 0; }
+.about-company-intro h2 { max-width: none; margin: 24px auto 20px; font-size: clamp(32px, 3.7vw, 58px); }
+.about-company-intro p { max-width: 1100px; margin: 0 auto; font-size: clamp(15px, 1.5vw, 20px); }
+.about-company-strip { display: flex; align-items: stretch; list-style: none; margin: 0; padding: 0; }
+.about-company-name { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; padding: 22px 20px; }
+.about-company-name + .about-company-name { border-left: 1px solid #c6a269; }
+.about-company-wordmark { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; column-gap: 20px; row-gap: 8px; transition: translate .3s ease; }
+.about-company-initials { color: #a6000c; font: 700 clamp(38px, 4.5vw, 70px)/1.15 "Libre Caslon Text", serif; white-space: nowrap; }
+.about-company-descriptor { color: #35211c; font: 700 clamp(11px, 1.2vw, 17px)/1.5 "Inter", sans-serif; letter-spacing: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  .about-company-name:hover .about-company-wordmark { translate: 0 -4px; }
+}
+@media (max-width: 1000px) {
+  .about-company-name { padding: 20px 14px; }
+  .about-company-wordmark { column-gap: 12px; }
+  .about-company-descriptor { letter-spacing: 2px; }
+}
+@media (max-width: 700px) {
+  .about-company-layout { gap: 28px; }
+  .about-company-intro .about-story-label { gap: 12px; font-size: 10px; letter-spacing: 1.6px; }
+  .about-company-intro .about-story-label::before, .about-company-intro .about-story-label::after { width: 22px; }
+  .about-company-strip { flex-direction: column; }
+  .about-company-name { padding: 26px 12px; }
+  .about-company-name + .about-company-name { border-left: 0; border-top: 1px solid #d9bc87; }
+  .about-company-initials { font-size: 44px; }
+  .about-company-descriptor { font-size: 13px; letter-spacing: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-company-wordmark { transition: none; }
+  .about-company-name:hover .about-company-wordmark { translate: none; }
+}
+.about-story-card .about-story-experience { margin: -6px 0 18px; color: #8c131b; font-size: 13px; font-weight: 600; }
+.about-story-photo { overflow: hidden; border-radius: 3px; }
+.about-story-photo img { aspect-ratio: 5 / 4; object-fit: cover; }
+.about-story-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 32px; }
+.about-story-stats > div { padding: 0 18px; border-left: 1px solid #b99b62; }
+.about-story-stats > div:first-child { border: 0; padding-left: 0; }
+.about-story-stats > div:last-child { padding-right: 0; }
+.about-story-stats dt { color: #92101a; font: 700 clamp(20px, 2vw, 29px)/1.3 "Libre Caslon Text", serif; }
+.about-story-stats dd { margin: 10px 0 0; color: #65534c; font: 400 12px/1.6 "Inter", sans-serif; }
+.about-story-section blockquote { margin: 30px 0 0; padding-left: 24px; border-left: 2px solid #b99b62; color: #78101a; font: italic 400 clamp(20px, 1.8vw, 25px)/1.6 "Libre Caslon Text", serif; }
+@media (max-width: 1100px) {
+  .about-story-section { padding-top: 64px; padding-bottom: 64px; }
+  .about-story-card { padding: 26px; }
+  .about-story-split { gap: 32px; }
+  .about-story-stats > div { padding-left: 12px; padding-right: 12px; }
+}
+@media (max-width: 800px) {
+  .about-story-section { padding: 52px 20px; }
+  .about-story-split, .about-story-cards { grid-template-columns: minmax(0, 1fr); }
+  .about-story-split { gap: 32px; }
+  .about-story-cards { gap: 18px; }
+  .about-story-section h2 { font-size: clamp(30px, 6vw, 40px); }
+  .about-story-portrait { width: min(100%, 430px); }
+  .about-story-photo img { aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-story-card { transition: none; }
+  .about-story-card:hover { translate: none; }
+  .about-story-section [data-aos] { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
