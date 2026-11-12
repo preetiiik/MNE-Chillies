@@ -11,7 +11,7 @@
 
 .process-container{
     width:100%;
-    max-width:1500px;   /* matches .nav-container */
+    max-width:1560px;   /* navbar's 1500px content plus its 30px side gutters */
     margin:0 auto;
     padding:0 30px;     /* matches .navbar horizontal padding */
     box-sizing:border-box;
@@ -52,11 +52,11 @@
 
 .process-grid {
   position: relative;
-  max-width: 940px;
+  width: 100%;
   margin: 48px 0 0;
 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -76,7 +76,8 @@
 .process-card {
   position: relative;
   z-index: 1;
-  width: 198px;
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -161,13 +162,12 @@
   }
 
   .process-grid {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
   }
 
   .process-card {
-    width: 260px;
+    width: 100%;
   }
 }
 
@@ -393,7 +393,7 @@
   }
 
   .process-grid {
-    flex-direction: column;
+    grid-template-columns: minmax(0, 1fr);
     align-items: stretch;
     gap: 32px;
   }
@@ -405,6 +405,7 @@
 
   .process-card {
     position: relative; /* anchor for the vertical connector below */
+    flex: none;
     width: 100%;
     max-width: 100%;
     display: flex;
