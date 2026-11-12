@@ -1,7 +1,7 @@
 import "../styles/CapabilitiesSection.css";
 
 import mpuImg from "../assets/images/mpu.png";
-import qaImg from "../assets/images/qa.png";
+import qaImg from "../assets/images/qa.jpg";
 import coldStorageImg from "../assets/images/coldstorage.png";
 import qualityLedImg from "../assets/images/quality-led.png";
 import stemlessImg from "../assets/images/stemless.png";
