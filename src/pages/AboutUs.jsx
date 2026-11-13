@@ -56,6 +56,7 @@ function AboutUs() {
 
       <Heritage />
       <StoryCards type="journey" />
+      <StoryCards type="purpose" />
       <GroupCompanies />
       <Infrastructure />
       <StoryCards type="leadership" />

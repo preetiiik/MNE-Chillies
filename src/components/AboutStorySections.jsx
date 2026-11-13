@@ -40,7 +40,7 @@ export function StoryCards({ type }) {
         <div className="about-story-cards">
           {story.cards.map((card, index) => (
             <article className="about-story-card" key={card.title} data-aos="fade-up" data-aos-delay={index * 100}>
-              <span className="about-story-card-label">{card.label}</span>
+              {card.label && <span className="about-story-card-label">{card.label}</span>}
               <h3>{card.title}</h3>
               {card.experience && <p className="about-story-experience">{card.experience}</p>}
               <p>{card.description}</p>

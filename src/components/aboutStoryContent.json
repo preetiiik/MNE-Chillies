@@ -31,6 +31,24 @@
       }
     ]
   },
+  "purpose": {
+    "label": "What drives us",
+    "title": "Our vision, mission & values.",
+    "cards": [
+      {
+        "title": "Our Vision",
+        "description": "To be a globally recognised, one-stop destination for red chillies — integrating sourcing, procurement and advanced manufacturing to deliver premium-quality chilli powder and flakes through cutting-edge technology, world-class quality standards and supply chain excellence."
+      },
+      {
+        "title": "Our Mission",
+        "description": "To combine generations of industry expertise, trusted sourcing relationships and modern manufacturing technologies to deliver high-quality red chilli products with hygiene, reliability and customer satisfaction."
+      },
+      {
+        "title": "Our Values",
+        "description": "Integrity, quality, innovation, lasting relationships, social responsibility and respect for the legacy that brought us here."
+      }
+    ]
+  },
   "leadership": {
     "label": "GROUP LEADERSHIP",
     "title": "Experience that grounds us. Innovation that moves us forward.",

@@ -7,6 +7,7 @@
 .about-story-inner { width: 100%; max-width: 1500px; margin: 0 auto; }
 .about-story-split { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: center; gap: clamp(36px, 5vw, 88px); }
 .about-story-label { display: block; color: #a6000c; font: 600 12px/1.7 "Inter", sans-serif; letter-spacing: 2.4px; }
+.about-story-purpose .about-story-label { text-transform: uppercase; }
 .about-story-section h2 { max-width: 1000px; margin: 16px 0 26px; font: 700 clamp(32px, 3.4vw, 52px)/1.18 "Libre Caslon Text", serif; text-wrap: balance; }
 .about-story-section p { margin: 0 0 20px; color: #65534c; font: 400 15px/1.85 "Inter", sans-serif; }
 .about-story-heading { margin-bottom: 38px; }
@@ -18,10 +19,11 @@
 .about-story-portrait { justify-self: center; width: min(100%, 470px); background: #f7f2e9; padding: 16px; border: 1px solid #e6dccb; }
 .about-story-portrait img { aspect-ratio: 4 / 5; object-fit: contain; }
 .about-story-portrait figcaption { padding: 16px 4px 3px; text-align: center; color: #65534c; font: 400 13px/1.6 "Inter", sans-serif; }
-.about-story-journey, .about-story-market { background: #f9f6f0; }
+.about-story-journey, .about-story-purpose, .about-story-market { background: #f9f6f0; }
 .about-story-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
 .about-story-card { padding: 34px; background: #fff; border: 1px solid #e9e1d8; border-radius: 16px; transition: translate .3s ease, box-shadow .3s ease, border-color .3s ease, background-color .3s ease; }
-.about-story-journey .about-story-card { border-top: 3px solid #b99b62; }
+.about-story-journey .about-story-card,
+.about-story-purpose .about-story-card { border-top: 3px solid #b99b62; }
 @media (hover: hover) and (pointer: fine) {
   .about-story-card:hover { translate: 0 -6px; background-color: #fffaf7; border-color: #a6000c; box-shadow: 0 16px 36px rgba(120, 16, 26, .12); }
 }
