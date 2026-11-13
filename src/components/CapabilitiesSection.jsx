@@ -8,8 +8,7 @@ import stemlessImg from "../assets/images/stemless.png";
 
 export default function CapabilitiesSection() {
   const capabilities = [
-
-
+    
     {
       id: "01",
       image: mpuImg,
