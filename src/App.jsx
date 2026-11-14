@@ -14,6 +14,7 @@ import Products from "./pages/Products";
 import Services from "./pages/Services";
 import Infrastructure from "./pages/Infrastructure";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 import PrivacyPolicy from "./components/Privacypolicy";
 import TermsConditions from "./components/Termsconditions";
@@ -54,6 +55,7 @@ function AppContent() {
         <Route path="/services" element={<Services />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
 
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />

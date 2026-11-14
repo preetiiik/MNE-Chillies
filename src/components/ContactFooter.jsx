@@ -213,7 +213,7 @@ const ContactFooter = ({ hideCTA }) => {
 
             <p>
               Mon–Sat,
-              9:00 AM – 6:30 PM IST
+              10:00 AM – 8:00 PM IST
             </p>
 
             <div className="certifications">

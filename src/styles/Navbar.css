@@ -32,12 +32,55 @@
     width:120px;
     display:block;
 }
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 12px;
+    border-left: 1px solid currentColor;
+}
+.nav-brand-title {
+    font: 700 25px/1 "Libre Caslon Text", serif;
+    letter-spacing: -.025em;
+    white-space: nowrap;
+}
+.nav-brand-companies {
+    display: flex;
+    align-items: center;
+    font: 700 9px/1.4 "Libre Caslon Text", serif;
+    white-space: nowrap;
+}
+.nav-brand-companies span + span {
+    margin-left: 6px;
+    padding-left: 6px;
+    border-left: 1px solid currentColor;
+}
+.nav-container { gap: 24px; }
+.contact-btn { flex-shrink: 0; }
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navbar { padding: 18px 20px; }
+    .nav-container { gap: 16px; }
+    .navbar .logo img { width: 85px; }
+    .nav-brand-title { font-size: 21px; }
+    .nav-brand-companies { font-size: 8px; }
+    .navbar .nav-links { gap: 16px; }
+    .nav-links a { font-size: 13px; }
+    .contact-btn { width: 112px; font-size: 13px; }
+}
 .nav-links{
     display:flex;
     align-items:center;
-    gap:40px;
+    gap:clamp(16px, 2vw, 32px);
     list-style:none;
-    margin:0;
+    margin:0 0 0 auto;
     padding:0;
 }
 .nav-links a{
@@ -119,6 +162,7 @@
     }
     .nav-links{
         position:fixed;
+        margin:0;
         top:0;
         right:-100%;
         width:280px;
@@ -136,4 +180,17 @@
     .logo img{
         width:105px;
     }
+    .navbar .logo { gap: 8px; }
+    .nav-brand { padding-left: 8px; }
+    .nav-brand-title { font-size: 21px; }
+    .nav-brand-companies { font-size: 7px; }
+}
+@media (max-width: 420px) {
+    .navbar { padding: 16px 12px; }
+    .nav-container { gap: 10px; }
+    .navbar .logo img { width: 70px; }
+    .nav-brand-title { font-size: 19px; }
+    .nav-brand-companies { font-size: 6px; }
+    .nav-brand-companies span + span { margin-left: 4px; padding-left: 4px; }
+    .menu-icon { font-size: 28px; flex-shrink: 0; }
 }

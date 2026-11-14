@@ -22,7 +22,7 @@ function Hero() {
         {/* Badge */}
         <div className="home-hero-badge">
           <span className="home-badge-dot"></span>
-          <span>GUNTUR'S FINEST SINCE 1998</span>
+          <span>OVER FOUR DECADES OF SPICE EXPERTISE</span>
         </div>
 
         {/* Heading */}
@@ -36,9 +36,7 @@ function Hero() {
 
         {/* Paragraph */}
         <p className="home-hero-description">
-          Delivering handpicked, export-grade chillies, chilli powder,
-          and flakes with rich color, strong aroma, and authentic heat
-          from India's spice capital.
+          From carefully sourced whole chillies to premium chilli powder and flakes — bringing the character of Guntur to markets across India and the world.
         </p>
 
         {/* Buttons */}

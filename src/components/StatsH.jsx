@@ -1,12 +1,12 @@
-import { FaSeedling, FaGlobeAsia, FaHandshake, FaAward } from "react-icons/fa";
+import { FaAward, FaMapMarkerAlt, FaCogs, FaGlobeAsia } from "react-icons/fa";
 import "../styles/StatsH.css";
 
 function Stats() {
   const stats = [
-    { sentence: "Sourced from APMC Guntur", icon: FaSeedling },
-    { sentence: "All over India and exports", icon: FaGlobeAsia },
-    { sentence: "Trusted globally since 4 decades", icon: FaHandshake },
-    { sentence: "India's most trusted chilli supplier", icon: FaAward },
+    { sentence: "45+ Years of Expertise", icon: FaAward },
+    { sentence: "Guntur Rooted", icon: FaMapMarkerAlt },
+    { sentence: "Advanced Processing", icon: FaCogs },
+    { sentence: "India and Global Markets", icon: FaGlobeAsia },
   ];
 
   return (

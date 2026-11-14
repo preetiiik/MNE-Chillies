@@ -1,7 +1,6 @@
 import "../styles/ContactEnq.css";
 
 import {
-  FiPhone,
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
@@ -32,21 +31,6 @@ function ContactEnquiry() {
           </p>
 
           <div className="contact-list">
-
-            {/* Phone */}
-            <div className="contact-item">
-              <FiPhone className="contact-icon" />
-
-              <div>
-                <div className="contact-label">Phone</div>
-
-                <div className="contact-value">
-                  <a href="tel:+91 9440793970">
-                    +91 9440793970
-                  </a>
-                </div>
-              </div>
-            </div>
 
             {/* Email */}
             <div className="contact-item">
@@ -95,7 +79,7 @@ function ContactEnquiry() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +91 9440793970
+                    Chat on WhatsApp
                   </a>
                 </div>
               </div>
