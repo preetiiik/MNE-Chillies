@@ -1,0 +1,32 @@
+.blog-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 160px 24px 80px;
+  background: linear-gradient(180deg, #281b18 0, #281b18 110px, #f8f4ed 110px);
+  text-align: center;
+  color: #281b18;
+}
+
+.blog-page__content { max-width: 620px; }
+.blog-page__label {
+  margin-bottom: 16px;
+  color: #a6000c;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2em;
+}
+.blog-page h1 {
+  margin: 0 0 24px;
+  font: 700 clamp(42px, 6vw, 72px)/1.2 "Libre Caslon Text", serif;
+}
+.blog-page__status {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border: 1px solid #d9bc87;
+  border-radius: 24px;
+  color: #92101a;
+  font-size: 14px;
+}
+.blog-page__content > p:last-child { color: #65534c; line-height: 1.8; }

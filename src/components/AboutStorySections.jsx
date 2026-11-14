@@ -66,6 +66,11 @@ export function GroupCompanies() {
           <h2 id="group-companies-title">Three Business Names. One Legacy.</h2>
           <p>A family of businesses built on trust, experience and a shared commitment to quality.</p>
         </div>
+        <div className="about-company-family">
+          <div className="about-company-group" aria-label="MNE Group">
+            <span className="about-company-group-initials">MNE</span>
+            <span className="about-company-group-label">GROUP</span>
+          </div>
         <ul className="about-company-strip" data-aos="fade-up">
           {companies.map(company => (
             <li className="about-company-name" key={company.name}>
@@ -76,6 +81,7 @@ export function GroupCompanies() {
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </section>
   );
