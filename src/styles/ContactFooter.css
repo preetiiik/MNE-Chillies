@@ -400,9 +400,52 @@
   justify-content: space-between;
 }
 
-.footer-logo {
-  width: 180px;
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 28px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 85px;
+  flex-shrink: 0;
+}
+
+.footer-brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 12px;
+  border-left: 1px solid currentColor;
+}
+
+.footer-brand-title {
+  font: 700 24px/1 "Libre Caslon Text", serif;
+  white-space: nowrap;
+}
+
+.footer-brand-companies {
+  display: flex;
+  align-items: center;
+  font: 700 7px/1.4 "Libre Caslon Text", serif;
+  white-space: nowrap;
+}
+
+.footer-brand-companies span + span {
+  margin-left: 4px;
+  padding-left: 4px;
+  border-left: 1px solid currentColor;
+}
+
+@media (max-width: 400px) {
+  .footer-brand { gap: 8px; }
+  .footer-logo { width: 65px; }
+  .footer-brand-copy { padding-left: 8px; }
+  .footer-brand-title { font-size: 20px; }
+  .footer-brand-companies { font-size: 6px; }
 }
 
 .footer-text {

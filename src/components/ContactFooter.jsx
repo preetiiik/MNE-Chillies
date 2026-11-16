@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/ContactFooter.css";
 
 import { FaWhatsapp } from "react-icons/fa";
-import { FiPhone, FiMail } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 import footerLogo from "../assets/images/logo.webp";
 import contactBg from "../assets/images/Container.webp";
@@ -75,11 +75,21 @@ const ContactFooter = ({ hideCTA }) => {
             data-aos="fade-up"
             data-aos-duration="800"
           >
+            <Link to="/" className="footer-brand">
             <img
               src={footerLogo}
-              alt="Logo"
+              alt="MNE Logo"
               className="footer-logo"
             />
+              <span className="footer-brand-copy">
+                <span className="footer-brand-title">MNE GROUP</span>
+                <span className="footer-brand-companies">
+                  <span>M.N. ENTERPRISES</span>
+                  <span>M.N. EXPORTERS</span>
+                  <span>MNE SPICES</span>
+                </span>
+              </span>
+            </Link>
 
             <p className="footer-text">
               Guntur's leading exporter of premium red chillies,
@@ -88,9 +98,6 @@ const ContactFooter = ({ hideCTA }) => {
             </p>
 
             <div className="social-icons">
-              <a href="tel:+919440793970" aria-label="Call +91 9440793970" title="Call us">
-                <FiPhone />
-              </a>
               <a href="mailto:mnenterprises@live.in" aria-label="Email mnenterprises@live.in" title="Email us">
                 <FiMail />
               </a>
@@ -196,16 +203,6 @@ const ContactFooter = ({ hideCTA }) => {
               mnenterprises@live.in
             </a>
 
-
-            <span className="footer-label">
-              PHONE
-            </span>
-
-            <div className="footer-phone">
-              <a href="tel:+919440793970">
-                +919440793970
-                </a>
-            </div>
 
             <span className="footer-label">
               HOURS
