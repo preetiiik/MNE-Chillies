@@ -14,7 +14,6 @@ import PremiumProductsH from "../components/PremiumProductsH";
 import ProcessSection from "../components/ProcessSectionH";
 import ServicesSection from "../components/ServicesSection";
 import OurCommitment from "../components/OurCommitmentH";
-import Testimonials from "../components/TestimonialsH";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -29,7 +28,6 @@ function Home() {
       <ProcessSection />
       <ServicesSection />
       <OurCommitment />
-      <Testimonials />
       <Footer />
     </>
   );

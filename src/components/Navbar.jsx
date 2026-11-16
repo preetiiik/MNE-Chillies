@@ -73,7 +73,7 @@ function Navbar() {
 
           <li>
             <NavLink to="/blog" onClick={closeMenu}>
-              Blog
+              Blogs
             </NavLink>
           </li>
         </ul>
