@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/ContactFooter.css";
 
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 
 import footerLogo from "../assets/images/logo.webp";
 import contactBg from "../assets/images/Container.webp";
@@ -99,6 +99,15 @@ const ContactFooter = ({ hideCTA }) => {
             <div className="social-icons">
               <a href="mailto:mnenterprises@live.in" aria-label="Email mnenterprises@live.in" title="Email us">
                 <FiMail />
+              </a>
+              <a
+                href="https://maps.app.goo.gl/1RpR2fCwzDAsfjpNA?g_st=iw"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View M.N Export House, Guntur on Google Maps"
+                title="Find us on Google Maps"
+              >
+                <FiMapPin />
               </a>
             </div>
           </div>

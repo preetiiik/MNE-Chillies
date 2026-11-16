@@ -34,38 +34,6 @@ export default function InfraIntro() {
             and premium.
           </p>
 
-          <div className="infra-stats">
-
-            <div
-              className="infra-stat"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            >
-              <div className="infra-border"></div>
-
-              <div>
-                <h4>50k+ Sq Ft</h4>
-                <span>Processing Area</span>
-              </div>
-
-            </div>
-
-            <div
-              className="infra-stat"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div className="infra-border"></div>
-
-              <div>
-                <h4>ISO 22000</h4>
-                <span>Certified Standards</span>
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
 
         {/* RIGHT IMAGE */}
@@ -76,13 +44,11 @@ export default function InfraIntro() {
           data-aos-duration="1200"
           data-aos-easing="ease-out-cubic"
         >
-
           <img
             src={handImg}
             alt="Fresh Red Chillies"
             className="infra-hand"
           />
-
         </div>
 
       </div>
