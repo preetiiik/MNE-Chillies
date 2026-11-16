@@ -80,14 +80,6 @@ const ContactFooter = ({ hideCTA }) => {
               alt="MNE Logo"
               className="footer-logo"
             />
-              <span className="footer-brand-copy">
-                <span className="footer-brand-title">MNE GROUP</span>
-                <span className="footer-brand-companies">
-                  <span>M.N. ENTERPRISES</span>
-                  <span>M.N. EXPORTERS</span>
-                  <span>MNE SPICES</span>
-                </span>
-              </span>
             </Link>
 
             <p className="footer-text">

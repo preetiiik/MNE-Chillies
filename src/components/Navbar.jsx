@@ -30,14 +30,6 @@ function Navbar() {
       <div className="nav-container">
         <Link to="/" className="logo" onClick={closeMenu}>
           <img src={logo} alt="MNE Logo" />
-          <span className="nav-brand">
-            <span className="nav-brand-title">MNE GROUP</span>
-            <span className="nav-brand-companies">
-              <span>M.N. ENTERPRISES</span>
-              <span>M.N. EXPORTERS</span>
-              <span>MNE SPICES</span>
-            </span>
-          </span>
         </Link>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
