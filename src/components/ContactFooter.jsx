@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/ContactFooter.css";
 
-import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 import footerLogo from "../assets/images/logo.webp";
@@ -100,14 +99,6 @@ const ContactFooter = ({ hideCTA }) => {
             <div className="social-icons">
               <a href="mailto:mnenterprises@live.in" aria-label="Email mnenterprises@live.in" title="Email us">
                 <FiMail />
-              </a>
-              <a
-                href="https://wa.me/919440793970"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Chat on WhatsApp"
-              >
-                <FaWhatsapp />
               </a>
             </div>
           </div>

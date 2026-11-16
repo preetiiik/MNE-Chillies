@@ -4,7 +4,6 @@ import {
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
 
 function ContactEnquiry() {
   return (
@@ -61,25 +60,6 @@ function ContactEnquiry() {
                     rel="noopener noreferrer"
                   >
                     M.N EXPORT HOUSE<br />2/2 Arundelpet<br />Backside Jain Temple<br />Guntur - 522007<br />Andhra Pradesh, India
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* WhatsApp */}
-            <div className="contact-item">
-              <FaWhatsapp className="contact-icon whatsapp-icon" />
-
-              <div>
-                <div className="contact-label">WhatsApp</div>
-
-                <div className="contact-value">
-                  <a
-                    href="https://wa.me/9440793970"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Chat on WhatsApp
                   </a>
                 </div>
               </div>
