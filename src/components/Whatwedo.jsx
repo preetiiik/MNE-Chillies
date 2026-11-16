@@ -35,7 +35,7 @@ const SERVICES = [
     statLabel: "Natural Chilli Grinding",
     icon: "diamond",
     paragraph:
-      "Our advanced Chilli grinding process transforms carefully selected dried red chillies into finely ground powder while preserving their natural colour, aroma, and pungency. Using modern grinding technology, we ensure consistent particle size, hygienic processing, and superior product quality.",
+      "Our advanced Chilli grinding process transforms carefully selected Whole Chilli into finely ground powder while preserving their natural colour, aroma, and pungency. Using modern grinding technology, we ensure consistent particle size, hygienic processing, and superior product quality.",
     features: [
       "Uniform particle size",
       "Preserves natural colour",

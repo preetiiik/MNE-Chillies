@@ -35,7 +35,7 @@ const ContactFooter = ({ hideCTA }) => {
           </h2>
 
           <p className="contact-descriptionf">
-            We supply bulk dry chillies, chilli powder, and flakes to food
+            We supply bulk Whole Chilli, chilli powder, and flakes to food
             processors, spice manufacturers, and importers worldwide. Reach
             out to discuss your requirements.
           </p>
@@ -138,14 +138,14 @@ const ContactFooter = ({ hideCTA }) => {
           >
             <h4>Products</h4>
             <ul>
-            <li><Link to="/products?category=Dry Chillies">Dry Chillies</Link></li>
+            <li><Link to="/products?category=Whole Chilli">Whole Chilli</Link></li>
 
             <li><Link to="/products?category=Chilli Powder">Chilli Powder</Link></li>
 
             <li><Link to="/products?category=Chilli Flakes">Chilli Flakes</Link></li>
             </ul>
             {/* <ul>
-              <li><a href="/">Dry Chillies</a></li>
+              <li><a href="/">Whole Chilli</a></li>
 
               <li><a href="/">Chilli Powder</a></li>
 

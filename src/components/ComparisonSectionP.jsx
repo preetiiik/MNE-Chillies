@@ -74,7 +74,7 @@ export default function ComparisonSection() {
   const products = [
     {
       image: teja,
-      name: "Teja S17 Dried Red Chilli",
+      name: "Teja S17 Whole Chilli",
       type: "Teja Variety",
       asta:"50–70",
       shu:"65k - 85k",
@@ -85,7 +85,7 @@ export default function ComparisonSection() {
 
     {
       image: byadagi,
-      name: "355 Byadgi (RALLIS) Dried Red Chilli",
+      name: "355 Byadgi (RALLIS) Whole Chilli",
       type: "355 Byadgi Variety",
       asta: "100–140",
       shu: "15,000–30,000",
@@ -96,7 +96,7 @@ export default function ComparisonSection() {
 
     {
       image: sannam,
-      name: "334 / S4 / Sannam Dried Red Chilli",
+      name: "334 / S4 / Sannam Whole Chilli",
       type: "334/S4 Sannam Variety",
       asta: "40–50",
       shu: "18,000–22,000",
@@ -107,7 +107,7 @@ export default function ComparisonSection() {
 
     {
       image: variety341,
-      name: "341 Dried Red Chilli",
+      name: "341 Whole Chilli",
       type: "341 Variety",
       asta: "90–140",
       shu: "25,000–50,000",
@@ -140,7 +140,7 @@ export default function ComparisonSection() {
 
     {
       image: dd,
-      name: "Devanur Deluxe (DD) Dried Red Chilli",
+      name: "Devanur Deluxe (DD) Whole Chilli",
       type: "Devanur Deluxe Variety",
       asta: "90–160",
       shu: "25,000–35,000",
@@ -169,7 +169,7 @@ export default function ComparisonSection() {
 
           </span>
 
-          <h2>Dry Chilli Comparison</h2>
+          <h2>Whole Chilli Comparison</h2>
 
         </div>
 

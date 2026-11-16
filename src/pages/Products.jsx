@@ -53,7 +53,7 @@ function Products() {
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            From sun-dried whole chillies to fine powders and crushed flakes,
+            From Whole Chilli to fine powders and crushed flakes,
             every batch is graded for colour, heat and purity before it ships.
           </p>
         </div>
