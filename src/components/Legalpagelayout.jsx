@@ -1,5 +1,5 @@
 import "../styles/Legalpagelayout.css";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/mne-logo1.png";
 
 export default function LegalPageLayout({ title, lastUpdated, children }) {
   return (

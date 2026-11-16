@@ -4,7 +4,7 @@ import "../styles/ContactFooter.css";
 
 import { FiMail, FiMapPin } from "react-icons/fi";
 
-import footerLogo from "../assets/images/logo.webp";
+import footerLogo from "../assets/images/mne-logo1.png";
 import contactBg from "../assets/images/Container.webp";
 
 const ContactFooter = ({ hideCTA }) => {
