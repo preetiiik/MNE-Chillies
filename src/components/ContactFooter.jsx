@@ -204,14 +204,6 @@ const ContactFooter = ({ hideCTA }) => {
               10:00 AM – 8:00 PM IST
             </p>
 
-            <div className="certifications">
-              <span>FSSAI</span>
-
-
-              <span>APEDA</span>
-
-              <span>SPICES BOARD</span>
-            </div>
           </div>
 
         </div>
