@@ -1,7 +1,7 @@
 import dryPowder from "../assets/images/powder-pour.webp";
 import dryChillies from "../assets/images/dry-chillies.webp";
-import flakes from "../assets/images/chilli-flakes.png";
-import powder from "../assets/images/mild-chilli-powder.png";
+import flakes from "../assets/images/chilli-flakes1.png";
+import powder from "../assets/images/mild-chilli-powder1.png";
 
 import "../styles/OurProductsP.css";
 
@@ -43,10 +43,10 @@ function OurProductsSection() {
           <div className="product-type">
 
             <div className="our-product-info">
-              <h3>Dry Chillies</h3>
+              <h3>Whole Chilli</h3>
 
               <p>
-                Handpicked dried red chillies with deep color and
+                Handpicked Whole Chilli with deep color and
                 bold aroma, sourced to deliver unmatched quality
                 and natural heat.
               </p>
@@ -54,7 +54,7 @@ function OurProductsSection() {
 
             <img
               src={dryChillies}
-              alt="Dry Chillies"
+              alt="Whole Chilli"
             />
 
           </div>

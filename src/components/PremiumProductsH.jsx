@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import "../styles/PremiumProductsH.css";
 
 // Existing Teja S17 asset already in the project — reused for the new
-// "Teja (S17) Dried Red Chilli" entry since it is the correct variety image.
+// "Teja (S17) Whole Chilli" entry since it is the correct variety image.
 import teja from "../assets/images/teja-s17.jpeg";
 
 // NEW client-provided images referenced in the brief.
@@ -29,11 +29,11 @@ function PremiumProductsH() {
   const products = [
     {
       id: 1,
-      category: "Dry Chillies",
+      category: "Whole Chilli",
       badge: "Hottest Variety",
       image: teja,
       variety: "TEJA (S17)",
-      title: "Teja (S17) Dried Red Chilli",
+      title: "Teja (S17) Whole Chilli",
       description:
         "One of the hottest chilli varieties, S17 Teja is widely grown in southern India and valued worldwide for its intense heat and rich red colour.",
       productDetails: {
@@ -64,11 +64,11 @@ function PremiumProductsH() {
 
     {
       id: 2,
-      category: "Dry Chillies",
+      category: "Whole Chilli",
       badge: "Popular Export Variety",
       image: sannam334,
       variety: "334 / S4 / SANNAM",
-      title: "334 / S4 / Sannam Dried Red Chilli",
+      title: "334 / S4 / Sannam Whole Chilli",
       description:
         "Light red color and low heat flavour. Grown in Guntur and Prakasam districts.",
       productDetails: {
@@ -99,11 +99,11 @@ function PremiumProductsH() {
 
     {
       id: 3,
-      category: "Dry Chillies",
+      category: "Whole Chilli",
       badge: "High Color Value",
       image: syngenta,
       variety: "355 BYADGI (RALLIS)",
-      title: "355 Byadgi (RALLIS) Dried Red Chilli",
+      title: "355 Byadgi (RALLIS) Whole Chilli",
       description:
         "High-demand worldwide, Byadgi is long, bright red, wrinkled, and mild. Widely used in cooking and natural colour extraction.",
       productDetails: {
@@ -134,11 +134,11 @@ function PremiumProductsH() {
 
     {
       id: 4,
-      category: "Dry Chillies",
+      category: "Whole Chilli",
       badge: "Masala Industry Favourite",
       image: chilli341dlx,
       variety: "341",
-      title: "341 Dried Red Chilli",
+      title: "341 Whole Chilli",
       description:
         "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed dark red, less spicy.",
       productDetails: {
@@ -169,11 +169,11 @@ function PremiumProductsH() {
 
     {
       id: 5,
-      category: "Dry Chillies",
+      category: "Whole Chilli",
       badge: "Chilli Powder Favourite",
       image: kurnoolDD,
       variety: "DEVANUR DELUXE (DD)",
-      title: "Devanur Deluxe Dried Red Chilli",
+      title: "Devanur Deluxe Whole Chilli",
       description:
         "Dark red, semi-wrinkled and hot, Devanur Deluxe is grown in Kurnool, Telangana and Andhra Pradesh. Ideal for chilli powder, with fewer seeds.",
       productDetails: {
@@ -244,7 +244,7 @@ function PremiumProductsH() {
 
   const filters = [
     "All",
-    "Dry Chillies",
+    "Whole Chilli",
     "Chilli Powder",
     "Chilli Flakes",
   ];

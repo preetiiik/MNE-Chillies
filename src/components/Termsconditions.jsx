@@ -21,7 +21,7 @@ export default function TermsConditions() {
 
       <h2>1. About Us</h2>
       <p>
-        {COMPANY} is an exporter of dried red chillies, chilli powder,
+        {COMPANY} is an exporter of Whole Chilli, chilli powder,
         and chilli flakes, based in {ADDRESS}. The Site is provided for
         informational and business enquiry purposes for prospective and
         existing customers, importers, and business partners.

@@ -33,7 +33,7 @@ function FeaturedProducts({
 
         if (
             categoryFromUrl &&
-            ["All", "Dry Chillies", "Chilli Powder", "Chilli Flakes"].includes(
+            ["All", "Whole Chilli", "Chilli Powder", "Chilli Flakes"].includes(
                 categoryFromUrl
             )
         ) {
@@ -61,7 +61,7 @@ function FeaturedProducts({
         {
             id: 1,
 
-            category: "Dry Chillies",
+            category: "Whole Chilli",
 
             badge: "BEST SELLER",
 
@@ -69,7 +69,7 @@ function FeaturedProducts({
 
             location: "TEJA VARIETY • GUNTUR, AP",
 
-            title: "Teja S17 Dried Red Chilli",
+            title: "Teja S17 Whole Chilli",
 
             subtitle: "World's most exported Indian chilli",
 
@@ -108,7 +108,7 @@ function FeaturedProducts({
         {
             id: 2,
 
-            category: "Dry Chillies",
+            category: "Whole Chilli",
 
             badge: "EXPORT QUALITY",
 
@@ -116,7 +116,7 @@ function FeaturedProducts({
 
             location: "334 S4/SANNAM • GUNTUR, AP",
 
-            title: "334 / S4 / Sannam Dried Red Chilli",
+            title: "334 / S4 / Sannam Whole Chilli",
 
             subtitle: "Low heat with light red colour",
 
@@ -154,7 +154,7 @@ function FeaturedProducts({
         {
             id: 3,
 
-            category: "Dry Chillies",
+            category: "Whole Chilli",
 
             badge: "GLOBAL DEMAND",
 
@@ -162,7 +162,7 @@ function FeaturedProducts({
 
             location: "355 BYADGI (RALLIS) • KARNATAKA",
 
-            title: "355 Byadgi (RALLIS) Dried Red Chilli",
+            title: "355 Byadgi (RALLIS) Whole Chilli",
 
             subtitle: "High colour. Low pungency.",
 
@@ -200,7 +200,7 @@ function FeaturedProducts({
         {
             id: 4,
 
-            category: "Dry Chillies",
+            category: "Whole Chilli",
 
             badge: "EXPORT GRADE",
 
@@ -208,7 +208,7 @@ function FeaturedProducts({
 
             location: "341 • GUNTUR",
 
-            title: "341 Dried Red Chilli",
+            title: "341 Whole Chilli",
 
             subtitle: "Excellent colour with medium heat",
 
@@ -245,7 +245,7 @@ function FeaturedProducts({
                 {
             id: 5,
 
-            category: "Dry Chillies",
+            category: "Whole Chilli",
 
             badge: "PREMIUM EXPORT",
 
@@ -253,7 +253,7 @@ function FeaturedProducts({
 
             location: "DEVANUR DELUXE (DD) • KURNOOL",
 
-            title: "Devanur Deluxe (DD) Dried Red Chilli",
+            title: "Devanur Deluxe (DD) Whole Chilli",
 
             subtitle: "Dark red. Rich flavour. Premium export grade.",
 
@@ -342,7 +342,7 @@ function FeaturedProducts({
             subtitle: "Perfect texture. Rich aroma.",
 
             description:
-                "Uniform crushed chilli flakes made from premium quality dried chillies. Widely used for pizzas, pasta, snacks and seasoning blends.",
+                "Uniform crushed chilli flakes made from premium quality Whole Chilli. Widely used for pizzas, pasta, snacks and seasoning blends.",
 
             heat: 2,
 
@@ -368,7 +368,7 @@ function FeaturedProducts({
     ];
     const filters = [
   "All",
-  "Dry Chillies",
+  "Whole Chilli",
   "Chilli Powder",
   "Chilli Flakes",
 ];
@@ -552,7 +552,7 @@ function FeaturedProducts({
                                     </div>
 
                                 </div>
-                                {product.category === "Dry Chillies" && (
+                                {product.category === "Whole Chilli" && (
 
                                     <div className="fp-block">
                                         <h5>Finishing</h5>

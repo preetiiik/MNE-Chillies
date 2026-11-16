@@ -18,9 +18,9 @@ function AllProducts() {
 
         {
             id:1,
-            badge:"DRY CHILLIES",
+            badge:"Whole Chilli",
             variety:"TEJA VARIETY",
-            title:"Teja S17 Dried Red Chilli",
+            title:"Teja S17 Whole Chilli",
             subtitle:"World's most exported Indian chilli",
             description:
             "One of the hottest varieties available. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
@@ -44,11 +44,11 @@ function AllProducts() {
         {
             id:2,
 
-            badge:"DRY CHILLIES",
+            badge:"Whole Chilli",
 
             variety:"355 BYADGI VARIETY",
 
-            title:"355 Byadgi (RALLIS) Dried Red Chilli",
+            title:"355 Byadgi (RALLIS) Whole Chilli",
 
             subtitle:"High colour. Low pungency.",
 
@@ -77,11 +77,11 @@ function AllProducts() {
         {
             id:3,
 
-            badge:"DRY CHILLIES",
+            badge:"Whole Chilli",
 
             variety:"334/S4 SANNAM VARIETY",
 
-            title:"334 / S4 / Sannam Dried Red Chilli",
+            title:"334 / S4 / Sannam Whole Chilli",
 
             subtitle:"Low heat with light red colour",
 
@@ -109,11 +109,11 @@ function AllProducts() {
         {
             id:4,
 
-            badge:"DRY CHILLIES",
+            badge:"Whole Chilli",
 
             variety:"DEVANUR DELUXE VARIETY",
 
-            title:"Devanur Deluxe (DD) Dried Red Chilli",
+            title:"Devanur Deluxe (DD) Whole Chilli",
 
             subtitle:"Dark red. Rich flavour. Premium export grade.",
 
@@ -208,11 +208,11 @@ function AllProducts() {
         {
             id:7,
 
-            badge:"DRY CHILLIES",
+            badge:"Whole Chilli",
 
             variety:"341 VARIETY",
 
-            title:"341 Dried Red Chilli",
+            title:"341 Whole Chilli",
 
             subtitle:"Excellent colour with medium heat",
 

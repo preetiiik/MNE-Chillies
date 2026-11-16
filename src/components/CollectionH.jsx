@@ -9,7 +9,7 @@ function Collection() {
       image: "/images/dry-chilies.webp",
       title: "Whole Chilli",
       description:
-        "Handpicked, sun-dried red chillies with deep pigmentation and bold heat. Source-verified from Guntur farms.",
+        "Handpicked, Whole Chilli with deep pigmentation and bold heat. Source-verified from Guntur farms.",
     },
     {
       image: "/images/chili-powder.webp",

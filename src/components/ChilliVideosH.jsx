@@ -8,8 +8,8 @@ import { useRef } from "react";
  */
 const chillies = [
   {
-    name: "Dried Chilli",
-    description: "Whole sun-dried chillies, deep colour and full aroma.",
+    name: "Whole Chilli",
+    description: "Whole Chilli, deep colour and full aroma.",
     src: "/assests/videos/dried-chilli.mp4",
     poster: "/assests/images/dried-chilli-poster.jpg",
   },
