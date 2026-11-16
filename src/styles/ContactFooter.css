@@ -410,7 +410,10 @@
 }
 
 .footer-logo {
-  width: 85px;
+  width: 320px;
+  height: 54px;
+  object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
 }
 
@@ -442,7 +445,7 @@
 
 @media (max-width: 400px) {
   .footer-brand { gap: 8px; }
-  .footer-logo { width: 65px; }
+  .footer-logo { width: 280px; height: 48px; }
   .footer-brand-copy { padding-left: 8px; }
   .footer-brand-title { font-size: 20px; }
   .footer-brand-companies { font-size: 6px; }
