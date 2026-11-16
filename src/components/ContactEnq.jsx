@@ -124,14 +124,6 @@ function ContactEnquiry() {
               </div>
 
               <div className="form-group">
-                <label>PHONE</label>
-                <input
-                  type="text"
-                  placeholder="+91 1234567890"
-                />
-              </div>
-
-              <div className="form-group">
                 <label>STATE</label>
                 <input
                   type="text"
@@ -150,7 +142,7 @@ function ContactEnquiry() {
                 </select>
               </div>
 
-              <div className="form-group full">
+              <div className="form-group">
                 <label>ESTIMATED QUANTITY (MT)</label>
 
                 <input
