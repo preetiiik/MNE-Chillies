@@ -4,7 +4,7 @@
  
 .premium {
   width: 100%;
-  background: #ffffff;
+  background: var(--brand-white);
   padding: clamp(40px, 6vw, 80px) 0; /* vertical only — container below handles horizontal */
   overflow: hidden;  /* fallback */
   overflow: clip;    /* `hidden` here would create a nested scroll container */ /* keeps entrance animations from causing scrollbars */
@@ -48,27 +48,27 @@
   display: block;
   margin-bottom: 12px;
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   letter-spacing: 2.5px;
  
   text-transform: uppercase;
-  color: #a6000c;
+  color: var(--brand-primary);
 }
  
 .premium-title {
   margin: 0;
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 52px;
   font-weight: 700;
   line-height: 60.2px;
-  color: #1a0505;
+  color: var(--brand-ink);
 }
  
 .premium-title span {
-  color: #a6000c;
+  color: var(--brand-primary);
 }
  
 /* ===========================
@@ -82,11 +82,11 @@
  
 .premium-right p {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
-  color: #5d3f3c;
+  color: var(--brand-muted);
   text-align: right;
 }
  
@@ -114,10 +114,10 @@
   border: none;
   border-radius: 10px;
  
-  background: #f4efee;
-  color: #5d3f3c;
+  background: var(--brand-surface);
+  color: var(--brand-muted);
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
@@ -127,7 +127,7 @@
 }
  
 .filter-buttons button:hover {
-  background: #e9e1df;
+  background: var(--brand-border);
 }
  
 .filter-buttons button:active {
@@ -135,12 +135,12 @@
 }
  
 .filter-buttons .active {
-  background: #a6000c;
-  color: #ffffff;
+  background: var(--brand-primary);
+  color: var(--brand-white);
 }
  
 .filter-buttons .active:hover {
-  background: #8d0009;
+  background: var(--brand-primary-hover);
 }
  
 /* ==========================================
@@ -166,7 +166,7 @@
   min-height:500px;  /* grows instead of clipping content */
   display:flex;
   flex-direction:column;
-  background: #ffffff;
+  background: var(--brand-white);
   border: 0.67px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   overflow: hidden;  /* fallback */
@@ -225,10 +225,10 @@
   padding: 6px 14px;
   border-radius: 999px;
  
-  background: #a6000c;
-  color: #ffffff;
+  background: var(--brand-primary);
+  color: var(--brand-white);
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -249,23 +249,23 @@
 }
  
 .product-variety {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 600;
   line-height: 16.5px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #a6000c;
+  color: var(--brand-primary);
  
 }
  
 .product-name {
   margin-top: 4px;
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
-  color: #1a0505;
+  color: var(--brand-ink);
    align-items:flex-start;   /* ADD THIS */
   text-align:left;
 }
@@ -273,7 +273,7 @@
 .product-tagline {
   margin-top: 4px;
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 8px;
   font-weight: 600;
   font-style: italic;
@@ -283,19 +283,19 @@
    align-items:flex-start;   /* ADD THIS */
   text-align:left;
  
-  color: #a6000c;
+  color: var(--brand-primary);
 }
  
 .product-description {
   margin-top: 12px;
   width: 100%;
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
  
-  color: #5d3f3c;
+  color: var(--brand-muted);
    align-items:flex-start;   /* ADD THIS */
   text-align:left;
 }
@@ -317,17 +317,17 @@
   align-items: center;
   gap: 5px;
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
-  color: #5d3f3c;
+  color: var(--brand-muted);
   white-space: nowrap;
 }
 
 .spec-item svg {
   width: 13px;
   height: 13px;
-  color: #a6000c;
+  color: var(--brand-primary);
   flex-shrink: 0;
 }
  
@@ -344,7 +344,7 @@
   padding: 14px 10px;
   border-radius: 12px;
  
-  background: #f8f1f0;
+  background: var(--brand-surface);
 }
  
 .spec-col {
@@ -356,15 +356,15 @@
 }
  
 .spec-value {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
-  color: #1a0505;
+  color: var(--brand-ink);
   white-space: nowrap;
 }
  
 .spec-label {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -399,19 +399,19 @@
     flex:1;
     height:5px;
     border-radius:20px;
-    background:#eadada;
+    background:var(--brand-border);
     max-width:none;
 }
 
 .heat-bar.active{
-    background:#a6000c;
+    background:var(--brand-primary);
 }
 
 .heat-label{
     flex-shrink:0;
     font-size:14px;
     font-weight:600;
-    color:#a6000c;
+    color:var(--brand-primary);
     white-space:nowrap;
 }
 /* .heat-section {
@@ -438,15 +438,15 @@
   transition: background 0.3s ease;
 }
 .heat-bar.active {
-  background: #a6000c;
+  background: var(--brand-primary);
 }
  
 .heat-label {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 600;
   line-height: 16.5px;
-  color: #5d3f3c;
+  color: var(--brand-muted);
   white-space: nowrap;
 } */
  
@@ -474,15 +474,15 @@
 
     padding: 6px 14px;
     border-radius: 999px;
-    background: #f8ecec;
+    background: var(--brand-surface);
     border: 1px solid #efd5d5;
 
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-body);
     font-size: 11px;
     font-weight: 500;
     line-height: 1;
 
-    color: #a6000c;
+    color: var(--brand-primary);
 
     white-space: nowrap;
     flex: 0 0 auto;
@@ -490,12 +490,12 @@
 /* .tag {
   padding: 4px 16px;
   border-radius: 999px;
-  background: #f8ecec;
+  background: var(--brand-surface);
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 10px;
   line-height: 16.5px;
-  color: #a6000c;
+  color: var(--brand-primary);
 } */
  
 .product-info hr {
@@ -518,10 +518,10 @@
 }
  
 .origin-text {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 500;
-  color: #5d3f3c;
+  color: var(--brand-muted);
   white-space: nowrap;
 }
  
@@ -530,7 +530,7 @@
     align-items:center;
     gap:8px;
 
-    color:#A6000C;
+    color:var(--brand-primary);
     font-size:16px;
     font-weight:600;
     text-decoration:none;
@@ -776,7 +776,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
 }
 
 .product-modal-overlay {
@@ -802,7 +802,7 @@
   max-height: 88vh;
   overflow-y: auto;
 
-  background: #ffffff;
+  background: var(--brand-white);
   border-radius: 16px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
@@ -822,14 +822,14 @@
   border: none;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.9);
-  color: #1a0505;
+  color: var(--brand-ink);
 
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .product-modal-close:hover {
-  background: #f4efee;
+  background: var(--brand-surface);
 }
 
 .product-modal-image {
@@ -857,11 +857,11 @@
 
 .product-modal-title {
   margin-top: 4px;
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  color: #1a0505;
+  color: var(--brand-ink);
 }
 
 .product-modal-section {
@@ -871,12 +871,12 @@
 
 .product-modal-section h4 {
   margin: 0 0 10px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #a6000c;
+  color: var(--brand-primary);
 }
 
 .product-modal-section ul {
@@ -890,14 +890,14 @@
 }
 
 .product-modal-section li {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   line-height: 21px;
-  color: #5d3f3c;
+  color: var(--brand-muted);
 }
 
 .product-modal-section li strong {
-  color: #1a0505;
+  color: var(--brand-ink);
   font-weight: 600;
   margin-right: 4px;
 }

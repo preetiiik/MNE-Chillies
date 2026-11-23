@@ -4,7 +4,7 @@
 
 
 .testimonials-section {
-  background: #faf8f5;
+  background: var(--brand-surface);
   padding: 96px 0;
 }
  
@@ -27,22 +27,22 @@
  
 .section-label {
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #a6000c;
+  color: var(--brand-primary);
   margin-bottom: 18px;
 }
  
 .testimonials-heading h2 {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 52px;
   line-height: 60.2px;
   font-weight: 700;
-  color: #1a0505;
+  color: var(--brand-ink);
 }
  
 /* ===========================
@@ -92,7 +92,7 @@
 =========================== */
  
 .testimonial-card {
-  background: #ffffff;
+  background: var(--brand-white);
   border: 0.7px solid rgba(0, 0, 0, 0.06);
   border-radius: 16px;
   padding: 28px;
@@ -111,10 +111,10 @@
 =========================== */
  
 .quote-mark {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 42px;
   line-height: 42px;
-  color: #a6000c;
+  color: var(--brand-primary);
   opacity: 0.35;
 }
  
@@ -123,11 +123,11 @@
 =========================== */
  
 .testimonial-text {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #3d1c1c;
+  color: var(--brand-ink);
  
   margin-top: 18px;
   margin-bottom: 24px;
@@ -142,7 +142,7 @@
   align-items: center;
   gap: 14px;
  
-  border-top: 1px solid #efefef;
+  border-top: 1px solid var(--brand-border);
   padding-top: 22px;
 }
  
@@ -161,7 +161,7 @@
  
   color: white;
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 15px;
  
@@ -173,23 +173,23 @@
 =========================== */
  
 .author-info h4 {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  color: #1a0505;
+  color: var(--brand-ink);
   margin-bottom: 2px;
 }
  
 .author-info span {
   display: block;
  
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
  
-  color: #5d3f3c;
+  color: var(--brand-muted);
 }
  
 /* ===========================
@@ -215,7 +215,7 @@
 }
  
 .testimonial-dot.active {
-  background: #a6000c;
+  background: var(--brand-primary);
   width: 24px;
   border-radius: 4px;
 }
@@ -226,11 +226,11 @@
   margin-bottom: 10px;
 }
 .testimonial-stars .star {
-  color: #ddd;
+  color: var(--brand-border);
   font-size: 16px;
 }
 .testimonial-stars .star.filled {
-  color: #D68910;
+  color: var(--brand-accent);
 }
  
 /* ===========================

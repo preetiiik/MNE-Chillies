@@ -33,35 +33,35 @@
     display:block;
 }
 .navbar .logo img {
-    width: 360px;
-    height: 60px;
-    object-fit: cover;
-    object-position: center;
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-right: -12px;
 }
 .navbar .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     flex-shrink: 0;
     text-decoration: none;
-    color: #fff;
+    color: var(--brand-white);
 }
 .nav-brand {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding-left: 12px;
+    padding-left: 8px;
     border-left: 1px solid currentColor;
 }
 .nav-brand-title {
-    font: 700 25px/1 "Libre Caslon Text", serif;
+    font: 700 25px/1 var(--font-heading);
     letter-spacing: -.025em;
     white-space: nowrap;
 }
 .nav-brand-companies {
     display: flex;
     align-items: center;
-    font: 700 9px/1.4 "Libre Caslon Text", serif;
+    font: 700 9px/1.4 var(--font-heading);
     white-space: nowrap;
 }
 .nav-brand-companies span + span {
@@ -74,7 +74,7 @@
 @media (min-width: 769px) and (max-width: 1200px) {
     .navbar { padding: 18px 20px; }
     .nav-container { gap: 16px; }
-    .navbar .logo img { width: 280px; height: 48px; }
+    .navbar .logo img { width: 85px; margin-right: -9px; }
     .nav-brand-title { font-size: 21px; }
     .nav-brand-companies { font-size: 8px; }
     .navbar .nav-links { gap: 16px; }
@@ -90,7 +90,7 @@
     padding:0;
 }
 .nav-links a{
-    color:#fff;
+    color:var(--brand-white);
     text-decoration:none;
     font-size:15px;
     font-weight:500;
@@ -104,7 +104,7 @@
     bottom:-7px;
     width:0;
     min-height:2px;
-    background:#A6000C;
+    background:var(--brand-primary);
     transition:.3s;
 }
 .nav-links a:hover::after,
@@ -120,7 +120,7 @@
     min-height:45px;
     border:none;
     border-radius:10px;
-    background:#A6000C;
+    background:var(--brand-primary);
     color:white;
     cursor:pointer;
     transition:.3s;
@@ -129,7 +129,7 @@
     justify-content:center;
     align-items:center;
     text-decoration:none;
-    font-family:"Inter", sans-serif;
+    font-family:var(--font-body);
     font-size:15px;
     font-weight:700;
 }
@@ -173,7 +173,7 @@
         right:-100%;
         width:280px;
         min-height:100vh;
-        background:#120303;
+        background:var(--brand-dark);
         flex-direction:column;
         justify-content:center;
         align-items:center;
@@ -184,8 +184,8 @@
         right:0;
     }
     .navbar .logo img{
-        width:280px;
-        height:48px;
+        width:105px;
+        margin-right:-11px;
     }
     .navbar .logo { gap: 8px; }
     .nav-brand { padding-left: 8px; }
@@ -195,7 +195,7 @@
 @media (max-width: 420px) {
     .navbar { padding: 16px 12px; }
     .nav-container { gap: 10px; }
-    .navbar .logo img { width: 250px; height: 44px; }
+    .navbar .logo img { width: 70px; margin-right: -7px; }
     .nav-brand-title { font-size: 19px; }
     .nav-brand-companies { font-size: 6px; }
     .nav-brand-companies span + span { margin-left: 4px; padding-left: 4px; }

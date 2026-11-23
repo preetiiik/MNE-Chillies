@@ -4,8 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
-import logo from "../assets/images/mne-logo1.png";
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +27,15 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src={logo} alt="MNE Logo" />
+          <img src={`${import.meta.env.BASE_URL}images/mne-logo-f.png`} alt="MNE Logo" />
+          <span className="nav-brand">
+            <span className="nav-brand-title">MNE GROUP</span>
+            <span className="nav-brand-companies">
+              <span>M.N. ENTERPRISES</span>
+              <span>M.N. EXPORTERS</span>
+              <span>MNE SPICES</span>
+            </span>
+          </span>
         </Link>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>

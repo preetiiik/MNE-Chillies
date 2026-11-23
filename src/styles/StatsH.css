@@ -1,6 +1,6 @@
 /* Four concise statements, balanced across desktop and mobile. */
 .stats {
-  background: #1a0505;
+  background: var(--brand-ink);
   padding: 36px 0;
 }
 
@@ -38,7 +38,7 @@
 .stat-card p {
   margin: 0;
   max-width: 260px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(16px, 1.5vw, 21px);
   font-weight: 600;
   line-height: 1.5;

@@ -44,7 +44,7 @@
     border: 0.67px solid rgba(255,255,255,.25);
     border-radius: 999px;
     background: rgba(255,255,255,.08);
-    font-family: Inter, sans-serif;
+    font-family: var(--font-body);
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1.4px;
@@ -57,7 +57,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #D96D6D;
+    background: var(--brand-accent);
     flex-shrink: 0;
 }
 
@@ -65,22 +65,22 @@
 .infra-content h1{
     margin-top: 24px;
     max-width: 560px;
-    font-family: "Libre Caslon Text", serif;
+    font-family: var(--font-heading);
     font-size: 56px;
     font-weight: 700;
     line-height: 1.15;
-    color: #FFFFFF;
+    color: var(--brand-white);
 }
 
 .infra-content h1 span{
-    color: #FF9094;
+    color: var(--brand-accent);
 }
 
 /* PARAGRAPH */
 .infra-content p{
     margin-top: 20px;
     max-width: 480px;
-    font-family: Inter, sans-serif;
+    font-family: var(--font-body);
     font-size: 17px;
     font-weight: 400;
     line-height: 1.65;

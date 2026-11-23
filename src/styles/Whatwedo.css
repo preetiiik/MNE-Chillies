@@ -4,7 +4,7 @@
  
 .wwd-section{
     width:100%;
-    background:#FCFBF9;
+    background:var(--brand-surface);
     padding:56px 0 110px;
 }
  
@@ -39,43 +39,43 @@
  
     margin-bottom:12px;
  
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     font-weight:600;
     line-height:18px;
     letter-spacing:2.5px;
     text-transform:uppercase;
  
-    color:#A6000C;
+    color:var(--brand-primary);
 }
  
 .wwd-dash{
     width:20px;
     height:1.5px;
-    background:#A6000C;
+    background:var(--brand-primary);
     display:inline-block;
 }
  
 .wwd-header-left h2{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:48px;
     font-weight:700;
     line-height:56px;
  
-    color:#1A0505;
+    color:var(--brand-ink);
 }
  
 .wwd-header-right{
     max-width:220px;
     margin-bottom:6px;
  
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
     font-weight:400;
     line-height:21px;
     text-align:right;
  
-    color:#5D3F3C;
+    color:var(--brand-muted);
 }
  
 /* =====================================================
@@ -106,7 +106,7 @@
     border-radius:16px;
     border:0.67px solid rgba(26,5,5,0.1);
  
-    background:#FFFFFF;
+    background:var(--brand-white);
     overflow: hidden;  /* fallback */
     overflow: clip;    /* `hidden` here would create a nested scroll container */
  
@@ -119,8 +119,8 @@
 }
  
 .wwd-card.active{
-    background:#A6000C;
-    border-color:#A6000C;
+    background:var(--brand-primary);
+    border-color:var(--brand-primary);
 }
  
 /* ---------- image ---------- */
@@ -150,7 +150,7 @@
     top:14px;
     left:18px;
  
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:34px;
     font-weight:400;
     color:rgba(255,255,255,0.55);
@@ -164,19 +164,19 @@
     padding:7px 16px;
     border-radius:999px;
  
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:11px;
     font-weight:600;
     letter-spacing:0.5px;
     text-transform:uppercase;
  
-    background:#A6000C;
-    color:#FFFFFF;
+    background:var(--brand-primary);
+    color:var(--brand-white);
 }
  
 .wwd-card.active .wwd-card-badge{
-    background:#FFFFFF;
-    color:#A6000C;
+    background:var(--brand-white);
+    color:var(--brand-primary);
 }
  
 /* ---------- content ---------- */
@@ -197,7 +197,7 @@
     align-items:center;
     margin-bottom:16px;
  
-    color:#A6000C;
+    color:var(--brand-primary);
 }
  
 .wwd-card.active .wwd-card-icon{
@@ -205,22 +205,22 @@
 }
  
 .wwd-card-content h3{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:18px;
     font-weight:700;
     line-height:26px;
  
-    color:#1A0505;
+    color:var(--brand-ink);
  
     margin-bottom:8px;
 }
  
 .wwd-card.active .wwd-card-content h3{
-    color:#FFFFFF;
+    color:var(--brand-white);
 }
  
 .wwd-card-content p{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
     font-weight:400;
     line-height:22px;
@@ -253,20 +253,20 @@
 }
  
 .wwd-stat-value{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:22px;
     font-weight:700;
     line-height:33px;
  
-    color:#A6000C;
+    color:var(--brand-primary);
 }
  
 .wwd-card.active .wwd-stat-value{
-    color:#FFFFFF;
+    color:var(--brand-white);
 }
  
 .wwd-stat-label{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:11px;
     font-weight:600;
     line-height:16.5px;
@@ -333,19 +333,19 @@
     padding:16px 22px;
     border-radius:10px;
  
-    background:#A6000C;
+    background:var(--brand-primary);
 }
  
 .wwd-detail-stat-value{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:26px;
     font-weight:700;
     line-height:32px;
-    color:#FFFFFF;
+    color:var(--brand-white);
 }
  
 .wwd-detail-stat-label{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     font-weight:400;
     color:rgba(255,255,255,0.85);
@@ -363,35 +363,35 @@
 .wwd-detail-icon{
     display:flex;
     margin-bottom:14px;
-    color:#A6000C;
+    color:var(--brand-primary);
 }
  
 .wwd-detail-content h2{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:38px;
     font-weight:700;
     line-height:44px;
-    color:#1A0505;
+    color:var(--brand-ink);
  
     margin-bottom:10px;
 }
  
 .wwd-detail-tagline{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:15px;
     font-weight:500;
     font-style:italic;
-    color:#A6000C;
+    color:var(--brand-primary);
  
     margin-bottom:20px;
 }
  
 .wwd-detail-paragraph{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:15.5px;
     font-weight:400;
     line-height:26px;
-    color:#5D3F3C;
+    color:var(--brand-muted);
  
     margin-bottom:28px;
 }
@@ -413,17 +413,17 @@
     align-items:center;
     gap:10px;
  
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
     font-weight:400;
-    color:#1A0505;
+    color:var(--brand-ink);
 }
  
 .wwd-feature-dot{
     width:7px;
     height:7px;
     border-radius:50%;
-    background:#A6000C;
+    background:var(--brand-primary);
     flex-shrink:0;
 }
  
@@ -450,22 +450,22 @@
     border:1px solid rgba(26,5,5,0.15);
  
     font-size:16px;
-    color:#1A0505;
+    color:var(--brand-ink);
  
     transition:background .25s ease, border-color .25s ease;
 }
  
 .wwd-nav-btn:hover{
-    background:#A6000C;
-    border-color:#A6000C;
-    color:#FFFFFF;
+    background:var(--brand-primary);
+    border-color:var(--brand-primary);
+    color:var(--brand-white);
 }
  
 .wwd-nav-count{
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:500;
-    color:#5D3F3C;
+    color:var(--brand-muted);
 }
  
 /* =====================================================

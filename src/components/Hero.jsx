@@ -45,10 +45,8 @@ function Hero() {
             Explore Products
           </Link>
 
-          <Link to="/aboutus">
-            <button className="home-secondary-btn">
-              Watch Our Story
-            </button>
+          <Link to="/about" className="home-secondary-btn">
+            Watch Our Story
           </Link>
         </div>
       </div>

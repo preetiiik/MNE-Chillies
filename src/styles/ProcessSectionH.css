@@ -5,7 +5,7 @@
 .process-section {
   width: 100%;
   margin-left: 0;
-  background: #f9f6f2;
+  background: var(--brand-surface);
   padding: 64px 0 80px; /* vertical only — container below handles horizontal */
 }
 
@@ -27,23 +27,23 @@
 }
 
 .process-label {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #a6000c;
+  color: var(--brand-primary);
 }
 
 .process-heading h2 {
   margin-top: 8px;
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 52px;
   font-weight: 700;
   line-height: 60.2px;
-  color: #1a0505;
+  color: var(--brand-ink);
 }
 
 /* ==========================
@@ -84,7 +84,7 @@
 }
 
 .process-card:focus-visible {
-  outline: 2px solid #a6000c;
+  outline: 2px solid var(--brand-primary);
   outline-offset: 6px;
   border-radius: 8px;
 }
@@ -97,14 +97,14 @@
   flex-shrink: 0;
   border-radius: 50%;
 
-  background: #a6000c;
-  color: #ffffff;
+  background: var(--brand-primary);
+  color: var(--brand-white);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 700;
   line-height: 22.5px;
@@ -119,21 +119,21 @@
 }
 
 .process-content h3 {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  color: #1a0505;
+  color: var(--brand-ink);
 }
 
 .process-content p {
   margin-top: 8px;
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
-  color: #5d3f3c;
+  color: var(--brand-muted);
 }
 
 /* ==========================
@@ -146,7 +146,7 @@
 }
 
 .process-card:hover h3 {
-  color: #a6000c;
+  color: var(--brand-primary);
   transition: 0.3s ease;
 }
 
@@ -183,7 +183,7 @@
 }
 .services-section {
   width: 100%;
-  background: #ffffff;
+  background: var(--brand-white);
   padding: 90px 0;
 }
 
@@ -210,7 +210,7 @@
 }
 
 .service-card {
-  background: #faf8f5;
+  background: var(--brand-surface);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 14px;
 
@@ -234,23 +234,23 @@
 }
 
 .service-card h3 {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 
-  color: #1a0505;
+  color: var(--brand-ink);
 
   margin-bottom: 10px;
 }
 
 .service-card p {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12.5px;
   font-weight: 400;
   line-height: 19px;
 
-  color: #5d3f3c;
+  color: var(--brand-muted);
 }
 
 /* RIGHT CONTENT */
@@ -272,7 +272,7 @@
   font-weight: 600;
   font-style: normal !important;
 
-  color: #a6000c;
+  color: var(--brand-primary);
 
   letter-spacing: 2.5px;
   text-transform: uppercase !important;
@@ -281,12 +281,12 @@
 }
 
 .services-content h2 {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 52px;
   line-height: 60.2px;
   font-weight: 700;
 
-  color: #1a0505;
+  color: var(--brand-ink);
 
   margin-bottom: 26px;
 }
@@ -296,7 +296,7 @@
   font-size: 16px;
   line-height: 26px;
 
-  color: #5d3f3c;
+  color: var(--brand-muted);
 
   margin-bottom: 34px;
 }
@@ -310,11 +310,11 @@
   font-size: 15px;
   font-weight: 700;
 
-  color: #a6000c;
+  color: var(--brand-primary);
 
   text-decoration: none;
 
-  border-bottom: 2px solid #a6000c;
+  border-bottom: 2px solid var(--brand-primary);
   padding-bottom: 4px;
 
   transition: .3s;

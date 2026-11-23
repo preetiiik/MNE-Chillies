@@ -5,7 +5,7 @@
 .marquee-strip {
   width: 100%;
   min-height: 48px;
-  background: #A6000C;
+  background: var(--brand-primary);
   overflow: hidden;  /* fallback */
   overflow: clip;    /* `hidden` here would create a nested scroll container */
 
@@ -24,13 +24,13 @@
 }
 
 .marquee-item {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--brand-white);
 
   flex-shrink: 0;
 }

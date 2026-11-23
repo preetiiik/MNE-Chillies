@@ -4,7 +4,7 @@
 
 .comparison-section {
   width: 100%;
-  background: #fff;
+  background: var(--brand-white);
   padding: 0px 0;
 }
 
@@ -28,31 +28,31 @@
   align-items: center;
   gap: 12px;
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
 
-  color: #A6000C;
+  color: var(--brand-primary);
 }
 
 .comparison-line {
   width: 24px;
   height: 2px;
-  background: #A6000C;
+  background: var(--brand-primary);
 }
 
 .comparison-heading h2 {
   margin-top: 10px;
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: clamp(36px, 4vw, 52px);
   font-weight: 700;
   line-height: 1.15;
 
-  color: #1A0505;
+  color: var(--brand-ink);
 }
 
 /* ======================================================
@@ -98,17 +98,17 @@
 
 .table-head div:first-child {
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 700;
   line-height: 22.5px;
 
-  color: #1A0505;
+  color: var(--brand-ink);
 }
 
 .table-head div:not(:first-child) {
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
 
@@ -118,7 +118,7 @@
 
   text-transform: uppercase;
 
-  color: #5D3F3C;
+  color: var(--brand-muted);
 }
 
 /* ======================================================
@@ -149,7 +149,7 @@
 
 .variety-col h4 {
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
 
   font-size: 15px;
 
@@ -157,14 +157,14 @@
 
   line-height: 22.5px;
 
-  color: #1A0505;
+  color: var(--brand-ink);
 
   margin-bottom: 2px;
 }
 
 .variety-col p {
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
 
   font-size: 12px;
 
@@ -172,7 +172,7 @@
 
   line-height: 18px;
 
-  color: #5D3F3C;
+  color: var(--brand-muted);
 }
 
 /* ======================================================
@@ -181,7 +181,7 @@
 
 .asta {
 
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
 
   font-size: 15px;
 
@@ -189,7 +189,7 @@
 
   line-height: 22.5px;
 
-  color: #A6000C;
+  color: var(--brand-primary);
 }
 
 /* ======================================================
@@ -198,7 +198,7 @@
 
 .normal-text {
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
 
   font-size: 13px;
 
@@ -206,7 +206,7 @@
 
   line-height: 20px;
 
-  color: #5D3F3C;
+  color: var(--brand-muted);
 }
 /* ======================================================
    HEAT LEVEL
@@ -227,7 +227,7 @@
 }
 
 .bar.active {
-  background: #A6000C;
+  background: var(--brand-primary);
 }
 
 /* ======================================================
@@ -246,19 +246,19 @@
 
   background: rgba(166, 0, 12, 0.07);
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
 
-  color: #A6000C;
+  color: var(--brand-primary);
 
   transition: .3s ease;
 }
 
 .chip:hover {
-  background: #A6000C;
-  color: #fff;
+  background: var(--brand-primary);
+  color: var(--brand-white);
 }
 
 /* ======================================================
@@ -335,12 +335,12 @@ height:8px;
 }
 
 .comparison-table::-webkit-scrollbar-thumb{
-background:#A6000C;
+background:var(--brand-primary);
 border-radius:20px;
 }
 
 .comparison-table::-webkit-scrollbar-track{
-background:#eee;
+background:var(--brand-border);
 }
 
 .table-head,
@@ -445,7 +445,7 @@ scroll-behavior:auto;
   height:6px;
   margin-top:14px;
   border-radius:999px;
-  background:#eee;
+  background:var(--brand-border);
   overflow:hidden;
   display:none; /* only shown when the table is actually wider than its container */
 }
@@ -458,7 +458,7 @@ scroll-behavior:auto;
   width:22%;
   min-width:40px;
   border-radius:999px;
-  background:#A6000C;
+  background:var(--brand-primary);
   transition:left .05s linear;
 }
 

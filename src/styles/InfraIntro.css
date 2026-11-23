@@ -4,7 +4,7 @@
 
 .infra-intro{
     width:100%;
-    background:#E3DFD5;
+    background:var(--brand-surface);
     padding:10px 0 0px;
     padding-bottom: 0px;
     overflow: hidden;  /* fallback */
@@ -17,7 +17,7 @@
     /* max-width:1500px; */
     margin:0 auto;
     padding:0 30px;
-    background:#E3DFD5;
+    background:var(--brand-surface);
     display:grid;
     grid-template-columns:560px 1fr;
     align-items:center;
@@ -39,24 +39,24 @@
 
     margin-bottom:24px;
 
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     font-weight:600;
     line-height:18px;
     letter-spacing:2.5px;
     text-transform:uppercase;
 
-    color:#A6000C;
+    color:var(--brand-primary);
 }
 
 .infra-intro-left h2{
 
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:48px;
     font-weight:700;
     line-height:56px;
 
-    color:#281717;
+    color:var(--brand-ink);
 
     margin-bottom:34px;
 }
@@ -65,12 +65,12 @@
 
     max-width:558px;
 
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:16px;
     font-weight:400;
     line-height:27px;
 
-    color:#5D3F3C;
+    color:var(--brand-muted);
 
     margin-bottom:56px;
 }
@@ -98,31 +98,31 @@
     width:4px;
     height:64px;
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
     border-radius:10px;
 }
 
 .infra-stat h4{
 
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:16px;
     font-weight:400;
     line-height:24px;
 
-    color:#A6000C;
+    color:var(--brand-primary);
 
     margin-bottom:4px;
 }
 
 .infra-stat span{
 
-    font-family:Inter,sans-serif;
+    font-family:var(--font-body);
     font-size:16px;
     font-weight:400;
     line-height:24px;
 
-    color:#5D3F3C;
+    color:var(--brand-muted);
 }
 
 /* =====================================================
@@ -318,7 +318,7 @@
 
 .infra-intro {
   padding: 70px 0 0;
-  background-color: #281717;
+  background-color: var(--brand-ink);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,8 +337,8 @@
   text-align: left;
 }
 
-.infra-intro .infra-small-title { color: #ffb5ae; }
-.infra-intro .infra-intro-left h2 { color: #fff; }
+.infra-intro .infra-small-title { color: var(--brand-accent); }
+.infra-intro .infra-intro-left h2 { color: var(--brand-white); }
 .infra-intro .infra-intro-left p {
   color: rgba(255, 255, 255, .88);
   margin: 0;

@@ -5,7 +5,7 @@
 .fp-section{
     width:100%;
     padding:100px 0;
-    background:#ffffff;
+    background:var(--brand-white);
 }
 
 .fp-container{
@@ -32,8 +32,8 @@
     display:inline-flex;
     align-items:center;
     gap:12px;
-    color:#A6000C;
-    font-family:"Inter",sans-serif;
+    color:var(--brand-primary);
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:600;
     letter-spacing:2.5px;
@@ -45,15 +45,15 @@
     content:"";
     width:24px;
     height:2px;
-    background:#A6000C;
+    background:var(--brand-primary);
 }
 
 .fp-title{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-weight:700;
     font-size:clamp(36px, 4vw, 52px);
     line-height:1.15;
-    color:#1C1111;
+    color:var(--brand-ink);
 }
 
 /* ===================================================
@@ -82,7 +82,7 @@
 
     transition:.35s;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
 
     font-weight:600;
@@ -91,7 +91,7 @@
 
 .fp-filters button:hover{
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
     color:white;
 
@@ -99,9 +99,9 @@
 
 .fp-filters button.active{
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
-    color:#fff;
+    color:var(--brand-white);
 
 }
 
@@ -124,7 +124,7 @@
     grid-template-columns:520px 1fr;
     align-items:start;   /* 👈 add this line */
     gap:50px;
-    background:#fff;
+    background:var(--brand-white);
     border-radius:30px;
     overflow: hidden;  /* fallback */
     overflow: clip;    /* `hidden` here would create a nested scroll container */
@@ -223,11 +223,11 @@
 
     border-radius:999px;
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
     color:white;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
 
     font-weight:600;
@@ -270,7 +270,7 @@
 
     color:white;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
 
     border-radius:999px;
@@ -295,11 +295,11 @@
 
 .fp-location{
 
-    color:#A6000C;
+    color:var(--brand-primary);
 
     text-transform:uppercase;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
 
     letter-spacing:2.5px;
@@ -314,7 +314,7 @@
    since this card functions as a mini spotlight section */
 .fp-product-title{
 
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
 
     font-size:42px;
 
@@ -322,7 +322,7 @@
 
     line-height:1.15;
 
-    color:#1C1111;
+    color:var(--brand-ink);
 
     margin-bottom:16px;
 
@@ -332,7 +332,7 @@
 
     color:#C64343;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:20px;
 
     font-style:italic;
@@ -343,9 +343,9 @@
 
 .fp-description{
 
-    color:#675652;
+    color:var(--brand-muted);
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:15px;
 
     font-weight:400;
@@ -367,7 +367,7 @@
 }
 
 .fp-heat-label{
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:600;
     color:#222;
@@ -386,7 +386,7 @@
 }
 
 .fp-bars span.active{
-    background:#A6000C;
+    background:var(--brand-primary);
 }
 
 /* ===================================================
@@ -398,12 +398,12 @@
 }
 
 .fp-block h5{
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     text-transform:uppercase;
     letter-spacing:1px;
     font-weight:600;
-    color:#1C1111;
+    color:var(--brand-ink);
     margin-bottom:16px;
 }
 
@@ -415,27 +415,27 @@
 
 .fp-chip{
     padding:10px 18px;
-    border:1px solid #E8E2DE;
+    border:1px solid var(--brand-border);
     border-radius:999px;
-    background:#fff;
-    color:#675652;
-    font-family:"Inter",sans-serif;
+    background:var(--brand-white);
+    color:var(--brand-muted);
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:500;
     transition:.3s;
 }
 
 .fp-chip:hover{
-    border-color:#A6000C;
-    color:#A6000C;
+    border-color:var(--brand-primary);
+    color:var(--brand-primary);
 }
 
 .fp-pack{
     padding:10px 18px;
     background:#FFF2F2;
-    color:#A6000C;
+    color:var(--brand-primary);
     border-radius:999px;
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:500;
 }
@@ -459,11 +459,11 @@
 
     border-radius:14px;
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
-    color:#fff;
+    color:var(--brand-white);
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
 
     font-weight:600;
@@ -476,7 +476,7 @@
 
 .fp-primary-btn:hover{
 
-    background:#860009;
+    background:var(--brand-primary-hover);
 
     transform:translateY(-3px);
 
@@ -489,15 +489,15 @@
     width:220px;
     height:56px;
 
-    border:1px solid #DDD6D3;
+    border:1px solid var(--brand-border);
 
-    background:#fff;
+    background:var(--brand-white);
 
-    color:#666;
+    color:var(--brand-muted);
 
     border-radius:14px;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:14px;
 
     font-weight:600;
@@ -510,9 +510,9 @@
 
 .fp-secondary-btn:hover:not(:disabled){
 
-    border-color:#A6000C;
+    border-color:var(--brand-primary);
 
-    color:#A6000C;
+    color:var(--brand-primary);
 
 }
 
@@ -526,9 +526,9 @@
 
 .fp-secondary-btn:disabled:hover{
 
-    border-color:#DDD6D3;
+    border-color:var(--brand-border);
 
-    color:#666;
+    color:var(--brand-muted);
 
     transform:none;
 
@@ -716,10 +716,10 @@
     }
 
 }
-.fp-sannam-details h4 { font: 600 15px/1.5 Inter, sans-serif; color: #1a0505; margin: 18px 0 8px; }
-.fp-sannam-details p { font: 14px/1.7 Inter, sans-serif; color: #5d3f3c; margin-bottom: 14px; }
+.fp-sannam-details h4 { font: 600 15px/1.5 var(--font-body); color: var(--brand-ink); margin: 18px 0 8px; }
+.fp-sannam-details p { font: 14px/1.7 var(--font-body); color: var(--brand-muted); margin-bottom: 14px; }
 .fp-spec-table-wrap { overflow-x: auto; margin: 20px 0; }
-.fp-spec-table { width: 100%; border-collapse: collapse; font: 12px/1.6 Inter, sans-serif; text-align: left; }
-.fp-spec-table th, .fp-spec-table td { padding: 12px; border: 1px solid #ddd; }
-.fp-spec-table th { background: #333; color: #fff; }
-.fp-spec-table tbody tr:nth-child(even) { background: #f3f1ef; }
+.fp-spec-table { width: 100%; border-collapse: collapse; font: 12px/1.6 var(--font-body); text-align: left; }
+.fp-spec-table th, .fp-spec-table td { padding: 12px; border: 1px solid var(--brand-border); }
+.fp-spec-table th { background: var(--brand-ink); color: var(--brand-white); }
+.fp-spec-table tbody tr:nth-child(even) { background: var(--brand-surface); }

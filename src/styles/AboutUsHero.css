@@ -39,13 +39,13 @@
   border: 0.67px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--brand-white);
 }
 
 .story-badge::before {
@@ -53,29 +53,29 @@
   width: 8px;
   min-height: 8px;
   border-radius: 50%;
-  background: #f98a8a;
+  background: var(--brand-accent);
 }
 
 /* Heading */
 .about-content h1 {
   margin-top: 24px;
   max-width: 560px;
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-heading);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.15;
-  color: #fff;
+  color: var(--brand-white);
 }
 
 .about-content h1 span {
-  color: #f98a8a;
+  color: var(--brand-accent);
 }
 
 /* Paragraph */
 .about-content p {
   margin-top: 20px;
   max-width: 480px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-size: 17px;
   font-weight: 400;
   line-height: 1.65;

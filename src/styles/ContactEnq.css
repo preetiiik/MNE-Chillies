@@ -5,7 +5,7 @@
 .contact-enquiry{
     width:100%;
     padding:56px 0;
-    background:#fff;
+    background:var(--brand-white);
 }
 
 .contact-enquiry-container{
@@ -30,11 +30,11 @@
 }
 
 .contact-info h2{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:52px;
     font-weight:700;
     line-height:64px;
-    color:#1A0505;
+    color:var(--brand-ink);
 
     margin-bottom:28px;
 }
@@ -42,11 +42,11 @@
 .contact-info p{
     max-width:448px;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:16px;
     font-weight:400;
     line-height:24px;
-    color:#5D3F3C;
+    color:var(--brand-muted);
 
     margin-bottom:48px;
 }
@@ -65,7 +65,7 @@
 
 .contact-icon{
     font-size:22px;
-    color:#A6000C;
+    color:var(--brand-primary);
     margin-top:4px;
     flex-shrink:0;
 }
@@ -73,28 +73,28 @@
 .contact-label{
     margin-bottom:6px;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     font-weight:600;
     line-height:16px;
     letter-spacing:1.2px;
     text-transform:uppercase;
 
-    color:#A6000C;
+    color:var(--brand-primary);
 }
 
 .contact-value{
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:18px;
     font-weight:400;
     line-height:32px;
 
-    color:#281717;
+    color:var(--brand-ink);
 }
 .contact-value a{
-    color:#281717;
+    color:var(--brand-ink);
     text-decoration:none;
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:18px;
     font-weight:400;
     line-height:32px;
@@ -102,20 +102,20 @@
 }
 
 .contact-value a:visited{
-    color:#281717;
+    color:var(--brand-ink);
 }
 
 .contact-value a:hover{
-    color:#A6000C;
+    color:var(--brand-primary);
     text-decoration:none;
 }
 
 .contact-value a:active{
-    color:#281717;
+    color:var(--brand-ink);
 }
 
 .contact-value a:focus{
-    color:#281717;
+    color:var(--brand-ink);
     text-decoration:none;
     outline:none;
 }
@@ -128,7 +128,7 @@
 
     padding:40px;
 
-    background:#FFF8F7;
+    background:var(--brand-surface);
 
     border-radius:4px;
 
@@ -152,14 +152,14 @@
 }
 
 .form-group label{
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:12px;
     font-weight:600;
     line-height:16px;
     letter-spacing:1.2px;
     text-transform:uppercase;
 
-    color:#5D3F3C;
+    color:var(--brand-muted);
 }
 
 .form-group input,
@@ -177,7 +177,7 @@
 
     outline:none;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:16px;
     font-weight:400;
 
@@ -190,7 +190,7 @@
 .form-group select:focus,
 .form-group textarea:focus{
 
-    border-color:#A6000C;
+    border-color:var(--brand-primary);
 }
 
 .form-group textarea{
@@ -227,11 +227,11 @@
 
     border-radius:10px;
 
-    background:#A6000C;
+    background:var(--brand-primary);
 
-    color:#fff;
+    color:var(--brand-white);
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:24px;
     font-weight:400;
 

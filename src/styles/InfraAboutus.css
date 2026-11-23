@@ -30,20 +30,20 @@
 .infra-tag{
     display:inline-block;
     margin-bottom:16px;
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:600;
     line-height:19.5px;
     letter-spacing:2.5px;
     text-transform:uppercase;
-    color:#FF9090;
+    color:var(--brand-accent);
 }
 .infra-title{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-weight:700;
     font-size: clamp(36px, 4vw, 52px);
     line-height: 1.15;
-    color:#fff;
+    color:var(--brand-white);
     margin-bottom:60px;
 }
 
@@ -75,18 +75,18 @@
 
 /* Big stat number - matches milestone year style */
 .infra-card h3{
-    font-family:"Libre Caslon Text",serif;
+    font-family:var(--font-heading);
     font-size:38px;
     font-weight:700;
     line-height:1.1;
-    color:#fff;
+    color:var(--brand-white);
 }
 
 /* Label under stat - matches card meta style */
 .infra-card span{
     display:block;
     margin-top:8px;
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:13px;
     font-weight:600;
     line-height:19.5px;
@@ -96,7 +96,7 @@
 }
 .infra-card p{
     margin-top:18px;
-    font-family:"Inter",sans-serif;
+    font-family:var(--font-body);
     font-size:15px;
     font-weight:400;
     line-height:1.6;

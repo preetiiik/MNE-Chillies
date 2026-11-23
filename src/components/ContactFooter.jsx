@@ -4,7 +4,6 @@ import "../styles/ContactFooter.css";
 
 import { FiMail, FiMapPin } from "react-icons/fi";
 
-import footerLogo from "../assets/images/mne-logo1.png";
 import contactBg from "../assets/images/Container.webp";
 
 const ContactFooter = ({ hideCTA }) => {
@@ -45,16 +44,6 @@ const ContactFooter = ({ hideCTA }) => {
             Contact Us
             </Link>
 
-            <button className="secondary-btn">
-              Download Catalog
-            </button>
-            {/* <a  WHEN CATALOG IS GIVEN UNCOMMENT THIS
-  href="/catalog.pdf"
-  download
-  className="secondary-btn"
->
-  Download Catalog
-</a> */}
           </div>
         </div>
         </div>
@@ -76,10 +65,18 @@ const ContactFooter = ({ hideCTA }) => {
           >
             <Link to="/" className="footer-brand">
             <img
-              src={footerLogo}
+              src={`${import.meta.env.BASE_URL}images/mne-logo-f.png`}
               alt="MNE Logo"
               className="footer-logo"
             />
+            <span className="footer-brand-copy">
+              <span className="footer-brand-title">MNE GROUP</span>
+              <span className="footer-brand-companies">
+                <span>M.N. ENTERPRISES</span>
+                <span>M.N. EXPORTERS</span>
+                <span>MNE SPICES</span>
+              </span>
+            </span>
             </Link>
 
             <p className="footer-text">
