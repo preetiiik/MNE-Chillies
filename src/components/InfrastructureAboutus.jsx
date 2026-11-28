@@ -15,12 +15,12 @@ const stats = [
   {
     number: "6°C",
     unit: "COLD STORAGE",
-    text: "Controlled Warehousing",
+    text: "Temperature-controlled storage",
   },
   {
     // number: "3",
     unit: "Our Upcoming Facility",
-    text: "New upcoming state of art manufacturing facility with integrated cold.",
+    text: "Upcoming manufacturing facility.",
   },
 ];
 

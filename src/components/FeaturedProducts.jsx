@@ -71,7 +71,7 @@ function FeaturedProducts({
 
             title: "Teja S17 Whole Chilli",
 
-            subtitle: "World's most exported Indian chilli",
+            subtitle: "A widely exported Indian chilli variety",
 
             description:
                 "One of the hottest varieties available. Bright red with thin skin. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
@@ -146,7 +146,7 @@ function FeaturedProducts({
 
             packing: [
                 "25 kg PP Bags",
-                "Jute Bags",
+                "Jute bags (weight on request)",
                 "Vacuum Packed"
             ]
         },
@@ -305,7 +305,7 @@ function FeaturedProducts({
             description:
                 "Prepared from carefully selected chillies to deliver uniform colour, flavour and texture for restaurants, food industries and spice brands.",
 
-            heat: 4,
+            heat: null,
 
             specs: [
                 "ASTA 120+",
@@ -344,7 +344,7 @@ function FeaturedProducts({
             description:
                 "Uniform crushed chilli flakes made from premium quality Whole Chilli. Widely used for pizzas, pasta, snacks and seasoning blends.",
 
-            heat: 2,
+            heat: null,
 
             specs: [
                 "ASTA 80+",
@@ -490,24 +490,15 @@ function FeaturedProducts({
                                     {product.description}
                                 </p>
 
-                                {product.id === 2 && (
-                                    <div className="fp-sannam-details">
-                                        <h4>Perfect Heat-to-Color Ratio</h4>
-                                        <p>With a pungency of 18,000–22,000 SHU and 40–50 ASTA color, it's the ideal base for global culinary spice blends.</p>
-                                        <h4>High Seed Density</h4>
-                                        <p>The seeds give it that signature pungent aroma and provide a great texture when ground into commercial chilli powder or flakes.</p>
-                                        <div className="fp-spec-table-wrap">
-                                            <table className="fp-spec-table">
-                                                <thead><tr><th>Parameter</th><th>Range / Value</th><th>Test Method</th></tr></thead>
-                                                <tbody>
-                                                    <tr><td>Scoville Heat Units (SHU)</td><td>18,000 – 22,000 SHU</td><td>HPLC / Spectrophotometric</td></tr>
-                                                    <tr><td>Total Capsaicinoids</td><td>~0.11 - ~0.14%</td><td>HPLC-FLD</td></tr>
-                                                    <tr><td>Colour value</td><td>40 – 50 ASTA</td><td>—</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                <details className="fp-technical-details">
+                                    <summary>Technical specifications</summary>
+                                    <div className="fp-spec-table-wrap">
+                                        <table className="fp-spec-table">
+                                            <thead><tr><th>Specification</th></tr></thead>
+                                            <tbody>{product.specs.map(spec => <tr key={spec}><td>{spec}</td></tr>)}</tbody>
+                                        </table>
                                     </div>
-                                )}
+                                </details>
 
                                 <div className="fp-heat">
 
@@ -515,7 +506,7 @@ function FeaturedProducts({
                                         Heat Level
                                     </span>
 
-                                    <div className="fp-bars">
+                                    {product.heat == null ? <span>Available on request</span> : <div className="fp-bars">
 
                                         {[1,2,3,4,5].map((bar)=>(
                                             <span
@@ -528,7 +519,7 @@ function FeaturedProducts({
                                             ></span>
                                         ))}
 
-                                    </div>
+                                    </div>}
 
                                 </div>
 

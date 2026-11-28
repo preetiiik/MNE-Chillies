@@ -46,7 +46,7 @@ function AboutUs() {
               data-aos-delay="500"
             >
               We have connected the world's finest chilli-growing
-              farms to kitchens and factories across countries.
+              farms to kitchens and factories around the world.
             </p>
           </div>
         </div>

@@ -92,7 +92,7 @@ export default function WhySourceWithUs() {
             </div>
 
             <div className="wsw-badge wsw-badge-card">
-              <span className="wsw-badge-value wsw-badge-value-red">6</span>
+              <span className="wsw-badge-value wsw-badge-value-red">5</span>
               <span className="wsw-badge-label wsw-badge-label-dark">
                 Services under one roof
               </span>

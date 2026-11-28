@@ -70,7 +70,7 @@ function PremiumProductsH() {
       variety: "334 / S4 / SANNAM",
       title: "334 / S4 / Sannam Whole Chilli",
       description:
-        "Light red color and low heat flavour. Grown in Guntur and Prakasam districts.",
+        "Light red in colour with a mild heat profile. Grown in Guntur and Prakasam districts.",
       productDetails: {
         finishing: "Sun dried",
         appearance: "Light Red, Low Heat",
@@ -100,12 +100,12 @@ function PremiumProductsH() {
     {
       id: 3,
       category: "Whole Chilli",
-      badge: "High Color Value",
+      badge: "High Colour Value",
       image: syngenta,
       variety: "355 BYADGI (RALLIS)",
       title: "355 Byadgi (RALLIS) Whole Chilli",
       description:
-        "High-demand worldwide, Byadgi is long, bright red, wrinkled, and mild. Widely used in cooking and natural colour extraction.",
+        "In high demand worldwide, Byadgi is long, bright red, wrinkled, and mild. Widely used in cooking and natural colour extraction.",
       productDetails: {
         finishing: "Sun dried",
         appearance: "Bright Red, Thin Skin, Less Hot",
@@ -140,7 +140,7 @@ function PremiumProductsH() {
       variety: "341",
       title: "341 Whole Chilli",
       description:
-        "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed dark red, less spicy.",
+        "Dark red, semi-hot flavour. Grown in Guntur, Andhra Pradesh. Popular with masala and chilli powder companies. When crushed, it produces a dark red colour with relatively mild heat.",
       productDetails: {
         finishing: "Sun dried",
         appearance: "Dark Red, Thin Skin, Less Hot",
@@ -175,7 +175,7 @@ function PremiumProductsH() {
       variety: "DEVANUR DELUXE (DD)",
       title: "Devanur Deluxe Whole Chilli",
       description:
-        "Dark red, semi-wrinkled and hot, Devanur Deluxe is grown in Kurnool, Telangana and Andhra Pradesh. Ideal for chilli powder, with fewer seeds.",
+        "Dark red, semi-wrinkled and hot, Devanur Deluxe is grown in Kurnool, Telangana and Andhra Pradesh. Its lower seed content makes it suitable for chilli powder production.",
       productDetails: {
         finishing: "Sun dried",
         appearance: "Dark Red, Semi Wrinkled, Hot",
@@ -210,7 +210,7 @@ function PremiumProductsH() {
       image: powder,
       variety: "MILD POWDER",
       title: "Mild Chilli Powder",
-      tagline: "RICH COLOR. GENTLE HEAT. MAXIMUM AROMA.",
+      tagline: "RICH COLOUR. GENTLE HEAT. MAXIMUM AROMA.",
       description:
         "Ground from carefully selected low-heat chilli varieties, this premium powder delivers a vibrant deep-red colour, balanced flavour, rich aroma, and consistent quality.",
       asta: "120+",
@@ -218,7 +218,7 @@ function PremiumProductsH() {
       moisture: "≤10%",
       heat: 4,
       heatLabel: "Mild",
-      tags: ["Mild", "High Color", "Powder", "Rich Aroma", "Seasoning"],
+      tags: ["Mild", "High Colour", "Powder", "Rich Aroma", "Seasoning"],
       origin: "Guntur, AP",
     },
 
@@ -229,15 +229,15 @@ function PremiumProductsH() {
       image: flakes,
       variety: "COARSE CUT",
       title: "Crushed Chilli Flakes",
-      tagline: "BOLD TEXTURE. PERFECT HEAT-TO-COLOR RATIO.",
+      tagline: "BOLD TEXTURE FOR SEASONING BLENDS.",
       description:
-        "Coarsely crushed for visual appeal and textural punch. Our chilli flakes are a staple for pizzas and seasoning. They offer a perfect balance of heat and color, making them ideal for culinary applications that demand both flavor and aesthetics.",
+        "Coarsely crushed for visual appeal and textural punch. Ideal for pizzas and seasoning blends.",
       asta: "80+",
       shu: "30,000+",
       moisture: "≤12%",
       heat: 2,
       heatLabel: "Very Hot",
-      tags: ["Coarse", "Preferred", "Flakes"],
+      tags: ["Coarse", "Flakes"],
       origin: "Guntur, AP",
     },
   ];

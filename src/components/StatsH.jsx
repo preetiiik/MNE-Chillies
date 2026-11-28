@@ -4,9 +4,9 @@ import "../styles/StatsH.css";
 function Stats() {
   const stats = [
     { sentence: "45+ Years of Expertise", icon: FaAward },
-    { sentence: "Guntur Rooted", icon: FaMapMarkerAlt },
+    { sentence: "Rooted in Guntur", icon: FaMapMarkerAlt },
     { sentence: "Advanced Processing", icon: FaCogs },
-    { sentence: "India and Global Markets", icon: FaGlobeAsia },
+    { sentence: "Indian and Global Markets", icon: FaGlobeAsia },
   ];
 
   return (

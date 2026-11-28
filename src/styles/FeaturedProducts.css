@@ -723,3 +723,11 @@
 .fp-spec-table th, .fp-spec-table td { padding: 12px; border: 1px solid var(--brand-border); }
 .fp-spec-table th { background: var(--brand-ink); color: var(--brand-white); }
 .fp-spec-table tbody tr:nth-child(even) { background: var(--brand-surface); }
+
+/* Keep product photography consistent even when card content differs. */
+.fp-image { height: 520px; }
+.fp-technical-details { margin: 0 0 24px; color: var(--brand-ink); font: 600 14px/1.5 var(--font-body); }
+.fp-technical-details summary { cursor: pointer; }
+@media (max-width: 1200px) { .fp-image { height: 500px; } }
+@media (max-width: 768px) { .fp-image { height: 330px; } }
+@media (max-width: 480px) { .fp-image { height: 250px; } }

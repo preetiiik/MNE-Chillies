@@ -112,8 +112,8 @@
   content: "";
   position: absolute;
   top: 54px;
-  left: 12%;
-  right: 12%;
+  left: 16.666%;
+  right: 16.666%;
   height: 72px;
   border: 2px solid #b28a43;
   border-bottom: 0;
@@ -150,7 +150,11 @@
   content: ""; width: 34px; height: 2px; background: currentColor;
 }
 .about-company-family .about-company-strip { margin-top: 28px; }
-.about-company-family .about-company-name { padding: 0 20px; }
+.about-company-family .about-company-name { position: relative; padding: 0 20px; }
+.about-company-family .about-company-name:nth-child(2)::before {
+  content: ""; position: absolute; left: 50%; top: -28px; height: 28px;
+  border-left: 2px solid #b28a43;
+}
 .about-company-family .about-company-wordmark { flex-direction: column; gap: 0; width: 100%; }
 .about-company-family .about-company-initials {
   font: 700 clamp(48px, 6vw, 82px)/1 Georgia, "Times New Roman", serif;
@@ -163,7 +167,8 @@
   letter-spacing: .025em;
 }
 @media (max-width: 700px) {
-  .about-company-family::before { display: none; }
+  .about-company-family::before,
+  .about-company-family .about-company-name:nth-child(2)::before { display: none; }
   .about-company-group { width: min(300px, 90%); border-radius: 36px; }
   .about-company-group-initials { font-size: 80px; }
   .about-company-group-label { font-size: 20px; }

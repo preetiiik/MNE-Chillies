@@ -27,8 +27,8 @@ function Commitment() {
         </h2>
 
         <p className="commitment-desc">
-          We source directly from APMC farmers across guntur and andhra region.
-          From first harvest to final shipment, we stand for authenticity and
+          We source chillies from Guntur and other regions of Andhra Pradesh.
+          From the first harvest to the final shipment, we stand for authenticity and
           trust.
         </p>
 

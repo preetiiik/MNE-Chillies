@@ -32,7 +32,7 @@ export default function QualitySection() {
   const cards = [
     {
       icon: <FiTarget />,
-      title: "ASTA Colour Certified",
+      title: "ASTA Colour Tested",
       description:
         "Measured on every batch. Documented on your COA. Consistent across the year.",
     },

@@ -33,7 +33,7 @@ function Products() {
             data-aos-duration="1000"
           >
             <span className="dot"></span>
-            OUR STORY
+            OUR PRODUCTS
           </div>
 
           <h1

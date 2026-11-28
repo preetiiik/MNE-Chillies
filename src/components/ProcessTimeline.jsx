@@ -4,7 +4,7 @@ const STEPS = [
   {
     id: "01",
     title: "Cleaning & Sorting",
-    description: "Machine and hand sorting to remove defects",
+    description: "Machine and hand sorting, with additional services on request",
   },
   {
     id: "02",
@@ -19,12 +19,12 @@ const STEPS = [
   {
     id: "04",
     title: "Quality Testing",
-    description: "ASTA colour, SHU pungency and moisture on every batch",
+    description: "Routine quality inspection; laboratory testing on request",
   },
   {
     id: "05",
     title: "Custom Packaging",
-    description: "Jute, PP, vacuum, and private-label options",
+    description: "Jute, PP and vacuum packaging; private labelling available",
   },
 ];
 

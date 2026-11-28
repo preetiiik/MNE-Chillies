@@ -922,3 +922,6 @@
 @media (max-width: 600px) {
   .product-grid .product-description, .product-grid .product-tags { min-height: 0; }
 }
+
+/* Let card content determine its height while keeping links aligned. */
+.product-grid .product-description, .product-grid .product-tags { min-height: 0; }

@@ -21,7 +21,7 @@ function AllProducts() {
             badge:"Whole Chilli",
             variety:"TEJA VARIETY",
             title:"Teja S17 Whole Chilli",
-            subtitle:"World's most exported Indian chilli",
+            subtitle:"A widely exported Indian chilli variety",
             description:
             "One of the hottest varieties available. Predominantly grown in southern India. Widely known as S17 Teja — popular for international buyers. Exported stemless, with stem, and as powder. Perfect for soups, stir fry, stews and blends.",
             image:teja,
@@ -343,7 +343,7 @@ function AllProducts() {
                             </div>
                                                         <div className="heat-section">
 
-                                <div className="heat-bars">
+                                {product.heat != null && <div className="heat-bars">
 
                                     {[1,2,3,4,5].map((bar)=>(
                                         <span
@@ -356,11 +356,11 @@ function AllProducts() {
                                         ></span>
                                     ))}
 
-                                </div>
+                                </div>}
 
                                 <span className="heat-label">
 
-                                    {product.heat >= 5
+                                    {product.heat == null ? "On request" : product.heat >= 5
                                         ? "Extra Hot"
                                         : product.heat >= 4
                                         ? "Very Hot"

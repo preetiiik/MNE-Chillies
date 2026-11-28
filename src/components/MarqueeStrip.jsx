@@ -4,9 +4,9 @@ function MarqueeStrip() {
     "RED CHILLIES",
     "CHILLI POWDER",
     "CHILLI FLAKES",
-    "STEMCUT CHILLIES",
+    "STEM-CUT CHILLIES",
     "PRIVATE LABELLING",
-    "STATE OF ART MANUFACTURING",
+    "STATE-OF-THE-ART MANUFACTURING",
   ];
 
   return (

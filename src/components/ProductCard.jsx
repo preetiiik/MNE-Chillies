@@ -10,8 +10,6 @@ function ProductCard({ product }) {
     variety,
     title,
     description,
-    heat,
-    heatLabel,
     tags,
   } = product;
 
@@ -32,20 +30,6 @@ function ProductCard({ product }) {
         <span className="product-variety">{variety}</span>
         <h3 className="product-name">{title}</h3>
         <p className="product-description">{description}</p>
-
-        {heat ? (
-          <div className="heat-section">
-            <div className="heat-bars">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <span
-                  key={i}
-                  className={`heat-bar${i <= heat ? " active" : ""}`}
-                ></span>
-              ))}
-            </div>
-            <span className="heat-label">{heatLabel}</span>
-          </div>
-        ) : null}
 
         {tags && tags.length > 0 ? (
           <div className="product-tags">

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { FiBox } from "react-icons/fi";
+import { FaRegSnowflake } from "react-icons/fa";
 
 
 const services = [
   {
     icon: "/images/chilli-pepper.webp",
-    title: "CMF Processing (Third Party)",
+    title: "CMF Processing (Third-Party Service)",
     description:
       "Cleaning and sorting through third-party facilities.",
   },
@@ -12,16 +14,16 @@ const services = [
     icon: "/images/detergent.webp",
     title: "Sorting & Grading",
     description:
-      "Machine + manual sorting for uniform quality and size.",
+      "Machine and manual sorting for uniform quality and size.",
   },
   {
-    icon: "/images/cooking.webp",
+    icon: FaRegSnowflake,
     title: "Cold Storage",
     description:
-      "Temperature-controlled warehouses — freshness guaranteed year-round.",
+      "Temperature-controlled storage helps maintain product quality throughout the year.",
   },
   {
-    icon: "/images/chilli-pepper.webp",
+    icon: FiBox,
     title: "Custom Packaging",
     description:
       "Jute bags, PP bags, vacuum packs — tailored to your brand.",
@@ -30,7 +32,7 @@ const services = [
     icon: "/images/cooking.webp",
     title: "Quality Testing",
     description:
-      "In-house and third-party lab testing for color, heat, and moisture.",
+      "In-house and third-party lab testing for colour, heat, and moisture.",
   },
 ];
 
@@ -43,11 +45,11 @@ export default function ServicesSection() {
         <div className="services-grid">
           {services.map((service, index) => (
             <div className="service-card" key={index}>
-              <img
-                src={service.icon}
-                alt={service.title}
-                className="service-icon"
-              />
+              {typeof service.icon === "string" ? (
+                <img src={service.icon} alt="" className="service-icon" />
+              ) : (
+                <service.icon className="service-icon" aria-hidden="true" />
+              )}
 
               <h3>{service.title}</h3>
 

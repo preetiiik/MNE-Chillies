@@ -744,3 +744,8 @@ img{
     text-align:center;
   }
 }
+
+.footer-brand-companies { font-size: 9px; }
+.footer-text, .footer-column a, .footer-contact p, .footer-bottom p, .footer-bottom a, .footer-label { color: rgba(255,255,255,.78); }
+.footer-bottom a:hover { color: #fff; }
+@media (max-width: 420px) { .footer-brand-companies { font-size: 8px; } }

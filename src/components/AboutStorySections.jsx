@@ -63,7 +63,7 @@ export function GroupCompanies() {
       <div className="about-story-inner about-company-layout">
         <div className="about-company-intro" data-aos="fade-up">
           <span className="about-story-label">OUR GROUP OF COMPANIES</span>
-          <h2 id="group-companies-title">Three Business Names. One Legacy.</h2>
+          <h2 id="group-companies-title">Three Businesses. One Legacy.</h2>
           <p>A family of businesses built on trust, experience and a shared commitment to quality.</p>
         </div>
         <div className="about-company-family">

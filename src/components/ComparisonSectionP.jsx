@@ -169,7 +169,7 @@ export default function ComparisonSection() {
 
           </span>
 
-          <h2>Whole Chilli Comparison</h2>
+          <h2>Chilli Product Comparison</h2>
 
         </div>
 
@@ -255,7 +255,7 @@ export default function ComparisonSection() {
 
               <div className="heat-bars">
 
-                {[1, 2, 3, 4, 5].map((bar) => (
+                {item.heat == null ? "On request" : [1, 2, 3, 4, 5].map((bar) => (
 
                   <span
                     key={bar}

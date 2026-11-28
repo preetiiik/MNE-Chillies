@@ -34,14 +34,14 @@ const ContactFooter = ({ hideCTA }) => {
           </h2>
 
           <p className="contact-descriptionf">
-            We supply bulk Whole Chilli, chilli powder, and flakes to food
-            processors, spice manufacturers, and importers worldwide. Reach
+            We supply whole chillies, chilli powder and chilli flakes in bulk to food
+            processors, spice manufacturers and importers worldwide. Reach
             out to discuss your requirements.
           </p>
 
           <div className="contact-buttons">
             <Link to="/contact" className="primary-btn">
-            Contact Us
+            Request a Quote
             </Link>
 
           </div>
@@ -81,8 +81,7 @@ const ContactFooter = ({ hideCTA }) => {
 
             <p className="footer-text">
               Guntur's leading exporter of premium red chillies,
-              chilli powder, and flakes. Trusted by food brands
-              across 25 countries.
+              chilli powder, and flakes. Supplying food brands in India and around the world.
             </p>
 
             <div className="social-icons">
@@ -121,6 +120,8 @@ const ContactFooter = ({ hideCTA }) => {
               <li><Link to="/services">Services</Link></li>
 
               <li><Link to="/infrastructure">Infrastructure</Link></li>
+
+              <li><Link to="/blog">Blogs</Link></li>
 
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
@@ -179,7 +180,7 @@ const ContactFooter = ({ hideCTA }) => {
               rel="noreferrer"
               className="footer-link"
             >
-              M.N EXPORT HOUSE<br />2/2 Arundelpet<br />Backside Jain Temple<br />Guntur - 522007<br />Andhra Pradesh, India
+              M.N EXPORT HOUSE<br />2/2 Arundelpet<br />Behind Jain Temple<br />Guntur - 522007<br />Andhra Pradesh, India
             </a>
 
             <span className="footer-label">
@@ -192,6 +193,9 @@ const ContactFooter = ({ hideCTA }) => {
               mnenterprises@live.in
             </a>
 
+
+            <span className="footer-label">PHONE</span>
+            <a href="tel:+919440793970" className="footer-link">+91 9440793970</a>
 
             <span className="footer-label">
               HOURS

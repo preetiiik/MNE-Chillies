@@ -9,19 +9,19 @@ function Collection() {
       image: "/images/dry-chilies.webp",
       title: "Whole Chilli",
       description:
-        "Handpicked, Whole Chilli with deep pigmentation and bold heat. Source-verified from Guntur farms.",
+        "Handpicked whole chillies with deep pigmentation and bold heat. Source-verified from Guntur farms.",
     },
     {
       image: "/images/chili-powder.webp",
       title: "Chilli Powder",
       description:
-        "Finely ground, vibrant red powder. Retains natural oils, aroma, and color — ideal for spice blends and sauces.",
+        "Finely ground, vibrant red powder. Retains natural oils, aroma and colour — ideal for spice blends and sauces.",
     },
     {
       image: "/images/chili-flakes.webp",
       title: "Chilli Flakes",
       description:
-        "Coarsely crushed for bold texture. Perfect heat-to-color ratio for pizza, pasta, marinades, and rubs.",
+        "Coarsely crushed for bold texture. Suitable for pizza, pasta, marinades and rubs.",
     },
   ];
 
@@ -43,7 +43,7 @@ function Collection() {
           >
             Three forms.
             <br />
-            Infinite flavor.
+            Infinite flavour.
           </h2>
         </div>
 

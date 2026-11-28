@@ -201,3 +201,7 @@
     .nav-brand-companies span + span { margin-left: 4px; padding-left: 4px; }
     .menu-icon { font-size: 28px; flex-shrink: 0; }
 }
+
+.nav-brand-companies { font-size: 10px; }
+@media (max-width: 1200px) { .nav-brand-companies { font-size: 9px; } }
+@media (max-width: 420px) { .nav-brand-companies { font-size: 7px; } }

@@ -13,7 +13,7 @@ export default function CapabilitiesSection() {
       id: "01",
       image: mpuImg,
       title: "Modern Processing Unit",
-      subtitle: "Precision Engineering for Every Grain",
+      subtitle: "Precision Processing for Every Batch",
       description:
         "Our central processing unit is a high-tech ecosystem where automated cleaning, grading and packaging lines work in harmony to ensure consistent quality across multi-ton batches.",
       points: [
@@ -44,7 +44,7 @@ export default function CapabilitiesSection() {
       title: "Cold Storage Facility",
       subtitle: "Fresher for Longer, by Design",
       description:
-        "Temperature and humidity are the enemies of spice quality. Our industrial cold storage units maintain a consistent climate of 4°C to 10°C, halting degradation and ensuring year-round supply.",
+        "Temperature and humidity are the enemies of spice quality. Our industrial cold storage units maintain a consistent climate of 4°C to 10°C, slowing degradation and preserving product quality while supporting year-round supply.",
       points: [
         "Precise Climate Control",
         "Anti-Caking Environment",
@@ -71,7 +71,7 @@ export default function CapabilitiesSection() {
       id: "05",
       image: stemlessImg,
       title: "Stemcut Processing Zone",
-      subtitle: "Specialized Efficiency for Global Needs (As per cutomer requirement)",
+      subtitle: "Specialized Efficiency for Global Needs (As per customer requirements)",
       description:
         "Dedicated to the production of premium stemcut chillies, this specialised line uses advanced mechanical and manual sorting to deliver 99.9% stem-free output for discerning international clients.",
       points: [

@@ -30,7 +30,7 @@ export default function ProcessingSection() {
     icon: <PiCalendarDotsBold />,
     title: "Year-Round Handling",
     description:
-      "Optimized supply chain infrastructure capable of handling seasonal peaks without quality loss.",
+      "Optimized supply chain infrastructure capable of handling seasonal peaks while maintaining consistent product quality.",
   },
 ];
 

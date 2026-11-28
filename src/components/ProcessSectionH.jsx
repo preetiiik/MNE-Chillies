@@ -6,9 +6,9 @@ import "../styles/ProcessSectionH.css";
 const processSteps = [
   {
     number: "01",
-    title: "Farm+ APMC Sourcing",
+    title: "Farm & APMC Sourcing",
     description:
-      "Directly from APMC farmers in Guntur",
+      "Sourced from farmers and APMC markets in Guntur",
   },
   {
     number: "02",
@@ -20,13 +20,13 @@ const processSteps = [
     number: "03",
     title: "Lab Testing",
     description:
-      "ASTA color, SHU pungency, and moisture tested on every single batch.",
+      "ASTA colour, SHU pungency, and moisture tested on every single batch.",
   },
   {
     number: "04",
     title: "Export Packaging",
     description:
-      "Custom-sealed in jute, PP, or vacuum packs — ready for global shipping.",
+      "Packed in jute bags, PP bags or vacuum-sealed packs, ready for global shipping.",
   },
 ];
 
